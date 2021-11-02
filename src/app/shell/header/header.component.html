@@ -1,7 +1,13 @@
 <header>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-      <a class="navbar-brand brand-text" routerLink="/home" routerLinkActive="active" translate>APP_NAME</a>
+      <a
+        class="navbar-brand brand-text focus:ring-2 focus:ring-gray-800"
+        routerLink="/home"
+        routerLinkActive="active"
+        translate
+        >APP_NAME</a
+      >
       <button
         class="navbar-toggler"
         type="button"
@@ -15,13 +21,25 @@
       <div id="navbar-menu" class="collapse navbar-collapse float-xs-none" [ngbCollapse]="menuHidden">
         <div class="navbar-nav ml-auto">
           <div class="navbar-nav">
-            <a class="nav-item nav-link text-uppercase" routerLink="/home" routerLinkActive="active">
+            <a
+              class="nav-item nav-link text-uppercase focus:ring-2 focus:ring-gray-800"
+              routerLink="/home"
+              routerLinkActive="active"
+            >
               <span translate>Home</span>
             </a>
-            <a class="nav-item nav-link text-uppercase" routerLink="/about" routerLinkActive="active">
+            <a
+              class="nav-item nav-link text-uppercase focus:ring-2 focus:ring-gray-800"
+              routerLink="/about"
+              routerLinkActive="active"
+            >
               <span translate>About</span>
             </a>
-            <a class="nav-item nav-link text-uppercase" routerLink="/resume" routerLinkActive="active">
+            <a
+              class="nav-item nav-link text-uppercase focus:ring-2 focus:ring-gray-800"
+              routerLink="/resume"
+              routerLinkActive="active"
+            >
               <span translate>Resume</span>
             </a>
           </div>

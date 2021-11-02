@@ -1,0 +1,13 @@
+@import "./variables";
+
+.btn-main {
+  font-weight: bold;
+  border-radius: 5px;
+  background: $bg-purple;
+  color: white;
+  padding: 10px 25px;
+  transition: 0.2s ease-in-out;
+  &:hover {
+    background: lighten($bg-purple, 3%);
+  }
+}
