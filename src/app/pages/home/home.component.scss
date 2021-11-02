@@ -1,0 +1,28 @@
+@import "../../../styles/index";
+@import "~animate.css/animate.min.css";
+.logo {
+  width: 100px;
+}
+
+q {
+  font-style: italic;
+  font-size: 1.2rem;
+  quotes: "« " " »";
+}
+
+.hero-section {
+  height: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    max-height: 550px;
+  }
+}
+
+.animated {
+  visibility: visible !important;
+}
+.hide-on-init {
+  visibility: hidden;
+}
