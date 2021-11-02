@@ -26,6 +26,7 @@
     "@angular/common": "^11.0.8",
     "@angular/compiler": "^11.0.8",
     "@angular/core": "^11.0.8",
+    "@angular/fire": "^7.1.1",
     "@angular/flex-layout": "^12.0.0-beta.35",
     "@angular/forms": "^11.0.8",
     "@angular/localize": "^11.0.8",
