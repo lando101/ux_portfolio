@@ -40,6 +40,7 @@
     "bootstrap": "^4.5.3",
     "moment": "^2.29.1",
     "ng2-animate-on-scroll": "^2.3.2",
+    "ngx-moment": "^5.0.0",
     "rxjs": "^6.6.3",
     "tslib": "^2.0.1",
     "zone.js": "~0.10.3"
