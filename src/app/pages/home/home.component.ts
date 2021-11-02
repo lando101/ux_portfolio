@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CaseStudy } from '@app/@shared/components/case-study-card/case-study-card.component';
 import { finalize } from 'rxjs/operators';
 
 import { QuoteService } from './quote.service';
@@ -38,6 +39,32 @@ export class HomeComponent implements OnInit {
         'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/illustrations%2Fundraw_developer_activity_re_39tg.svg?alt=media&token=2d8685f9-58d7-4af3-a08a-27fcb8255049',
     },
   ];
+
+  caseStudies: CaseStudy[] = [
+    {
+      title: 'Coinfloe',
+      desc: 'A full-featured crypto currency web application built for exploring the crypto landscape.',
+      skills: ['UX Designer', 'UX Researcher', 'Front-end Developer'],
+      img_url:
+        'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fcoinfloe_image.png?alt=media&token=a81dc3b2-5afe-4d78-b7cf-179213c8ebbd',
+      href: '',
+      orientation: 'left',
+      alt: 'Image of coinfloe application on desktop and mobile',
+      caseStudy: true,
+    },
+    {
+      title: 'Forecaster',
+      desc: 'An exprimental weather application with dynamic weather animations based on current conditions.',
+      skills: ['UX Designer', 'UX Researcher', 'Front-end Developer'],
+      img_url:
+        'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fforecaster.png?alt=media&token=49a1d12b-2733-4266-b091-3787eec6fb85',
+      href: '',
+      orientation: 'right',
+      alt: 'Image of forecaster application on mobile',
+      caseStudy: false,
+    },
+  ];
+
   quote: string | undefined;
   isLoading = false;
 

@@ -11,3 +11,14 @@
     background: lighten($bg-purple, 3%);
   }
 }
+
+a {
+  font-weight: bold;
+  color: $bg-purple;
+  transition: 0.2s ease-in-out;
+  text-transform: uppercase;
+  &:hover {
+    color: lighten($bg-purple, 3%);
+    text-decoration: underline;
+  }
+}

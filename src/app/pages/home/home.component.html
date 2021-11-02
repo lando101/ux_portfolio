@@ -1,7 +1,7 @@
 <div class="container-fluid">
   <div class="container" fxLayout="column" fxLayoutGap="80px">
     <div fxLayout="row" class="hero-section">
-      <div fxFlex="45">
+      <div fxFlex.lt-sm="100" fxFlex="45">
         <h1 class="text-5xl font-extrabold">Hi, I'm Landon.</h1>
         <p class="text-xl leading-9 my-4 text-gray-500">
           I'm a UX engineer, experienced in building custom user experiences for the government <b>cleared</b> space.
@@ -9,7 +9,7 @@
         </p>
         <button class="btn-main focus:ring-2 focus:ring-gray-800">Let's Team Up!</button>
       </div>
-      <div fxFlex="auto" fxLayout="row" fxLayoutAlign="center center">
+      <div fxHide.lt-sm fxFlex="auto" fxLayout="row" fxLayoutAlign="center center">
         <img
           [src]="
             'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/illustrations%2Fundraw_building_websites_i78t.svg?alt=media&token=583188f0-8ede-4a8c-9b0f-9d3ff14798bf'
@@ -18,12 +18,12 @@
       </div>
     </div>
     <div animateOnScroll animationName="animate__fadeInLeft animate__animated" class="">
-      <div class="text-center w-100 mb-1 py-3 section-header" fxLayout="row" fxLayoutAlign="center center">
+      <div class="text-center w-100 mb-5 py-3 section-header" fxLayout="row" fxLayoutAlign="center center">
         <div class="divider w-100"></div>
-        <h2 class="text-3xl font-extrabold px-4">Skills</h2>
+        <h2 class="text-4xl font-extrabold px-4">Skills</h2>
         <div class="divider w-100"></div>
       </div>
-      <div fxLayout="row wrap" fxLayoutGap="65px" fxLayoutAlign="space-around">
+      <div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutGap="65px" fxLayoutAlign="space-around">
         <div fxFlex="30" *ngFor="let skill of skills">
           <app-info-card [skills]="skill"></app-info-card>
         </div>
@@ -31,17 +31,17 @@
 
       <!-- <div animateOnScroll animationName="animate__flash">test</div> -->
     </div>
-    <div
-      animateOnScroll
-      animationName="animate__fadeInRight"
-      class="animate__animated"
-      style="height: 550px; background-color: red"
-    >
-      <div animateOnScroll animationName="animate__flash">test</div>
-    </div>
-    <div style="height: 550px; background-color: white">
-      <div animateOnScroll animationName="animate__fadeInLeft animate__animated animated" class="hide-on-init">
-        test
+    <div animateOnScroll animationName="animate__fadeInRight" class="animate__animated">
+      <div class="text-center w-100 mb-5 py-3 section-header" fxLayout="row" fxLayoutAlign="center center">
+        <div class="divider"></div>
+        <h2 fxHide.lt-sm class="text-4xl font-extrabold px-4 whitespace-nowrap">Projects & Case Studies</h2>
+        <h2 fxHide.gt-xs class="text-4xl font-extrabold px-4 whitespace-nowrap">Projects</h2>
+        <div class="divider"></div>
+      </div>
+      <div fxLayout="column" fxLayoutGap="90px">
+        <div *ngFor="let casestudy of caseStudies">
+          <app-case-study-card [caseStudy]="casestudy"></app-case-study-card>
+        </div>
       </div>
     </div>
   </div>

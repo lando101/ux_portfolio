@@ -1,0 +1,73 @@
+<div fxHide.lt-lg fxLayout="row" fxLayoutGap="20px">
+  <div *ngIf="caseStudy.orientation === 'left'" fxFlex="45" fxLayoutAlign="center center">
+    <a href="">
+      <img
+        fxFlex.lt-lg="50"
+        class="img-left"
+        [alt]="'Image of coinfloe application on desktop and mobile'"
+        [src]="caseStudy.img_url"
+      />
+    </a>
+  </div>
+  <div fxFlex="55" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="40px">
+    <h2 class="text-3xl font-extrabold px-4">{{ caseStudy.title }}</h2>
+    <div ngClass.gt-xs="px-5 mx-5 " class="">
+      <p class="text-center text-gray-600">{{ caseStudy.desc }}</p>
+      <div fxLayout="row wrap" fxLayoutGap="10px" fxLayoutAlign="center center" class="mt-2">
+        <span *ngFor="let skill of caseStudy.skills" class="badge badge-pill badge-dark mt-2 px-3 py-2">{{
+          skill
+        }}</span>
+      </div>
+    </div>
+    <div>
+      <a href="" *ngIf="caseStudy.caseStudy; else viewMore" class="focus:ring-2 focus:ring-gray-800"
+        >Read the case study</a
+      >
+      <ng-template #viewMore>
+        <a href="" class="focus:ring-2 focus:ring-gray-800">Explore the project</a>
+      </ng-template>
+    </div>
+  </div>
+  <div *ngIf="caseStudy.orientation === 'right'" fxFlex="45" fxLayoutAlign="center center">
+    <a href="">
+      <img
+        fxFlex.lt-lg="50"
+        class="img-right"
+        [alt]="'Image of coinfloe application on desktop and mobile'"
+        [src]="caseStudy.img_url"
+      />
+    </a>
+  </div>
+</div>
+
+<div fxLayout="column" fxHide.gt-md fxLayoutGap="20px">
+  <div fxFlex="45" fxLayoutAlign="center center">
+    <a href="" class="justify-content-center">
+      <img
+        fxFlex.lt-lg="50"
+        class="img-left"
+        [alt]="'Image of coinfloe application on desktop and mobile'"
+        [src]="caseStudy.img_url"
+      />
+    </a>
+  </div>
+  <div fxFlex="55" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="40px">
+    <h2 class="text-3xl font-extrabold px-4">{{ caseStudy.title }}</h2>
+    <div ngClass.gt-xs="px-5 mx-5" class="">
+      <p class="text-center text-gray-600">{{ caseStudy.desc }}</p>
+      <div fxLayout="row wrap" fxLayoutGap="10px" fxLayoutAlign="center center" class="mt-2">
+        <span *ngFor="let skill of caseStudy.skills" class="badge badge-pill badge-dark mt-2 px-3 py-2">{{
+          skill
+        }}</span>
+      </div>
+    </div>
+    <div>
+      <a href="" *ngIf="caseStudy.caseStudy; else viewMore" class="focus:ring-2 focus:ring-gray-800"
+        >Read the case study</a
+      >
+      <ng-template #viewMore>
+        <a href="" class="focus:ring-2 focus:ring-gray-800">Explore the project</a>
+      </ng-template>
+    </div>
+  </div>
+</div>
