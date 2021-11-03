@@ -1,8 +1,8 @@
 <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfmcCPFM_edN_SYPohjmNLSG9VQkLUnC2LG5CQFrpymx-YqSA/viewform?embedded=true" width="640" height="841" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
 <div class="form-wrapper" fxLayout="column" fxLayoutGap="25px">
   <div>
-    <h1 class="text-3xl font-bold">Contact Information</h1>
-    <p class="text-base text-gray-500">Thanks for visiting. I'm looking forward to chatting!</p>
+    <h1 class="text-3xl font-extrabold">Contact Information</h1>
+    <p class="text-sm text-gray-500 font-semibold">Thanks for visiting. I'm looking forward to chatting!</p>
   </div>
 
   <div [formGroup]="form" class="d-block">
@@ -40,7 +40,7 @@
     </div>
     <div fxFlex="100">
       <mat-form-field fxFlex="100" appearance="outline">
-        <mat-label>Comments</mat-label>
+        <mat-label>Message</mat-label>
         <textarea #comment formControlName="comments" maxlength="350" matInput required></textarea>
         <mat-hint align="end">{{ comment.value?.length || 0 }}/350</mat-hint>
         <mat-error *ngIf="this.form.controls.comments.invalid">What brings you here? Required.</mat-error>
@@ -56,6 +56,6 @@
 
   <div fxLayout="row" class="justify-content-between align-items-center">
     <button (click)="onNoClick()" class="btn-secondary focus:ring-2 focus:ring-gray-800">Cancel</button>
-    <button type="submit" class="btn-main focus:ring-2 focus:ring-gray-800">Send</button>
+    <button type="submit" class="btn-main focus:ring-2 focus:ring-gray-800">Send Message</button>
   </div>
 </div>
