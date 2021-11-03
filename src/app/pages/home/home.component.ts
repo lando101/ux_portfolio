@@ -42,6 +42,17 @@ export class HomeComponent implements OnInit {
 
   caseStudies: CaseStudy[] = [
     {
+      title: 'Process Automation System',
+      desc: 'An enterprise grade application for managing workflows.',
+      skills: ['UX Designer', 'UX Researcher', 'Front-end Developer'],
+      img_url:
+        'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fpas_image.png?alt=media&token=4a0dc5de-d5ed-4740-9f18-a82dd10601bc',
+      href: '',
+      orientation: 'right',
+      alt: 'Image of process automation application on desktop in light and dark mode',
+      caseStudy: true,
+    },
+    {
       title: 'Coinfloe',
       desc: 'A full-featured crypto currency web application built for exploring the crypto landscape.',
       skills: ['UX Designer', 'UX Researcher', 'Front-end Developer'],
