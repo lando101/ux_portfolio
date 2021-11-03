@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { TranslateModule } from '@ngx-translate/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { environment } from '@env/environment';
 import { CoreModule } from '@core';
@@ -22,6 +23,8 @@ import { MaterialModule } from './material/material.module';
     FormsModule,
     HttpClientModule,
     TranslateModule.forRoot(),
+    BrowserAnimationsModule,
+    MaterialModule,
     NgbModule,
     CoreModule,
     SharedModule,

@@ -12,6 +12,18 @@
   }
 }
 
+.btn-secondary {
+  font-weight: bold;
+  border-radius: 5px;
+  background: $bg-gray;
+  color: $big-text-color;
+  padding: 10px 25px;
+  transition: 0.2s ease-in-out;
+  &:hover {
+    background: darken($bg-gray, 3%);
+  }
+}
+
 a {
   font-weight: bold;
   color: $bg-purple;
