@@ -7,6 +7,7 @@ import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 import { SharedModule } from '@shared';
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
+import { MaterialModule } from '@app/material/material.module';
 
 @NgModule({
   imports: [
@@ -15,6 +16,7 @@ import { HomeComponent } from './home.component';
     SharedModule,
     HomeRoutingModule,
     FlexLayoutModule,
+    MaterialModule,
     AnimateOnScrollModule.forRoot(),
   ],
   declarations: [HomeComponent],

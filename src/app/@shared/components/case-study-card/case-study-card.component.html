@@ -1,6 +1,6 @@
 <div fxHide.lt-lg fxLayout="row" fxLayoutGap="20px">
   <div *ngIf="caseStudy.orientation === 'left'" fxFlex="45" fxLayoutAlign="center center">
-    <a href="">
+    <a [routerLink]="caseStudy.href">
       <img
         fxFlex.lt-lg="50"
         class="img-left"
@@ -20,16 +20,19 @@
       </div>
     </div>
     <div>
-      <a href="" *ngIf="caseStudy.caseStudy; else viewMore" class="focus:ring-2 focus:ring-gray-800"
+      <a
+        [routerLink]="caseStudy.href"
+        *ngIf="caseStudy.caseStudy; else viewMore"
+        class="focus:ring-2 focus:ring-gray-800"
         >Read the case study</a
       >
       <ng-template #viewMore>
-        <a href="" class="focus:ring-2 focus:ring-gray-800">Explore the project</a>
+        <a [routerLink]="caseStudy.href" class="focus:ring-2 focus:ring-gray-800">Explore the project</a>
       </ng-template>
     </div>
   </div>
   <div *ngIf="caseStudy.orientation === 'right'" fxFlex="45" fxLayoutAlign="center center">
-    <a href="">
+    <a [routerLink]="caseStudy.href">
       <img
         fxFlex.lt-lg="50"
         class="img-right"
@@ -42,7 +45,7 @@
 
 <div fxLayout="column" fxHide.gt-md fxLayoutGap="20px">
   <div fxFlex="45" fxLayoutAlign="center center">
-    <a href="" class="justify-content-center">
+    <a [routerLink]="caseStudy.href" class="justify-content-center">
       <img
         fxFlex.lt-lg="50"
         class="img-left"
@@ -62,11 +65,14 @@
       </div>
     </div>
     <div>
-      <a href="" *ngIf="caseStudy.caseStudy; else viewMore" class="focus:ring-2 focus:ring-gray-800"
+      <a
+        [routerLink]="caseStudy.href"
+        *ngIf="caseStudy.caseStudy; else viewMore"
+        class="focus:ring-2 focus:ring-gray-800"
         >Read the case study</a
       >
       <ng-template #viewMore>
-        <a href="" class="focus:ring-2 focus:ring-gray-800">Explore the project</a>
+        <a [routerLink]="caseStudy.href" class="focus:ring-2 focus:ring-gray-800">Explore the project</a>
       </ng-template>
     </div>
   </div>
