@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import {
   MatCommonModule,
   MatLineModule,
@@ -43,8 +42,6 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatTreeModule } from '@angular/material/tree';
 
 @NgModule({
-  declarations: [],
-  imports: [CommonModule],
   exports: [
     MatAutocompleteModule,
     MatBadgeModule,

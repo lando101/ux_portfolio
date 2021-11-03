@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
+// import { MatDialog } from '@angular/material/dialog';
 import { CaseStudy } from '@app/@shared/components/case-study-card/case-study-card.component';
 import {
   ContactInfo,
@@ -86,7 +86,7 @@ export class HomeComponent implements OnInit {
 
   contactInfo: ContactInfo;
 
-  constructor(private quoteService: QuoteService, public dialog: MatDialog) {}
+  constructor(private quoteService: QuoteService) {}
 
   ngOnInit() {
     this.isLoading = true;
@@ -101,15 +101,15 @@ export class HomeComponent implements OnInit {
         this.quote = quote;
       });
   }
-  openDialog(): void {
-    const dialogRef = this.dialog.open(ContactInfoFormComponent, {
-      width: '250px',
-      data: { name: null, email: null, date: null, phone: null, comments: null },
-    });
+  // openDialog(): void {
+  //   const dialogRef = this.dialog.open(ContactInfoFormComponent, {
+  //     width: '250px',
+  //     data: { name: null, email: null, date: null, phone: null, comments: null },
+  //   });
 
-    dialogRef.afterClosed().subscribe((result: ContactInfo) => {
-      console.log('The dialog was closed');
-      this.contactInfo = result;
-    });
-  }
+  //   dialogRef.afterClosed().subscribe((result: ContactInfo) => {
+  //     console.log('The dialog was closed');
+  //     this.contactInfo = result;
+  //   });
+  // }
 }
