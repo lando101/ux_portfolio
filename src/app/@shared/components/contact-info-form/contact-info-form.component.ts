@@ -15,8 +15,7 @@ export interface ContactInfo {
   styleUrls: ['./contact-info-form.component.scss'],
 })
 export class ContactInfoFormComponent implements OnInit {
-  constructor() // @Inject(MAT_DIALOG_DATA) public data: ContactInfo // public dialogRef: MatDialogRef<ContactInfoFormComponent>,
-  {}
+  constructor() {} // @Inject(MAT_DIALOG_DATA) public data: ContactInfo // public dialogRef: MatDialogRef<ContactInfoFormComponent>,
 
   ngOnInit(): void {}
   onNoClick(): void {
