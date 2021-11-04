@@ -11,6 +11,7 @@ import { CaseStudyCardComponent } from './components/case-study-card/case-study-
 import { ContactInfoFormComponent } from './components/contact-info-form/contact-info-form.component';
 import { TeleInputComponent } from './components/contact-info-form/components/tele-input/tele-input.component';
 import { MaterialModule } from '@app/material/material.module';
+import { PositiveNotiComponent } from './components/notifications/positive-noti/positive-noti.component';
 @NgModule({
   imports: [CommonModule, FlexLayoutModule, MomentModule, RouterModule, ReactiveFormsModule, MaterialModule],
   declarations: [
@@ -19,6 +20,7 @@ import { MaterialModule } from '@app/material/material.module';
     CaseStudyCardComponent,
     ContactInfoFormComponent,
     TeleInputComponent,
+    PositiveNotiComponent,
   ],
   exports: [LoaderComponent, InfoCardComponent, CaseStudyCardComponent, ContactInfoFormComponent],
 })

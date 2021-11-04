@@ -22,6 +22,8 @@ export interface Skills {
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
+  name: string;
+  contactInfo: ContactInfo;
   skills: Skills[] = [
     {
       title: 'UX Design',
@@ -85,8 +87,6 @@ export class HomeComponent implements OnInit {
   quote: string | undefined;
   isLoading = false;
 
-  contactInfo: ContactInfo;
-
   constructor(private quoteService: QuoteService, public dialog: MatDialog) {}
 
   ngOnInit() {
@@ -107,12 +107,22 @@ export class HomeComponent implements OnInit {
       // width: '250px',
       id: 'formdialog',
       panelClass: ['animate__animated'],
-      data: { name: null, email: null, date: null, phone: null, comments: null },
+      data: {
+        firstname: !this.contactInfo?.firstname ? '' : this.contactInfo.firstname,
+        lastname: !this.contactInfo?.lastname ? '' : this.contactInfo.lastname,
+        email: !this.contactInfo?.email ? '' : this.contactInfo.email,
+        date: !this.contactInfo?.date ? '' : this.contactInfo.date,
+        tel: !this.contactInfo?.tel ? '' : this.contactInfo.tel,
+        org: !this.contactInfo?.org ? '' : this.contactInfo.org,
+        comments: '',
+      },
     });
 
     dialogRef.afterClosed().subscribe((result: ContactInfo) => {
       console.log('The dialog was closed');
+      this.name = result.firstname;
       this.contactInfo = result;
+      console.log(result);
     });
   }
 }

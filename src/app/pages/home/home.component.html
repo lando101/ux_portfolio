@@ -7,7 +7,10 @@
           I'm a UX engineer, experienced in building custom user experiences for the Government <b>cleared</b> space.
           I'm located in <b>Arlington, VA</b> and I'm ready to help!
         </p>
-        <button (click)="openDialog()" class="btn-main focus:ring-2 focus:ring-gray-800">Let's Team Up!</button>
+        <button (click)="openDialog()" class="btn-main focus:ring-2 focus:ring-gray-800">
+          <span class="font-bold" *ngIf="!name">Let's Team Up!</span>
+          <span class="font-bold" *ngIf="name">Got Feedback, {{ name }}?</span>
+        </button>
       </div>
       <div fxHide.lt-sm fxFlex="auto" fxLayout="row" fxLayoutAlign="center center">
         <img

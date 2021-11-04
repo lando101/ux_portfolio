@@ -1,0 +1,13 @@
+<div fxLayout="row" fxLayoutGap="10px" class="align-items-center" class="p-2 bg-white">
+  <div fxLayout="row" class="align-items-center" fxLayoutGap="10px">
+    <i class="far fa-thumbs-up text-xl"></i>
+    <div fxLayout="column">
+      <span class="text-base font-semibold text-gray-800">
+        {{ data }}
+      </span>
+      <span class="text-xs font-medium text-gray-500">Recieved</span>
+    </div>
+  </div>
+
+  <button class="px-2 py-1 text-blue-500 font-medium text-sm" (click)="snackbarRef.dismiss()">Dimiss</button>
+</div>
