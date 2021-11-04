@@ -9,7 +9,7 @@ import {
   Validators,
 } from '@angular/forms';
 import { MAT_FORM_FIELD, MatFormField, MatFormFieldControl } from '@angular/material/form-field';
-import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { FocusMonitor } from '@angular/cdk/a11y';
 import { BooleanInput, coerceBooleanProperty } from '@angular/cdk/coercion';
 import { MyTel } from './components/tele-input/tele-input.component';
@@ -33,6 +33,7 @@ export interface ContactInfo {
   },
 })
 export class ContactInfoFormComponent implements OnInit {
+  badSubmit: boolean = false;
   form: FormGroup = new FormGroup({
     firstname: new FormControl('', [Validators.required]),
     lastname: new FormControl('', [Validators.required]),
@@ -43,7 +44,8 @@ export class ContactInfoFormComponent implements OnInit {
   });
   constructor(
     @Inject(MAT_DIALOG_DATA) public data: ContactInfo,
-    public dialogRef: MatDialogRef<ContactInfoFormComponent>
+    public dialogRef: MatDialogRef<ContactInfoFormComponent>,
+    public dialog: MatDialog
   ) {} // @Inject(MAT_DIALOG_DATA) public data: ContactInfo // public dialogRef: MatDialogRef<ContactInfoFormComponent>,
 
   ngOnInit(): void {}
@@ -60,5 +62,18 @@ export class ContactInfoFormComponent implements OnInit {
 
   onNoClick(): void {
     this.dialogRef.close();
+  }
+
+  submit() {
+    if (this.form.valid) {
+      this.badSubmit = false;
+      // document.getElementById('formdialog').classList.add('animate__backOutUp');
+      document.getElementsByClassName('animate__animated')[0].classList.add('animate__backOutUp');
+      setTimeout(() => {
+        this.dialog.closeAll();
+      }, 470);
+    } else {
+      this.badSubmit = true;
+    }
   }
 }

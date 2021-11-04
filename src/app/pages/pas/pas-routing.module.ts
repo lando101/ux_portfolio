@@ -4,7 +4,7 @@ import { marker } from '@biesbjerg/ngx-translate-extract-marker';
 
 import { PasComponent } from './pas.component';
 
-const routes: Routes = [{ path: 'resume', component: PasComponent, data: { title: marker('PAS') } }];
+const routes: Routes = [{ path: 'pas', component: PasComponent, data: { title: marker('Landon UX') } }];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

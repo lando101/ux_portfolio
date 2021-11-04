@@ -26,7 +26,7 @@ export class HomeComponent implements OnInit {
     {
       title: 'UX Design',
       experience: '06-01-2019',
-      desc: 'Putting customers at the center of application design creates experiences that keep them coming back. That is why my approach is to include users at all stages of the design process. Their feedback is what informs my designs. Frequently I conduct usability studies, conduct user research and always advocate for the usesr.',
+      desc: 'Putting customers at the center of application design creates experiences that keep them coming back. That is why my approach is to include users at all stages of the design process. Their feedback is what informs my designs. Frequently I conduct usability studies, conduct user research and always advocate for the users.',
       img_url:
         'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/illustrations%2Fundraw_user_flow_re_bvfx.svg?alt=media&token=a3d8e058-2d8c-4f00-b28d-d90ba4358001',
     },
@@ -105,6 +105,8 @@ export class HomeComponent implements OnInit {
   openDialog(): void {
     const dialogRef = this.dialog.open(ContactInfoFormComponent, {
       // width: '250px',
+      id: 'formdialog',
+      panelClass: ['animate__animated'],
       data: { name: null, email: null, date: null, phone: null, comments: null },
     });
 
