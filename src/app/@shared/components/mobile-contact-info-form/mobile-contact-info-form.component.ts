@@ -1,53 +1,34 @@
-import { Component, OnInit, ElementRef, Inject, Input, OnDestroy, Optional, Self, ViewChild } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { AngularFirestore } from '@angular/fire/compat/firestore';
-
-import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { MyTel } from './components/tele-input/tele-input.component';
-import { MatSnackBar } from '@angular/material/snack-bar';
-import { PositiveNotiComponent } from '../notifications/positive-noti/positive-noti.component';
+import { MatBottomSheetRef, MAT_BOTTOM_SHEET_DATA } from '@angular/material/bottom-sheet';
 import { DeviceDetectorService } from 'ngx-device-detector';
-export interface ContactInfo {
-  id?: string;
-  firstname?: string;
-  lastname?: string;
-  email?: string;
-  date?: string;
-  tel?: any;
-  comment?: string;
-  org?: string;
-  created?: string;
-}
+import { ContactInfo } from '../contact-info-form/contact-info-form.component';
+import { MyTel } from '../contact-info-form/components/tele-input/tele-input.component';
 
 @Component({
-  selector: 'app-contact-info-form',
-  templateUrl: './contact-info-form.component.html',
-  styleUrls: ['./contact-info-form.component.scss'],
-  providers: [],
-  host: {
-    '[class.example-floating]': 'shouldLabelFloat',
-    '[id]': 'id',
-  },
+  selector: 'app-mobile-contact-info-form',
+  templateUrl: './mobile-contact-info-form.component.html',
+  styleUrls: ['./mobile-contact-info-form.component.scss'],
 })
-export class ContactInfoFormComponent implements OnInit {
+export class MobileContactInfoFormComponent implements OnInit {
   badSubmit: boolean = false;
   form: FormGroup = new FormGroup({
-    firstname: new FormControl(this.data.firstname, [Validators.required]),
-    lastname: new FormControl(this.data.lastname, [Validators.required]),
-    org: new FormControl(this.data.org),
+    firstname: new FormControl(this.dataBS.firstname, [Validators.required]),
+    lastname: new FormControl(this.dataBS.lastname, [Validators.required]),
+    org: new FormControl(this.dataBS.org),
     tel: new FormControl(new MyTel('', '', '')),
-    email: new FormControl(this.data.email, [Validators.required, Validators.email]),
+    email: new FormControl(this.dataBS.email, [Validators.required, Validators.email]),
     comments: new FormControl('', [Validators.required]),
   });
   constructor(
-    @Inject(MAT_DIALOG_DATA) public data: ContactInfo,
-    public dialogRef: MatDialogRef<ContactInfoFormComponent>,
-    public dialog: MatDialog,
-    private fs: AngularFirestore,
-    private _snackBar: MatSnackBar,
-    private deviceService: DeviceDetectorService
-  ) {} // @Inject(MAT_DIALOG_DATA) public data: ContactInfo // public dialogRef: MatDialogRef<ContactInfoFormComponent>,
+    @Inject(MAT_BOTTOM_SHEET_DATA) public dataBS: ContactInfo,
+    private _bottomSheetRef: MatBottomSheetRef<MobileContactInfoFormComponent>,
+    private deviceService: DeviceDetectorService,
+    private fs: AngularFirestore
+  ) {}
   desktop: boolean = this.deviceService.isDesktop();
+
   ngOnInit(): void {}
 
   getErrorMessage() {
@@ -61,7 +42,7 @@ export class ContactInfoFormComponent implements OnInit {
   }
 
   onNoClick(): void {
-    this.dialogRef.close();
+    this._bottomSheetRef.dismiss();
   }
 
   submit() {
@@ -73,7 +54,7 @@ export class ContactInfoFormComponent implements OnInit {
       }
       this.sendToDB().then((user) => {
         setTimeout(() => {
-          this.dialogRef.close(user);
+          this._bottomSheetRef.dismiss(user);
         }, 470);
       });
     } else {
@@ -111,33 +92,15 @@ export class ContactInfoFormComponent implements OnInit {
             .then((response: any) => {
               console.log('response', response);
               if (response.exists) {
-                if (this.desktop) {
-                  this.openSnackBar(
-                    `${item.firstname.charAt(0).toUpperCase() + item.firstname.slice(1)}, thanks for reaching out!`,
-                    'Close'
-                  );
-                }
                 resolve(item);
               }
             })
             .catch(() => {
-              if (this.desktop) {
-                this.openSnackBar('Whoops! Something went wrong...', 'Close');
-              }
               reject('erros');
             });
         });
     });
 
     return promise;
-  }
-
-  openSnackBar(message: string, action: string) {
-    this._snackBar.openFromComponent(PositiveNotiComponent, {
-      horizontalPosition: 'end',
-      data: message,
-      verticalPosition: 'top',
-      duration: 6000,
-    });
   }
 }

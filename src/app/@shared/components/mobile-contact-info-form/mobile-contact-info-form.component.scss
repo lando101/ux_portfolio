@@ -1,0 +1,17 @@
+@import "../../../../styles/";
+
+.form-wrapper {
+  margin: 1em 0px;
+  height: auto;
+}
+
+.send {
+  i {
+    transition: 0.2s ease-in-out;
+  }
+  &:hover {
+    i {
+      transform: translateX(10px) translateY(-2px) rotate(-10deg);
+    }
+  }
+}

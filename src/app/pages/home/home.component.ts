@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { DeviceDetectorService, DeviceInfo } from 'ngx-device-detector';
+import { MatBottomSheet, MatBottomSheetRef } from '@angular/material/bottom-sheet';
 // import { MatDialog } from '@angular/material/dialog';
 import { CaseStudy } from '@app/@shared/components/case-study-card/case-study-card.component';
 import {
@@ -9,6 +11,7 @@ import {
 import { finalize } from 'rxjs/operators';
 
 import { QuoteService } from './quote.service';
+import { MobileContactInfoFormComponent } from '@app/@shared/components/mobile-contact-info-form/mobile-contact-info-form.component';
 
 export interface Skills {
   title?: string;
@@ -22,6 +25,7 @@ export interface Skills {
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
+  deviceInfo: DeviceInfo = null;
   name: string;
   contactInfo: ContactInfo;
   skills: Skills[] = [
@@ -87,42 +91,73 @@ export class HomeComponent implements OnInit {
   quote: string | undefined;
   isLoading = false;
 
-  constructor(private quoteService: QuoteService, public dialog: MatDialog) {}
+  constructor(
+    private deviceService: DeviceDetectorService,
+    public dialog: MatDialog,
+    private _bottomSheet: MatBottomSheet
+  ) {}
+  desktop: boolean = this.deviceService.isDesktop();
 
   ngOnInit() {
     this.isLoading = true;
-    this.quoteService
-      .getRandomQuote({ category: 'dev' })
-      .pipe(
-        finalize(() => {
-          this.isLoading = false;
-        })
-      )
-      .subscribe((quote: string) => {
-        this.quote = quote;
-      });
+    this.epicFunction();
+  }
+
+  epicFunction() {
+    this.deviceInfo = this.deviceService.getDeviceInfo();
+    const isMobile = this.deviceService.isMobile();
+    const isTablet = this.deviceService.isTablet();
+    const isDesktopDevice = this.deviceService.isDesktop();
+    console.log(this.deviceInfo);
+    console.log(isMobile); // returns if the device is a mobile device (android / iPhone / windows-phone etc)
+    console.log(isTablet); // returns if the device us a tablet (iPad etc)
+    console.log(isDesktopDevice); // returns if the app is running on a Desktop browser.
   }
   openDialog(): void {
-    const dialogRef = this.dialog.open(ContactInfoFormComponent, {
-      // width: '250px',
-      id: 'formdialog',
-      panelClass: ['animate__animated'],
-      data: {
-        firstname: !this.contactInfo?.firstname ? '' : this.contactInfo.firstname,
-        lastname: !this.contactInfo?.lastname ? '' : this.contactInfo.lastname,
-        email: !this.contactInfo?.email ? '' : this.contactInfo.email,
-        date: !this.contactInfo?.date ? '' : this.contactInfo.date,
-        tel: !this.contactInfo?.tel ? '' : this.contactInfo.tel,
-        org: !this.contactInfo?.org ? '' : this.contactInfo.org,
-        comments: '',
-      },
-    });
+    if (this.desktop) {
+      const dialogRef = this.dialog.open(ContactInfoFormComponent, {
+        // width: '250px',
+        id: 'formdialog',
+        panelClass: ['animate__animated'],
+        data: {
+          firstname: !this.contactInfo?.firstname ? '' : this.contactInfo.firstname,
+          lastname: !this.contactInfo?.lastname ? '' : this.contactInfo.lastname,
+          email: !this.contactInfo?.email ? '' : this.contactInfo.email,
+          date: !this.contactInfo?.date ? '' : this.contactInfo.date,
+          tel: !this.contactInfo?.tel ? '' : this.contactInfo.tel,
+          org: !this.contactInfo?.org ? '' : this.contactInfo.org,
+          comments: '',
+        },
+      });
 
-    dialogRef.afterClosed().subscribe((result: ContactInfo) => {
-      console.log('The dialog was closed');
-      this.name = result.firstname;
-      this.contactInfo = result;
-      console.log(result);
-    });
+      dialogRef.afterClosed().subscribe((result: ContactInfo) => {
+        console.log('The dialog was closed');
+        if (result) {
+          this.name = result?.firstname || null;
+          this.contactInfo = result;
+        }
+        console.log(result);
+      });
+    } else {
+      const bottomSheet = this._bottomSheet.open(MobileContactInfoFormComponent, {
+        data: {
+          firstname: !this.contactInfo?.firstname ? '' : this.contactInfo?.firstname,
+          lastname: !this.contactInfo?.lastname ? '' : this.contactInfo?.lastname,
+          email: !this.contactInfo?.email ? '' : this.contactInfo?.email,
+          date: !this.contactInfo?.date ? '' : this.contactInfo?.date,
+          tel: !this.contactInfo?.tel ? '' : this.contactInfo?.tel,
+          org: !this.contactInfo?.org ? '' : this.contactInfo?.org,
+          comments: '',
+        },
+      });
+      bottomSheet.afterDismissed().subscribe((result: ContactInfo) => {
+        console.log('The dialog was closed');
+        if (result) {
+          this.name = result?.firstname || null;
+          this.contactInfo = result;
+        }
+        console.log(result);
+      });
+    }
   }
 }
