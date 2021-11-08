@@ -7,6 +7,7 @@ export interface Quote {
   name?: string;
   date?: string;
   large?: boolean;
+  color?: string;
 }
 @Component({
   selector: 'app-quotes',

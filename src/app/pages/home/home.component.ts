@@ -97,6 +97,7 @@ export class HomeComponent implements OnInit {
       role: 'Associate at Booz Allen Hamilton',
       name: 'Teresa Lowen',
       large: false,
+      color: '#fb4b6e',
     },
     {
       title: 'Leadership',
@@ -105,6 +106,7 @@ export class HomeComponent implements OnInit {
       role: 'Team Lead at Knucklepuck',
       name: 'Julia Andrews',
       large: true,
+      color: '#3f3d56',
     },
     {
       title: 'Initiative',
@@ -113,6 +115,7 @@ export class HomeComponent implements OnInit {
       role: 'Chief Technologist at Booz Allen Hamilton',
       name: 'Andrew Lyboldt',
       large: false,
+      color: '#6c63ff',
     },
   ];
 

@@ -1,6 +1,6 @@
 <div [ngClass.gt-md]="{ emphasis: quote.large }" fxLayout="column" class="quote-card position-relative">
   <div>
-    <h2 class="font-bold text-2xl text-gray-500 mb-1">{{ quote.title }}</h2>
+    <h2 class="font-bold text-2xl mb-1" [style.color]="quote.color">{{ quote.title }}</h2>
     <p class="mb-4">{{ quote.comment }}</p>
   </div>
   <div fxLayout="column">

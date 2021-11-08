@@ -7,8 +7,11 @@
   color: white;
   padding: 10px 25px;
   transition: 0.2s ease-in-out;
+  text-transform: capitalize;
+  text-align: center;
   &:hover {
     background: lighten($bg-purple, 3%);
+    color: white;
   }
 }
 
@@ -19,8 +22,11 @@
   color: $big-text-color;
   padding: 10px 25px;
   transition: 0.2s ease-in-out;
+  text-transform: capitalize;
+  text-align: center;
   &:hover {
     background: darken($bg-gray, 3%);
+    color: $big-text-color;
   }
 }
 

@@ -33,8 +33,6 @@
           <app-info-card [skills]="skill"></app-info-card>
         </div>
       </div>
-
-      <!-- <div animateOnScroll animationName="animate__flash">test</div> -->
     </div>
     <!-- <div animateOnScroll animationName="animate__fadeInRight" class="animate__animated"> -->
     <div>
@@ -69,6 +67,73 @@
           <app-quotes [quote]="quote"></app-quotes>
         </div>
       </div>
+    </div>
+    <div>
+      <div class="text-center w-100 mb-5 py-3 section-header" fxLayout="row" fxLayoutAlign="center center">
+        <div class="divider w-100"></div>
+        <h2 class="text-4xl font-extrabold px-4 whitespace-nowrap">Build It</h2>
+        <div class="divider w-100"></div>
+      </div>
+      <div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutAlign="space-around">
+        <!-- <div fxFlex="30" *ngFor="let skill of skills">
+          <app-info-card [skills]="skill"></app-info-card>
+        </div> -->
+        <div fxLayout.gt-md="row" fxLayout="column" fxLayoutGap="25px">
+          <div fxFlex="40" fxLayout="column" fxLayoutAlign="center center">
+            <h2 class="text-3xl font-bold mb-4">When mock-ups aren't enough, build it.</h2>
+            <div fxLayout="column" fxLayoutGap="10px">
+              <p class="text-gray-600">
+                Frequently, I build and prototype working expereinces. Wireframes and mock-ups are great for
+                presentations, however, they don't always capture the full intent of a design. Working with developers
+                and delivering functional HTML/SCSS has proven to be the most effective way to nail UI interactions.
+              </p>
+              <p class="text-gray-600">When mock-ups are failing to communicate iteractions, I build it.</p>
+              <div class="my-5">
+                <a
+                  class="btn-main focus:ring-2 focus:ring-gray-800"
+                  target="_blank"
+                  href="https://codepen.io/lando101/pens/public?cursor=ZD0wJm89MSZwPTEmdj0zOTM5NDExNw=="
+                  >View Codepen projects <i class="ml-1 fas fa-external-link-alt"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div fxFlex="60">
+            <iframe
+              height="500"
+              style="width: 100%"
+              scrolling="no"
+              title="Primary Button"
+              src="https://codepen.io/lando101/embed/abOeNWO?default-tab=css%2Cresult&theme-id=dark"
+              frameborder="no"
+              loading="lazy"
+              allowtransparency="true"
+              allowfullscreen="true"
+            >
+              See the Pen <a href="https://codepen.io/lando101/pen/abOeNWO"> Primary Button</a> by Landon Messmer (<a
+                href="https://codepen.io/lando101"
+                >@lando101</a
+              >) on <a href="https://codepen.io">CodePen</a>.
+            </iframe>
+          </div>
+        </div>
+        <!--
+        <iframe height="500" style="width: 100%;" scrolling="no" title="Layout Dropdown" src="https://codepen.io/lando101/embed/abbXjEm?default-tab=css%2Cresult&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+          See the Pen <a href="https://codepen.io/lando101/pen/abbXjEm">
+          Layout Dropdown</a> by Landon Messmer (<a href="https://codepen.io/lando101">@lando101</a>)
+          on <a href="https://codepen.io">CodePen</a>.
+        </iframe> -->
+      </div>
+      <!-- <div class="mt-4">
+        <h3 class="text-xl font-bold">More Examples</h3>
+        <div>
+          <iframe height="300" style="width: 100%;" scrolling="no" title="Layout Dropdown" src="https://codepen.io/lando101/embed/abbXjEm?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/lando101/pen/abbXjEm">
+            Layout Dropdown</a> by Landon Messmer (<a href="https://codepen.io/lando101">@lando101</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe>
+        </div>
+      </div> -->
     </div>
   </div>
 

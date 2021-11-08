@@ -17,7 +17,6 @@ import { MaterialModule } from '@app/material/material.module';
     HomeRoutingModule,
     FlexLayoutModule,
     MaterialModule,
-    MaterialModule,
     AnimateOnScrollModule.forRoot(),
   ],
   declarations: [HomeComponent],
