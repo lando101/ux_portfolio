@@ -13,6 +13,7 @@ import { TeleInputComponent } from './components/contact-info-form/components/te
 import { MaterialModule } from '@app/material/material.module';
 import { PositiveNotiComponent } from './components/notifications/positive-noti/positive-noti.component';
 import { MobileContactInfoFormComponent } from './components/mobile-contact-info-form/mobile-contact-info-form.component';
+import { QuotesComponent } from './components/quotes/quotes.component';
 @NgModule({
   imports: [CommonModule, FlexLayoutModule, MomentModule, RouterModule, ReactiveFormsModule, MaterialModule],
   declarations: [
@@ -23,6 +24,7 @@ import { MobileContactInfoFormComponent } from './components/mobile-contact-info
     TeleInputComponent,
     PositiveNotiComponent,
     MobileContactInfoFormComponent,
+    QuotesComponent,
   ],
   exports: [
     LoaderComponent,
@@ -30,6 +32,7 @@ import { MobileContactInfoFormComponent } from './components/mobile-contact-info
     CaseStudyCardComponent,
     ContactInfoFormComponent,
     MobileContactInfoFormComponent,
+    QuotesComponent,
   ],
 })
 export class SharedModule {}

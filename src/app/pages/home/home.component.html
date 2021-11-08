@@ -1,5 +1,5 @@
 <div class="container-fluid">
-  <div class="container" fxLayout="column" fxLayoutGap="80px">
+  <div class="container" fxLayout="column" fxLayoutGap="140px">
     <div fxLayout="row" class="hero-section">
       <div fxFlex.lt-sm="100" fxFlex="45">
         <h1 class="text-5xl font-extrabold">Hi, I'm Landon.</h1>
@@ -47,6 +47,26 @@
       <div fxLayout="column" fxLayoutGap="90px">
         <div *ngFor="let casestudy of caseStudies">
           <app-case-study-card [caseStudy]="casestudy"></app-case-study-card>
+        </div>
+      </div>
+    </div>
+    <div class="feedback-section">
+      <div class="bg">
+        <img
+          fxHide.lt-xl
+          [src]="
+            'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/illustrations%2Fundraw_team_spirit_re_yl1v.svg?alt=media&token=5fde9477-1e23-4d47-a20b-35758cbd8bbe'
+          "
+        />
+      </div>
+      <div class="text-center w-100 mb-5 pb-3 bg-transparent" fxLayout="row" fxLayoutAlign="star center">
+        <!-- <div class="divider"></div> -->
+        <h2 class="text-4xl font-extrabold whitespace-normal text-white">What my team members say...</h2>
+        <!-- <div class="divider"></div> -->
+      </div>
+      <div fxLayout.gt-md="row" fxLayout="column" fxLayoutGap="50px" class="quotes-wrapper">
+        <div fxFlex="30" *ngFor="let quote of quotes">
+          <app-quotes [quote]="quote"></app-quotes>
         </div>
       </div>
     </div>

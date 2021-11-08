@@ -37,3 +37,30 @@ q {
   top: -1px;
   background: white;
 }
+
+.feedback-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 0px;
+  .bg {
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    background: linear-gradient(45deg, #6c63ff, #4a44ad);
+    img {
+      position: absolute;
+      width: 15%;
+      max-width: 290px;
+      right: 40px;
+      bottom: 40px;
+    }
+  }
+  .quotes-wrapper {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+}

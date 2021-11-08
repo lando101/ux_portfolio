@@ -12,6 +12,7 @@ import { finalize } from 'rxjs/operators';
 
 import { QuoteService } from './quote.service';
 import { MobileContactInfoFormComponent } from '@app/@shared/components/mobile-contact-info-form/mobile-contact-info-form.component';
+import { Quote } from '@app/@shared/components/quotes/quotes.component';
 
 export interface Skills {
   title?: string;
@@ -85,6 +86,33 @@ export class HomeComponent implements OnInit {
       orientation: 'right',
       alt: 'Image of forecaster application on mobile',
       caseStudy: false,
+    },
+  ];
+
+  quotes: Quote[] = [
+    {
+      title: 'Flexibility',
+      comment:
+        "Landon has been proactive about getting the tools and equipment he needs to move forward on his UI designs. [...] I appreciate Landon's willingness to pivot on projects as needed by the changing dictates of the client requirements. His flexibility and can-do attitude are saving the day!",
+      role: 'Associate at Booz Allen Hamilton',
+      name: 'Teresa Lowen',
+      large: false,
+    },
+    {
+      title: 'Leadership',
+      comment:
+        'Landon is an incredibly goal oriented individual with significant computer based skills. He is an exceptional team leader and has the ability to motivate others to do their best work. Landon always goes above and beyond the original goal to produce the best quality work possible.',
+      role: 'Team Lead at Knucklepuck',
+      name: 'Julia Andrews',
+      large: true,
+    },
+    {
+      title: 'Initiative',
+      comment:
+        '[Landon is] providing significant impact to the customer and across the team, taking a lead role with UX/UI support and helping to shape and scope the next years’ worth of work. Thank you for all that you do!',
+      role: 'Chief Technologist at Booz Allen Hamilton',
+      name: 'Andrew Lyboldt',
+      large: false,
     },
   ];
 
