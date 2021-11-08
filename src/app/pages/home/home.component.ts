@@ -106,7 +106,7 @@ export class HomeComponent implements OnInit {
       role: 'Team Lead at Knucklepuck',
       name: 'Julia Andrews',
       large: true,
-      color: '#3f3d56',
+      color: '#ffa500',
     },
     {
       title: 'Initiative',

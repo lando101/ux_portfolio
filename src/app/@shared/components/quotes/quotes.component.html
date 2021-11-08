@@ -1,11 +1,11 @@
 <div [ngClass.gt-md]="{ emphasis: quote.large }" fxLayout="column" class="quote-card position-relative">
   <div>
     <h2 class="font-bold text-2xl mb-1" [style.color]="quote.color">{{ quote.title }}</h2>
-    <p class="mb-4">{{ quote.comment }}</p>
+    <p class="mb-4 text-gray-300">{{ quote.comment }}</p>
   </div>
   <div fxLayout="column">
-    <label class="font-semibold mb-0">{{ quote.name }}</label>
-    <label class="text-sm text-gray-600 font-medium mb-0">{{ quote.role }}</label>
+    <label class="font-semibold mb-0 text-gray-300">{{ quote.name }}</label>
+    <label class="text-sm text-gray-400 font-medium mb-0">{{ quote.role }}</label>
   </div>
   <i class="fas fa-quote-right"></i>
 </div>
