@@ -2,7 +2,7 @@
   <div class="container" fxLayout="column" fxLayoutGap="140px">
     <div fxLayout="row" class="hero-section">
       <div fxFlex.lt-sm="100" fxFlex="45">
-        <h1 class="text-5xl font-extrabold">Hi, I'm Landon.</h1>
+        <h1 class="text-5xl font-extrabold leading-tight">I'm Landon, a UX Engineer at Booz Allen Hamilton.</h1>
         <p class="text-xl leading-9 my-4 text-gray-500">
           I'm a UX engineer, experienced in building custom user experiences for the Government <b>cleared</b> space.
           I'm located in <b>Arlington, VA</b> and I'm ready to help!
@@ -11,6 +11,20 @@
           <span class="font-bold" *ngIf="!name">Let's Team Up!</span>
           <span class="font-bold" *ngIf="name">Got Feedback, {{ name }}?</span>
         </button>
+        <div fxLayout="row" fxLayoutGap="25px" class="my-4">
+          <a href="https://www.linkedin.com/in/4921117/" target="_blank" matTooltip="View LinkedIn profile"
+            ><i class="fab fa-linkedin text-2xl text-gray-600"></i
+          ></a>
+          <a href="mailto:landon.messmerjmu@gmail.com" matTooltip="Send email"
+            ><i class="fas fa-envelope text-2xl text-gray-600"></i
+          ></a>
+          <a
+            href="https://codepen.io/lando101/pens/public?cursor=ZD0wJm89MSZwPTEmdj0zOTM5NDExNw=="
+            target="_blank"
+            matTooltip="View Codepen projects"
+            ><i class="fab fa-codepen text-2xl text-gray-600"></i
+          ></a>
+        </div>
       </div>
       <div fxHide.lt-sm fxFlex="auto" fxLayout="row" fxLayoutAlign="center center">
         <img
