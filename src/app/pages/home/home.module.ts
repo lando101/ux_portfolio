@@ -8,7 +8,7 @@ import { SharedModule } from '@shared';
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { MaterialModule } from '@app/material/material.module';
-
+import { NgxVcardModule } from 'ngx-vcard';
 @NgModule({
   imports: [
     CommonModule,
@@ -17,6 +17,7 @@ import { MaterialModule } from '@app/material/material.module';
     HomeRoutingModule,
     FlexLayoutModule,
     MaterialModule,
+    NgxVcardModule,
     AnimateOnScrollModule.forRoot(),
   ],
   declarations: [HomeComponent],

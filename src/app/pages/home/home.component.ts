@@ -13,6 +13,7 @@ import { finalize } from 'rxjs/operators';
 import { QuoteService } from './quote.service';
 import { MobileContactInfoFormComponent } from '@app/@shared/components/mobile-contact-info-form/mobile-contact-info-form.component';
 import { Quote } from '@app/@shared/components/quotes/quotes.component';
+import { VCard } from 'ngx-vcard';
 
 export interface Skills {
   title?: string;
@@ -29,6 +30,14 @@ export class HomeComponent implements OnInit {
   deviceInfo: DeviceInfo = null;
   name: string;
   contactInfo: ContactInfo;
+
+  public vCard: VCard = {
+    name: {
+      firstNames: 'Landon',
+      lastNames: 'Messmer',
+    },
+  };
+
   skills: Skills[] = [
     {
       title: 'UX Design',
@@ -191,4 +200,20 @@ export class HomeComponent implements OnInit {
       });
     }
   }
+
+  public generateVCardOnTheFly = (): VCard => {
+    // TODO: Generate the VCard before Download
+    return {
+      name: { firstNames: 'Landon', lastNames: 'Messmer' },
+      gender: { sex: 'M' },
+      organization: 'Booz Allen Hamilton',
+      title: 'UX Engineer',
+      email: ['landon.messmerjmu@gmail.com'],
+      url: 'https://uxlcm.com/home',
+      telephone: ['412-360-4941'],
+      address: [{ countryName: 'United States', locality: 'Virginia', street: 'Arlington' }],
+      photo:
+        'https://firebasestorage.googleapis.com/v0/b/cryptoliov2.appspot.com/o/landon_image.jpg?alt=media&token=16ebf32f-77b3-4103-be59-80f68a581054',
+    };
+  };
 }
