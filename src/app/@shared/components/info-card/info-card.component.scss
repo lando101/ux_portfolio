@@ -1,5 +1,14 @@
 @import "../../../../styles/index";
 
 img {
-  max-height: 155px;
+  max-height: 135px;
+}
+
+.info-card {
+  padding: 2rem;
+  background: white;
+  border-radius: 15px;
+  box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+  align-items: start;
+  justify-content: space-between;
 }

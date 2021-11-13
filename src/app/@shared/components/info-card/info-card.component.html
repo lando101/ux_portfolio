@@ -1,6 +1,9 @@
-<div fxLayout="column">
-  <img class="mb-3" [src]="skills.img_url" />
-  <span class="text-xl font-bold">{{ skills.title }}</span>
-  <span class="text-sm text-gray-600 font-semibold">{{ skills.experience | amTimeAgo }}</span>
-  <p class="pt-3 leading-7 text-sm">{{ skills.desc }}</p>
+<div class="info-card h-100" fxLayout="column" fxLayoutGap="25px">
+  <div fxLayout="column" class="align-items-start">
+    <img class="mb-3" [src]="skills.img_url" />
+    <span class="text-xl font-bold">{{ skills.title }}</span>
+    <span class="text-xs text-gray-500 font-semibold">{{ skills.experience | amTimeAgo }}</span>
+    <p class="pt-3 leading-7 text-sm text-gray-600">{{ skills.desc }}</p>
+  </div>
+  <button class="btn-main">Read more</button>
 </div>
