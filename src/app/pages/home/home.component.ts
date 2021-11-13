@@ -8,18 +8,21 @@ import {
   ContactInfo,
   ContactInfoFormComponent,
 } from '@app/@shared/components/contact-info-form/contact-info-form.component';
-import { finalize } from 'rxjs/operators';
 
-import { QuoteService } from './quote.service';
 import { MobileContactInfoFormComponent } from '@app/@shared/components/mobile-contact-info-form/mobile-contact-info-form.component';
 import { Quote } from '@app/@shared/components/quotes/quotes.component';
-import { VCard } from 'ngx-vcard';
 
 export interface Skills {
   title?: string;
   desc?: string;
   img_url?: string;
+  duration?: string;
   experience?: string;
+  icon_classes?: string[];
+  images?: string[];
+  cert?: string[];
+  fulltime?: string;
+  client?: string;
 }
 @Component({
   selector: 'app-home',
@@ -31,34 +34,44 @@ export class HomeComponent implements OnInit {
   name: string;
   contactInfo: ContactInfo;
 
-  public vCard: VCard = {
-    name: {
-      firstNames: 'Landon',
-      lastNames: 'Messmer',
-    },
-  };
-
   skills: Skills[] = [
     {
-      title: 'UX Design',
+      title: 'UX Engineer',
       experience: '06-01-2019',
+      duration: '2.5 Years',
       desc: 'Putting customers at the center of application design creates experiences that keep them coming back. That is why my approach is to include users at all stages of the design process. Their feedback is what informs my designs. Frequently I conduct usability studies, conduct user research and always advocate for the users.',
       img_url:
         'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/illustrations%2Fundraw_user_flow_re_bvfx.svg?alt=media&token=a3d8e058-2d8c-4f00-b28d-d90ba4358001',
+      icon_classes: ['fab fa-figma', 'fab fa-accessible-icon'],
+      cert: [
+        'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fnng-uxc-badge.png?alt=media&token=b25e8f3d-ad27-4517-9633-a44ca98877b8',
+      ],
+      fulltime: 'Full-time',
+      client: 'U.S. Gov',
     },
     {
-      title: 'UI Design',
+      title: 'UI Designer',
       experience: '05-01-2018',
+      duration: '4 Years',
       desc: 'Customers expect to interact with clean, polished, aesthetically pleasing designs. Good user interfaces may never recieve praise but bad ones stick out like a sore thumb. I take pride in creating UIs that bring joy. Building micro-interactions, creating digestiable content layouts, and using splashes of color are just a few ways that help me achieve this goal.',
       img_url:
         'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/illustrations%2Fundraw_design_feedback_re_8gtk.svg?alt=media&token=41b974db-4f89-4585-a477-00df57627d14',
+      icon_classes: [],
+      cert: [],
+      fulltime: 'Full-time',
+      client: 'U.S. Gov',
     },
     {
-      title: 'Front-End Development',
+      title: 'Front-End Developer',
       experience: '08-01-2019',
+      duration: '1.5 Years',
       desc: 'Front-end applications need to be maintainable, scalable and built with other developers in mind. My expereince in building well documented modular components using modern JavaScript frameworks such as Angular has made this possible. I try to program defensively to prevent errors and write consise code for future OM efforts.',
       img_url:
         'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/illustrations%2Fundraw_developer_activity_re_39tg.svg?alt=media&token=2d8685f9-58d7-4af3-a08a-27fcb8255049',
+      icon_classes: [],
+      cert: [],
+      fulltime: 'Part-time',
+      client: 'BAH',
     },
   ];
 
@@ -200,20 +213,4 @@ export class HomeComponent implements OnInit {
       });
     }
   }
-
-  public generateVCardOnTheFly = (): VCard => {
-    // TODO: Generate the VCard before Download
-    return {
-      name: { firstNames: 'Landon', lastNames: 'Messmer' },
-      gender: { sex: 'M' },
-      organization: 'Booz Allen Hamilton',
-      title: 'UX Engineer',
-      email: ['landon.messmerjmu@gmail.com'],
-      url: 'https://uxlcm.com/home',
-      telephone: ['412-360-4941'],
-      address: [{ countryName: 'United States', locality: 'Virginia', street: 'Arlington' }],
-      photo:
-        'https://firebasestorage.googleapis.com/v0/b/cryptoliov2.appspot.com/o/landon_image.jpg?alt=media&token=16ebf32f-77b3-4103-be59-80f68a581054',
-    };
-  };
 }

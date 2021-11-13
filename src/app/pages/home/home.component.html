@@ -4,8 +4,18 @@
       <div fxFlex.lt-sm="100" fxFlex="45">
         <h1 class="text-5xl font-extrabold leading-tight">I'm Landon, a UX Engineer at Booz Allen Hamilton.</h1>
         <p class="text-xl leading-9 my-4 text-gray-500">
-          I'm a UX engineer, experienced in building custom user experiences for the Government <b>cleared</b> space.
-          I'm located in <b>Arlington, VA</b> and I'm ready to help!
+          I'm a UX engineer, experienced in building custom user experiences for the Government
+          <a
+            matTooltip="Learn more about Government clearances"
+            href="https://www.state.gov/security-clearances"
+            target="_blank"
+            >cleared</a
+          >
+          space. I'm located in
+          <a matTooltip="Learn more about Arlington, VA" href="https://www.arlingtonva.us/Home" target="_blank"
+            >Arlington, VA</a
+          >
+          and I'm ready to help!
         </p>
         <button (click)="openDialog()" class="btn-main focus:ring-2 focus:ring-gray-800">
           <span class="font-bold" *ngIf="!name">Let's Team Up!</span>
@@ -39,13 +49,16 @@
     <div>
       <div class="text-center w-100 mb-5 py-3 section-header" fxLayout="row" fxLayoutAlign="center center">
         <div class="divider w-100"></div>
-        <h2 class="text-4xl font-extrabold px-4">Skills</h2>
+        <h2 class="text-4xl font-extrabold px-4">Roles</h2>
         <div class="divider w-100"></div>
       </div>
       <div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutGap="65px" fxLayoutAlign="space-around">
         <div fxFlex="30" *ngFor="let skill of skills">
           <app-info-card [skills]="skill"></app-info-card>
         </div>
+      </div>
+      <div>
+        <app-cert-images></app-cert-images>
       </div>
     </div>
     <!-- <div animateOnScroll animationName="animate__fadeInRight" class="animate__animated"> -->
@@ -157,76 +170,8 @@
         <div class="divider w-100"></div>
       </div>
       <div class="w-100 overflow-hidden" fxLayout="row">
-        <div class="contact-wrapper rounded-xl text-white p-3 py-4" fxFlex="350px" fxLayout="column">
-          <h2 class="text-xs font-semibold mb-4 text-gray-200">Contact Information</h2>
-          <div class="px-1" fxLayout="column">
-            <div fxLayout="column" class="align-items-center" fxLayoutGap="15px">
-              <a>
-                <img
-                  class="profile-image-sm"
-                  [src]="
-                    'https://firebasestorage.googleapis.com/v0/b/cryptoliov2.appspot.com/o/landon_image.jpg?alt=media&token=16ebf32f-77b3-4103-be59-80f68a581054'
-                  "
-                />
-              </a>
-              <div fxLayout="column" class="text-center">
-                <label class="text-xl font-bold mb-1">Landon C. Messmer</label>
-                <label class="text-sm font-medium text-gray-200">UX Engineer</label>
-              </div>
-              <div fxLayout="row" fxLayoutGap="25px" class="w-100 mb-3" fxLayoutAlign="space-around start">
-                <a class="contact-icon" href="mailto:landon.messmerjmu@gmail.com" matTooltip="Email">
-                  <i class="fas fa-envelope"></i>
-                </a>
-                <a class="contact-icon" href="tel:+14123604941" matTooltip="Call">
-                  <i class="fas fa-phone"></i>
-                </a>
-                <a class="contact-icon" href="sms:+14123604941" matTooltip="Message">
-                  <i class="fas fa-comment"></i>
-                </a>
-                <a
-                  class="contact-icon"
-                  href="https://www.linkedin.com/in/4921117/"
-                  target="_blank"
-                  matTooltip="LinkedIn"
-                >
-                  <i class="fab fa-linkedin"></i>
-                </a>
-
-                <!-- <a
-                  href="https://codepen.io/lando101/pens/public?cursor=ZD0wJm89MSZwPTEmdj0zOTM5NDExNw=="
-                  target="_blank"
-                  matTooltip="View Codepen projects"
-                  ><i class="fab fa-codepen text-2xl text-gray-600"></i
-                ></a> -->
-              </div>
-            </div>
-            <div fxLayout="column" fxLayoutGap="10px" class="contact-info">
-              <div fxLayout="column">
-                <label class="text-xs font-medium text-gray-300 mb-0">Email</label>
-                <label class="text-sm font-medium text-white">landon.messmerjmu@gmail.com</label>
-              </div>
-              <div fxLayout="column">
-                <label class="text-xs font-medium text-gray-300 mb-0">Phone</label>
-                <label class="text-sm font-medium text-white">(412) 360-4941</label>
-              </div>
-              <div fxLayout="column">
-                <label class="text-xs font-medium text-gray-300 mb-0">Location</label>
-                <label class="text-sm font-medium text-white">Arlington, VA</label>
-              </div>
-            </div>
-            <div>
-              <button
-                vcdDownloadVCard
-                [generateVCardFunction]="generateVCardOnTheFly"
-                class="btn-main-invert focus:ring-2 focus:ring-gray-800 w-100"
-              >
-                <span class="font-bold">
-                  <i class="fas fa-cloud-download-alt mr-1"></i>
-                  Save Contact
-                </span>
-              </button>
-            </div>
-          </div>
+        <div fxFlex="350px">
+          <app-contact-card></app-contact-card>
         </div>
         <div fxFlex="auto">Form</div>
       </div>

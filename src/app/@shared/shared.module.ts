@@ -14,8 +14,20 @@ import { MaterialModule } from '@app/material/material.module';
 import { PositiveNotiComponent } from './components/notifications/positive-noti/positive-noti.component';
 import { MobileContactInfoFormComponent } from './components/mobile-contact-info-form/mobile-contact-info-form.component';
 import { QuotesComponent } from './components/quotes/quotes.component';
+import { CertImagesComponent } from './components/cert-images/cert-images.component';
+import { ContactCardComponent } from './components/contact-card/contact-card.component';
+import { NgxVcardModule } from 'ngx-vcard';
+
 @NgModule({
-  imports: [CommonModule, FlexLayoutModule, MomentModule, RouterModule, ReactiveFormsModule, MaterialModule],
+  imports: [
+    CommonModule,
+    NgxVcardModule,
+    FlexLayoutModule,
+    MomentModule,
+    RouterModule,
+    ReactiveFormsModule,
+    MaterialModule,
+  ],
   declarations: [
     LoaderComponent,
     InfoCardComponent,
@@ -25,6 +37,8 @@ import { QuotesComponent } from './components/quotes/quotes.component';
     PositiveNotiComponent,
     MobileContactInfoFormComponent,
     QuotesComponent,
+    CertImagesComponent,
+    ContactCardComponent,
   ],
   exports: [
     LoaderComponent,
@@ -33,6 +47,8 @@ import { QuotesComponent } from './components/quotes/quotes.component';
     ContactInfoFormComponent,
     MobileContactInfoFormComponent,
     QuotesComponent,
+    CertImagesComponent,
+    ContactCardComponent,
   ],
 })
 export class SharedModule {}

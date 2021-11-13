@@ -1,9 +1,27 @@
 <div class="info-card h-100" fxLayout="column" fxLayoutGap="25px">
   <div fxLayout="column" class="align-items-start">
     <img class="mb-3" [src]="skills.img_url" />
-    <span class="text-xl font-bold">{{ skills.title }}</span>
-    <span class="text-xs text-gray-500 font-semibold">{{ skills.experience | amTimeAgo }}</span>
-    <p class="pt-3 leading-7 text-sm text-gray-600">{{ skills.desc }}</p>
+    <div class="mt-3 w-100">
+      <span class="font-semibold text-xs text-gray-400">Booz Allen Hamilton • McLean, VA</span>
+      <h2 class="text-xl font-extrabold mb-2">{{ skills.title }}</h2>
+      <!-- <span class="text-xs text-gray-500 font-semibold">{{ skills.experience | amTimeAgo }}</span> -->
+      <div fxLayout="row" class="justify-between w-100">
+        <span class="info-badge text-sm font-semibold text-gray-600 px-3 py-1"
+          ><span class="mr-1">⌛</span>{{ skills.duration }}</span
+        >
+        <span class="info-badge text-sm font-semibold text-gray-600 px-3 py-1"
+          ><span class="mr-1">⌚</span>{{ skills.fulltime }}</span
+        >
+        <span class="info-badge text-sm font-semibold text-gray-600 px-3 py-1"
+          ><span class="mr-1">🏢</span>{{ skills.client }}</span
+        >
+      </div>
+    </div>
+
+    <div class="pt-4">
+      <h3 class="text-sm font-bold text-gray-70">Key Info</h3>
+      <p class="leading-7 text-sm text-gray-600">{{ skills.desc }}</p>
+    </div>
   </div>
   <button class="btn-main">Read more</button>
 </div>

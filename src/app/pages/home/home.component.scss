@@ -18,6 +18,10 @@ q {
   img {
     max-height: 550px;
   }
+  a {
+    color: $bg-purple;
+    text-transform: uppercase;
+  }
 }
 
 .animated {
@@ -62,35 +66,5 @@ q {
   .quotes-wrapper {
     width: 100%;
     justify-content: space-evenly;
-  }
-}
-
-.contact-wrapper {
-  background: $bg-purple;
-  .profile-image-sm {
-    width: 130px;
-    border-radius: 90px;
-    border: 4px solid #ffff;
-    box-shadow: rgb(50 50 93 / 56%) 0px 30px 60px -12px, rgb(0 0 0 / 30%) 0px 18px 36px -18px;
-  }
-  .contact-icon {
-    font-size: 1.2rem;
-    border-radius: 45px;
-    padding: 10px;
-    height: 43px;
-    width: 43px;
-    background: white;
-    color: $bg-purple;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    &:hover {
-      text-decoration: none !important;
-    }
-  }
-  .contact-info {
-    padding: 15px 0px;
-    margin-bottom: 15px;
-    border-top: 1px solid #9c96ff;
   }
 }
