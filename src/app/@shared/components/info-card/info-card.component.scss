@@ -12,6 +12,7 @@ img {
   border: 1px solid #ebebeb;
   align-items: start;
   justify-content: space-between;
+  max-width: 580px;
   transition: 0.2s ease-in-out;
   &:hover {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -20,5 +21,6 @@ img {
   .info-badge {
     background: $badge-bg-light;
     border-radius: 50px;
+    white-space: nowrap;
   }
 }

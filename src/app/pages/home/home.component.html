@@ -52,8 +52,8 @@
         <h2 class="text-4xl font-extrabold px-4">Roles</h2>
         <div class="divider w-100"></div>
       </div>
-      <div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutGap="65px" fxLayoutAlign="space-around">
-        <div fxFlex="30" *ngFor="let skill of skills">
+      <div fxLayout="row" fxLayout.lt-lg="column" fxLayoutGap="65px" fxLayoutAlign="space-around">
+        <div fxFlex="30" class="d-flex justify-center item-center" *ngFor="let skill of skills">
           <app-info-card [skills]="skill"></app-info-card>
         </div>
       </div>

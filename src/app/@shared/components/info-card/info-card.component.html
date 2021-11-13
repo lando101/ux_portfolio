@@ -3,16 +3,16 @@
     <img class="mb-3" [src]="skills.img_url" />
     <div class="mt-3 w-100">
       <span class="font-semibold text-xs text-gray-400">Booz Allen Hamilton • McLean, VA</span>
-      <h2 class="text-xl font-extrabold mb-2">{{ skills.title }}</h2>
+      <h2 class="text-xl font-extrabold mb-0">{{ skills.title }}</h2>
       <!-- <span class="text-xs text-gray-500 font-semibold">{{ skills.experience | amTimeAgo }}</span> -->
-      <div fxLayout="row" class="justify-between w-100">
-        <span class="info-badge text-sm font-semibold text-gray-600 px-3 py-1"
+      <div fxLayout="row wrap" class="justify-start w-100" fxLayoutGap="15px">
+        <span class="info-badge text-sm font-semibold text-gray-600 px-3 py-1 mt-2"
           ><span class="mr-1">⌛</span>{{ skills.duration }}</span
         >
-        <span class="info-badge text-sm font-semibold text-gray-600 px-3 py-1"
+        <span class="info-badge text-sm font-semibold text-gray-600 px-3 py-1 mt-2"
           ><span class="mr-1">⌚</span>{{ skills.fulltime }}</span
         >
-        <span class="info-badge text-sm font-semibold text-gray-600 px-3 py-1"
+        <span class="info-badge text-sm font-semibold text-gray-600 px-3 py-1 mt-2"
           ><span class="mr-1">🏢</span>{{ skills.client }}</span
         >
       </div>
