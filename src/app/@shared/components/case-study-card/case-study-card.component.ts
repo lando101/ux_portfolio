@@ -7,6 +7,7 @@ export interface CaseStudy {
   href: string;
   orientation: string;
   alt: string;
+  nda?: boolean;
   caseStudy: boolean;
 }
 @Component({

@@ -4,7 +4,7 @@ import { marker } from '@biesbjerg/ngx-translate-extract-marker';
 
 import { ForcasterComponent } from './forcaster.component';
 
-const routes: Routes = [{ path: 'forecaster', component: ForcasterComponent, data: { title: marker('Landon UX') } }];
+const routes: Routes = [{ path: '', component: ForcasterComponent, data: { title: marker('Landon UX') } }];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

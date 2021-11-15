@@ -85,6 +85,7 @@ export class HomeComponent implements OnInit {
       href: '/pas',
       orientation: 'right',
       alt: 'Image of process automation application on desktop in light and dark mode',
+      nda: true,
       caseStudy: true,
     },
     {
@@ -96,6 +97,7 @@ export class HomeComponent implements OnInit {
       href: '/coinfloe',
       orientation: 'left',
       alt: 'Image of coinfloe application on desktop and mobile',
+      nda: false,
       caseStudy: true,
     },
     {
@@ -107,6 +109,7 @@ export class HomeComponent implements OnInit {
       href: '/forecaster',
       orientation: 'right',
       alt: 'Image of forecaster application on mobile',
+      nda: false,
       caseStudy: false,
     },
   ];

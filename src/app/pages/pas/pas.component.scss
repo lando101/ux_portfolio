@@ -1,0 +1,60 @@
+@import "../../../styles/index";
+
+.hero-section {
+  background: $bg-purple;
+  padding: 4rem 2rem;
+  .img-container {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .title-text {
+    // margin-top: 50px;
+  }
+}
+
+.hero-lg {
+  // height: 595px;
+}
+
+.hero-md {
+  // height: 510px;
+}
+
+.hero-sm {
+  // height: 440px;
+}
+
+img {
+  max-width: none;
+  max-height: none;
+  // margin: 50px 0px;
+}
+
+section {
+  margin-top: -15px;
+}
+
+.img-lg {
+  height: 590px;
+  // transform: scale(1.25);
+  // margin-top: 9rem;
+}
+
+.img-md {
+  height: 490px;
+  // transform: scale(1.15);
+  // margin-top: 5rem;
+}
+
+.img-sm {
+  height: 315px;
+  // transform: scale(1.15);
+  // margin-top: 5rem;
+}
+
+.img-xs {
+  // transform: scale(.85);
+  // margin-top: 2rem;
+  height: 190px;
+}

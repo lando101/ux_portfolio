@@ -1,1 +1,55 @@
-<p>pas works!</p>
+<!-- <div class="container-fluid">
+  <div class="jumbotron text-center">
+    <h1>
+      <span translate>APP_NAME</span>
+    </h1>
+    <p><i class="far fa-bookmark"></i> <span translate>Version</span></p>
+  </div>
+</div> -->
+<div>
+  <section class="w-100">
+    <div
+      [ngClass.gt-md]="'hero-lg'"
+      [ngClass.md]="'hero-md'"
+      [ngClass.sm]="'hero-sm'"
+      class="hero-section"
+      fxLayout="column"
+      fxLayoutGap="2.5rem"
+    >
+      <div [ngClass.gt-sm]="'d-none'" class="img-container">
+        <img
+          [ngClass.gt-md]="'img-lg'"
+          [ngClass.lt-lg]="'img-md'"
+          [ngClass.lt-md]="'img-sm'"
+          [ngClass.lt-sm]="'img-xs'"
+          [src]="
+            'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fpas_image.png?alt=media&token=4a0dc5de-d5ed-4740-9f18-a82dd10601bc'
+          "
+        />
+      </div>
+      <div class="title-text text-center">
+        <h1
+          [ngClass.lt-md]="'text-4xl'"
+          [ngClass.gt-sm]="'text-5xl'"
+          class="text-gray-100 font-extrabold leading-tight"
+        >
+          PAS Case Study
+        </h1>
+        <p [ngClass.lt-md]="'text-2xl'" [ngClass.gt-sm]="'text-3xl'" class="text-gray-200 font-base">
+          An enterprise grade application for managing workflows.
+        </p>
+      </div>
+      <div [ngClass.lt-md]="'d-none'" class="img-container">
+        <img
+          [ngClass.gt-md]="'img-lg'"
+          [ngClass.lt-lg]="'img-md'"
+          [ngClass.lt-md]="'img-sm'"
+          [ngClass.lt-sm]="'img-xs'"
+          [src]="
+            'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fpas_image.png?alt=media&token=4a0dc5de-d5ed-4740-9f18-a82dd10601bc'
+          "
+        />
+      </div>
+    </div>
+  </section>
+</div>
