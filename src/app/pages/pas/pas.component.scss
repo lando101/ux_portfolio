@@ -71,6 +71,11 @@ img {
     max-height: 350px;
     width: 100%;
   }
+  .lg-img {
+    max-height: 650px !important;
+    width: auto !important;
+    max-width: 100%;
+  }
 }
 
 .img-xs {
