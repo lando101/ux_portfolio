@@ -2,6 +2,24 @@
 
 $dark-bg: #f3f1f9;
 
+.table-of-contents-wrapper {
+  top: 0px;
+  right: 30px;
+  z-index: 9;
+  .inner-container {
+    top: 25px;
+    width: 165px;
+    button {
+      &:hover {
+        color: $hightlight-text-color;
+      }
+    }
+  }
+}
+
+section {
+  width: 100vw;
+}
 .hero-section {
   background: $bg-purple;
   padding: 4rem 2rem;
@@ -52,17 +70,17 @@ img {
   margin-top: -15px;
 }
 
-.dark-section {
-  background-color: $dark-bg;
-  padding: 5rem 3rem;
-}
-
 .image-wrapper-with-border {
   background: $dark-bg;
   padding: 2rem;
   border-radius: 15px;
   border: 4px solid #dfdeee;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.dark-section {
+  background-color: $dark-bg;
+  padding: 5rem 3rem;
 }
 
 .normal-section {
@@ -76,6 +94,27 @@ img {
     width: auto !important;
     max-width: 100%;
   }
+}
+
+.section-header-sticky {
+  position: sticky;
+  top: 0px;
+  background: #f9f9fd;
+  z-index: 2;
+}
+
+.dark-section-header-sticky {
+  position: sticky;
+  top: 0px;
+  background: $dark-bg;
+  z-index: 2;
+}
+
+.process-section {
+  background-color: #e0dfef;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg fill-opacity='0.73'%3E%3Ccircle fill='%23E0DFEF' cx='400' cy='400' r='600'/%3E%3Ccircle fill='%23e6e5f2' cx='400' cy='400' r='500'/%3E%3Ccircle fill='%23ececf5' cx='400' cy='400' r='400'/%3E%3Ccircle fill='%23f3f2f9' cx='400' cy='400' r='300'/%3E%3Ccircle fill='%23f9f9fc' cx='400' cy='400' r='200'/%3E%3Ccircle fill='%23FFFFFF' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
+  // background-attachment: fixed;
+  background-size: cover;
 }
 
 .img-xs {
@@ -114,5 +153,36 @@ img {
     color: $bg-purple;
     font-weight: 700;
     font-size: 1.2rem;
+  }
+}
+
+.style-tile-img {
+  max-height: 1000px;
+}
+
+// carousel
+::ng-deep .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+::ng-deep .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+::ng-deep .carousel-control-next {
+  width: 3rem !important;
+  opacity: 0.25 !important;
+  transition: 0.15s ease-in-out;
+  &:hover {
+    opacity: 0.75 !important;
+  }
+}
+
+::ng-deep .carousel-control-prev {
+  width: 3rem !important;
+  opacity: 0.25 !important;
+  transition: 0.15s ease-in-out;
+  &:hover {
+    opacity: 0.75 !important;
   }
 }

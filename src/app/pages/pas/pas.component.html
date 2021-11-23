@@ -52,699 +52,739 @@
       </div>
     </div>
   </section>
-  <section class="dark-section">
-    <div class="container max-w-screen-xl">
-      <div class="w-100 text-start">
-        <div class="mb-3 justify-between" fxLayout.gt-sm="row" fxLayout="column">
-          <h1 fxFlex="70" class="font-extrabold text-4xl">Key Info</h1>
-          <span fxFlex="30" fxLayout="row" class="nda-wrapper" fxLayoutGap="10px">
-            <div fxLayout="column" class="justify-center">
-              <i class="text-gray-400 text-xl fas fa-exclamation-circle"></i>
-            </div>
-            <div fxLayout="column">
-              <label class="text-sm font-semibold text-gray-100 mb-1">Under Non-disclosure Agreement</label>
-              <p class="text-xs text-gray-300 font-medium">Details will likely be vague to protect client info.</p>
-            </div>
-          </span>
-        </div>
-        <div class="text-left" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="3.5rem">
-          <div [ngClass.gt-sm]="'content-section-with-border'" fxLayout="column" fxFlex="70" fxLayoutGap="30px">
-            <div>
-              <h3 class="text-2xl font-extrabold mb-2">Overview & Problems</h3>
-              <p class="mb-3 text-gray-600">
-                The original Process Automation System was deployed in 2006, using an antiquated low-code no-code
-                solution, that was meant to manage a variety of workflow types. The technology used to build it made
-                development fast but rigid and, as a result, the solution could not be optimized for user experience.
-                The years following the original deployment were unresponsive to users’ feedback due to technology
-                constraints. This led to long, frustrating, time consuming experiences for users.
-              </p>
-              <p class="mb-3 text-gray-600">
-                In 2016, a new version of the application was approved to be built. The organization knew they wanted to
-                create an experience that reduced the time users spent to complete tasks. However, it was now clear
-                after years of feedback, the primary user was not obvious. Users had drastically different goals in the
-                application. Some were approvers and others were submitters with varying expertise in the previous
-                solution.
-              </p>
-              <p class="text-gray-600">
-                <strong class="font-semibold"
-                  >To design and build a successful replacement application, it had to be flexible to user needs,
-                  address radically different user goals and minimize the time spent to complete tasks.
-                </strong>
-              </p>
-            </div>
-            <div>
-              <h3 class="text-2xl font-extrabold mb-2">Goals</h3>
-              <ul class="list-disc ml-3 text-gray-600">
-                <li>Design and build a modern web application to replace the existing application</li>
-                <li>
-                  Create a solution that is
-                  <strong class="font-semibold">flexible enough to provide a positive experience</strong> for users with
-                  widely differing objectives
-                </li>
-                <li>
-                  Build a <strong class="font-semibold">templatized UI</strong> that dynamically loads content and
-                  generates pages from JSON data without the need for deployments for content changes
-                </li>
-                <li>
-                  Engineer an experience to <strong class="font-semibold">help novice users identify forms</strong> that
-                  are required to be completed based on user scenario – travel, expense, security reporting, etc.
-                </li>
-                <li>
-                  Develop two unique experiences (novice, expert) for users that promotes timeliness, achieved with
-                  <strong class="font-semibold"
-                    >familiar industry design patterns and contextual content visibility for convenience</strong
-                  >
-                </li>
-                <li>
-                  Create an <strong class="font-semibold">inclusive application for users with disabilities </strong>in
-                  compliance with 508 requirements
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div [ngClass.gt-sm]="'sub-section-with-border'" fxLayout="column" fxFlex="30" fxLayoutGap="15px">
-            <div>
-              <h4 class="text-lg font-extrabold">Project Scope</h4>
-              <p class="text-sm text-gray-600">Replacement of existing application</p>
-            </div>
-            <div>
-              <h4 class="text-lg font-extrabold">Tools</h4>
-              <p class="text-sm text-gray-600">Codepen, PowerPoint, VS Code, Adobe Suite</p>
-            </div>
-            <div>
-              <h4 class="text-lg font-extrabold">Roles</h4>
-              <p class="text-sm text-gray-600">UX Designer, UX Engineer</p>
-            </div>
-            <div>
-              <h4 class="text-lg font-extrabold">Team</h4>
-              <p class="text-sm text-gray-600">
-                Self-organizing team with 3 developers, a UX designer, an analyst, and Scrum Master.
-              </p>
-            </div>
-            <div>
-              <h4 class="text-lg font-extrabold">Size</h4>
-              <p class="text-sm text-gray-600">5,000+ users</p>
-            </div>
-            <div>
-              <h4 class="text-lg font-extrabold">Duration</h4>
-              <p class="text-sm text-gray-600">2.5 years</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="normal-section">
-    <div class="container max-w-screen-xl image-wrapper-with-border">
-      <div class="w-100 text-start">
-        <h1 class="font-extrabold text-4xl">Design Process</h1>
-        <label class="text-2xl font-bold sub-header">We aren't users or actors. Don't act like a user.</label>
-      </div>
-      <div class="w-100 my-5 py-2">
-        <img
-          class="w-100"
-          [src]="
-            'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fdesign_process.png?alt=media&token=3be96b07-c9a8-4dc7-a6a7-e7890202d0dc'
-          "
-        />
-      </div>
-    </div>
-  </section>
-  <section class="normal-section">
-    <div class="container max-w-screen-xl">
-      <div class="w-100 text-start">
-        <h1>
-          <span class="sub-header font-extrabold text-4xl">01</span
-          ><span class="font-extrabold text-4xl">/Research</span>
-        </h1>
-        <label class="text-2xl font-bold sub-header">Empathize with users.</label>
-      </div>
-      <div class="mt-4" fxLayout="column">
-        <div fxLayout.gt-sm="row" fxLayout="column" fxLayoutGap="20px">
-          <div fxFlex="40" fxLayoutAlign="center center" fxLayout="column">
-            <h2 class="text-2xl font-bold mb-3 w-100">Meet Users</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed pulvinar proin
-              gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat orci nulla pellentesque
-              dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec ullamcorper sit amet.
-            </p>
-            <div class="w-100 my-3">
-              <h4 class="font-semibold mb-2">Methods</h4>
-              <ul class="list-disc ml-3">
-                <li>Interviews</li>
-                <li>Card sorting</li>
-                <li>Field studies</li>
-                <li>Surveys</li>
-              </ul>
-            </div>
-          </div>
-          <div fxFlex="60">
-            <div fxLayout="row" class="w-100 justify-end">
-              <img
-                [src]="
-                  'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/illustrations%2Fundraw_conversation_h-12-g.svg?alt=media&token=900aa0e6-90db-455b-814f-2514883b1c55'
-                "
-              />
-            </div>
-          </div>
-        </div>
-        <div class="w-100 my-5 py-5 justify-center" fxLayout="row">
-          <div
-            fxLayout="row"
-            [ngClass.gt-sm]="'w-75'"
-            [ngClass]="'w-100'"
-            class="qoute content-section-with-border"
-            fxLayoutGap="10px"
-          >
-            <div>
-              <i [ngClass.gt-xs]="'text-5xl'" [ngClass]="'text-4xl'" class="text-gray-200 fas fa-quote-left"></i>
-            </div>
-            <div class="text-start">
-              <h1 [ngClass.gt-xs]="'text-5xl'" [ngClass]="'text-4xl'" class="font-bold leading-snug">
-                I can't find the forms I'm looking for. The names of forms are confusing.
-              </h1>
-              <div fxLayout="column">
-                <span>Organization Business Analyst</span>
-                <small class="font-semibold text-sm text-gray-500">Submitter • Novice Experience</small>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="mt-4" fxLayout="column">
-        <div fxLayout.gt-sm="row" fxLayout="column" fxLayoutGap="150px">
-          <div fxFlex="50" fxLayoutAlign="center center" fxLayout="column">
-            <h2 class="text-2xl font-bold mb-3 w-100">Baseline</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed pulvinar proin
-              gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat orci nulla pellentesque
-              dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec ullamcorper sit amet.
-            </p>
-            <div class="w-100 my-3">
-              <h4 class="font-semibold mb-2">Methods</h4>
-              <ul class="list-disc ml-3">
-                <li>Usability Testing</li>
-                <li>Surveys</li>
-              </ul>
-            </div>
-          </div>
-          <div fxFlex="50">
-            <h2 class="text-2xl font-bold mb-3 w-100">Competitive Analysis</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed pulvinar proin
-              gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat orci nulla pellentesque
-              dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec ullamcorper sit amet.
-            </p>
-            <div class="w-100 my-3">
-              <h4 class="font-semibold mb-2">Methods</h4>
-              <ul class="list-disc ml-3">
-                <li>Interviews</li>
-                <li>Card sorting</li>
-                <li>Field studies</li>
-                <li>Surveys</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="dark-section">
-    <div class="container max-w-screen-xl">
-      <div class="w-100 text-start">
-        <h1>
-          <span class="sub-header font-extrabold text-4xl">02</span
-          ><span class="font-extrabold text-4xl">/Strategy</span>
-        </h1>
-        <label class="text-2xl font-bold sub-header">Transform knowledge into a plan.</label>
-        <div class="mt-4" fxLayout="column" fxLayoutGap="6rem">
-          <div fxLayout.gt-sm="row" fxLayout="column" fxLayoutGap="20px">
-            <div fxFlex="40" fxLayoutAlign="start center" fxLayout="column">
-              <h2 class="text-2xl font-bold mb-3 w-100">Personas</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed pulvinar proin
-                gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat orci nulla
-                pellentesque dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec ullamcorper sit amet.
-              </p>
-              <div class="w-100 my-3">
-                <h4 class="font-semibold mb-2">Insights</h4>
-                <ul class="list-disc ml-3">
-                  <li>Interviews</li>
-                  <li>Card sorting</li>
-                  <li>Field studies</li>
-                  <li>Surveys</li>
-                </ul>
-              </div>
-            </div>
-            <div fxFlex="60">
-              <div class="ml-5 rounded-md overflow-hidden">
-                <ngb-carousel [interval]="10000" *ngIf="images">
-                  <ng-template ngbSlide>
-                    <div class="picsum-img-wrapper">
-                      <img [src]="images[0]" alt="Random first slide" />
-                    </div>
-                    <div class="carousel-caption">
-                      <h3>First slide label</h3>
-                      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                    </div>
-                  </ng-template>
-                  <ng-template ngbSlide>
-                    <div class="picsum-img-wrapper">
-                      <img [src]="images[1]" alt="Random second slide" />
-                    </div>
-                    <div class="carousel-caption">
-                      <h3>Second slide label</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                  </ng-template>
-                  <ng-template ngbSlide>
-                    <div class="picsum-img-wrapper">
-                      <img [src]="images[2]" alt="Random third slide" />
-                    </div>
-                    <div class="carousel-caption">
-                      <h3>Third slide label</h3>
-                      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                    </div>
-                  </ng-template>
-                </ngb-carousel>
-              </div>
-            </div>
-          </div>
-          <div fxLayout.gt-sm="row" fxLayout="column" fxLayoutGap="20px">
-            <div fxFlex="60">
-              <div class="mr-5 rounded-md overflow-hidden">
-                <ngb-carousel [interval]="10000" *ngIf="images">
-                  <ng-template ngbSlide>
-                    <div class="picsum-img-wrapper">
-                      <img [src]="images[0]" alt="Random first slide" />
-                    </div>
-                    <div class="carousel-caption">
-                      <h3>First slide label</h3>
-                      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                    </div>
-                  </ng-template>
-                  <ng-template ngbSlide>
-                    <div class="picsum-img-wrapper">
-                      <img [src]="images[1]" alt="Random second slide" />
-                    </div>
-                    <div class="carousel-caption">
-                      <h3>Second slide label</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                  </ng-template>
-                  <ng-template ngbSlide>
-                    <div class="picsum-img-wrapper">
-                      <img [src]="images[2]" alt="Random third slide" />
-                    </div>
-                    <div class="carousel-caption">
-                      <h3>Third slide label</h3>
-                      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                    </div>
-                  </ng-template>
-                </ngb-carousel>
-              </div>
-            </div>
-            <div fxFlex="40" fxLayoutAlign="start center" fxLayout="column">
-              <h2 class="text-2xl font-bold mb-3 w-100">Customer Journey Map</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed pulvinar proin
-                gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat orci nulla
-                pellentesque dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec ullamcorper sit amet.
-              </p>
-              <div class="w-100 my-3">
-                <h4 class="font-semibold mb-2">Insights</h4>
-                <ul class="list-disc ml-3">
-                  <li>Interviews</li>
-                  <li>Card sorting</li>
-                  <li>Field studies</li>
-                  <li>Surveys</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="w-100 my-5 pb-5 justify-center" fxLayout="row">
-            <div
-              fxLayout="row"
-              [ngClass.gt-sm]="'w-75'"
-              [ngClass]="'w-100'"
-              class="qoute content-section-with-border"
-              fxLayoutGap="10px"
-            >
-              <div>
-                <i [ngClass.gt-xs]="'text-5xl'" [ngClass]="'text-4xl'" class="text-gray-200 fas fa-quote-left"></i>
-              </div>
-              <div class="text-start">
-                <h1 [ngClass.gt-xs]="'text-5xl'" [ngClass]="'text-4xl'" class="font-bold leading-snug">
-                  Save research for the true unknowns.
-                </h1>
+
+  <div fxLayout="row">
+    <div>
+      <section #keyinfo class="dark-section">
+        <div class="container max-w-screen-xl">
+          <div class="w-100 text-start">
+            <div class="mb-3 justify-between" fxLayout.gt-sm="row" fxLayout="column">
+              <h1 fxFlex="70" class="font-extrabold text-4xl">Key Info</h1>
+              <span fxFlex="30" fxLayout="row" class="nda-wrapper" fxLayoutGap="10px">
+                <div fxLayout="column" class="justify-center">
+                  <i class="text-gray-400 text-xl fas fa-exclamation-circle"></i>
+                </div>
                 <div fxLayout="column">
-                  <span>NN/g</span>
+                  <label class="text-sm font-semibold text-gray-100 mb-1">Under Non-disclosure Agreement</label>
+                  <p class="text-xs text-gray-300 font-medium">Details will likely be vague to protect client info.</p>
                 </div>
-              </div>
+              </span>
             </div>
-          </div>
-          <div fxLayout.gt-sm="row" fxLayout="column" fxLayoutGap="20px">
-            <div fxFlex="40" fxLayoutAlign="start center" fxLayout="column" fxLayoutGap="3rem">
-              <div fxLayout="column">
-                <h2 class="text-2xl font-bold mb-3 w-100">Usability Heurisitcs</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed pulvinar proin
-                  gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat orci nulla
-                  pellentesque dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec ullamcorper sit
-                  amet.
-                </p>
-                <div class="w-100 my-3">
-                  <h4 class="font-semibold mb-2">Insights</h4>
-                  <ul class="list-disc ml-3">
-                    <li>Interviews</li>
-                    <li>Card sorting</li>
-                    <li>Field studies</li>
-                    <li>Surveys</li>
+            <div class="text-left" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="3.5rem">
+              <div [ngClass.gt-sm]="'content-section-with-border'" fxLayout="column" fxFlex="70" fxLayoutGap="30px">
+                <div>
+                  <h3 class="text-2xl font-extrabold mb-2">Overview & Problems</h3>
+                  <p class="mb-3 text-gray-600">
+                    The original Process Automation System was deployed in 2006, using an antiquated low-code no-code
+                    solution, that was meant to manage a variety of workflow types. The technology used to build it made
+                    development fast but rigid and, as a result, the solution could not be optimized for user
+                    experience. The years following the original deployment were unresponsive to users’ feedback due to
+                    technology constraints. This led to long, frustrating, time consuming experiences for users.
+                  </p>
+                  <p class="mb-3 text-gray-600">
+                    In 2016, a new version of the application was approved to be built. The organization knew they
+                    wanted to create an experience that reduced the time users spent to complete tasks. However, it was
+                    now clear after years of feedback, the primary user was not obvious. Users had drastically different
+                    goals in the application. Some were approvers and others were submitters with varying expertise in
+                    the previous solution.
+                  </p>
+                  <p class="text-gray-600">
+                    <strong class="font-semibold"
+                      >To design and build a successful replacement application, it had to be flexible to user needs,
+                      address radically different user goals and minimize the time spent to complete tasks.
+                    </strong>
+                  </p>
+                </div>
+                <div>
+                  <h3 class="text-2xl font-extrabold mb-2">Goals</h3>
+                  <ul class="list-disc ml-3 text-gray-600">
+                    <li>Design and build a modern web application to replace the existing application</li>
+                    <li>
+                      Create a solution that is
+                      <strong class="font-semibold">flexible enough to provide a positive experience</strong> for users
+                      with widely differing objectives
+                    </li>
+                    <li>
+                      Build a <strong class="font-semibold">templatized UI</strong> that dynamically loads content and
+                      generates pages from JSON data without the need for deployments for content changes
+                    </li>
+                    <li>
+                      Engineer an experience to
+                      <strong class="font-semibold">help novice users identify forms</strong> that are required to be
+                      completed based on user scenario – travel, expense, security reporting, etc.
+                    </li>
+                    <li>
+                      Develop two unique experiences (novice, expert) for users that promotes timeliness, achieved with
+                      <strong class="font-semibold"
+                        >familiar industry design patterns and contextual content visibility for convenience</strong
+                      >
+                    </li>
+                    <li>
+                      Create an
+                      <strong class="font-semibold">inclusive application for users with disabilities </strong>in
+                      compliance with 508 requirements
+                    </li>
                   </ul>
                 </div>
               </div>
-              <div fxLayout="column">
-                <h2 class="text-2xl font-bold mb-3 w-100">Common Design Standards</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed pulvinar proin
-                  gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat orci nulla
-                  pellentesque dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec ullamcorper sit
-                  amet.
-                </p>
-                <div class="w-100 my-3">
-                  <h4 class="font-semibold mb-2">Insights</h4>
-                  <ul class="list-disc ml-3">
-                    <li>Interviews</li>
-                    <li>Card sorting</li>
-                    <li>Field studies</li>
-                    <li>Surveys</li>
-                  </ul>
+              <div [ngClass.gt-sm]="'sub-section-with-border'" fxLayout="column" fxFlex="30" fxLayoutGap="15px">
+                <div>
+                  <h4 class="text-lg font-extrabold">Project Scope</h4>
+                  <p class="text-sm text-gray-600">Replacement of existing application</p>
                 </div>
-              </div>
-            </div>
-            <div fxFlex="60">
-              <div class="ml-5 rounded-md overflow-hidden">
-                <img
-                  class="w-100"
-                  [src]="
-                    'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fheuristic-visual.png?alt=media&token=6f57b3ad-e28d-4ed9-b50d-047e4d725309'
-                  "
-                />
+                <div>
+                  <h4 class="text-lg font-extrabold">Tools</h4>
+                  <p class="text-sm text-gray-600">Codepen, PowerPoint, VS Code, Adobe Suite</p>
+                </div>
+                <div>
+                  <h4 class="text-lg font-extrabold">Roles</h4>
+                  <p class="text-sm text-gray-600">UX Designer, UX Engineer</p>
+                </div>
+                <div>
+                  <h4 class="text-lg font-extrabold">Team</h4>
+                  <p class="text-sm text-gray-600">
+                    Self-organizing team with 3 developers, a UX designer, an analyst, and Scrum Master.
+                  </p>
+                </div>
+                <div>
+                  <h4 class="text-lg font-extrabold">Size</h4>
+                  <p class="text-sm text-gray-600">5,000+ users</p>
+                </div>
+                <div>
+                  <h4 class="text-lg font-extrabold">Duration</h4>
+                  <p class="text-sm text-gray-600">2.5 years</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <section class="normal-section">
-    <div class="container max-w-screen-xl">
-      <div class="w-100 text-start">
-        <h1>
-          <span class="sub-header font-extrabold text-4xl">03</span><span class="font-extrabold text-4xl">/Design</span>
-        </h1>
-        <label class="text-2xl font-bold sub-header">One step at a time, with users in mind.</label>
-      </div>
-      <div class="mt-4" fxLayout="column" fxLayoutGap="6rem">
-        <div fxLayout="column" fxLayoutGap="3rem">
-          <div fxLayoutAlign="start center" fxLayout="column">
-            <h2 class="text-2xl font-bold mb-3 w-100">Task Flow</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed pulvinar proin
-              gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat orci nulla pellentesque
-              dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec ullamcorper sit amet.
-            </p>
+      </section>
+      <section class="normal-section process-section">
+        <div class="container max-w-screen-xl">
+          <div class="w-100 text-start">
+            <h1 class="font-extrabold text-4xl">Design Process</h1>
+            <label class="text-2xl font-bold sub-header">We aren't users or actors. Don't act like a user.</label>
           </div>
-          <div class="d-flex justify-center">
+          <div class="w-100 my-5 py-2">
             <img
-              class="lg-img"
+              class="w-100"
               [src]="
-                'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fpas-task-flow.png?alt=media&token=6b67ad6b-0535-474c-b15a-6749b7028df2'
+                'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fdesign_process.png?alt=media&token=3be96b07-c9a8-4dc7-a6a7-e7890202d0dc'
               "
             />
           </div>
         </div>
-        <div fxLayout="column" fxLayoutGap="3rem">
-          <h2 class="text-2xl font-bold mb-3 w-100">Mockups</h2>
-          <div fxLayoutAlign="start center" fxLayout="column" fxLayoutGap="3rem">
-            <h3 class="w-100 mb-2">
-              <span class="sub-header font-extrabold text-xl">01</span
-              ><span class="font-extrabold text-xl">/Sketches</span>
-            </h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed pulvinar proin
-              gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat orci nulla pellentesque
-              dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec ullamcorper sit amet.
-            </p>
-            <div class="d-flex justify-center rounded-md overflow-hidden bg-white px-1 py-3">
-              <img
-                class="lg-img"
-                [src]="
-                  'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fopas-drawling.png?alt=media&token=523a6847-01f6-4d84-8630-dca094807624'
-                "
-              />
+      </section>
+      <section #research class="normal-section">
+        <div class="w-100 section-header-sticky">
+          <div class="w-100 text-start container max-w-screen-xl">
+            <h1>
+              <span class="sub-header font-extrabold text-4xl">01</span
+              ><span class="font-extrabold text-4xl">/Research</span>
+            </h1>
+            <label class="text-2xl font-bold sub-header">Empathize with users.</label>
+          </div>
+        </div>
+        <div class="container max-w-screen-xl">
+          <div class="mt-4" fxLayout="column">
+            <div fxLayout.gt-sm="row" fxLayout="column" fxLayoutGap="20px">
+              <div fxFlex="40" fxLayoutAlign="center center" fxLayout="column">
+                <h2 class="text-2xl font-bold mb-3 w-100">Meet Users</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed pulvinar proin
+                  gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat orci nulla
+                  pellentesque dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec ullamcorper sit
+                  amet.
+                </p>
+                <div class="w-100 my-3">
+                  <h4 class="font-semibold mb-2">Methods</h4>
+                  <ul class="list-disc ml-3">
+                    <li>Interviews</li>
+                    <li>Card sorting</li>
+                    <li>Field studies</li>
+                    <li>Surveys</li>
+                  </ul>
+                </div>
+              </div>
+              <div fxFlex="60">
+                <div fxLayout="row" class="w-100 justify-end">
+                  <img
+                    [src]="
+                      'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/illustrations%2Fundraw_conversation_h-12-g.svg?alt=media&token=900aa0e6-90db-455b-814f-2514883b1c55'
+                    "
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="w-100 my-5 py-5 justify-center" fxLayout="row">
+              <div
+                fxLayout="row"
+                [ngClass.gt-sm]="'w-75'"
+                [ngClass]="'w-100'"
+                class="qoute content-section-with-border"
+                fxLayoutGap="10px"
+              >
+                <div>
+                  <i [ngClass.gt-xs]="'text-5xl'" [ngClass]="'text-4xl'" class="text-gray-200 fas fa-quote-left"></i>
+                </div>
+                <div class="text-start">
+                  <h1 [ngClass.gt-xs]="'text-5xl'" [ngClass]="'text-4xl'" class="font-bold leading-snug">
+                    I can't find the forms I'm looking for. The names of forms are confusing.
+                  </h1>
+                  <div fxLayout="column">
+                    <span>Organization Business Analyst</span>
+                    <small class="font-semibold text-sm text-gray-500">Submitter • Novice Experience</small>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div fxLayoutAlign="start center" fxLayout="column" fxLayoutGap="3rem">
-            <h3 class="w-100 mb-2">
-              <span class="sub-header font-extrabold text-xl">02</span
-              ><span class="font-extrabold text-xl">/Mid-fidelity Mockup</span>
-            </h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed pulvinar proin
-              gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat orci nulla pellentesque
-              dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec ullamcorper sit amet.
-            </p>
-            <div class="d-flex justify-center rounded-md overflow-hidden w-screen px-1 py-3">
-              <img
-                class="lg-img"
-                [src]="
-                  'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fopas-mock-ups.png?alt=media&token=e50555fa-4c13-4ebb-a924-692e368c3738'
-                "
-              />
+          <div class="mt-4" fxLayout="column">
+            <div fxLayout.gt-sm="row" fxLayout="column" fxLayoutGap="150px">
+              <div fxFlex="50" fxLayoutAlign="center center" fxLayout="column">
+                <h2 class="text-2xl font-bold mb-3 w-100">Baseline</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed pulvinar proin
+                  gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat orci nulla
+                  pellentesque dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec ullamcorper sit
+                  amet.
+                </p>
+                <div class="w-100 my-3">
+                  <h4 class="font-semibold mb-2">Methods</h4>
+                  <ul class="list-disc ml-3">
+                    <li>Usability Testing</li>
+                    <li>Surveys</li>
+                  </ul>
+                </div>
+              </div>
+              <div fxFlex="50">
+                <h2 class="text-2xl font-bold mb-3 w-100">Competitive Analysis</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed pulvinar proin
+                  gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat orci nulla
+                  pellentesque dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec ullamcorper sit
+                  amet.
+                </p>
+                <div class="w-100 my-3">
+                  <h4 class="font-semibold mb-2">Methods</h4>
+                  <ul class="list-disc ml-3">
+                    <li>Interviews</li>
+                    <li>Card sorting</li>
+                    <li>Field studies</li>
+                    <li>Surveys</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+      </section>
+      <section #strategy class="dark-section">
+        <div class="w-100 dark-section-header-sticky">
+          <div class="w-100 text-start container max-w-screen-xl">
+            <h1>
+              <span class="sub-header font-extrabold text-4xl">02</span
+              ><span class="font-extrabold text-4xl">/Strategy</span>
+            </h1>
+            <label class="text-2xl font-bold sub-header">Transform knowledge into a plan.</label>
+          </div>
+        </div>
+        <div class="container max-w-screen-xl">
+          <div class="w-100 text-start">
+            <div class="mt-4" fxLayout="column" fxLayoutGap="6rem">
+              <div fxLayout="column" fxLayoutGap="20px">
+                <div fxFlex="40" fxLayoutAlign="start center" fxLayout="column">
+                  <h2 class="text-2xl font-bold mb-3 w-100">Personas</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed pulvinar
+                    proin gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat orci nulla
+                    pellentesque dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec ullamcorper sit
+                    amet.
+                  </p>
+                  <div class="w-100 my-3">
+                    <h4 class="font-semibold mb-2">Insights</h4>
+                    <ul class="list-disc ml-3">
+                      <li>Interviews</li>
+                      <li>Card sorting</li>
+                      <li>Field studies</li>
+                      <li>Surveys</li>
+                    </ul>
+                  </div>
+                </div>
+                <div fxFlex="60">
+                  <div class="rounded-md overflow-hidden img-shadow">
+                    <ngb-carousel [interval]="15000" *ngIf="images">
+                      <ng-template ngbSlide>
+                        <div class="picsum-img-wrapper">
+                          <img class="w-100" [src]="images[0]" alt="Random first slide" />
+                        </div>
+                        <!-- <div class="carousel-caption">
+                        <h3>First slide label</h3>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                      </div> -->
+                      </ng-template>
+                      <ng-template ngbSlide>
+                        <div class="picsum-img-wrapper">
+                          <img class="w-100" [src]="images[1]" alt="Random second slide" />
+                        </div>
+                        <!-- <div class="carousel-caption">
+                        <h3>Second slide label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      </div> -->
+                      </ng-template>
+                    </ngb-carousel>
+                  </div>
+                </div>
+              </div>
+              <div fxLayout="column" fxLayoutGap="20px">
+                <div fxFlex="40" fxLayoutAlign="start center" fxLayout="column">
+                  <h2 class="text-2xl font-bold mb-3 w-100">Customer Journey Map</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed pulvinar
+                    proin gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat orci nulla
+                    pellentesque dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec ullamcorper sit
+                    amet.
+                  </p>
+                  <div class="w-100 my-3">
+                    <h4 class="font-semibold mb-2">Insights</h4>
+                    <ul class="list-disc ml-3">
+                      <li>Interviews</li>
+                      <li>Card sorting</li>
+                      <li>Field studies</li>
+                      <li>Surveys</li>
+                    </ul>
+                  </div>
+                </div>
+                <div fxFlex="60">
+                  <div [ngStyle]="{ background: '#fbfbfb' }" class="p-3 rounded-md overflow-hidden img-shadow">
+                    <img
+                      class="w-100"
+                      [src]="
+                        'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fopas-journey-map.png?alt=media&token=c65f81ce-7cc3-423f-8266-6f288fa5ddba'
+                      "
+                    />
+                    <!-- <ngb-carousel [interval]="10000" *ngIf="images">
+                    <ng-template ngbSlide>
+                      <div class="picsum-img-wrapper">
+                        <img class="w-100" [src]="images[0]" alt="Random first slide" />
+                      </div>
+                      <div class="carousel-caption">
+                        <h3>First slide label</h3>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                      </div>
+                    </ng-template>
+                    <ng-template ngbSlide>
+                      <div class="picsum-img-wrapper">
+                        <img class="w-100" [src]="images[1]" alt="Random second slide" />
+                      </div>
+                      <div class="carousel-caption">
+                        <h3>Second slide label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      </div>
+                    </ng-template>
+                  </ngb-carousel> -->
+                  </div>
+                </div>
+              </div>
+              <div class="w-100 my-5 pb-5 justify-center" fxLayout="row">
+                <div
+                  fxLayout="row"
+                  [ngClass.gt-sm]="'w-75'"
+                  [ngClass]="'w-100'"
+                  class="qoute content-section-with-border"
+                  fxLayoutGap="10px"
+                >
+                  <div>
+                    <i [ngClass.gt-xs]="'text-5xl'" [ngClass]="'text-4xl'" class="text-gray-200 fas fa-quote-left"></i>
+                  </div>
+                  <div class="text-start">
+                    <h1 [ngClass.gt-xs]="'text-5xl'" [ngClass]="'text-4xl'" class="font-bold leading-snug">
+                      Save research for the true unknowns.
+                    </h1>
+                    <div fxLayout="column">
+                      <span>NN/g</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div fxLayout.gt-sm="row" fxLayout="column" fxLayoutGap="20px">
+                <div fxFlex="40" fxLayoutAlign="start center" fxLayout="column" fxLayoutGap="3rem">
+                  <div fxLayout="column">
+                    <h2 class="text-2xl font-bold mb-3 w-100">Usability Heurisitcs</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed
+                      pulvinar proin gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat
+                      orci nulla pellentesque dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec
+                      ullamcorper sit amet.
+                    </p>
+                    <div class="w-100 my-3">
+                      <h4 class="font-semibold mb-2">Insights</h4>
+                      <ul class="list-disc ml-3">
+                        <li>Interviews</li>
+                        <li>Card sorting</li>
+                        <li>Field studies</li>
+                        <li>Surveys</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div fxLayout="column">
+                    <h2 class="text-2xl font-bold mb-3 w-100">Common Design Standards</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed
+                      pulvinar proin gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat
+                      orci nulla pellentesque dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec
+                      ullamcorper sit amet.
+                    </p>
+                    <div class="w-100 my-3">
+                      <h4 class="font-semibold mb-2">Insights</h4>
+                      <ul class="list-disc ml-3">
+                        <li>Interviews</li>
+                        <li>Card sorting</li>
+                        <li>Field studies</li>
+                        <li>Surveys</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div fxFlex="60">
+                  <div class="ml-5 rounded-md overflow-hidden">
+                    <img
+                      class="w-100"
+                      [src]="
+                        'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fheuristic-visual.png?alt=media&token=6f57b3ad-e28d-4ed9-b50d-047e4d725309'
+                      "
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section #design class="normal-section">
+        <div class="w-100 section-header-sticky">
+          <div class="w-100 text-start container max-w-screen-xl">
+            <h1>
+              <span class="sub-header font-extrabold text-4xl">03</span
+              ><span class="font-extrabold text-4xl">/Design</span>
+            </h1>
+            <label class="text-2xl font-bold sub-header">One step at a time, with users in mind.</label>
+          </div>
+        </div>
+        <div class="container max-w-screen-xl">
+          <div class="mt-4" fxLayout="column" fxLayoutGap="6rem">
+            <div fxLayout="column" fxLayoutGap="3rem">
+              <div fxLayoutAlign="start center" fxLayout="column">
+                <h2 class="text-2xl font-bold mb-3 w-100">Task Flow</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed pulvinar proin
+                  gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat orci nulla
+                  pellentesque dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec ullamcorper sit
+                  amet.
+                </p>
+              </div>
+              <div class="d-flex justify-center">
+                <img
+                  class="lg-img"
+                  [src]="
+                    'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fpas-task-flow.png?alt=media&token=6b67ad6b-0535-474c-b15a-6749b7028df2'
+                  "
+                />
+              </div>
+            </div>
+            <div fxLayout="column" fxLayoutGap="3rem">
+              <h2 class="text-2xl font-bold mb-3 w-100">Mockups</h2>
+              <div fxLayoutAlign="start center" fxLayout="column" fxLayoutGap="3rem">
+                <h3 class="w-100 mb-2">
+                  <span class="sub-header font-extrabold text-xl">01</span
+                  ><span class="font-extrabold text-xl">/Sketches</span>
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed pulvinar proin
+                  gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat orci nulla
+                  pellentesque dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec ullamcorper sit
+                  amet.
+                </p>
+                <div class="d-flex justify-center rounded-md overflow-hidden bg-white px-1 py-3 img-shadow">
+                  <img
+                    class="lg-img"
+                    [src]="
+                      'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fopas-drawling.png?alt=media&token=523a6847-01f6-4d84-8630-dca094807624'
+                    "
+                  />
+                </div>
+              </div>
+              <div fxLayoutAlign="start center" fxLayout="column" fxLayoutGap="3rem">
+                <h3 class="w-100 mb-2">
+                  <span class="sub-header font-extrabold text-xl">02</span
+                  ><span class="font-extrabold text-xl">/Mid-fidelity Mockup</span>
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed pulvinar proin
+                  gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat orci nulla
+                  pellentesque dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec ullamcorper sit
+                  amet.
+                </p>
+                <div class="d-flex justify-center rounded-md overflow-hidden w-screen px-1 py-3">
+                  <img
+                    class="lg-img"
+                    [src]="
+                      'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fopas-mock-ups.png?alt=media&token=e50555fa-4c13-4ebb-a924-692e368c3738'
+                    "
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section #prototype class="dark-section">
+        <div class="w-100 dark-section-header-sticky">
+          <div class="w-100 text-start container max-w-screen-xl">
+            <h1>
+              <span class="sub-header font-extrabold text-4xl">04</span
+              ><span class="font-extrabold text-4xl">/Prototype & Test</span>
+            </h1>
+            <label class="text-2xl font-bold sub-header">The first moments of truth.</label>
+          </div>
+        </div>
+        <div class="container max-w-screen-xl">
+          <div class="mt-4" fxLayout="column" fxLayoutGap="6rem">
+            <div fxLayout="column" fxLayoutGap="3rem">
+              <div fxLayoutAlign="start center" fxLayout="column">
+                <h2 class="text-2xl font-bold mb-3 w-100">Information Architecture</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida.
+                </p>
+              </div>
+            </div>
+            <div fxLayout="column" fxLayoutGap="3rem">
+              <div fxLayoutAlign="start center" fxLayout="column" fxLayoutGap="20px">
+                <div fxLayout="column">
+                  <h2 class="text-2xl font-bold mb-3 w-100">Styles & Branding</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida.
+                  </p>
+                </div>
+                <div class="rounded-md overflow-hidden img-shadow">
+                  <img
+                    class="w-100 style-tile-img"
+                    [src]="
+                      'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fopas-style-tile.png?alt=media&token=de2a9b4e-bb95-48e0-9bd6-a66672c52952'
+                    "
+                  />
+                </div>
+              </div>
+            </div>
+            <div fxLayout="column" fxLayoutGap="3rem">
+              <div fxLayoutAlign="start center" fxLayout="column">
+                <h2 class="text-2xl font-bold mb-3 w-100">'Mini' Prototypes</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida.
+                </p>
+              </div>
+              <div [ngClass.gt-sm]="'content-section-with-border'" fxLayout="column" fxLayoutGap="6rem">
+                <div fx-layout="row" fxLayoutGap="2rem">
+                  <div fxFlex="35" fxLayoutAlign="center center" fxLayout="column" fxLayoutGap="3rem">
+                    <h3 class="w-100 mb-2">
+                      <span class="font-semibold text-xl">Primary & Secondary Buttons</span>
+                    </h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed
+                      pulvinar proin gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat
+                      orci nulla pellentesque dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec
+                      ullamcorper sit amet.
+                    </p>
+                  </div>
+                  <div fxFlex="65">
+                    <iframe
+                      height="500"
+                      style="width: 100%"
+                      scrolling="no"
+                      title="Primary Button"
+                      src="https://codepen.io/lando101/embed/abOeNWO?default-tab=result&theme-id=dark"
+                      frameborder="no"
+                      loading="lazy"
+                      allowtransparency="true"
+                      allowfullscreen="true"
+                    >
+                      See the Pen <a href="https://codepen.io/lando101/pen/abOeNWO"> Primary Button</a> by Landon
+                      Messmer (<a href="https://codepen.io/lando101">@lando101</a>) on
+                      <a href="https://codepen.io">CodePen</a>.
+                    </iframe>
+                  </div>
+                </div>
+                <div fx-layout="row" fxLayoutGap="2rem">
+                  <div fxFlex="65">
+                    <iframe
+                      height="500"
+                      style="width: 100%"
+                      scrolling="no"
+                      title="Layout Dropdown"
+                      src="https://codepen.io/lando101/embed/abbXjEm?default-tab=result&theme-id=dark"
+                      frameborder="no"
+                      loading="lazy"
+                      allowtransparency="true"
+                      allowfullscreen="true"
+                    >
+                      See the Pen <a href="https://codepen.io/lando101/pen/abbXjEm"> Layout Dropdown</a> by Landon
+                      Messmer (<a href="https://codepen.io/lando101">@lando101</a>) on
+                      <a href="https://codepen.io">CodePen</a>.
+                    </iframe>
+                  </div>
+                  <div fxFlex="35" fxLayoutAlign="center center" fxLayout="column" fxLayoutGap="3rem">
+                    <h3 class="w-100 mb-2">
+                      <span class="font-semibold text-xl">Layout Dropdown</span>
+                    </h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed
+                      pulvinar proin gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat
+                      orci nulla pellentesque dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec
+                      ullamcorper sit amet.
+                    </p>
+                  </div>
+                </div>
+                <div fx-layout="row" fxLayoutGap="2rem">
+                  <div fxFlex="35" fxLayoutAlign="center center" fxLayout="column" fxLayoutGap="3rem">
+                    <h3 class="w-100 mb-2">
+                      <span class="font-semibold text-xl">Icon Buttons</span>
+                    </h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed
+                      pulvinar proin gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat
+                      orci nulla pellentesque dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec
+                      ullamcorper sit amet.
+                    </p>
+                  </div>
+                  <div fxFlex="65">
+                    <iframe
+                      height="500"
+                      style="width: 100%"
+                      scrolling="no"
+                      title="Icon Hover w/ Text"
+                      src="https://codepen.io/lando101/embed/rXpOZv?default-tab=result&theme-id=dark"
+                      frameborder="no"
+                      loading="lazy"
+                      allowtransparency="true"
+                      allowfullscreen="true"
+                    >
+                      See the Pen <a href="https://codepen.io/lando101/pen/rXpOZv"> Icon Hover w/ Text</a> by Landon
+                      Messmer (<a href="https://codepen.io/lando101">@lando101</a>) on
+                      <a href="https://codepen.io">CodePen</a>.
+                    </iframe>
+                  </div>
+                </div>
+                <div fx-layout="row" fxLayoutGap="2rem">
+                  <div fxFlex="65">
+                    <iframe
+                      height="500"
+                      style="width: 100%"
+                      scrolling="no"
+                      title="Details Button"
+                      src="https://codepen.io/lando101/embed/mddgxmR?default-tab=result&theme-id=dark"
+                      frameborder="no"
+                      loading="lazy"
+                      allowtransparency="true"
+                      allowfullscreen="true"
+                    >
+                      See the Pen <a href="https://codepen.io/lando101/pen/mddgxmR"> Details Button</a> by Landon
+                      Messmer (<a href="https://codepen.io/lando101">@lando101</a>) on
+                      <a href="https://codepen.io">CodePen</a>.
+                    </iframe>
+                  </div>
+                  <div fxFlex="35" fxLayoutAlign="center center" fxLayout="column" fxLayoutGap="3rem">
+                    <h3 class="w-100 mb-2">
+                      <span class="font-semibold text-xl">Layout Behaviors</span>
+                    </h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed
+                      pulvinar proin gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat
+                      orci nulla pellentesque dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec
+                      ullamcorper sit amet.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div fxLayout="column" fxLayoutGap="3rem">
+              <div fxLayoutAlign="center center" fxLayout="column">
+                <h2 class="text-2xl font-bold mb-3 w-100">Usability Testing</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida.
+                </p>
+              </div>
+              <div fxLayout="column" fxLayoutGap="2rem">
+                <div fxLayoutAlign="start center" fxLayout="column" fxLayoutGap="3rem">
+                  <h3 class="w-100 mb-2">
+                    <span class="sub-header font-extrabold text-xl">01</span
+                    ><span class="font-extrabold text-xl">/Preperation</span>
+                  </h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed pulvinar
+                    proin gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat orci nulla
+                    pellentesque dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec ullamcorper sit
+                    amet.
+                  </p>
+                </div>
+                <div fxLayoutAlign="start center" fxLayout="column" fxLayoutGap="3rem">
+                  <h3 class="w-100 mb-2">
+                    <span class="sub-header font-extrabold text-xl">02</span
+                    ><span class="font-extrabold text-xl">/Conduct</span>
+                  </h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed pulvinar
+                    proin gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat orci nulla
+                    pellentesque dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec ullamcorper sit
+                    amet.
+                  </p>
+                </div>
+                <div fxLayoutAlign="start center" fxLayout="column" fxLayoutGap="3rem">
+                  <h3 class="w-100 mb-2">
+                    <span class="sub-header font-extrabold text-xl">03</span
+                    ><span class="font-extrabold text-xl">/Report</span>
+                  </h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed pulvinar
+                    proin gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat orci nulla
+                    pellentesque dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec ullamcorper sit
+                    amet.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div fxHide.lt-xl class="position-sticky table-of-contents-wrapper">
+      <div class="position-sticky inner-container text-gray-500 mt-5 text-sm" fxLayout="column" fxLayoutGap="10px">
+        <button class="text-left font-medium text-uppercase" (click)="scroll(keyinfo)">Key Info</button>
+        <button class="text-left font-medium text-uppercase" (click)="scroll(research)">Research</button>
+        <button class="text-left font-medium text-uppercase" (click)="scroll(strategy)">Strategy</button>
+        <button class="text-left font-medium text-uppercase" (click)="scroll(design)">Design</button>
+        <button class="text-left font-medium text-uppercase" (click)="scroll(prototype)">Prototype & Test</button>
       </div>
     </div>
-  </section>
-  <section class="dark-section">
-    <div class="container max-w-screen-xl">
-      <div class="w-100 text-start">
-        <h1>
-          <span class="sub-header font-extrabold text-4xl">04</span
-          ><span class="font-extrabold text-4xl">/Prototype & Test</span>
-        </h1>
-        <label class="text-2xl font-bold sub-header">The first moments of truth.</label>
-      </div>
-      <div class="mt-4" fxLayout="column" fxLayoutGap="6rem">
-        <div fxLayout="column" fxLayoutGap="3rem">
-          <div fxLayoutAlign="start center" fxLayout="column">
-            <h2 class="text-2xl font-bold mb-3 w-100">Information Architecture</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida.
-            </p>
-          </div>
-        </div>
-        <div fxLayout="column" fxLayoutGap="3rem">
-          <div fxLayoutAlign="start center" fxLayout="column">
-            <h2 class="text-2xl font-bold mb-3 w-100">Styles & Branding</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida.
-            </p>
-          </div>
-        </div>
-        <div fxLayout="column" fxLayoutGap="3rem">
-          <div fxLayoutAlign="start center" fxLayout="column">
-            <h2 class="text-2xl font-bold mb-3 w-100">'Mini' Prototypes</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida.
-            </p>
-          </div>
-          <div [ngClass.gt-sm]="'content-section-with-border'" fxLayout="column" fxLayoutGap="6rem">
-            <div fx-layout="row" fxLayoutGap="2rem">
-              <div fxFlex="35" fxLayoutAlign="center center" fxLayout="column" fxLayoutGap="3rem">
-                <h3 class="w-100 mb-2">
-                  <span class="font-semibold text-xl">Primary & Secondary Buttons</span>
-                </h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed pulvinar proin
-                  gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat orci nulla
-                  pellentesque dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec ullamcorper sit
-                  amet.
-                </p>
-              </div>
-              <div fxFlex="65">
-                <iframe
-                  height="500"
-                  style="width: 100%"
-                  scrolling="no"
-                  title="Primary Button"
-                  src="https://codepen.io/lando101/embed/abOeNWO?default-tab=result&theme-id=dark"
-                  frameborder="no"
-                  loading="lazy"
-                  allowtransparency="true"
-                  allowfullscreen="true"
-                >
-                  See the Pen <a href="https://codepen.io/lando101/pen/abOeNWO"> Primary Button</a> by Landon Messmer
-                  (<a href="https://codepen.io/lando101">@lando101</a>) on <a href="https://codepen.io">CodePen</a>.
-                </iframe>
-              </div>
-            </div>
-            <div fx-layout="row" fxLayoutGap="2rem">
-              <div fxFlex="65">
-                <iframe
-                  height="500"
-                  style="width: 100%"
-                  scrolling="no"
-                  title="Layout Dropdown"
-                  src="https://codepen.io/lando101/embed/abbXjEm?default-tab=result&theme-id=dark"
-                  frameborder="no"
-                  loading="lazy"
-                  allowtransparency="true"
-                  allowfullscreen="true"
-                >
-                  See the Pen <a href="https://codepen.io/lando101/pen/abbXjEm"> Layout Dropdown</a> by Landon Messmer
-                  (<a href="https://codepen.io/lando101">@lando101</a>) on <a href="https://codepen.io">CodePen</a>.
-                </iframe>
-              </div>
-              <div fxFlex="35" fxLayoutAlign="center center" fxLayout="column" fxLayoutGap="3rem">
-                <h3 class="w-100 mb-2">
-                  <span class="font-semibold text-xl">Layout Dropdown</span>
-                </h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed pulvinar proin
-                  gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat orci nulla
-                  pellentesque dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec ullamcorper sit
-                  amet.
-                </p>
-              </div>
-            </div>
-            <div fx-layout="row" fxLayoutGap="2rem">
-              <div fxFlex="35" fxLayoutAlign="center center" fxLayout="column" fxLayoutGap="3rem">
-                <h3 class="w-100 mb-2">
-                  <span class="font-semibold text-xl">Icon Buttons</span>
-                </h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed pulvinar proin
-                  gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat orci nulla
-                  pellentesque dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec ullamcorper sit
-                  amet.
-                </p>
-              </div>
-              <div fxFlex="65">
-                <iframe
-                  height="500"
-                  style="width: 100%"
-                  scrolling="no"
-                  title="Icon Hover w/ Text"
-                  src="https://codepen.io/lando101/embed/rXpOZv?default-tab=result&theme-id=dark"
-                  frameborder="no"
-                  loading="lazy"
-                  allowtransparency="true"
-                  allowfullscreen="true"
-                >
-                  See the Pen <a href="https://codepen.io/lando101/pen/rXpOZv"> Icon Hover w/ Text</a> by Landon Messmer
-                  (<a href="https://codepen.io/lando101">@lando101</a>) on <a href="https://codepen.io">CodePen</a>.
-                </iframe>
-              </div>
-            </div>
-            <div fx-layout="row" fxLayoutGap="2rem">
-              <div fxFlex="65">
-                <iframe
-                  height="500"
-                  style="width: 100%"
-                  scrolling="no"
-                  title="Details Button"
-                  src="https://codepen.io/lando101/embed/mddgxmR?default-tab=result&theme-id=dark"
-                  frameborder="no"
-                  loading="lazy"
-                  allowtransparency="true"
-                  allowfullscreen="true"
-                >
-                  See the Pen <a href="https://codepen.io/lando101/pen/mddgxmR"> Details Button</a> by Landon Messmer
-                  (<a href="https://codepen.io/lando101">@lando101</a>) on <a href="https://codepen.io">CodePen</a>.
-                </iframe>
-              </div>
-              <div fxFlex="35" fxLayoutAlign="center center" fxLayout="column" fxLayoutGap="3rem">
-                <h3 class="w-100 mb-2">
-                  <span class="font-semibold text-xl">Layout Behaviors</span>
-                </h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed pulvinar proin
-                  gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat orci nulla
-                  pellentesque dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec ullamcorper sit
-                  amet.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div fxLayout="column" fxLayoutGap="3rem">
-          <div fxLayoutAlign="center center" fxLayout="column">
-            <h2 class="text-2xl font-bold mb-3 w-100">Usability Testing</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida.
-            </p>
-          </div>
-          <div fxLayout="column" fxLayoutGap="2rem">
-            <div fxLayoutAlign="start center" fxLayout="column" fxLayoutGap="3rem">
-              <h3 class="w-100 mb-2">
-                <span class="sub-header font-extrabold text-xl">01</span
-                ><span class="font-extrabold text-xl">/Preperation</span>
-              </h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed pulvinar proin
-                gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat orci nulla
-                pellentesque dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec ullamcorper sit amet.
-              </p>
-            </div>
-            <div fxLayoutAlign="start center" fxLayout="column" fxLayoutGap="3rem">
-              <h3 class="w-100 mb-2">
-                <span class="sub-header font-extrabold text-xl">02</span
-                ><span class="font-extrabold text-xl">/Conduct</span>
-              </h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed pulvinar proin
-                gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat orci nulla
-                pellentesque dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec ullamcorper sit amet.
-              </p>
-            </div>
-            <div fxLayoutAlign="start center" fxLayout="column" fxLayoutGap="3rem">
-              <h3 class="w-100 mb-2">
-                <span class="sub-header font-extrabold text-xl">03</span
-                ><span class="font-extrabold text-xl">/Report</span>
-              </h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed pulvinar proin
-                gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat orci nulla
-                pellentesque dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec ullamcorper sit amet.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  </div>
 </div>
