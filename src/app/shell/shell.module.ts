@@ -8,9 +8,10 @@ import { I18nModule } from '@app/i18n';
 import { ShellComponent } from './shell.component';
 import { HeaderComponent } from './header/header.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   imports: [CommonModule, TranslateModule, NgbModule, I18nModule, RouterModule, FlexLayoutModule],
-  declarations: [HeaderComponent, ShellComponent],
+  declarations: [HeaderComponent, ShellComponent, FooterComponent],
 })
 export class ShellModule {}

@@ -33,7 +33,7 @@
           [ngClass.gt-sm]="'text-5xl'"
           class="text-gray-100 mb-2 font-extrabold leading-tight"
         >
-          PAS Case Study
+          OPAS Case Study
         </h1>
         <p [ngClass.lt-md]="'text-2xl'" [ngClass.gt-sm]="'text-3xl'" class="text-gray-200 font-base">
           An enterprise grade application for managing workflows.
@@ -210,6 +210,7 @@
               <div fxFlex="60">
                 <div fxLayout="row" class="w-100 justify-end">
                   <img
+                    class="sm-img"
                     [src]="
                       'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/illustrations%2Fundraw_conversation_h-12-g.svg?alt=media&token=900aa0e6-90db-455b-814f-2514883b1c55'
                     "
@@ -482,6 +483,26 @@
           <div class="mt-4" fxLayout="column" fxLayoutGap="6rem">
             <div fxLayout="column" fxLayoutGap="3rem">
               <div fxLayoutAlign="start center" fxLayout="column">
+                <h2 class="text-2xl font-bold mb-3 w-100">Site Map</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed pulvinar proin
+                  gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat orci nulla
+                  pellentesque dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec ullamcorper sit
+                  amet.
+                </p>
+              </div>
+              <div class="d-flex justify-center">
+                <img
+                  class="lg-img"
+                  [src]="
+                    'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fsitemap.png?alt=media&token=558d6c1a-79dd-43a8-b6f9-9970b24456a0'
+                  "
+                />
+              </div>
+            </div>
+            <div fxLayout="column" fxLayoutGap="3rem">
+              <div fxLayoutAlign="start center" fxLayout="column">
                 <h2 class="text-2xl font-bold mb-3 w-100">Task Flow</h2>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -586,6 +607,23 @@
                     "
                   />
                 </div>
+              </div>
+            </div>
+            <div fxLayoutAlign="start center" fxLayout="column" fxLayoutGap="3rem">
+              <h3 class="text-2xl font-bold mb-3 w-100">High-fidelity Mockup</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed pulvinar proin
+                gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat orci nulla
+                pellentesque dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec ullamcorper sit amet.
+              </p>
+              <div class="d-flex justify-center rounded-md overflow-hidden w-screen px-1 py-3">
+                <img
+                  class="lg-img"
+                  [src]="
+                    'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fopas-high-fidelity-mockup.png?alt=media&token=5439cbc2-3901-4ce8-9a1c-74971f508eed'
+                  "
+                />
               </div>
             </div>
             <div fxLayout="column" fxLayoutGap="3rem">
@@ -776,6 +814,22 @@
           </div>
         </div>
       </section>
+      <section #results class="normal-section">
+        <div class="container max-w-screen-xl">
+          <div class="w-100 text-start">
+            <h1 class="font-extrabold text-4xl">Final Thoughts + Next Steps</h1>
+            <label class="text-2xl font-bold sub-header">Keep improving.</label>
+          </div>
+        </div>
+        <div class="w-100 my-5 py-2 d-flex justify-content-center">
+          <img
+            class="w-100 w-100 max-w-screen-2xl"
+            [src]="
+              'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2FOPAS-summary.png?alt=media&token=fb667fa8-66a6-4002-8072-4aeabefd1d3c'
+            "
+          />
+        </div>
+      </section>
     </div>
     <div fxHide.lt-xl class="position-sticky table-of-contents-wrapper">
       <div class="position-sticky inner-container text-gray-500 mt-5 text-sm" fxLayout="column" fxLayoutGap="10px">
@@ -784,6 +838,7 @@
         <button class="text-left font-medium text-uppercase" (click)="scroll(strategy)">Strategy</button>
         <button class="text-left font-medium text-uppercase" (click)="scroll(design)">Design</button>
         <button class="text-left font-medium text-uppercase" (click)="scroll(prototype)">Prototype & Test</button>
+        <button class="text-left font-medium text-uppercase" (click)="scroll(results)">Final Thoughts</button>
       </div>
     </div>
   </div>

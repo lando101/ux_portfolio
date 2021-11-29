@@ -81,11 +81,16 @@ img {
 .dark-section {
   background-color: $dark-bg;
   padding: 5rem 3rem;
+  .lg-img {
+    max-height: 650px !important;
+    width: auto !important;
+    max-width: 100%;
+  }
 }
 
 .normal-section {
   padding: 5rem 3rem;
-  img {
+  .sm-img {
     max-height: 350px;
     width: 100%;
   }

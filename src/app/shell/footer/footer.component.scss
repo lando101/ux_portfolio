@@ -1,0 +1,22 @@
+@import "src/theme/theme-variables";
+@import "../../../styles/index";
+.navbar {
+  margin-bottom: $spacer;
+  background: #ffffff !important;
+  border-bottom: solid 1px#f1f1f1;
+}
+
+.nav-link.dropdown-toggle {
+  cursor: pointer;
+}
+
+.brand-text {
+  font-family: "Megrim", cursive;
+  font-size: 1.8rem;
+}
+
+.footer-container {
+  background: $bg-dark;
+  margin-top: 9rem;
+  padding: 4rem 0rem;
+}
