@@ -1,6 +1,6 @@
 <div fxHide.lt-lg fxLayout="row" fxLayoutGap="20px">
   <div *ngIf="caseStudy.orientation === 'left'" fxFlex="45" fxLayoutAlign="center center">
-    <a [routerLink]="caseStudy.href">
+    <a [routerLink]="caseStudy.public ? caseStudy.href : ''">
       <img
         fxFlex.lt-lg="50"
         class="img-left"
@@ -33,17 +33,25 @@
     <div>
       <a
         [routerLink]="caseStudy.href"
-        *ngIf="caseStudy.caseStudy; else viewMore"
+        *ngIf="caseStudy.caseStudy && caseStudy.public; else viewMore"
         class="focus:ring-2 focus:ring-gray-800"
         >Read the case study</a
       >
       <ng-template #viewMore>
-        <a [routerLink]="caseStudy.href" class="focus:ring-2 focus:ring-gray-800">Explore the project</a>
+        <a
+          *ngIf="caseStudy.public; else comingsoon"
+          [routerLink]="caseStudy.href"
+          class="focus:ring-2 focus:ring-gray-800"
+          >Explore the project</a
+        >
+      </ng-template>
+      <ng-template #comingsoon>
+        <span class="text-gray-500 focus:ring-2 focus:ring-gray-800 text-uppercase font-bold">Coming Soon</span>
       </ng-template>
     </div>
   </div>
   <div *ngIf="caseStudy.orientation === 'right'" fxFlex="45" fxLayoutAlign="center center">
-    <a [routerLink]="caseStudy.href">
+    <a [routerLink]="caseStudy.public ? caseStudy.href : ''">
       <img
         fxFlex.lt-lg="50"
         class="img-right"
@@ -88,13 +96,22 @@
     </div>
     <div>
       <a
-        [routerLink]="caseStudy.href"
-        *ngIf="caseStudy.caseStudy; else viewMore"
+        [routerLink]="caseStudy.public ? caseStudy.href : ''"
+        *ngIf="caseStudy.caseStudy && caseStudy.public; else viewMore"
         class="focus:ring-2 focus:ring-gray-800"
         >Read the case study</a
       >
       <ng-template #viewMore>
-        <a [routerLink]="caseStudy.href" class="focus:ring-2 focus:ring-gray-800">Explore the project</a>
+        <a
+          *ngIf="caseStudy.public; else comingsoon"
+          [routerLink]="caseStudy.href"
+          class="focus:ring-2 focus:ring-gray-800"
+          >Explore the project</a
+        >
+      </ng-template>
+
+      <ng-template #comingsoon>
+        <span class="text-gray-500 focus:ring-2 focus:ring-gray-800 text-uppercase font-bold">Coming Soon</span>
       </ng-template>
     </div>
   </div>

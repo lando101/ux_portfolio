@@ -9,6 +9,7 @@ export interface CaseStudy {
   alt: string;
   nda?: boolean;
   caseStudy: boolean;
+  public: boolean;
 }
 @Component({
   selector: 'app-case-study-card',

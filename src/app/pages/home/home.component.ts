@@ -87,6 +87,7 @@ export class HomeComponent implements OnInit {
       alt: 'Image of process automation application on desktop in light and dark mode',
       nda: true,
       caseStudy: true,
+      public: true,
     },
     {
       title: 'Coinfloe',
@@ -99,6 +100,7 @@ export class HomeComponent implements OnInit {
       alt: 'Image of coinfloe application on desktop and mobile',
       nda: false,
       caseStudy: true,
+      public: false,
     },
     {
       title: 'Forecaster',
@@ -111,6 +113,7 @@ export class HomeComponent implements OnInit {
       alt: 'Image of forecaster application on mobile',
       nda: false,
       caseStudy: false,
+      public: false,
     },
   ];
 
