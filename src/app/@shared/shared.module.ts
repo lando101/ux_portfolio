@@ -17,6 +17,7 @@ import { QuotesComponent } from './components/quotes/quotes.component';
 import { CertImagesComponent } from './components/cert-images/cert-images.component';
 import { ContactCardComponent } from './components/contact-card/contact-card.component';
 import { NgxVcardModule } from 'ngx-vcard';
+import { CaseStudyCardSmComponent } from './components/case-study-card-sm/case-study-card-sm.component';
 
 @NgModule({
   imports: [
@@ -39,6 +40,7 @@ import { NgxVcardModule } from 'ngx-vcard';
     QuotesComponent,
     CertImagesComponent,
     ContactCardComponent,
+    CaseStudyCardSmComponent,
   ],
   exports: [
     LoaderComponent,

@@ -186,24 +186,26 @@
           </div>
         </div>
         <div class="container max-w-screen-xl">
-          <div class="mt-4" fxLayout="column">
+          <div class="mt-4" fxLayout="column" fxLayoutGap="9rem">
             <div fxLayout.gt-sm="row" fxLayout="column" fxLayoutGap="20px">
               <div fxFlex="40" fxLayoutAlign="center center" fxLayout="column">
                 <h2 class="text-2xl font-bold mb-3 w-100">Meet Users</h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed pulvinar proin
-                  gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat orci nulla
-                  pellentesque dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec ullamcorper sit
-                  amet.
+                  My design process starts and end with users in mind. When designing the new OPAS application I wanted
+                  to speak directly to users to understand how the current application was failing and succeeding.
+                  During this process it was clear that the perceived user base and actual user base were quite
+                  different. It was previously assumed that most users were high frequency users.
+                  <b>However, power users were a smaller percentage of users than anticipated.</b> After meeting with
+                  users, it was apparent lower frequency (novice) users were <b>50%+</b> of the user base and the
+                  application needed to better accommodate them.
                 </p>
                 <div class="w-100 my-3">
                   <h4 class="font-semibold mb-2">Methods</h4>
                   <ul class="list-disc ml-3">
-                    <li>Interviews</li>
+                    <li>Interviews – 30+ participants</li>
                     <li>Card sorting</li>
-                    <li>Field studies</li>
-                    <li>Surveys</li>
+                    <li>Field studies – 5 disabled users (508 compliance)</li>
+                    <li>Surveys – 300~ responses</li>
                   </ul>
                 </div>
               </div>
@@ -218,7 +220,7 @@
                 </div>
               </div>
             </div>
-            <div class="w-100 my-5 py-5 justify-center" fxLayout="row">
+            <div class="w-100 justify-center" fxLayout="row">
               <div
                 fxLayout="row"
                 [ngClass.gt-sm]="'w-75'"
@@ -240,35 +242,50 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="mt-4" fxLayout="column">
             <div fxLayout.gt-sm="row" fxLayout="column" fxLayoutGap="150px">
-              <div fxFlex="50" fxLayoutAlign="center center" fxLayout="column">
+              <div fxFlex="50" fxLayoutAlign="start center" fxLayout="column">
                 <h2 class="text-2xl font-bold mb-3 w-100">Baseline</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed pulvinar proin
-                  gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat orci nulla
-                  pellentesque dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec ullamcorper sit
-                  amet.
-                </p>
+                <div fxLayout="column" fxLayoutGap="20px">
+                  <p>
+                    To understand where we were heading, we needed to know what we were coming from. Users had
+                    complained that the old solution made find forms difficult, but we need to know why this process was
+                    difficult. Usability testing helped us discover that forms names, groupings and locations were
+                    confusing. <b>A form named TR-251 was harder to digest than International Travel.</b> Additionally,
+                    we observed there was a fear of opening a form and realizing it was the wrong one. We needed to tell
+                    the user clearly what a forms function was.
+                  </p>
+                  <p>
+                    Additionally, the division that owned OPAS could not communicate with users to notify them of future
+                    outages, updates and changes using the existing application. Instead, these notifications had to be
+                    communicated over email. The new application also had to give the owners of OPAS the ability to tell
+                    users the status of the application.
+                  </p>
+                </div>
                 <div class="w-100 my-3">
                   <h4 class="font-semibold mb-2">Methods</h4>
                   <ul class="list-disc ml-3">
-                    <li>Usability Testing</li>
-                    <li>Surveys</li>
+                    <li>Usability Testing – 5 participants (novice) + 5 participants (power)</li>
+                    <li>Surveys – 300 responses</li>
                   </ul>
                 </div>
               </div>
-              <div fxFlex="50">
+              <div fxFlex="50" fxLayoutAlign="start center" fxLayout="column">
                 <h2 class="text-2xl font-bold mb-3 w-100">Competitive Analysis</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed pulvinar proin
-                  gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat orci nulla
-                  pellentesque dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec ullamcorper sit
-                  amet.
-                </p>
+                <div fxLayout="column" fxLayoutGap="20px">
+                  <p>
+                    Rather than starting from scratch, I looked to other solutions that already existed to understand
+                    how they approached the problem of creating an experience for submitters (novice) and approvers
+                    (power). Some low code/no code solutions provided unique UIs for different users but were
+                    <b>rigid and difficult to customize.</b> Other solutions tried to accommodate both users with
+                    similar experiences but ultimately delivered a
+                    <b>watered-down design that appeased neither user base.</b>
+                    However, these solutions appeared to be more flexible.
+                  </p>
+                  <p>
+                    The new OPAS application had to be robust enough to work with many technologies and flexible enough
+                    to provide a unique experience for each user. We needed a hybrid solution.
+                  </p>
+                </div>
                 <div class="w-100 my-3">
                   <h4 class="font-semibold mb-2">Methods</h4>
                   <ul class="list-disc ml-3">
@@ -281,6 +298,9 @@
               </div>
             </div>
           </div>
+          <!-- <div class="mt-4" fxLayout="column">
+
+          </div> -->
         </div>
       </section>
       <section #strategy class="dark-section">
@@ -295,28 +315,28 @@
         </div>
         <div class="container max-w-screen-xl">
           <div class="w-100 text-start">
-            <div class="mt-4" fxLayout="column" fxLayoutGap="6rem">
-              <div fxLayout="column" fxLayoutGap="20px">
-                <div fxFlex="40" fxLayoutAlign="start center" fxLayout="column">
-                  <h2 class="text-2xl font-bold mb-3 w-100">Personas</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed pulvinar
-                    proin gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat orci nulla
-                    pellentesque dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec ullamcorper sit
-                    amet.
-                  </p>
+            <div class="mt-4" fxLayout="column" fxLayoutGap="10.5rem">
+              <div fxLayout="column" fxLayout.gt-md="row" fxLayoutGap="5rem">
+                <div fxFlex="35" fxLayoutAlign="start center" fxLayout="column">
+                  <h2 class="text-3xl font-bold mb-3 w-100">Personas</h2>
+                  <div fxLayout="column" fxLayoutGap="20px">
+                    <p>
+                      Personas allowed me to summarize a large user base into a few segments and then design solutions
+                      around these. I also used personas to familiarize the team with our users. So, instead of talking
+                      about users abstractly, we now could better empathize with them. The team needed to know that our
+                      decisions impact real people and not just a user id in a database.
+                    </p>
+                  </div>
+
                   <div class="w-100 my-3">
-                    <h4 class="font-semibold mb-2">Insights</h4>
+                    <h4 class="font-bold mb-2">Insights</h4>
                     <ul class="list-disc ml-3">
-                      <li>Interviews</li>
-                      <li>Card sorting</li>
-                      <li>Field studies</li>
-                      <li>Surveys</li>
+                      <li>Developers cared about a user's exprience more than I anticipated</li>
+                      <li>User stories became easier to write and more impactful</li>
                     </ul>
                   </div>
                 </div>
-                <div fxFlex="60">
+                <div fxFlex="65" fxLayoutAlign="start">
                   <div class="rounded-md overflow-hidden img-shadow">
                     <ngb-carousel [interval]="15000" *ngIf="images">
                       <ng-template ngbSlide>
@@ -341,27 +361,8 @@
                   </div>
                 </div>
               </div>
-              <div fxLayout="column" fxLayoutGap="20px">
-                <div fxFlex="40" fxLayoutAlign="start center" fxLayout="column">
-                  <h2 class="text-2xl font-bold mb-3 w-100">Customer Journey Map</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed pulvinar
-                    proin gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat orci nulla
-                    pellentesque dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec ullamcorper sit
-                    amet.
-                  </p>
-                  <div class="w-100 my-3">
-                    <h4 class="font-semibold mb-2">Insights</h4>
-                    <ul class="list-disc ml-3">
-                      <li>Interviews</li>
-                      <li>Card sorting</li>
-                      <li>Field studies</li>
-                      <li>Surveys</li>
-                    </ul>
-                  </div>
-                </div>
-                <div fxFlex="60">
+              <div fxLayout="column" fxLayout.gt-md="row" fxLayoutGap="5rem">
+                <div fxFlex="65">
                   <div [ngStyle]="{ background: '#fbfbfb' }" class="p-3 rounded-md overflow-hidden img-shadow">
                     <img
                       class="w-100"
@@ -369,30 +370,37 @@
                         'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fopas-journey-map.png?alt=media&token=c65f81ce-7cc3-423f-8266-6f288fa5ddba'
                       "
                     />
-                    <!-- <ngb-carousel [interval]="10000" *ngIf="images">
-                    <ng-template ngbSlide>
-                      <div class="picsum-img-wrapper">
-                        <img class="w-100" [src]="images[0]" alt="Random first slide" />
-                      </div>
-                      <div class="carousel-caption">
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                      </div>
-                    </ng-template>
-                    <ng-template ngbSlide>
-                      <div class="picsum-img-wrapper">
-                        <img class="w-100" [src]="images[1]" alt="Random second slide" />
-                      </div>
-                      <div class="carousel-caption">
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                      </div>
-                    </ng-template>
-                  </ngb-carousel> -->
+                  </div>
+                </div>
+                <div fxFlex="35" fxLayoutAlign="start" fxLayout="column">
+                  <h2 class="text-3xl font-bold mb-3 w-100">Customer Journey Map</h2>
+                  <div fxLayout="column" fxLayoutGap="10px">
+                    <p>
+                      Creating a customer journey map allowed me to put myself in the shoes of the user and identify
+                      pain points and joyful moments experienced during the process of completing a user goal. Then,
+                      after identifying these points, I worked to remediate bad experiences and maximize good ones.
+                    </p>
+                    <p>
+                      <b
+                        >The customer journey map made finding opportunities for improvement clear and led to an
+                        experience that was better for users.</b
+                      >
+                      Often, the improvements were derived from common design practices rather than custom, one-off
+                      solutions.
+                    </p>
+                  </div>
+
+                  <div class="w-100 my-3">
+                    <h4 class="font-bold mb-2">Insights</h4>
+                    <ul class="list-disc ml-3">
+                      <li>The problems are often not unique to OPAS, look for common solutions</li>
+                      <li>Users go through a rollercoaster of emotions while completing tasks – let's minimize this</li>
+                      <li>Identifying ownership of problems is't always clear</li>
+                    </ul>
                   </div>
                 </div>
               </div>
-              <div class="w-100 my-5 pb-5 justify-center" fxLayout="row">
+              <div class="w-100 justify-center" fxLayout="row">
                 <div
                   fxLayout="row"
                   [ngClass.gt-sm]="'w-75'"
@@ -414,47 +422,46 @@
                 </div>
               </div>
               <div fxLayout.gt-sm="row" fxLayout="column" fxLayoutGap="20px">
-                <div fxFlex="40" fxLayoutAlign="start center" fxLayout="column" fxLayoutGap="3rem">
+                <div fxFlex="35" fxLayoutAlign="start center" fxLayout="column" fxLayoutGap="9rem">
                   <div fxLayout="column">
-                    <h2 class="text-2xl font-bold mb-3 w-100">Usability Heurisitcs</h2>
+                    <h2 class="text-3xl font-bold mb-3 w-100">Usability Heurisitcs</h2>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed
-                      pulvinar proin gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat
-                      orci nulla pellentesque dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec
-                      ullamcorper sit amet.
+                      While most designs for OPAS were custom, all of them were formulated with consideration to NN/g 10
+                      Usability Heuristics. I wanted to
+                      <b>maximize my time spent on solving truly unique problems</b> experienced by OPAS users, rather
+                      than waste time researching, and creating novel designs. As a result, most designs were
+                      fundamentally sound and only required small tweaks.
                     </p>
                     <div class="w-100 my-3">
-                      <h4 class="font-semibold mb-2">Insights</h4>
+                      <h4 class="font-bold mb-2">Outcomes</h4>
                       <ul class="list-disc ml-3">
-                        <li>Interviews</li>
-                        <li>Card sorting</li>
-                        <li>Field studies</li>
-                        <li>Surveys</li>
+                        <li>Two unique expriences tailored to its perspective audience</li>
+                        <li>Overhaul of form names to 'speak' the users language</li>
+                        <li>Reduction of information on the page; clear hierarchy of information</li>
+                        <li>Most actions taken in OPAS could now be easily reversed</li>
                       </ul>
                     </div>
                   </div>
                   <div fxLayout="column">
-                    <h2 class="text-2xl font-bold mb-3 w-100">Common Design Standards</h2>
+                    <h2 class="text-3xl font-bold mb-3 w-100">Common Design Standards</h2>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed
-                      pulvinar proin gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat
-                      orci nulla pellentesque dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec
-                      ullamcorper sit amet.
+                      OPAS might have been overhauled but I still wanted the experience to be recognizable, even if
+                      users had never seen it before. The goal was to reduce cognitive load of users and promote action.
+                      To accomplish this, standards such as a logo in the top left (doubled as home page navigation), a
+                      search box and main navigation in the header and more were implemented. It’s estimated that up to
+                      <b>93% of these practices are familiar</b> to users and reduce confusion when used correctly.
                     </p>
                     <div class="w-100 my-3">
-                      <h4 class="font-semibold mb-2">Insights</h4>
+                      <h4 class="font-bold mb-2">Insights</h4>
                       <ul class="list-disc ml-3">
-                        <li>Interviews</li>
-                        <li>Card sorting</li>
-                        <li>Field studies</li>
-                        <li>Surveys</li>
+                        <li>Users don't want to learn something new</li>
+                        <li>Flashy style wears off quickly, functional design lasts</li>
+                        <li>Focus design efforts on unique problems</li>
                       </ul>
                     </div>
                   </div>
                 </div>
-                <div fxFlex="60">
+                <div fxFlex="65">
                   <div class="ml-5 rounded-md overflow-hidden">
                     <img
                       class="w-100"
@@ -828,6 +835,14 @@
               'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2FOPAS-summary.png?alt=media&token=fb667fa8-66a6-4002-8072-4aeabefd1d3c'
             "
           />
+        </div>
+      </section>
+      <section class="normal-section">
+        <div class="container max-w-screen-xl">
+          <div class="w-100 text-center">
+            <h4 class="font-extrabold text-gray-600 text-xl">Other Projects</h4>
+          </div>
+          <div class="w-100" fxLayout="row"></div>
         </div>
       </section>
     </div>
