@@ -85,8 +85,8 @@
                     In 2016, a new version of the application was approved to be built. The organization knew they
                     wanted to create an experience that reduced the time users spent to complete tasks. However, it was
                     now clear after years of feedback, the primary user was not obvious. Users had drastically different
-                    goals in the application. Some were approvers and others were submitters with varying expertise in
-                    the previous solution.
+                    goals in the application. Some were approvers and others were submitters with varying degrees of
+                    expertise.
                   </p>
                   <p class="text-gray-600">
                     <strong class="font-semibold"
@@ -114,10 +114,10 @@
                       completed based on user scenario – travel, expense, security reporting, etc.
                     </li>
                     <li>
-                      Develop two unique experiences (novice, expert) for users that promotes timeliness, achieved with
-                      <strong class="font-semibold"
+                      Develop two unique experiences (novice, expert) for users that promotes timeliness and efficiency
+                      <!-- <strong class="font-semibold"
                         >familiar industry design patterns and contextual content visibility for convenience</strong
-                      >
+                      > -->
                     </li>
                     <li>
                       Create an
@@ -189,11 +189,11 @@
           <div class="mt-4" fxLayout="column" fxLayoutGap="9rem">
             <div fxLayout.gt-sm="row" fxLayout="column" fxLayoutGap="20px">
               <div fxFlex="40" fxLayoutAlign="center center" fxLayout="column">
-                <h2 class="text-2xl font-bold mb-3 w-100">Meet Users</h2>
-                <p>
+                <h2 class="text-2xl font-extrabold mb-3 w-100">Meet Users</h2>
+                <p class="text-gray-600">
                   My design process starts and end with users in mind. When designing the new OPAS application I wanted
                   to speak directly to users to understand how the current application was failing and succeeding.
-                  During this process it was clear that the perceived user base and actual user base were quite
+                  During this process, it was clear that the perceived user base and actual user base were quite
                   different. It was previously assumed that most users were high frequency users.
                   <b>However, power users were a smaller percentage of users than anticipated.</b> After meeting with
                   users, it was apparent lower frequency (novice) users were <b>50%+</b> of the user base and the
@@ -201,7 +201,7 @@
                 </p>
                 <div class="w-100 my-3">
                   <h4 class="font-semibold mb-2">Methods</h4>
-                  <ul class="list-disc ml-3">
+                  <ul class="list-disc ml-3 text-gray-600">
                     <li>Interviews – 30+ participants</li>
                     <li>Card sorting</li>
                     <li>Field studies – 5 disabled users (508 compliance)</li>
@@ -244,42 +244,41 @@
             </div>
             <div fxLayout.gt-sm="row" fxLayout="column" fxLayoutGap="150px">
               <div fxFlex="50" fxLayoutAlign="start center" fxLayout="column">
-                <h2 class="text-2xl font-bold mb-3 w-100">Baseline</h2>
-                <div fxLayout="column" fxLayoutGap="20px">
+                <h2 class="text-2xl font-extrabold mb-3 w-100">Baseline</h2>
+                <div fxLayout="column" fxLayoutGap="20px" class="text-gray-600">
                   <p>
-                    To understand where we were heading, we needed to know what we were coming from. Users had
-                    complained that the old solution made find forms difficult, but we need to know why this process was
-                    difficult. Usability testing helped us discover that forms names, groupings and locations were
-                    confusing. <b>A form named TR-251 was harder to digest than International Travel.</b> Additionally,
-                    we observed there was a fear of opening a form and realizing it was the wrong one. We needed to tell
-                    the user clearly what a forms function was.
+                    To build a better solution, the team needed to know why the old application was failing. Users had
+                    complained that the old solution made finding forms difficult, but I needed to know why. Usability
+                    testing helped me discover that form names, groupings and locations were confusing.
+                    <b>A form named TR-251 was harder to digest than International Travel.</b> Additionally, we observed
+                    there was a fear of opening a form and realizing it was the wrong one. We needed to better
+                    communicate the function of a form.
                   </p>
                   <p>
                     Additionally, the division that owned OPAS could not communicate with users to notify them of future
                     outages, updates and changes using the existing application. Instead, these notifications had to be
-                    communicated over email. The new application also had to give the owners of OPAS the ability to tell
-                    users the status of the application.
+                    communicated over email. The new application required the ability to notify users the status of the
+                    application.
                   </p>
                 </div>
                 <div class="w-100 my-3">
                   <h4 class="font-semibold mb-2">Methods</h4>
-                  <ul class="list-disc ml-3">
-                    <li>Usability Testing – 5 participants (novice) + 5 participants (power)</li>
-                    <li>Surveys – 300 responses</li>
+                  <ul class="list-disc ml-3 text-gray-600">
+                    <li>Usability Testing – 5 novice participants + 5 power participants</li>
+                    <!-- <li>Surveys – 300 responses</li> -->
                   </ul>
                 </div>
               </div>
               <div fxFlex="50" fxLayoutAlign="start center" fxLayout="column">
-                <h2 class="text-2xl font-bold mb-3 w-100">Competitive Analysis</h2>
-                <div fxLayout="column" fxLayoutGap="20px">
+                <h2 class="text-2xl font-extrabold mb-3 w-100">Competitive Analysis</h2>
+                <div fxLayout="column" fxLayoutGap="20px" class="text-gray-600">
                   <p>
-                    Rather than starting from scratch, I looked to other solutions that already existed to understand
-                    how they approached the problem of creating an experience for submitters (novice) and approvers
-                    (power). Some low code/no code solutions provided unique UIs for different users but were
+                    Before designing the application, I looked to other solutions that already existed. I wanted to
+                    understand how they solved the problems OPAS users were experiencing. Some low code/no code
+                    solutions provided unique UIs for different users but were
                     <b>rigid and difficult to customize.</b> Other solutions tried to accommodate both users with
                     similar experiences but ultimately delivered a
-                    <b>watered-down design that appeased neither user base.</b>
-                    However, these solutions appeared to be more flexible.
+                    <b>watered-down design that appeased neither user base. </b>
                   </p>
                   <p>
                     The new OPAS application had to be robust enough to work with many technologies and flexible enough
@@ -288,7 +287,7 @@
                 </div>
                 <div class="w-100 my-3">
                   <h4 class="font-semibold mb-2">Methods</h4>
-                  <ul class="list-disc ml-3">
+                  <ul class="list-disc ml-3 text-gray-600">
                     <li>Interviews</li>
                     <li>Card sorting</li>
                     <li>Field studies</li>
@@ -317,26 +316,26 @@
           <div class="w-100 text-start">
             <div class="mt-4" fxLayout="column" fxLayoutGap="10.5rem">
               <div fxLayout="column" fxLayout.gt-md="row" fxLayoutGap="5rem">
-                <div fxFlex="35" fxLayoutAlign="start center" fxLayout="column">
-                  <h2 class="text-3xl font-bold mb-3 w-100">Personas</h2>
-                  <div fxLayout="column" fxLayoutGap="20px">
+                <div fxFlex="30" fxLayoutAlign="start center" fxLayout="column">
+                  <h2 class="text-2xl font-extrabold mb-3 w-100">Personas</h2>
+                  <div fxLayout="column" fxLayoutGap="20px" class="text-gray-600">
                     <p>
-                      Personas allowed me to summarize a large user base into a few segments and then design solutions
-                      around these. I also used personas to familiarize the team with our users. So, instead of talking
-                      about users abstractly, we now could better empathize with them. The team needed to know that our
-                      decisions impact real people and not just a user id in a database.
+                      I created personas to summarize a large user base into a few segments and then design solutions
+                      around these groups. I also used personas to familiarize the team with our users and help us
+                      better empathize with them. The team needed to know that our decisions impact real people and not
+                      just a user ID in a database.
                     </p>
                   </div>
 
                   <div class="w-100 my-3">
                     <h4 class="font-bold mb-2">Insights</h4>
-                    <ul class="list-disc ml-3">
+                    <ul class="list-disc ml-3 text-gray-600">
                       <li>Developers cared about a user's exprience more than I anticipated</li>
                       <li>User stories became easier to write and more impactful</li>
                     </ul>
                   </div>
                 </div>
-                <div fxFlex="65" fxLayoutAlign="start">
+                <div fxFlex="70" fxLayoutAlign="start">
                   <div class="rounded-md overflow-hidden img-shadow">
                     <ngb-carousel [interval]="15000" *ngIf="images">
                       <ng-template ngbSlide>
@@ -362,7 +361,35 @@
                 </div>
               </div>
               <div fxLayout="column" fxLayout.gt-md="row" fxLayoutGap="5rem">
-                <div fxFlex="65">
+                <div fxFlex="30" fxLayoutAlign="start" fxLayout="column">
+                  <h2 class="text-2xl font-extrabold mb-3 w-100">Customer Journey Map</h2>
+                  <div fxLayout="column" fxLayoutGap="10px" class="text-gray-600">
+                    <p>
+                      The customer journey map helped me put myself in the shoes of the user and
+                      <b>identify pain points and joyful moments</b> experienced by them while completing a task. Then,
+                      after identifying these points, I worked to remediate bad experiences and maximize good ones.
+                    </p>
+                    <!-- <p>
+                      <b
+                        >The customer journey map made finding opportunities for improvement clear and led to an
+                        experience that was better for users.</b
+                      >
+                      Often, the improvements were derived from common design practices rather than custom, one-off
+                      solutions.
+                    </p> -->
+                  </div>
+                  <div class="w-100 my-3">
+                    <h4 class="font-bold mb-2">Insights</h4>
+                    <ul class="list-disc ml-3 text-gray-600">
+                      <li>The problems are often not unique to OPAS, look for common solutions</li>
+                      <li>
+                        Users go through a rollercoaster of emotions while completing tasks – let's minimize these
+                      </li>
+                      <li>Identifying ownership of problems is't always clear</li>
+                    </ul>
+                  </div>
+                </div>
+                <div fxFlex="70">
                   <div [ngStyle]="{ background: '#fbfbfb' }" class="p-3 rounded-md overflow-hidden img-shadow">
                     <img
                       class="w-100"
@@ -370,33 +397,6 @@
                         'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fopas-journey-map.png?alt=media&token=c65f81ce-7cc3-423f-8266-6f288fa5ddba'
                       "
                     />
-                  </div>
-                </div>
-                <div fxFlex="35" fxLayoutAlign="start" fxLayout="column">
-                  <h2 class="text-3xl font-bold mb-3 w-100">Customer Journey Map</h2>
-                  <div fxLayout="column" fxLayoutGap="10px">
-                    <p>
-                      Creating a customer journey map allowed me to put myself in the shoes of the user and identify
-                      pain points and joyful moments experienced during the process of completing a user goal. Then,
-                      after identifying these points, I worked to remediate bad experiences and maximize good ones.
-                    </p>
-                    <p>
-                      <b
-                        >The customer journey map made finding opportunities for improvement clear and led to an
-                        experience that was better for users.</b
-                      >
-                      Often, the improvements were derived from common design practices rather than custom, one-off
-                      solutions.
-                    </p>
-                  </div>
-
-                  <div class="w-100 my-3">
-                    <h4 class="font-bold mb-2">Insights</h4>
-                    <ul class="list-disc ml-3">
-                      <li>The problems are often not unique to OPAS, look for common solutions</li>
-                      <li>Users go through a rollercoaster of emotions while completing tasks – let's minimize this</li>
-                      <li>Identifying ownership of problems is't always clear</li>
-                    </ul>
                   </div>
                 </div>
               </div>
@@ -424,17 +424,17 @@
               <div fxLayout.gt-sm="row" fxLayout="column" fxLayoutGap="20px">
                 <div fxFlex="35" fxLayoutAlign="start center" fxLayout="column" fxLayoutGap="9rem">
                   <div fxLayout="column">
-                    <h2 class="text-3xl font-bold mb-3 w-100">Usability Heurisitcs</h2>
-                    <p>
+                    <h2 class="text-2xl font-extrabold mb-3 w-100">Usability Heurisitcs</h2>
+                    <p class="text-gray-600">
                       While most designs for OPAS were custom, all of them were formulated with consideration to NN/g 10
                       Usability Heuristics. I wanted to
-                      <b>maximize my time spent on solving truly unique problems</b> experienced by OPAS users, rather
-                      than waste time researching, and creating novel designs. As a result, most designs were
-                      fundamentally sound and only required small tweaks.
+                      <b>maximize my time spent on solving truly unique problems</b>, rather than use time researching,
+                      and creating novel designs. As a result, most designs were fundamentally sound and only required
+                      small tweaks.
                     </p>
                     <div class="w-100 my-3">
                       <h4 class="font-bold mb-2">Outcomes</h4>
-                      <ul class="list-disc ml-3">
+                      <ul class="list-disc ml-3 text-gray-600">
                         <li>Two unique expriences tailored to its perspective audience</li>
                         <li>Overhaul of form names to 'speak' the users language</li>
                         <li>Reduction of information on the page; clear hierarchy of information</li>
@@ -443,17 +443,17 @@
                     </div>
                   </div>
                   <div fxLayout="column">
-                    <h2 class="text-3xl font-bold mb-3 w-100">Common Design Standards</h2>
-                    <p>
+                    <h2 class="text-2xl font-extrabold mb-3 w-100">Common Design Standards</h2>
+                    <p class="text-gray-600">
                       OPAS might have been overhauled but I still wanted the experience to be recognizable, even if
-                      users had never seen it before. The goal was to reduce cognitive load of users and promote action.
+                      users had never seen it before. The goal was to <b>reduce cognitive load and promote action.</b>
                       To accomplish this, standards such as a logo in the top left (doubled as home page navigation), a
                       search box and main navigation in the header and more were implemented. It’s estimated that up to
                       <b>93% of these practices are familiar</b> to users and reduce confusion when used correctly.
                     </p>
                     <div class="w-100 my-3">
                       <h4 class="font-bold mb-2">Insights</h4>
-                      <ul class="list-disc ml-3">
+                      <ul class="list-disc ml-3 text-gray-600">
                         <li>Users don't want to learn something new</li>
                         <li>Flashy style wears off quickly, functional design lasts</li>
                         <li>Focus design efforts on unique problems</li>
@@ -487,19 +487,25 @@
           </div>
         </div>
         <div class="container max-w-screen-xl">
-          <div class="mt-4" fxLayout="column" fxLayoutGap="6rem">
-            <div fxLayout="column" fxLayoutGap="3rem">
-              <div fxLayoutAlign="start center" fxLayout="column">
-                <h2 class="text-2xl font-bold mb-3 w-100">Site Map</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed pulvinar proin
-                  gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat orci nulla
-                  pellentesque dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec ullamcorper sit
-                  amet.
+          <div class="mt-4" fxLayout="column" fxLayoutGap="9rem">
+            <div fxLayout="column" fxLayout.gt-md="row" fxLayoutGap="5rem">
+              <div fxFlex="30" fxLayoutAlign="start center" fxLayout="column">
+                <h2 class="text-2xl font-extrabold mb-3 w-100">Site Map</h2>
+                <p class="text-gray-600">
+                  OPAS was, functionally speaking, a large application, but its page count was relatively low. This is
+                  highlighted by the site map. The site map helped me
+                  <b>organize the application and decide where to place content.</b> I found myself coming back to this
+                  visualization when I needed to mentally shrink the scope of OPAS.
                 </p>
+                <div class="w-100 my-3">
+                  <h4 class="font-bold mb-2">Insights</h4>
+                  <ul class="list-disc ml-3 text-gray-600">
+                    <li>A birds eye view simplifies the application</li>
+                    <li>A high level view of the application made re-organizing and cutting pages easier</li>
+                  </ul>
+                </div>
               </div>
-              <div class="d-flex justify-center">
+              <div fxFlex="70" class="d-flex justify-center">
                 <img
                   class="lg-img"
                   [src]="
@@ -508,18 +514,26 @@
                 />
               </div>
             </div>
-            <div fxLayout="column" fxLayoutGap="3rem">
-              <div fxLayoutAlign="start center" fxLayout="column">
-                <h2 class="text-2xl font-bold mb-3 w-100">Task Flow</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed pulvinar proin
-                  gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat orci nulla
-                  pellentesque dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec ullamcorper sit
-                  amet.
+            <div fxLayout.gt-md="row" fxLayout="column" fxLayoutGap="5rem">
+              <div fxFlex="30" fxLayoutAlign="start center" fxLayout="column">
+                <h2 class="text-2xl font-extrabold mb-3 w-100">Task Flow</h2>
+                <p class="text-gray-600">
+                  I used task flow diagrams to ensure processes in OPAS were sequential. Each step in completing a task
+                  was intended to feel necessary and <b>avoided “leaps of faith” or guessing</b>. The task flow diagram
+                  helped me view a task from a user’s perspective and eliminate or add steps that would make a task
+                  easier to complete.
                 </p>
+                <div class="w-100 my-3">
+                  <h4 class="font-bold mb-2">Outcomes</h4>
+                  <ul class="list-disc ml-3 text-gray-600">
+                    <li>Clear indicators were added when launching a form that left OPAS</li>
+                    <li>
+                      Some tasks required more clicks but lead to less errors and higher completion rates for users
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div class="d-flex justify-center">
+              <div fxFlex="70" class="d-flex justify-center">
                 <img
                   class="lg-img"
                   [src]="
@@ -529,47 +543,55 @@
               </div>
             </div>
             <div fxLayout="column" fxLayoutGap="3rem">
-              <h2 class="text-2xl font-bold mb-3 w-100">Mockups</h2>
-              <div fxLayoutAlign="start center" fxLayout="column" fxLayoutGap="3rem">
-                <h3 class="w-100 mb-2">
-                  <span class="sub-header font-extrabold text-xl">01</span
-                  ><span class="font-extrabold text-xl">/Sketches</span>
-                </h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed pulvinar proin
-                  gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat orci nulla
-                  pellentesque dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec ullamcorper sit
-                  amet.
-                </p>
-                <div class="d-flex justify-center rounded-md overflow-hidden bg-white px-1 py-3 img-shadow">
-                  <img
-                    class="lg-img"
-                    [src]="
-                      'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fopas-drawling.png?alt=media&token=523a6847-01f6-4d84-8630-dca094807624'
-                    "
-                  />
+              <h2 class="text-2xl font-extrabold mb-3 w-100">Mockups</h2>
+              <div fxLayout="column" fxLayoutGap="9rem">
+                <div fxLayoutAlign="start center" fxLayout="column" fxLayoutGap="3rem">
+                  <h3 class="w-100 mb-2">
+                    <span class="sub-header font-extrabold text-xl">01</span
+                    ><span class="font-extrabold text-xl">/Sketches</span>
+                  </h3>
+                  <p class="text-gray-600">
+                    Before jumping into tools such as Adobe XD or Figma, I like to slow the design process down.
+                    Starting on pencil and paper gives me a moment to collect my thoughts and begin designing without
+                    the distractions of notifications and errors. I find, after completing sketches, my mid-fidelity
+                    mock-ups are focused and materialize faster.
+                  </p>
+                  <div class="d-flex justify-center rounded-md overflow-hidden bg-white px-1 py-3 img-shadow">
+                    <img
+                      class="lg-img"
+                      [src]="
+                        'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fopas-drawling.png?alt=media&token=523a6847-01f6-4d84-8630-dca094807624'
+                      "
+                    />
+                  </div>
                 </div>
-              </div>
-              <div fxLayoutAlign="start center" fxLayout="column" fxLayoutGap="3rem">
-                <h3 class="w-100 mb-2">
-                  <span class="sub-header font-extrabold text-xl">02</span
-                  ><span class="font-extrabold text-xl">/Mid-fidelity Mockup</span>
-                </h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed pulvinar proin
-                  gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat orci nulla
-                  pellentesque dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec ullamcorper sit
-                  amet.
-                </p>
-                <div class="d-flex justify-center rounded-md overflow-hidden w-screen px-1 py-3">
-                  <img
-                    class="lg-img"
-                    [src]="
-                      'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fopas-mock-ups.png?alt=media&token=e50555fa-4c13-4ebb-a924-692e368c3738'
-                    "
-                  />
+                <div fxLayoutAlign="start center" fxLayout="column" fxLayoutGap="3rem">
+                  <h3 class="w-100 mb-2">
+                    <span class="sub-header font-extrabold text-xl">02</span
+                    ><span class="font-extrabold text-xl">/Mid-fidelity Mockup</span>
+                  </h3>
+                  <div fxLayout="column" fxLayoutGap="10px" class="text-gray-600">
+                    <p>
+                      For me, mid-fidelity mock-ups are a time to organize content and further solidify page layouts.
+                      Often, my mid-fidelity mock-ups vary in completion. The more unknowns there are, the more
+                      placeholders, lorem ipsum text and gaps there are. Overtime, these mock-ups are refined and
+                      eventually reflect the mock-ups below. The absence of color is intentional, so team members and
+                      users are focused on layout and content, rather than styles.
+                    </p>
+                    <p>
+                      Once mid-fidelity mock-ups have been refined, I like to show them to users. Typically, this is in
+                      the form of usability testing, which results in great feedback that is easy to implement.
+                      <b>Refining mock-ups is always easier than re-development.</b>
+                    </p>
+                  </div>
+                  <div class="d-flex justify-center rounded-md overflow-hidden w-screen px-1 py-3">
+                    <img
+                      class="lg-img"
+                      [src]="
+                        'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fopas-mock-ups.png?alt=media&token=e50555fa-4c13-4ebb-a924-692e368c3738'
+                      "
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -587,8 +609,8 @@
           </div>
         </div>
         <div class="container max-w-screen-xl">
-          <div class="mt-4" fxLayout="column" fxLayoutGap="6rem">
-            <div fxLayout="column" fxLayoutGap="3rem">
+          <div class="mt-4" fxLayout="column" fxLayoutGap="9rem">
+            <!-- <div fxLayout="column" fxLayoutGap="3rem">
               <div fxLayoutAlign="start center" fxLayout="column">
                 <h2 class="text-2xl font-bold mb-3 w-100">Information Architecture</h2>
                 <p>
@@ -596,17 +618,26 @@
                   dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida.
                 </p>
               </div>
-            </div>
+            </div> -->
             <div fxLayout="column" fxLayoutGap="3rem">
-              <div fxLayoutAlign="start center" fxLayout="column" fxLayoutGap="20px">
-                <div fxLayout="column">
-                  <h2 class="text-2xl font-bold mb-3 w-100">Styles & Branding</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida.
-                  </p>
+              <div fxLayout.gt-md="row" fxLayout="column" fxLayoutGap="5rem">
+                <div fxFlex="30" fxLayout="column">
+                  <h2 class="text-2xl font-extrabold mb-3 w-100">Styles & Branding</h2>
+                  <div fxLayout="column" fxLayoutGap="10px" class="text-gray-600">
+                    <p>
+                      The OPAS style tile was a quick reference for OPAS colors, fonts, iconography and more. It
+                      documented the official styles to be used for OPAS and other future applications built by the
+                      division.
+                    </p>
+                    <p>
+                      There were a wide variety of colors that were used, some more than others. ‘Area’ colors were used
+                      to help users associate types of forms with topics. These
+                      <b>colors were eye grabbing but were used limitedly </b> to avoid desensitizing users to them.
+                    </p>
+                    <p>The style tile was used to inform style and branding of the high-fidelity mock-ups below.</p>
+                  </div>
                 </div>
-                <div class="rounded-md overflow-hidden img-shadow">
+                <div fxFlex="auto" class="rounded-md overflow-hidden img-shadow">
                   <img
                     class="w-100 style-tile-img"
                     [src]="
@@ -617,13 +648,28 @@
               </div>
             </div>
             <div fxLayoutAlign="start center" fxLayout="column" fxLayoutGap="3rem">
-              <h3 class="text-2xl font-bold mb-3 w-100">High-fidelity Mockup</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed pulvinar proin
-                gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat orci nulla
-                pellentesque dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec ullamcorper sit amet.
-              </p>
+              <h3 class="text-2xl font-extrabold mb-3 w-100">High-fidelity Mock-up</h3>
+              <div fxLayout="column" fxLayoutGap="10px" class="text-gray-600">
+                <p>
+                  High-fidelity mock-ups are one of the final steps before reaching a working prototype of the
+                  application. The OPAS high-fidelity mock-ups were used to show team members and users imagery of what
+                  the application could look like in its final form, with colors, branding, content and information
+                  hierarchies.
+                </p>
+                <p>
+                  When creating the mock-ups, I tried to make them look as close to the real application as possible.
+                  <b
+                    >This helps eliminate surprises and provides developers with a clear vision of what the product
+                    should look like.</b
+                  >
+                </p>
+                <p>
+                  While high-fidelity mock-ups clarify design decisions, they often lack detail about interactions,
+                  animations and feel. I use ‘mini’ prototypes to clarify these questions. There are a few examples in
+                  the next section.
+                </p>
+              </div>
+
               <div class="d-flex justify-center rounded-md overflow-hidden w-screen px-1 py-3">
                 <img
                   class="lg-img"
@@ -633,12 +679,13 @@
                 />
               </div>
             </div>
-            <div fxLayout="column" fxLayoutGap="3rem">
+            <div fxLayout="column" fxLayoutGap="6rem">
               <div fxLayoutAlign="start center" fxLayout="column">
-                <h2 class="text-2xl font-bold mb-3 w-100">'Mini' Prototypes</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida.
+                <h2 class="text-2xl font-extrabold mb-3 w-100">'Mini' Prototypes</h2>
+                <p class="text-gray-600">
+                  I find the best way to convey the behavior of a UI is by prototyping working versions of them. On the
+                  OPAS project, I would often design interactions using Codepen and share them with developers.
+                  Frequently the HTML and SCSS I produced were used in the code base.
                 </p>
               </div>
               <div [ngClass.gt-sm]="'content-section-with-border'" fxLayout="column" fxLayoutGap="6rem">
@@ -647,12 +694,11 @@
                     <h3 class="w-100 mb-2">
                       <span class="font-semibold text-xl">Primary & Secondary Buttons</span>
                     </h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed
-                      pulvinar proin gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat
-                      orci nulla pellentesque dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec
-                      ullamcorper sit amet.
+                    <p class="text-gray-600">
+                      Primary and secondary buttons in the high-fidelity mock-ups appeared to be static buttons that did
+                      not respond to user interaction. In the Codepen project, the buttons respond to mouse hovering by
+                      the user. I, also, mentioned when to use each respective button.
+                      <b>Buttons were not an artistic design choice but rather a functional design decision.</b>
                     </p>
                   </div>
                   <div fxFlex="65">
@@ -674,6 +720,17 @@
                   </div>
                 </div>
                 <div fx-layout="row" fxLayoutGap="2rem">
+                  <div fxFlex="35" fxLayoutAlign="center center" fxLayout="column" fxLayoutGap="3rem">
+                    <h3 class="w-100 mb-2">
+                      <span class="font-semibold text-xl">Layout Dropdown</span>
+                    </h3>
+                    <p class="text-gray-600">
+                      The layout drop down was intended to allow the user to customize the Task List page layout. Each
+                      option in the drop down had a label and small illustration of what the layout would look like.
+                      Although this feature did not make it to production, it was a quick way to build a working version
+                      of the drop down, and subsequently eliminate it without deploying it.
+                    </p>
+                  </div>
                   <div fxFlex="65">
                     <iframe
                       height="500"
@@ -691,31 +748,24 @@
                       <a href="https://codepen.io">CodePen</a>.
                     </iframe>
                   </div>
-                  <div fxFlex="35" fxLayoutAlign="center center" fxLayout="column" fxLayoutGap="3rem">
-                    <h3 class="w-100 mb-2">
-                      <span class="font-semibold text-xl">Layout Dropdown</span>
-                    </h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed
-                      pulvinar proin gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat
-                      orci nulla pellentesque dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec
-                      ullamcorper sit amet.
-                    </p>
-                  </div>
                 </div>
                 <div fx-layout="row" fxLayoutGap="2rem">
                   <div fxFlex="35" fxLayoutAlign="center center" fxLayout="column" fxLayoutGap="3rem">
                     <h3 class="w-100 mb-2">
                       <span class="font-semibold text-xl">Icon Buttons</span>
                     </h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed
-                      pulvinar proin gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat
-                      orci nulla pellentesque dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec
-                      ullamcorper sit amet.
-                    </p>
+                    <div fxLayout="column" fxLayoutGap="10px" class="text-gray-600">
+                      <p>
+                        Early in the design process of the OPAS application, it was planned to remove text where
+                        possible and replace it with icons. However, we still wanted this text to be available when a
+                        user interacted with the icons. As a result, this Codepen project shows how icons would lift to
+                        reveal text that described the button's action.
+                      </p>
+                      <p>
+                        Ultimately, we chose to always show text because many of the icons were not ubiquitous enough to
+                        describe the action they represented.
+                      </p>
+                    </div>
                   </div>
                   <div fxFlex="65">
                     <iframe
@@ -736,6 +786,17 @@
                   </div>
                 </div>
                 <div fx-layout="row" fxLayoutGap="2rem">
+                  <div fxFlex="35" fxLayoutAlign="center center" fxLayout="column" fxLayoutGap="3rem">
+                    <h3 class="w-100 mb-2">
+                      <span class="font-semibold text-xl">Layout Behaviors</span>
+                    </h3>
+                    <p class="text-gray-600">
+                      The development team had varying opinions about the Task List page layout. I used Codepen to
+                      create three options and test them with users. Creating these prototypes in Codepen shorted the
+                      process of testing and resulted in a design that reflected what users wanted. Prototyping the
+                      options <b>avoided using developer time and provided them with usable code.</b>
+                    </p>
+                  </div>
                   <div fxFlex="65">
                     <iframe
                       height="500"
@@ -753,27 +814,16 @@
                       <a href="https://codepen.io">CodePen</a>.
                     </iframe>
                   </div>
-                  <div fxFlex="35" fxLayoutAlign="center center" fxLayout="column" fxLayoutGap="3rem">
-                    <h3 class="w-100 mb-2">
-                      <span class="font-semibold text-xl">Layout Behaviors</span>
-                    </h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed
-                      pulvinar proin gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat
-                      orci nulla pellentesque dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec
-                      ullamcorper sit amet.
-                    </p>
-                  </div>
                 </div>
               </div>
             </div>
             <div fxLayout="column" fxLayoutGap="3rem">
               <div fxLayoutAlign="center center" fxLayout="column">
-                <h2 class="text-2xl font-bold mb-3 w-100">Usability Testing</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida.
+                <h2 class="text-2xl font-extrabold mb-3 w-100">Usability Testing</h2>
+                <p class="text-gray-600">
+                  I frequently usability tested the OPAS application when new functionality was added. It was important
+                  to me that OPAS designs were validated by users. The high frequency of usability testing prevented the
+                  application from deviating from user needs and sanity checked our design thinking.
                 </p>
               </div>
               <div fxLayout="column" fxLayoutGap="2rem">
@@ -782,38 +832,53 @@
                     <span class="sub-header font-extrabold text-xl">01</span
                     ><span class="font-extrabold text-xl">/Preperation</span>
                   </h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed pulvinar
-                    proin gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat orci nulla
-                    pellentesque dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec ullamcorper sit
-                    amet.
-                  </p>
+                  <div fxLayout="column" fxLayoutGap="10px" class="text-gray-600">
+                    <p>
+                      Before conducting usability testing, I created a script and outlined what aspects of the
+                      application needed to be tested. Typically, these were new functionalities that had not been
+                      tested before. Then, I would create open ended tasks that would test each functionality. The tasks
+                      were based on goals a user might attempt in their day-to-day while using the application. Tasks
+                      never prescribed how to complete it. Additionally, each task was expected to be completed with a
+                      low error rate (<5%).
+                    </p>
+                    <p>
+                      Often the note takers that participated in usability testing were not familiar with the
+                      application. Therefore, each task also included a section that highlighted what a note taker
+                      should be aware of and what metrics they should capture.
+                    </p>
+                  </div>
                 </div>
                 <div fxLayoutAlign="start center" fxLayout="column" fxLayoutGap="3rem">
                   <h3 class="w-100 mb-2">
                     <span class="sub-header font-extrabold text-xl">02</span
                     ><span class="font-extrabold text-xl">/Conduct</span>
                   </h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed pulvinar
-                    proin gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat orci nulla
-                    pellentesque dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec ullamcorper sit
-                    amet.
-                  </p>
+                  <div fxLayout="column" fxLayoutGap="10px" class="text-gray-600">
+                    <p>
+                      Usability testing was usually scheduled with <b>5 users</b> and lasted between
+                      <b>30 to 45 minutes</b>. I wanted to keep testers engaged and respect their time. After all, our
+                      users had full time jobs. During usability testing, users typically completed between
+                      <b>10 to 20 tasks</b> and were asked to think out loud. Periodically I reminded testers they
+                      weren’t being tested; the application was. I wanted to reinforce the fact that testers were
+                      testing the application and not the other way around.
+                    </p>
+                    <p>
+                      At the end of usability testing, I thanked the user for their time and stopped the recording.
+                      Recordings were used to highlight successes and pain points experienced by users.
+                    </p>
+                  </div>
                 </div>
                 <div fxLayoutAlign="start center" fxLayout="column" fxLayoutGap="3rem">
                   <h3 class="w-100 mb-2">
                     <span class="sub-header font-extrabold text-xl">03</span
                     ><span class="font-extrabold text-xl">/Report</span>
                   </h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque gravida. Nibh sed pulvinar
-                    proin gravida hendrerit. Metus dictum at tempor commodo ullamcorper a lacus. Ut placerat orci nulla
-                    pellentesque dignissim enim sit. Purus semper eget duis at tellus at. Aliquet nec ullamcorper sit
-                    amet.
+                  <p class="text-gray-600">
+                    After usability testing was completed, I would summarize the results into a document. The report
+                    contained both successes and failures of the current design and outlined potential ways to remediate
+                    problems. The report was used to socialize UX issues to the team and explain where and why users
+                    failed certain tasks. I wanted to keep team members looped in with the UX process so they understood
+                    my decisions.
                   </p>
                 </div>
               </div>
@@ -824,7 +889,7 @@
       <section #results class="normal-section">
         <div class="container max-w-screen-xl">
           <div class="w-100 text-start">
-            <h1 class="font-extrabold text-4xl">Final Thoughts + Next Steps</h1>
+            <h1 class="font-extrabold text-4xl">Results + Next Steps</h1>
             <label class="text-2xl font-bold sub-header">Keep improving.</label>
           </div>
         </div>
@@ -853,7 +918,7 @@
         <button class="text-left font-medium text-uppercase" (click)="scroll(strategy)">Strategy</button>
         <button class="text-left font-medium text-uppercase" (click)="scroll(design)">Design</button>
         <button class="text-left font-medium text-uppercase" (click)="scroll(prototype)">Prototype & Test</button>
-        <button class="text-left font-medium text-uppercase" (click)="scroll(results)">Final Thoughts</button>
+        <button class="text-left font-medium text-uppercase" (click)="scroll(results)">Results</button>
       </div>
     </div>
   </div>
