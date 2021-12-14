@@ -4,7 +4,7 @@ import { marker } from '@biesbjerg/ngx-translate-extract-marker';
 
 import { ResumeComponent } from './resume.component';
 
-const routes: Routes = [{ path: 'resume', component: ResumeComponent, data: { title: marker('Landon UX') } }];
+const routes: Routes = [{ path: '', component: ResumeComponent, data: { title: marker('Landon UX') } }];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
