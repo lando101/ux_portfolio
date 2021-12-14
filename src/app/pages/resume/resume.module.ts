@@ -5,9 +5,10 @@ import { ResumeRoutingModule } from './resume-routing.module';
 import { ResumeComponent } from './resume.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { MaterialModule } from '@app/material/material.module';
 
 @NgModule({
   declarations: [ResumeComponent],
-  imports: [CommonModule, ResumeRoutingModule, FlexLayoutModule, NgbModule],
+  imports: [CommonModule, ResumeRoutingModule, FlexLayoutModule, NgbModule, MaterialModule],
 })
 export class ResumeModule {}
