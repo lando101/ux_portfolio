@@ -18,8 +18,8 @@
           and I'm ready to help!
         </p>
         <button (click)="openDialog()" class="btn-main focus:ring-2 focus:ring-gray-800">
-          <span class="font-bold" *ngIf="!name">Let's Team Up!</span>
-          <span class="font-bold" *ngIf="name">Got Feedback, {{ name }}?</span>
+          <span class="font-bold">{{ btnString }}</span>
+          <!-- <span class="font-bold" *ngIf="name">Got Feedback, {{ name }}?</span> -->
         </button>
         <div fxLayout="row" fxLayoutGap="25px" class="my-4">
           <a href="https://www.linkedin.com/in/4921117/" target="_blank" matTooltip="View LinkedIn profile"
@@ -163,11 +163,13 @@
         <h2 class="text-4xl font-extrabold px-4 whitespace-nowrap">Contact Me</h2>
         <div class="divider w-100"></div>
       </div>
-      <div class="w-100 overflow-hidden" fxLayout="row">
+      <div class="w-100" fxLayout="row" fxLayoutGap="6rem">
         <div fxFlex="350px">
           <app-contact-card></app-contact-card>
         </div>
-        <div fxFlex="auto">Form</div>
+        <div fxFlex="auto">
+          <app-contact-info-form-standard></app-contact-info-form-standard>
+        </div>
       </div>
     </div>
   </div>

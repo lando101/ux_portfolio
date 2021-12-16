@@ -18,6 +18,7 @@ import { CertImagesComponent } from './components/cert-images/cert-images.compon
 import { ContactCardComponent } from './components/contact-card/contact-card.component';
 import { NgxVcardModule } from 'ngx-vcard';
 import { CaseStudyCardSmComponent } from './components/case-study-card-sm/case-study-card-sm.component';
+import { ContactInfoFormStandardComponent } from './components/contact-info-form-standard/contact-info-form-standard.component';
 
 @NgModule({
   imports: [
@@ -41,6 +42,7 @@ import { CaseStudyCardSmComponent } from './components/case-study-card-sm/case-s
     CertImagesComponent,
     ContactCardComponent,
     CaseStudyCardSmComponent,
+    ContactInfoFormStandardComponent,
   ],
   exports: [
     LoaderComponent,
@@ -51,6 +53,7 @@ import { CaseStudyCardSmComponent } from './components/case-study-card-sm/case-s
     QuotesComponent,
     CertImagesComponent,
     ContactCardComponent,
+    ContactInfoFormStandardComponent,
   ],
 })
 export class SharedModule {}

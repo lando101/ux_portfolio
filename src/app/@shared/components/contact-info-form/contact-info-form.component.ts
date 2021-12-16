@@ -1,4 +1,4 @@
-import { Component, OnInit, ElementRef, Inject, Input, OnDestroy, Optional, Self, ViewChild } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { AngularFirestore } from '@angular/fire/compat/firestore';
 
@@ -7,6 +7,8 @@ import { MyTel } from './components/tele-input/tele-input.component';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { PositiveNotiComponent } from '../notifications/positive-noti/positive-noti.component';
 import { DeviceDetectorService } from 'ngx-device-detector';
+import { ContactInfoService } from '@app/services/contact-info.service';
+
 export interface ContactInfo {
   id?: string;
   firstname?: string;
@@ -45,7 +47,8 @@ export class ContactInfoFormComponent implements OnInit {
     public dialog: MatDialog,
     private fs: AngularFirestore,
     private _snackBar: MatSnackBar,
-    private deviceService: DeviceDetectorService
+    private deviceService: DeviceDetectorService,
+    private contactInfoService: ContactInfoService
   ) {} // @Inject(MAT_DIALOG_DATA) public data: ContactInfo // public dialogRef: MatDialogRef<ContactInfoFormComponent>,
   desktop: boolean = this.deviceService.isDesktop();
   ngOnInit(): void {}
@@ -86,7 +89,7 @@ export class ContactInfoFormComponent implements OnInit {
     const tel = this.form.controls.tel.value;
     const formattedTel = `${tel.area}-${tel.exchange}-${tel.subscriber}`;
     console.log(tel.area);
-    const item: ContactInfo = {
+    const contact: ContactInfo = {
       id: id,
       firstname: this.form.controls.firstname.value,
       lastname: this.form.controls.lastname.value,
@@ -98,46 +101,25 @@ export class ContactInfoFormComponent implements OnInit {
     };
 
     const promise = new Promise((resolve, reject) => {
-      this.fs
-        .collection('messages')
-        .doc(id)
-        .set(item)
-        .then((data: any) => {
-          this.fs
-            .collection('messages')
-            .doc(id)
-            .get()
-            .toPromise()
-            .then((response: any) => {
-              console.log('response', response);
-              if (response.exists) {
-                if (this.desktop) {
-                  this.openSnackBar(
-                    `${item.firstname.charAt(0).toUpperCase() + item.firstname.slice(1)}, thanks for reaching out!`,
-                    'Close'
-                  );
-                }
-                resolve(item);
-              }
-            })
-            .catch(() => {
-              if (this.desktop) {
-                this.openSnackBar('Whoops! Something went wrong...', 'Close');
-              }
-              reject('erros');
-            });
+      this.contactInfoService
+        .sendToDB(contact)
+        .then((response: any) => {
+          resolve(response);
+        })
+        .catch(() => {
+          reject('errors');
         });
     });
 
     return promise;
   }
 
-  openSnackBar(message: string, action: string) {
-    this._snackBar.openFromComponent(PositiveNotiComponent, {
-      horizontalPosition: 'end',
-      data: message,
-      verticalPosition: 'top',
-      duration: 6000,
-    });
-  }
+  // openSnackBar(message: string, action: string) {
+  //   this._snackBar.openFromComponent(PositiveNotiComponent, {
+  //     horizontalPosition: 'end',
+  //     data: message,
+  //     verticalPosition: 'top',
+  //     duration: 6000,
+  //   });
+  // }
 }

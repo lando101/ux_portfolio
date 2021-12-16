@@ -11,6 +11,7 @@ import {
 
 import { MobileContactInfoFormComponent } from '@app/@shared/components/mobile-contact-info-form/mobile-contact-info-form.component';
 import { Quote } from '@app/@shared/components/quotes/quotes.component';
+import { ContactInfoService } from '@app/services/contact-info.service';
 
 export interface Skills {
   title?: string;
@@ -33,6 +34,7 @@ export class HomeComponent implements OnInit {
   deviceInfo: DeviceInfo = null;
   name: string;
   contactInfo: ContactInfo;
+  btnString: string;
 
   skills: Skills[] = [
     {
@@ -153,13 +155,18 @@ export class HomeComponent implements OnInit {
   constructor(
     private deviceService: DeviceDetectorService,
     public dialog: MatDialog,
-    private _bottomSheet: MatBottomSheet
+    private _bottomSheet: MatBottomSheet,
+    private contactInfoService: ContactInfoService
   ) {}
   desktop: boolean = this.deviceService.isDesktop();
 
   ngOnInit() {
     this.isLoading = true;
     this.epicFunction();
+
+    this.contactInfoService.$btnText.subscribe((text: string) => {
+      this.btnString = text;
+    });
   }
 
   epicFunction() {
@@ -172,51 +179,55 @@ export class HomeComponent implements OnInit {
     console.log(isTablet); // returns if the device us a tablet (iPad etc)
     console.log(isDesktopDevice); // returns if the app is running on a Desktop browser.
   }
-  openDialog(): void {
-    if (this.desktop) {
-      const dialogRef = this.dialog.open(ContactInfoFormComponent, {
-        // width: '250px',
-        id: 'formdialog',
-        panelClass: ['animate__animated'],
-        data: {
-          firstname: !this.contactInfo?.firstname ? '' : this.contactInfo.firstname,
-          lastname: !this.contactInfo?.lastname ? '' : this.contactInfo.lastname,
-          email: !this.contactInfo?.email ? '' : this.contactInfo.email,
-          date: !this.contactInfo?.date ? '' : this.contactInfo.date,
-          tel: !this.contactInfo?.tel ? '' : this.contactInfo.tel,
-          org: !this.contactInfo?.org ? '' : this.contactInfo.org,
-          comments: '',
-        },
-      });
+  // openDialog(): void {
+  //   if (this.desktop) {
+  //     const dialogRef = this.dialog.open(ContactInfoFormComponent, {
+  //       // width: '250px',
+  //       id: 'formdialog',
+  //       panelClass: ['animate__animated'],
+  //       data: {
+  //         firstname: !this.contactInfo?.firstname ? '' : this.contactInfo.firstname,
+  //         lastname: !this.contactInfo?.lastname ? '' : this.contactInfo.lastname,
+  //         email: !this.contactInfo?.email ? '' : this.contactInfo.email,
+  //         date: !this.contactInfo?.date ? '' : this.contactInfo.date,
+  //         tel: !this.contactInfo?.tel ? '' : this.contactInfo.tel,
+  //         org: !this.contactInfo?.org ? '' : this.contactInfo.org,
+  //         comments: '',
+  //       },
+  //     });
 
-      dialogRef.afterClosed().subscribe((result: ContactInfo) => {
-        console.log('The dialog was closed');
-        if (result) {
-          this.name = result?.firstname || null;
-          this.contactInfo = result;
-        }
-        console.log(result);
-      });
-    } else {
-      const bottomSheet = this._bottomSheet.open(MobileContactInfoFormComponent, {
-        data: {
-          firstname: !this.contactInfo?.firstname ? '' : this.contactInfo?.firstname,
-          lastname: !this.contactInfo?.lastname ? '' : this.contactInfo?.lastname,
-          email: !this.contactInfo?.email ? '' : this.contactInfo?.email,
-          date: !this.contactInfo?.date ? '' : this.contactInfo?.date,
-          tel: !this.contactInfo?.tel ? '' : this.contactInfo?.tel,
-          org: !this.contactInfo?.org ? '' : this.contactInfo?.org,
-          comments: '',
-        },
-      });
-      bottomSheet.afterDismissed().subscribe((result: ContactInfo) => {
-        console.log('The dialog was closed');
-        if (result) {
-          this.name = result?.firstname || null;
-          this.contactInfo = result;
-        }
-        console.log(result);
-      });
-    }
+  //     dialogRef.afterClosed().subscribe((result: ContactInfo) => {
+  //       console.log('The dialog was closed');
+  //       if (result) {
+  //         this.name = result?.firstname || null;
+  //         this.contactInfo = result;
+  //       }
+  //       console.log(result);
+  //     });
+  //   } else {
+  //     const bottomSheet = this._bottomSheet.open(MobileContactInfoFormComponent, {
+  //       data: {
+  //         firstname: !this.contactInfo?.firstname ? '' : this.contactInfo?.firstname,
+  //         lastname: !this.contactInfo?.lastname ? '' : this.contactInfo?.lastname,
+  //         email: !this.contactInfo?.email ? '' : this.contactInfo?.email,
+  //         date: !this.contactInfo?.date ? '' : this.contactInfo?.date,
+  //         tel: !this.contactInfo?.tel ? '' : this.contactInfo?.tel,
+  //         org: !this.contactInfo?.org ? '' : this.contactInfo?.org,
+  //         comments: '',
+  //       },
+  //     });
+  //     bottomSheet.afterDismissed().subscribe((result: ContactInfo) => {
+  //       console.log('The dialog was closed');
+  //       if (result) {
+  //         this.name = result?.firstname || null;
+  //         this.contactInfo = result;
+  //       }
+  //       console.log(result);
+  //     });
+  //   }
+  // }
+
+  openDialog(): void {
+    this.contactInfoService.openDialog();
   }
 }

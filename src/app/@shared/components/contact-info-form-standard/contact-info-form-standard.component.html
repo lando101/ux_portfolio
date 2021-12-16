@@ -1,0 +1,84 @@
+<!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfmcCPFM_edN_SYPohjmNLSG9VQkLUnC2LG5CQFrpymx-YqSA/viewform?embedded=true" width="640" height="841" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
+<div id="modal" class="form-wrapper" fxLayout="column" fxLayoutGap="25px">
+  <div>
+    <h1 *ngIf="!contactInfo.firstname" class="text-3xl font-extrabold">About you...</h1>
+    <h1 *ngIf="contactInfo.firstname" class="text-3xl font-extrabold">Got ideas?</h1>
+    <p *ngIf="!contactInfo.firstname" class="text-sm text-gray-500 font-semibold">
+      Thanks for visiting. I'm looking forward to chatting!
+    </p>
+    <p *ngIf="contactInfo.firstname" class="text-sm text-gray-500 font-semibold">Wow, you're awesome!</p>
+  </div>
+
+  <div [formGroup]="form" class="d-block">
+    <div class="mb-2" fxLayout="row" fxLayoutGap="15px">
+      <mat-form-field
+        [ngClass]="{ 'mat-form-field-invalid ': form.invalid && !firstname.value }"
+        fxFlex="40"
+        appearance="outline"
+      >
+        <mat-label>First name</mat-label>
+        <input #firstname placeholder="First name" matInput formControlName="firstname" required />
+        <mat-error *ngIf="this.form.controls.firstname.invalid">First name is required</mat-error>
+      </mat-form-field>
+      <mat-form-field
+        [ngClass]="{ 'mat-form-field-invalid ': badSubmit && !lastname.value }"
+        fxFlex="40"
+        appearance="outline"
+      >
+        <mat-label>Last name</mat-label>
+        <input #lastname placeholder="Last name" matInput formControlName="lastname" required />
+        <mat-error *ngIf="this.form.controls.lastname.invalid">Last name is required</mat-error>
+      </mat-form-field>
+    </div>
+    <div fxFlex="40" class="mb-2">
+      <mat-form-field fxFlex="100" appearance="outline">
+        <mat-label>Organization</mat-label>
+        <input #org placeholder="Organization" matInput formControlName="org" />
+      </mat-form-field>
+    </div>
+    <div class="mb-2">
+      <mat-form-field appearance="outline">
+        <mat-label>Phone number</mat-label>
+        <app-tele-input formControlName="tel"></app-tele-input>
+        <mat-hint>Include area code</mat-hint>
+      </mat-form-field>
+    </div>
+    <div class="mb-2" fxFlex="60">
+      <mat-form-field
+        [ngClass]="{ 'mat-form-field-invalid ': badSubmit && !email.value }"
+        fxFlex="100"
+        appearance="outline"
+      >
+        <mat-label>Email</mat-label>
+        <input #email matInput placeholder="pat@example.com" formControlName="email" required />
+        <mat-error *ngIf="this.form.controls.email.invalid">{{ getErrorMessage() }}</mat-error>
+      </mat-form-field>
+    </div>
+    <div fxFlex="100">
+      <mat-form-field
+        [ngClass]="{ 'mat-form-field-invalid ': badSubmit && !comment.value }"
+        fxFlex="100"
+        appearance="outline"
+      >
+        <mat-label>Message</mat-label>
+        <textarea #comment formControlName="comments" maxlength="350" matInput required></textarea>
+        <mat-hint align="end">{{ comment.value?.length || 0 }}/350</mat-hint>
+        <mat-error *ngIf="this.form.controls.comments.invalid">What brings you here? Required.</mat-error>
+      </mat-form-field>
+    </div>
+    <div class="w-100" fxLayout="column" fxLayoutAlign="center start">
+      <p class="text-xs font-semibold">Form not working? Email me instead.</p>
+      <a class="text-sm font-light text-lowercase" href="mailto:landon.messmerjmu@gmail.com"
+        >landon.messmerjmu@gmail.com</a
+      >
+    </div>
+  </div>
+
+  <div fxLayout="row" class="justify-content-between align-items-center">
+    <!-- <button (click)="onNoClick()" class="btn-secondary focus:ring-2 focus:ring-gray-800">Cancel</button> -->
+    <button (click)="submit()" type="submit" class="send btn-main focus:ring-2 focus:ring-gray-800">
+      Send
+      <i class="fas fa-shipping-fast text-sm ml-2"></i>
+    </button>
+  </div>
+</div>

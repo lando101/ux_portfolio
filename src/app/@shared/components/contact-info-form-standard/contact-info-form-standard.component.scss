@@ -1,0 +1,16 @@
+@import "../../../../styles/index";
+
+.form-wrapper {
+  min-width: 35vw;
+}
+
+.send {
+  i {
+    transition: 0.2s ease-in-out;
+  }
+  &:hover {
+    i {
+      transform: translateX(10px) translateY(-2px) rotate(-10deg);
+    }
+  }
+}
