@@ -5,15 +5,18 @@ import { ContactInfoService } from '@app/services/contact-info.service';
 import { ContactInfo } from '../contact-info-form/contact-info-form.component';
 import { MyTel } from '../contact-info-form/components/tele-input/tele-input.component';
 import { DeviceDetectorService } from 'ngx-device-detector';
-
+import party from 'party-js';
 @Component({
   selector: 'app-contact-info-form-standard',
   templateUrl: './contact-info-form-standard.component.html',
   styleUrls: ['./contact-info-form-standard.component.scss'],
 })
 export class ContactInfoFormStandardComponent implements OnInit {
+  showForm = true;
   badSubmit: boolean = false;
+  localSubmit: boolean = false;
   contactInfo: ContactInfo = {};
+  btnString: string;
 
   form: FormGroup = new FormGroup({
     firstname: new FormControl(this.contactInfo.firstname, [Validators.required]),
@@ -30,9 +33,13 @@ export class ContactInfoFormStandardComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
+    // document.querySelector(".send").addEventListener("click", function (e) {
+
+    // });
     this.contactInfoService.$contactInfo.subscribe((contact: ContactInfo) => {
       if (contact) {
         this.contactInfo = contact;
+        this.showForm = false;
       }
     });
   }
@@ -50,18 +57,44 @@ export class ContactInfoFormStandardComponent implements OnInit {
   submit() {
     if (this.form.valid) {
       this.badSubmit = false;
-      // document.getElementById('formdialog').classList.add('animate__backOutUp');
+      this.localSubmit = true;
       if (this.deviceService.isDesktop()) {
-        // document.getElementsByClassName('animate__animated')[0].classList.add('animate__backOutUp');
+        document.getElementsByClassName('animate__animated')[0].classList.add('slide_away');
+        setTimeout(() => {
+          this.showForm = false;
+          // setTimeout(() => {
+          //   party.confetti(document.getElementById('fireworks'), {
+          //     count: party.variation.range(20, 40),
+          //   });
+          // }, 300);
+        }, 800);
       }
-      this.sendToDB().then((user) => {
-        // setTimeout(() => {
-        //   this.dialogRef.close(user);
-        // }, 470);
-      });
+      this.sendToDB().then((user) => {});
     } else {
       this.badSubmit = true;
+      this.localSubmit = false;
     }
+  }
+
+  // animate thank you and trigger confetti
+  showThanks() {
+    const container = document.getElementById('fireworks');
+
+    container.classList.remove('invisible');
+    container.classList.add('visible');
+    container.classList.add('slide_in');
+
+    if (this.localSubmit) {
+      setTimeout(() => {
+        party.confetti(document.getElementById('fireworks'), {
+          count: 100,
+        });
+      }, 300);
+    }
+  }
+
+  openDialog(): void {
+    this.contactInfoService.openDialog();
   }
 
   sendToDB() {
