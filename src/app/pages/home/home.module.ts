@@ -9,6 +9,8 @@ import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { MaterialModule } from '@app/material/material.module';
 import { NgxVcardModule } from 'ngx-vcard';
+import { ImgDirective } from '@app/directives/img.directive';
+import { DirectivesModule } from '@app/directives/directives.module';
 @NgModule({
   imports: [
     CommonModule,
@@ -18,6 +20,7 @@ import { NgxVcardModule } from 'ngx-vcard';
     FlexLayoutModule,
     MaterialModule,
     NgxVcardModule,
+    DirectivesModule,
     AnimateOnScrollModule.forRoot(),
   ],
   declarations: [HomeComponent],

@@ -1,6 +1,12 @@
 <div class="w-100 footer-container">
   <div class="container max-w-screen-xl" fxLayout="column">
-    <div fxLayout="row" fxLayoutGap="80px" fxLayoutAlign="center start">
+    <div
+      fxLayout="row"
+      fxLayout.lt-md="column"
+      fxLayoutGap.lt-md="20px"
+      fxLayoutGap="80px"
+      fxLayoutAlign="center start"
+    >
       <div fxLayout="column" fxLayoutGap="30px">
         <div fxLayout="column">
           <a
@@ -49,9 +55,9 @@
       <div fxLayout="column" class="pt-2">
         <h4 class="text-md font-bold text-gray-400">Resources</h4>
         <ul fxLayout="column" fxLayoutGap="5px">
-          <li>
+          <!-- <li>
             <a class="text-gray-400 text-sm font-light" routerLink="/about" routerLinkActive="active">About</a>
-          </li>
+          </li> -->
           <li>
             <a
               class="text-gray-400 text-sm font-light"

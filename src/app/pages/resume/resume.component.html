@@ -1,56 +1,56 @@
-<div class="w-100">
-  <div class="container-lg">
-    <div class="max-w-screen-lg py-5 my-5">
-      <div fxLayout="column" fxLayoutGap="12rem">
-        <img
-          [src]="
-            'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fresume_winter_2021.png?alt=media&token=1baeb5b4-7e79-4818-80ba-82f46ec42fd5'
-          "
-        />
-        <div fxLayout="row" fxLayoutGap="6rem">
-          <div ngClass.lt-md="text-center" fxFlex="auto" fxLayout="column" class="justify-between">
+<div class="w-100 d-flex justify-center">
+  <div class="max-w-screen-lg py-5 my-5 px-5">
+    <div id="resume" fxLayout.lt-sm="column-reverse" fxLayout="column" fxLayoutGap="12rem">
+      <img
+        [src]="
+          'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fresume_winter_2021.png?alt=media&token=1baeb5b4-7e79-4818-80ba-82f46ec42fd5'
+        "
+      />
+      <div fxLayout="row" fxLayoutGap="6rem">
+        <div ngClass.lt-md="text-center" fxFlex="auto" fxLayout="column" class="justify-between">
+          <div>
+            <h1 ngClass.lt-sm="text-4xl" ngClass="text-5xl" class="font-extrabold leading-tight">
+              Take a copy for yourself!
+            </h1>
+            <p class="text-xl leading-9 my-4 text-gray-500">Thanks for visiting and I look forward to talking.</p>
             <div>
-              <h1 class="text-5xl font-extrabold leading-tight">Take a copy for yourself!</h1>
-              <p class="text-xl leading-9 my-4 text-gray-500">Thanks for visiting and I look forward to talking.</p>
-              <div>
-                <button class="btn-main focus:ring-2 focus:ring-gray-800">
-                  <i class="fas fa-cloud-download-alt mr-1"></i>
-                  Download Resume
-                </button>
-                <div fxLayout="row" fxLayoutGap="25px" class="my-4">
-                  <a href="https://www.linkedin.com/in/4921117/" target="_blank" matTooltip="View LinkedIn profile"
-                    ><i class="fab fa-linkedin text-2xl text-gray-600"></i
-                  ></a>
-                  <a href="mailto:landon.messmerjmu@gmail.com" matTooltip="Send email"
-                    ><i class="fas fa-envelope text-2xl text-gray-600"></i
-                  ></a>
-                  <a
-                    href="https://codepen.io/lando101/pens/public?cursor=ZD0wJm89MSZwPTEmdj0zOTM5NDExNw=="
-                    target="_blank"
-                    matTooltip="View Codepen projects"
-                    ><i class="fab fa-codepen text-2xl text-gray-600"></i
-                  ></a>
-                </div>
+              <button (click)="saveResume()" class="btn-main focus:ring-2 focus:ring-gray-800">
+                <i class="fas fa-cloud-download-alt mr-1"></i>
+                Download Resume
+              </button>
+              <div fxLayout="row" ngClass.lt-md="justify-center" fxLayoutGap="25px" class="my-4">
+                <a href="https://www.linkedin.com/in/4921117/" target="_blank" matTooltip="View LinkedIn profile"
+                  ><i class="fab fa-linkedin text-2xl text-gray-600"></i
+                ></a>
+                <a href="mailto:landon.messmerjmu@gmail.com" matTooltip="Send email"
+                  ><i class="fas fa-envelope text-2xl text-gray-600"></i
+                ></a>
+                <a
+                  href="https://codepen.io/lando101/pens/public?cursor=ZD0wJm89MSZwPTEmdj0zOTM5NDExNw=="
+                  target="_blank"
+                  matTooltip="View Codepen projects"
+                  ><i class="fab fa-codepen text-2xl text-gray-600"></i
+                ></a>
               </div>
             </div>
-            <div>
-              <a class="text-sm" routerLink="/home">
-                <i class="fas fa-arrow-left mr-1"></i>
-                Home
-              </a>
-            </div>
           </div>
-          <div fxHide.lt-md fxFlex="45">
-            <img
-              alt="Landon Messmer smiling softly"
-              class="rounded-md mb-1"
-              [src]="
-                'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Flandon_profile.jpg?alt=media&token=428ebe68-6741-4ada-8dd6-f6cfb84d2f58'
-              "
-            />
-            <div class="w-100 text-right">
-              <small><code>alt="soft smiles" 😄</code></small>
-            </div>
+          <div>
+            <a class="text-sm" routerLink="/home">
+              <i class="fas fa-arrow-left mr-1"></i>
+              Home
+            </a>
+          </div>
+        </div>
+        <div fxHide.lt-md fxFlex="45">
+          <img
+            alt="Landon Messmer smiling softly"
+            class="rounded-md mb-1"
+            [src]="
+              'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Flandon_profile.jpg?alt=media&token=428ebe68-6741-4ada-8dd6-f6cfb84d2f58'
+            "
+          />
+          <div class="w-100 text-right">
+            <small><code>alt="soft smiles" 😄</code></small>
           </div>
         </div>
       </div>

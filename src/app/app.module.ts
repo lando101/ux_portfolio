@@ -15,6 +15,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { MaterialModule } from './material/material.module';
 import { AngularFireModule } from '@angular/fire/compat';
+import { ImgDirective } from './directives/img.directive';
 
 const firebaseConfig = {
   apiKey: 'AIzaSyCEd0Nl9euG-vL_fw_Yte8YmDxSndH3bd0',

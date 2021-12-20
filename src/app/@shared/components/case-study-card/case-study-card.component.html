@@ -1,8 +1,8 @@
-<div fxHide.lt-lg fxLayout="row" fxLayoutGap="20px">
+<div fxHide.lt-lg fxLayout="row" fxLayoutGap="6rem">
   <div *ngIf="caseStudy.orientation === 'left'" fxFlex="45" fxLayoutAlign="center center">
     <a [routerLink]="caseStudy.public ? caseStudy.href : ''">
       <img
-        fxFlex.lt-lg="50"
+        fxFlex.lt-lg="70"
         class="img-left"
         [alt]="'Image of coinfloe application on desktop and mobile'"
         [src]="caseStudy.img_url"
@@ -11,7 +11,7 @@
   </div>
   <div fxFlex="55" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="40px">
     <h2 class="text-2xl font-extrabold px-4">{{ caseStudy.title }}</h2>
-    <div ngClass.gt-xs="px-5 mx-5 " class="">
+    <div ngClass.gt-xs="" class="">
       <p class="text-center text-gray-600">{{ caseStudy.desc }}</p>
       <div fxLayout="row wrap" fxLayoutGap="10px" fxLayoutAlign="center center" class="mt-2">
         <span *ngFor="let skill of caseStudy.skills" class="badge badge-pill badge-dark mt-2 px-3 py-2">{{
@@ -53,7 +53,7 @@
   <div *ngIf="caseStudy.orientation === 'right'" fxFlex="45" fxLayoutAlign="center center">
     <a [routerLink]="caseStudy.public ? caseStudy.href : ''">
       <img
-        fxFlex.lt-lg="50"
+        fxFlex.lt-lg="70"
         class="img-right"
         [alt]="'Image of coinfloe application on desktop and mobile'"
         [src]="caseStudy.img_url"
@@ -62,11 +62,11 @@
   </div>
 </div>
 
-<div fxLayout="column" fxHide.gt-md fxLayoutGap="20px">
+<div fxLayout="column" fxHide.gt-md fxLayoutGap="3rem">
   <div fxFlex="45" fxLayoutAlign="center center">
     <a [routerLink]="caseStudy.href" class="justify-content-center">
       <img
-        fxFlex.lt-lg="50"
+        fxFlex.lt-lg="70"
         class="img-left"
         [alt]="'Image of coinfloe application on desktop and mobile'"
         [src]="caseStudy.img_url"
@@ -75,7 +75,7 @@
   </div>
   <div fxFlex="55" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="40px">
     <h2 class="text-3xl font-extrabold px-4">{{ caseStudy.title }}</h2>
-    <div ngClass.gt-xs="px-5 mx-5" class="">
+    <div ngClass.gt-xs="" class="">
       <p class="text-center text-gray-600">{{ caseStudy.desc }}</p>
       <div fxLayout="row wrap" fxLayoutGap="10px" fxLayoutAlign="center center" class="mt-2">
         <span *ngFor="let skill of caseStudy.skills" class="badge badge-pill badge-dark mt-2 px-3 py-2">{{
