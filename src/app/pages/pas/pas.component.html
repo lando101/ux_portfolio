@@ -56,11 +56,11 @@
   <div fxLayout="row">
     <div>
       <section #keyinfo class="dark-section">
-        <div class="container max-w-screen-xl">
+        <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-xl'">
           <div class="w-100 text-start">
-            <div class="mb-3 justify-between" fxLayout.gt-sm="row" fxLayout="column">
+            <div class="mb-3 justify-between" fxLayout.gt-md="row" fxLayout="column-reverse">
               <h1 fxFlex="70" class="font-extrabold text-4xl">Key Info</h1>
-              <span fxFlex="30" fxLayout="row" class="nda-wrapper" fxLayoutGap="10px">
+              <span fxFlex="auto" fxLayout="row" [ngClass.lt-lg]="'mb-5'" class="nda-wrapper" fxLayoutGap="10px">
                 <div fxLayout="column" class="justify-center">
                   <i class="text-gray-400 text-xl fas fa-exclamation-circle"></i>
                 </div>
@@ -127,7 +127,7 @@
                   </ul>
                 </div>
               </div>
-              <div [ngClass.gt-sm]="'sub-section-with-border'" fxLayout="column" fxFlex="30" fxLayoutGap="15px">
+              <div [ngClass.gt-sm]="'sub-section-wo-border'" fxLayout="column" fxFlex="30" fxLayoutGap="15px">
                 <div>
                   <h4 class="text-lg font-extrabold">Project Scope</h4>
                   <p class="text-sm text-gray-600">Replacement of existing application</p>
@@ -160,7 +160,7 @@
         </div>
       </section>
       <section class="normal-section process-section">
-        <div class="container max-w-screen-xl">
+        <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-xl'">
           <div class="w-100 text-start">
             <h1 class="font-extrabold text-4xl">Design Process</h1>
             <label class="text-2xl font-bold sub-header">We aren't users or actors. Don't act like a user.</label>
@@ -176,8 +176,12 @@
         </div>
       </section>
       <section #research class="normal-section">
-        <div class="w-100 section-header-sticky">
-          <div class="w-100 text-start container max-w-screen-xl">
+        <div class="section-header-sticky">
+          <div
+            class="w-100 text-start container"
+            [ngClass.lt-lg]="'max-w-screen-lg px-4'"
+            [ngClass.gt-md]="'max-w-screen-xl'"
+          >
             <h1>
               <span class="sub-header font-extrabold text-4xl">01</span
               ><span class="font-extrabold text-4xl">/Research</span>
@@ -185,7 +189,7 @@
             <label class="text-2xl font-bold sub-header">Empathize with users.</label>
           </div>
         </div>
-        <div class="container max-w-screen-xl">
+        <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-xl'">
           <div class="mt-4" fxLayout="column" fxLayoutGap="9rem">
             <div fxLayout.gt-sm="row" fxLayout="column" fxLayoutGap="20px">
               <div fxFlex="40" fxLayoutAlign="center center" fxLayout="column">
@@ -303,8 +307,12 @@
         </div>
       </section>
       <section #strategy class="dark-section">
-        <div class="w-100 dark-section-header-sticky">
-          <div class="w-100 text-start container max-w-screen-xl">
+        <div class="dark-section-header-sticky">
+          <div
+            class="w-100 text-start container"
+            [ngClass.lt-lg]="'max-w-screen-lg px-4'"
+            [ngClass.gt-md]="'max-w-screen-xl'"
+          >
             <h1>
               <span class="sub-header font-extrabold text-4xl">02</span
               ><span class="font-extrabold text-4xl">/Strategy</span>
@@ -312,7 +320,7 @@
             <label class="text-2xl font-bold sub-header">Transform knowledge into a plan.</label>
           </div>
         </div>
-        <div class="container max-w-screen-xl">
+        <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-xl'">
           <div class="w-100 text-start">
             <div class="mt-4" fxLayout="column" fxLayoutGap="10.5rem">
               <div fxLayout="column" fxLayout.gt-md="row" fxLayoutGap="5rem">
@@ -462,9 +470,10 @@
                   </div>
                 </div>
                 <div fxFlex="65">
-                  <div class="ml-5 rounded-md overflow-hidden">
+                  <div class="d-flex justify-center" [ngClass.gt-sm]="'ml-5'">
                     <img
-                      class="w-100"
+                      [ngClass.lt-md]="'heur-img'"
+                      class="rounded-md overflow-hidden"
                       [src]="
                         'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fheuristic-visual.png?alt=media&token=6f57b3ad-e28d-4ed9-b50d-047e4d725309'
                       "
@@ -477,8 +486,12 @@
         </div>
       </section>
       <section #design class="normal-section">
-        <div class="w-100 section-header-sticky">
-          <div class="w-100 text-start container max-w-screen-xl">
+        <div class="section-header-sticky">
+          <div
+            class="w-100 text-start container"
+            [ngClass.lt-lg]="'max-w-screen-lg px-4'"
+            [ngClass.gt-md]="'max-w-screen-xl'"
+          >
             <h1>
               <span class="sub-header font-extrabold text-4xl">03</span
               ><span class="font-extrabold text-4xl">/Design</span>
@@ -486,7 +499,7 @@
             <label class="text-2xl font-bold sub-header">One step at a time, with users in mind.</label>
           </div>
         </div>
-        <div class="container max-w-screen-xl">
+        <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-xl'">
           <div class="mt-4" fxLayout="column" fxLayoutGap="9rem">
             <div fxLayout="column" fxLayout.gt-md="row" fxLayoutGap="5rem">
               <div fxFlex="30" fxLayoutAlign="start center" fxLayout="column">
@@ -584,11 +597,18 @@
                       <b>Refining mock-ups is always easier than re-development.</b>
                     </p>
                   </div>
-                  <div class="d-flex justify-center rounded-md overflow-hidden w-screen px-1 py-3">
+                  <div
+                    [ngClass.lt-lg]="'w-100'"
+                    class="d-flex justify-center rounded-md overflow-hidden w-screen px-1 py-3"
+                  >
                     <img
-                      class="lg-img"
-                      [src]="
+                      class="w-100"
+                      [ngClass.gt-md]="'lg-img'"
+                      [src.gt-md]="
                         'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fopas-mock-ups.png?alt=media&token=e50555fa-4c13-4ebb-a924-692e368c3738'
+                      "
+                      [src.lt-lg]="
+                        'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fopas-mid-fidelity-mockup-vertical.png?alt=media&token=4e4e1d00-2797-47fd-a26f-df5144bf5936'
                       "
                     />
                   </div>
@@ -599,8 +619,12 @@
         </div>
       </section>
       <section #prototype class="dark-section">
-        <div class="w-100 dark-section-header-sticky">
-          <div class="w-100 text-start container max-w-screen-xl">
+        <div class="dark-section-header-sticky">
+          <div
+            class="w-100 text-start container"
+            [ngClass.lt-lg]="'max-w-screen-lg px-4'"
+            [ngClass.gt-md]="'max-w-screen-xl'"
+          >
             <h1>
               <span class="sub-header font-extrabold text-4xl">04</span
               ><span class="font-extrabold text-4xl">/Prototype & Test</span>
@@ -608,7 +632,7 @@
             <label class="text-2xl font-bold sub-header">The first moments of truth.</label>
           </div>
         </div>
-        <div class="container max-w-screen-xl">
+        <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-xl'">
           <div class="mt-4" fxLayout="column" fxLayoutGap="9rem">
             <!-- <div fxLayout="column" fxLayoutGap="3rem">
               <div fxLayoutAlign="start center" fxLayout="column">
@@ -637,9 +661,9 @@
                     <p>The style tile was used to inform style and branding of the high-fidelity mock-ups below.</p>
                   </div>
                 </div>
-                <div fxFlex="auto" class="rounded-md overflow-hidden img-shadow">
+                <div fxFlex="auto" class="d-flex justify-center">
                   <img
-                    class="w-100 style-tile-img"
+                    class="style-tile-img rounded-md overflow-hidden img-shadow"
                     [src]="
                       'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fopas-style-tile.png?alt=media&token=de2a9b4e-bb95-48e0-9bd6-a66672c52952'
                     "
@@ -670,11 +694,18 @@
                 </p>
               </div>
 
-              <div class="d-flex justify-center rounded-md overflow-hidden w-screen px-1 py-3">
+              <div
+                [ngClass.lt-lg]="'w-100'"
+                class="d-flex justify-center rounded-md overflow-hidden w-screen px-1 py-3"
+              >
                 <img
-                  class="lg-img"
-                  [src]="
+                  class="w-100"
+                  [ngClass.gt-md]="'lg-img'"
+                  [src.gt-md]="
                     'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fopas-high-fidelity-mockup.png?alt=media&token=5439cbc2-3901-4ce8-9a1c-74971f508eed'
+                  "
+                  [src.lt-lg]="
+                    'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fopas-high-fidelity-mockup-vertical.png?alt=media&token=6132ba66-b627-441e-a484-8f4d7b23d786'
                   "
                 />
               </div>
@@ -887,23 +918,25 @@
         </div>
       </section>
       <section #results class="normal-section">
-        <div class="container max-w-screen-xl">
+        <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-xl'">
           <div class="w-100 text-start">
             <h1 class="font-extrabold text-4xl">Results + Next Steps</h1>
             <label class="text-2xl font-bold sub-header">Keep improving.</label>
           </div>
         </div>
-        <div class="w-100 my-5 py-2 d-flex justify-content-center">
-          <img
-            class="w-100 w-100 max-w-screen-2xl"
-            [src]="
-              'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2FOPAS-summary.png?alt=media&token=fb667fa8-66a6-4002-8072-4aeabefd1d3c'
-            "
-          />
+        <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-xl'">
+          <div class="my-5 py-2 d-flex justify-center">
+            <img
+              class="w-100"
+              [src]="
+                'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2FOPAS-summary.png?alt=media&token=fb667fa8-66a6-4002-8072-4aeabefd1d3c'
+              "
+            />
+          </div>
         </div>
       </section>
       <section class="normal-section">
-        <div class="container max-w-screen-xl">
+        <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-xl'">
           <div class="w-100 text-center">
             <h4 class="font-extrabold text-gray-600 text-xl">Other Projects</h4>
           </div>

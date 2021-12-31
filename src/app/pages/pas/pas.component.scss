@@ -33,7 +33,7 @@ section {
   // background-attachment: fixed;
   // background-color: #655CFF;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg %3E%3Ccircle fill='%23655CFF' cx='400' cy='400' r='600'/%3E%3Ccircle fill='%238179ff' cx='400' cy='400' r='500'/%3E%3Ccircle fill='%239b96ff' cx='400' cy='400' r='400'/%3E%3Ccircle fill='%23b5b2ff' cx='400' cy='400' r='300'/%3E%3Ccircle fill='%23cfceff' cx='400' cy='400' r='200'/%3E%3Ccircle fill='%23EAEAFF' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
-  background-attachment: fixed;
+  // background-attachment: fixed;
   background-size: cover;
   .img-container {
     display: flex;
@@ -83,16 +83,23 @@ img {
 
 .dark-section {
   background-color: $dark-bg;
-  padding: 5rem 3rem;
+  // padding: 5rem 3rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   .lg-img {
     max-height: 650px !important;
     width: auto !important;
     max-width: 100%;
   }
+  .content {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
 }
 
 .normal-section {
-  padding: 5rem 3rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   .sm-img {
     max-height: 350px;
     width: 100%;
@@ -102,6 +109,10 @@ img {
     width: auto !important;
     max-width: 100%;
   }
+  .content {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
 }
 
 .section-header-sticky {
@@ -109,6 +120,7 @@ img {
   top: 0px;
   background: #f9f9fd;
   z-index: 2;
+  width: 100vw;
 }
 
 .dark-section-header-sticky {
@@ -116,6 +128,7 @@ img {
   top: 0px;
   background: $dark-bg;
   z-index: 2;
+  width: 100vw;
 }
 
 .process-section {
@@ -131,6 +144,10 @@ img {
   height: 190px;
 }
 
+.heur-img {
+  max-height: 950px;
+}
+
 .content-section-with-border {
   padding-left: 35px;
   // border-left: 4px solid $purple-border;
@@ -142,6 +159,12 @@ img {
 .sub-section-with-border {
   padding-left: 25px;
   border-left: 4px solid #4a4a4a12;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.sub-section-wo-border {
+  padding-left: 25px;
   padding-top: 15px;
   padding-bottom: 15px;
 }
