@@ -393,7 +393,7 @@
                       <li>
                         Users go through a rollercoaster of emotions while completing tasks – let's minimize these
                       </li>
-                      <li>Identifying ownership of problems is't always clear</li>
+                      <li>Identifying ownership of problems is not obvious</li>
                     </ul>
                   </div>
                 </div>
@@ -436,9 +436,9 @@
                     <p class="text-gray-600">
                       While most designs for OPAS were custom, all of them were formulated with consideration to NN/g 10
                       Usability Heuristics. I wanted to
-                      <b>maximize my time spent on solving truly unique problems</b>, rather than use time researching,
-                      and creating novel designs. As a result, most designs were fundamentally sound and only required
-                      small tweaks.
+                      <b>maximize my time spent on solving truly unique problems</b>, rather than spend time
+                      researching, and illustrating novel designs. As a result, most designs were purposely simple and
+                      required few tweaks.
                     </p>
                     <div class="w-100 my-3">
                       <h4 class="font-bold mb-2">Outcomes</h4>
@@ -455,15 +455,16 @@
                     <p class="text-gray-600">
                       OPAS might have been overhauled but I still wanted the experience to be recognizable, even if
                       users had never seen it before. The goal was to <b>reduce cognitive load and promote action.</b>
-                      To accomplish this, standards such as a logo in the top left (doubled as home page navigation), a
-                      search box and main navigation in the header and more were implemented. It’s estimated that up to
+                      To accomplish this, standards such as a logo in the top left which doubled as a home button, a
+                      search box and main navigation in the header, plus more were implemented. It’s estimated that up
+                      to
                       <b>93% of these practices are familiar</b> to users and reduce confusion when used correctly.
                     </p>
                     <div class="w-100 my-3">
                       <h4 class="font-bold mb-2">Insights</h4>
                       <ul class="list-disc ml-3 text-gray-600">
                         <li>Users don't want to learn something new</li>
-                        <li>Flashy style wears off quickly, functional design lasts</li>
+                        <li>Flashy styles wear off quickly, functional design lasts</li>
                         <li>Focus design efforts on unique problems</li>
                       </ul>
                     </div>
@@ -475,7 +476,7 @@
                       [ngClass.lt-md]="'heur-img'"
                       class="rounded-md overflow-hidden"
                       [src]="
-                        'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fheuristic-visual.png?alt=media&token=6f57b3ad-e28d-4ed9-b50d-047e4d725309'
+                        'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fheuristic-visual.png?alt=media&token=4ea51c3e-1002-4fb1-9155-e311f094c334'
                       "
                     />
                   </div>
@@ -593,7 +594,7 @@
                     </p>
                     <p>
                       Once mid-fidelity mock-ups have been refined, I like to show them to users. Typically, this is in
-                      the form of usability testing, which results in great feedback that is easy to implement.
+                      the form of usability testing, which results in actionable feedback.
                       <b>Refining mock-ups is always easier than re-development.</b>
                     </p>
                   </div>
@@ -716,19 +717,19 @@
                 <p class="text-gray-600">
                   I find the best way to convey the behavior of a UI is by prototyping working versions of them. On the
                   OPAS project, I would often design interactions using Codepen and share them with developers.
-                  Frequently the HTML and SCSS I produced were used in the code base.
+                  Frequently the HTML and SCSS I produced were merged into the main branch.
                 </p>
               </div>
               <div [ngClass.gt-sm]="'content-section-with-border'" fxLayout="column" fxLayoutGap="6rem">
-                <div fx-layout="row" fxLayoutGap="2rem">
+                <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="2rem">
                   <div fxFlex="35" fxLayoutAlign="center center" fxLayout="column" fxLayoutGap="3rem">
                     <h3 class="w-100 mb-2">
                       <span class="font-semibold text-xl">Primary & Secondary Buttons</span>
                     </h3>
                     <p class="text-gray-600">
-                      Primary and secondary buttons in the high-fidelity mock-ups appeared to be static buttons that did
-                      not respond to user interaction. In the Codepen project, the buttons respond to mouse hovering by
-                      the user. I, also, mentioned when to use each respective button.
+                      Primary and secondary buttons appeared to be static buttons that did not respond to user
+                      interaction in the high-fidelity mock-ups. In the Codepen project, the buttons respond to hover
+                      events.
                       <b>Buttons were not an artistic design choice but rather a functional design decision.</b>
                     </p>
                   </div>
@@ -750,16 +751,16 @@
                     </iframe>
                   </div>
                 </div>
-                <div fx-layout="row" fxLayoutGap="2rem">
+                <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="2rem">
                   <div fxFlex="35" fxLayoutAlign="center center" fxLayout="column" fxLayoutGap="3rem">
                     <h3 class="w-100 mb-2">
                       <span class="font-semibold text-xl">Layout Dropdown</span>
                     </h3>
                     <p class="text-gray-600">
                       The layout drop down was intended to allow the user to customize the Task List page layout. Each
-                      option in the drop down had a label and small illustration of what the layout would look like.
-                      Although this feature did not make it to production, it was a quick way to build a working version
-                      of the drop down, and subsequently eliminate it without deploying it.
+                      option in the drop down had a label and small illustration representing the layout. Although this
+                      feature did not make it to production, it was a quick way to build a working version of the drop
+                      down and, subsequently, eliminate it without deploying it.
                     </p>
                   </div>
                   <div fxFlex="65">
@@ -780,7 +781,7 @@
                     </iframe>
                   </div>
                 </div>
-                <div fx-layout="row" fxLayoutGap="2rem">
+                <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="2rem">
                   <div fxFlex="35" fxLayoutAlign="center center" fxLayout="column" fxLayoutGap="3rem">
                     <h3 class="w-100 mb-2">
                       <span class="font-semibold text-xl">Icon Buttons</span>
@@ -816,16 +817,16 @@
                     </iframe>
                   </div>
                 </div>
-                <div fx-layout="row" fxLayoutGap="2rem">
+                <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="2rem">
                   <div fxFlex="35" fxLayoutAlign="center center" fxLayout="column" fxLayoutGap="3rem">
                     <h3 class="w-100 mb-2">
                       <span class="font-semibold text-xl">Layout Behaviors</span>
                     </h3>
                     <p class="text-gray-600">
                       The development team had varying opinions about the Task List page layout. I used Codepen to
-                      create three options and test them with users. Creating these prototypes in Codepen shorted the
-                      process of testing and resulted in a design that reflected what users wanted. Prototyping the
-                      options <b>avoided using developer time and provided them with usable code.</b>
+                      create three options and test them with users. Creating these prototypes in Codepen shortened the
+                      process of testing and led to a design that reflected what users wanted. Prototyping the options
+                      <b>avoided using developer time and provided them with usable code.</b>
                     </p>
                   </div>
                   <div fxFlex="65">

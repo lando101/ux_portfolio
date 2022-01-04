@@ -14,11 +14,11 @@ img {
   justify-content: space-between;
   // max-width: 580px;
   transition: 0.2s ease-in-out;
-  &:hover {
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    transform: translateY(-10px);
-    background: white;
-  }
+  // &:hover {
+  //   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  //   transform: translateY(-10px);
+  //   background: white;
+  // }
   .info-badge {
     background: $badge-bg-light;
     border-radius: 50px;
