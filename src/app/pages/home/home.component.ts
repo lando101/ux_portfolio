@@ -79,7 +79,7 @@ export class HomeComponent implements OnInit {
 
   caseStudies: CaseStudy[] = [
     {
-      title: 'Process Automation System',
+      title: 'OPAS',
       desc: 'An enterprise grade application for managing workflows.',
       skills: ['UX/UI', 'UX Engineer', 'Angular'],
       img_url:

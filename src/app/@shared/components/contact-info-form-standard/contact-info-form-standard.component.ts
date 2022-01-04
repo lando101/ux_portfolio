@@ -59,7 +59,7 @@ export class ContactInfoFormStandardComponent implements OnInit {
       this.badSubmit = false;
       this.localSubmit = true;
       if (this.deviceService.isDesktop()) {
-        document.getElementsByClassName('animate__animated')[0].classList.add('slide_away');
+        document.getElementById('form').classList.add('slide_away');
         setTimeout(() => {
           this.showForm = false;
           // setTimeout(() => {
