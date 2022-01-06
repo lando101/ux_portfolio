@@ -4,8 +4,9 @@
  */
 
 * {
-  font-family: "Lexend", sans-serif;
-  font-weight: 300;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.08rem;
 }
 
 body {
@@ -23,6 +24,9 @@ body {
   b {
     // color: #6c63ff;
     font-weight: bold !important;
+  }
+  p {
+    font-weight: 400;
   }
   .mat-dialog-container {
     border-radius: 10px !important;

@@ -1,13 +1,5 @@
-<!-- <div class="container-fluid">
-  <div class="jumbotron text-center">
-    <h1>
-      <span translate>APP_NAME</span>
-    </h1>
-    <p><i class="far fa-bookmark"></i> <span translate>Version</span></p>
-  </div>
-</div> -->
 <div>
-  <section class="w-100 hero-wrapper">
+  <!-- <section class="w-100 hero-wrapper">
     <div
       [ngClass.gt-md]="'hero-lg'"
       [ngClass.md]="'hero-md'"
@@ -51,14 +43,41 @@
         />
       </div>
     </div>
+  </section> -->
+  <section class="pb-5 my-5">
+    <div class="container py-5 my-5" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
+      <div fxLayout.gt-md="row" fxLayout.lt-lg="column-reverse" fxLayoutGap="6rem">
+        <div fxFlex.gt-md="45">
+          <h1 class="text-5xl mb-2 font-extrabold leading-tight">OPAS</h1>
+          <p class="project-desc text-xl text-gray-600">
+            OPAS is a portal to a suite of 15+ applications that tracks the progression of tickets submitted by users.
+            It helps submitters find the forms they need to complete and visualizes tasks approvers must take for a
+            ticket to be complete. This case study focuses on the re-engineering effort of the original OPAS
+            application.
+          </p>
+          <div fxLayout="row" fxLayoutGap="15px" class="py-4">
+            <span class="badge badge-pill badge-dark p-3">UI/UX Design</span>
+            <span class="badge badge-pill badge-dark p-3">UX Research</span>
+            <span class="badge badge-pill badge-dark p-3">UI Development</span>
+          </div>
+        </div>
+        <div fxFlex.gt-md="55">
+          <img
+            class="w-100 rounded-xl"
+            [src]="
+              'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fpas_image.png?alt=media&token=4a0dc5de-d5ed-4740-9f18-a82dd10601bc'
+            "
+          />
+        </div>
+      </div>
+    </div>
   </section>
-
   <div fxLayout="row">
     <div>
       <section #keyinfo class="dark-section">
-        <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-xl'">
+        <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
           <div class="w-100 text-start">
-            <div class="mb-3 justify-between" fxLayout.gt-md="row" fxLayout="column-reverse">
+            <!-- <div class="mb-3 justify-between" fxLayout.gt-md="row" fxLayout="column-reverse">
               <h1 fxFlex="70" class="font-extrabold text-4xl">Key Info</h1>
               <span fxFlex="auto" fxLayout="row" [ngClass.lt-lg]="'mb-5'" class="nda-wrapper" fxLayoutGap="10px">
                 <div fxLayout="column" class="justify-center">
@@ -69,11 +88,11 @@
                   <p class="text-xs text-gray-300 font-medium">Details will likely be vague to protect client info.</p>
                 </div>
               </span>
-            </div>
+            </div> -->
             <div class="text-left" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="3.5rem">
-              <div [ngClass.gt-sm]="'content-section-with-border'" fxLayout="column" fxFlex="70" fxLayoutGap="30px">
+              <div [ngClass.gt-sm]="'content-section-with-border'" fxLayout="column" fxFlex="50" fxLayoutGap="30px">
                 <div>
-                  <h3 class="text-2xl font-extrabold mb-2">Overview & Problems</h3>
+                  <h3 class="text-2xl font-extrabold mb-2">Overview</h3>
                   <p class="mb-3 text-gray-600">
                     The original Process Automation System was deployed in 2006, using an antiquated low-code no-code
                     solution, that was meant to manage a variety of workflow types. The technology used to build it made
@@ -88,16 +107,38 @@
                     goals in the application. Some were approvers and others were submitters with varying degrees of
                     expertise.
                   </p>
-                  <p class="text-gray-600">
-                    <strong class="font-semibold"
-                      >To design and build a successful replacement application, it had to be flexible to user needs,
-                      address radically different user goals and minimize the time spent to complete tasks.
-                    </strong>
-                  </p>
+                </div>
+                <div fxLayout="column" fxLayoutGap="1rem">
+                  <div>
+                    <h4 class="text-lg font-extrabold">Project Scope</h4>
+                    <p class="text-gray-600">Replacement of existing application</p>
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-extrabold">Tools</h4>
+                    <p class="text-gray-600">Codepen, PowerPoint, VS Code, Adobe Suite</p>
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-extrabold">Roles</h4>
+                    <p class="text-gray-600">UX Designer, UX Engineer</p>
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-extrabold">Team</h4>
+                    <p class="text-gray-600">
+                      Self-organizing team with 3 developers, a UX designer, an analyst, and Scrum Master.
+                    </p>
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-extrabold">Size</h4>
+                    <p class="text-gray-600">5,000+ users</p>
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-extrabold">Duration</h4>
+                    <p class="text-gray-600">2.5 years</p>
+                  </div>
                 </div>
                 <div>
-                  <h3 class="text-2xl font-extrabold mb-2">Goals</h3>
-                  <ul class="list-disc ml-3 text-gray-600">
+                  <!-- <h3 class="text-2xl font-extrabold mb-2">Goals</h3> -->
+                  <!-- <ul class="list-disc ml-3 text-gray-600">
                     <li>Design and build a modern web application to replace the existing application</li>
                     <li>
                       Create a solution that is
@@ -115,44 +156,55 @@
                     </li>
                     <li>
                       Develop two unique experiences (novice, expert) for users that promotes timeliness and efficiency
-                      <!-- <strong class="font-semibold"
-                        >familiar industry design patterns and contextual content visibility for convenience</strong
-                      > -->
                     </li>
                     <li>
                       Create an
                       <strong class="font-semibold">inclusive application for users with disabilities </strong>in
                       compliance with 508 requirements
                     </li>
-                  </ul>
+                  </ul> -->
                 </div>
               </div>
-              <div [ngClass.gt-sm]="'sub-section-wo-border'" fxLayout="column" fxFlex="30" fxLayoutGap="15px">
+              <div [ngClass.gt-sm]="'sub-section-wo-border'" fxLayout="column" fxFlex="50" fxLayoutGap="15px">
                 <div>
-                  <h4 class="text-lg font-extrabold">Project Scope</h4>
-                  <p class="text-sm text-gray-600">Replacement of existing application</p>
-                </div>
-                <div>
-                  <h4 class="text-lg font-extrabold">Tools</h4>
-                  <p class="text-sm text-gray-600">Codepen, PowerPoint, VS Code, Adobe Suite</p>
-                </div>
-                <div>
-                  <h4 class="text-lg font-extrabold">Roles</h4>
-                  <p class="text-sm text-gray-600">UX Designer, UX Engineer</p>
-                </div>
-                <div>
-                  <h4 class="text-lg font-extrabold">Team</h4>
-                  <p class="text-sm text-gray-600">
-                    Self-organizing team with 3 developers, a UX designer, an analyst, and Scrum Master.
+                  <h3 class="text-2xl font-extrabold mb-2">Challenge</h3>
+                  <p class="text-gray-600">
+                    <strong class="font-semibold"
+                      >To design and build a successful replacement application, it had to be flexible to user needs,
+                      address radically different user goals and minimize the time spent to complete tasks.
+                    </strong>
                   </p>
-                </div>
-                <div>
-                  <h4 class="text-lg font-extrabold">Size</h4>
-                  <p class="text-sm text-gray-600">5,000+ users</p>
-                </div>
-                <div>
-                  <h4 class="text-lg font-extrabold">Duration</h4>
-                  <p class="text-sm text-gray-600">2.5 years</p>
+                  <div>
+                    <ul class="list-disc ml-3 text-gray-600">
+                      <li>Design and build a modern web application to replace the existing application</li>
+                      <li>
+                        Create a solution that is
+                        <strong class="font-semibold">flexible enough to provide a positive experience</strong> for
+                        users with widely differing objectives
+                      </li>
+                      <li>
+                        Build a <strong class="font-semibold">templatized UI</strong> that dynamically loads content and
+                        generates pages from JSON data without the need for deployments for content changes
+                      </li>
+                      <li>
+                        Engineer an experience to
+                        <strong class="font-semibold">help novice users identify forms</strong> that are required to be
+                        completed based on user scenario – travel, expense, security reporting, etc.
+                      </li>
+                      <li>
+                        Develop two unique experiences (novice, expert) for users that promotes timeliness and
+                        efficiency
+                        <!-- <strong class="font-semibold"
+                          >familiar industry design patterns and contextual content visibility for convenience</strong
+                        > -->
+                      </li>
+                      <li>
+                        Create an
+                        <strong class="font-semibold">inclusive application for users with disabilities </strong>in
+                        compliance with 508 requirements
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -160,7 +212,7 @@
         </div>
       </section>
       <section class="normal-section process-section">
-        <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-xl'">
+        <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
           <div class="w-100 text-start">
             <h1 class="font-extrabold text-4xl">Design Process</h1>
             <label class="text-2xl font-bold sub-header">We aren't users or actors. Don't act like a user.</label>
@@ -180,7 +232,7 @@
           <div
             class="w-100 text-start container"
             [ngClass.lt-lg]="'max-w-screen-lg px-4'"
-            [ngClass.gt-md]="'max-w-screen-xl'"
+            [ngClass.gt-md]="'max-w-screen-2xl'"
           >
             <h1>
               <span class="sub-header font-extrabold text-4xl">01</span
@@ -189,7 +241,7 @@
             <label class="text-2xl font-bold sub-header">Empathize with users.</label>
           </div>
         </div>
-        <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-xl'">
+        <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
           <div class="mt-4" fxLayout="column" fxLayoutGap="9rem">
             <div fxLayout.gt-sm="row" fxLayout="column" fxLayoutGap="20px">
               <div fxFlex="40" fxLayoutAlign="center center" fxLayout="column">
@@ -311,7 +363,7 @@
           <div
             class="w-100 text-start container"
             [ngClass.lt-lg]="'max-w-screen-lg px-4'"
-            [ngClass.gt-md]="'max-w-screen-xl'"
+            [ngClass.gt-md]="'max-w-screen-2xl'"
           >
             <h1>
               <span class="sub-header font-extrabold text-4xl">02</span
@@ -320,7 +372,7 @@
             <label class="text-2xl font-bold sub-header">Transform knowledge into a plan.</label>
           </div>
         </div>
-        <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-xl'">
+        <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
           <div class="w-100 text-start">
             <div class="mt-4" fxLayout="column" fxLayoutGap="10.5rem">
               <div fxLayout="column" fxLayout.gt-md="row" fxLayoutGap="5rem">
@@ -491,7 +543,7 @@
           <div
             class="w-100 text-start container"
             [ngClass.lt-lg]="'max-w-screen-lg px-4'"
-            [ngClass.gt-md]="'max-w-screen-xl'"
+            [ngClass.gt-md]="'max-w-screen-2xl'"
           >
             <h1>
               <span class="sub-header font-extrabold text-4xl">03</span
@@ -500,7 +552,7 @@
             <label class="text-2xl font-bold sub-header">One step at a time, with users in mind.</label>
           </div>
         </div>
-        <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-xl'">
+        <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
           <div class="mt-4" fxLayout="column" fxLayoutGap="9rem">
             <div fxLayout="column" fxLayout.gt-md="row" fxLayoutGap="5rem">
               <div fxFlex="30" fxLayoutAlign="start center" fxLayout="column">
@@ -624,7 +676,7 @@
           <div
             class="w-100 text-start container"
             [ngClass.lt-lg]="'max-w-screen-lg px-4'"
-            [ngClass.gt-md]="'max-w-screen-xl'"
+            [ngClass.gt-md]="'max-w-screen-2xl'"
           >
             <h1>
               <span class="sub-header font-extrabold text-4xl">04</span
@@ -633,7 +685,7 @@
             <label class="text-2xl font-bold sub-header">The first moments of truth.</label>
           </div>
         </div>
-        <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-xl'">
+        <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
           <div class="mt-4" fxLayout="column" fxLayoutGap="9rem">
             <!-- <div fxLayout="column" fxLayoutGap="3rem">
               <div fxLayoutAlign="start center" fxLayout="column">
@@ -919,13 +971,13 @@
         </div>
       </section>
       <section #results class="normal-section">
-        <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-xl'">
+        <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
           <div class="w-100 text-start">
             <h1 class="font-extrabold text-4xl">Results + Next Steps</h1>
             <label class="text-2xl font-bold sub-header">Keep improving.</label>
           </div>
         </div>
-        <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-xl'">
+        <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
           <div class="my-5 py-2 d-flex justify-center">
             <img
               class="w-100"
@@ -937,7 +989,7 @@
         </div>
       </section>
       <section class="normal-section">
-        <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-xl'">
+        <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
           <div class="w-100 text-left">
             <!-- <h4 class="font-extrabold text-gray-600 text-xl">Other Projects</h4> -->
             <a class="text-sm" routerLink="/home">

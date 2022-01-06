@@ -63,6 +63,10 @@ section {
   }
 }
 
+.project-desc {
+  line-height: 36px;
+}
+
 .img-lg {
   height: 590px;
   // transform: scale(1.25);
@@ -134,7 +138,7 @@ img {
 }
 
 .section-header-sticky {
-  position: sticky;
+  // position: sticky;
   top: 0px;
   background: #f9f9fd;
   z-index: 2;
@@ -142,7 +146,7 @@ img {
 }
 
 .dark-section-header-sticky {
-  position: sticky;
+  // position: sticky;
   top: 0px;
   background: $dark-bg;
   z-index: 2;

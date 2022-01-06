@@ -51,7 +51,19 @@
       </div>
     </div>
     <!-- <div animateOnScroll animationName="animate__fadeInLeft animate__animated" class=""> -->
-
+    <div [ngClass.lt-lg]="'max-w-screen-sm'">
+      <div class="text-center w-100 mb-5 py-3 section-header" fxLayout="row" fxLayoutAlign="center center">
+        <div class="divider"></div>
+        <h2 fxHide.lt-md class="text-4xl font-extrabold px-4 whitespace-nowrap">Projects & Case Studies</h2>
+        <h2 fxHide.gt-sm class="text-4xl font-extrabold px-4 whitespace-nowrap">Projects</h2>
+        <div class="divider"></div>
+      </div>
+      <div fxLayout="column" fxLayoutGap="90px">
+        <div *ngFor="let casestudy of caseStudies">
+          <app-case-study-card [caseStudy]="casestudy"></app-case-study-card>
+        </div>
+      </div>
+    </div>
     <div [ngClass.lt-lg]="'max-w-screen-sm'">
       <div class="text-center w-100 mb-2 py-3 section-header" fxLayout="row" fxLayoutAlign="center center">
         <div class="divider w-100"></div>
@@ -68,19 +80,7 @@
       </div>
     </div>
     <!-- <div animateOnScroll animationName="animate__fadeInRight" class="animate__animated"> -->
-    <div [ngClass.lt-lg]="'max-w-screen-sm'">
-      <div class="text-center w-100 mb-5 py-3 section-header" fxLayout="row" fxLayoutAlign="center center">
-        <div class="divider"></div>
-        <h2 fxHide.lt-md class="text-4xl font-extrabold px-4 whitespace-nowrap">Projects & Case Studies</h2>
-        <h2 fxHide.gt-sm class="text-4xl font-extrabold px-4 whitespace-nowrap">Projects</h2>
-        <div class="divider"></div>
-      </div>
-      <div fxLayout="column" fxLayoutGap="90px">
-        <div *ngFor="let casestudy of caseStudies">
-          <app-case-study-card [caseStudy]="casestudy"></app-case-study-card>
-        </div>
-      </div>
-    </div>
+
     <div [ngClass.lt-lg]="'max-w-screen-sm'" class="feedback-section">
       <div class="bg">
         <img
@@ -101,16 +101,13 @@
         </div>
       </div>
     </div>
-    <div [ngClass.lt-lg]="'max-w-screen-sm'">
+    <!-- <div [ngClass.lt-lg]="'max-w-screen-sm'">
       <div class="text-center w-100 mb-5 py-3 section-header" fxLayout="row" fxLayoutAlign="center center">
         <div class="divider w-100"></div>
         <h2 class="text-4xl font-extrabold px-4 whitespace-nowrap">Build It</h2>
         <div class="divider w-100"></div>
       </div>
       <div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutAlign="space-around">
-        <!-- <div fxFlex="30" *ngFor="let skill of skills">
-          <app-info-card [skills]="skill"></app-info-card>
-        </div> -->
         <div fxLayout.gt-md="row" fxLayout="column" fxLayoutGap="25px">
           <div fxFlex="40" fxLayout="column" fxLayoutAlign="center center">
             <h2 class="text-3xl font-bold mb-4">When mock-ups aren't enough, build it.</h2>
@@ -152,23 +149,13 @@
           </div>
         </div>
       </div>
-      <!-- <div class="mt-4">
-        <h3 class="text-xl font-bold">More Examples</h3>
-        <div>
-          <iframe height="300" style="width: 100%;" scrolling="no" title="Layout Dropdown" src="https://codepen.io/lando101/embed/abbXjEm?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-            See the Pen <a href="https://codepen.io/lando101/pen/abbXjEm">
-            Layout Dropdown</a> by Landon Messmer (<a href="https://codepen.io/lando101">@lando101</a>)
-            on <a href="https://codepen.io">CodePen</a>.
-          </iframe>
-        </div>
-      </div> -->
-    </div>
+    </div> -->
     <div [ngClass.lt-lg]="'max-w-screen-sm'" class="w-100">
-      <div class="text-center w-100 mb-5 py-3 section-header" fxLayout="row" fxLayoutAlign="center center">
+      <!-- <div class="text-center w-100 mb-5 py-3 section-header" fxLayout="row" fxLayoutAlign="center center">
         <div class="divider w-100"></div>
         <h2 class="text-4xl font-extrabold px-4 whitespace-nowrap">Contact Me</h2>
         <div class="divider w-100"></div>
-      </div>
+      </div> -->
       <div class="w-100" fxLayout="row" fxLayout.lt-lg="column-reverse" fxLayoutGap="6rem">
         <div fxHide.lt-lg="" fxFlex="350px">
           <app-contact-card></app-contact-card>
