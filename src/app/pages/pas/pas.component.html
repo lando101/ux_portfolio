@@ -101,13 +101,6 @@
                     tickets progression through a series of approvers. These approvers visit the site daily and are
                     highly sensitive to change.
                   </p>
-                  <!-- <p class="mb-3 text-gray-600">
-                    In 2016, a new version of the application was approved to be built. The organization knew they
-                    wanted to create an experience that reduced the time users spent to complete tasks. However, it was
-                    now clear after years of feedback, the primary user was not obvious. Users had drastically different
-                    goals in the application. Some were approvers and others were submitters with varying degrees of
-                    expertise.
-                  </p> -->
                 </div>
                 <div fxLayout="column" fxLayoutGap="1rem">
                   <div>
@@ -137,34 +130,7 @@
                     <p class="text-gray-600">2.5 years</p>
                   </div>
                 </div>
-                <div>
-                  <!-- <h3 class="text-2xl font-extrabold mb-2">Goals</h3> -->
-                  <!-- <ul class="list-disc ml-3 text-gray-600">
-                    <li>Design and build a modern web application to replace the existing application</li>
-                    <li>
-                      Create a solution that is
-                      <strong class="font-semibold">flexible enough to provide a positive experience</strong> for users
-                      with widely differing objectives
-                    </li>
-                    <li>
-                      Build a <strong class="font-semibold">templatized UI</strong> that dynamically loads content and
-                      generates pages from JSON data without the need for deployments for content changes
-                    </li>
-                    <li>
-                      Engineer an experience to
-                      <strong class="font-semibold">help novice users identify forms</strong> that are required to be
-                      completed based on user scenario – travel, expense, security reporting, etc.
-                    </li>
-                    <li>
-                      Develop two unique experiences (novice, expert) for users that promotes timeliness and efficiency
-                    </li>
-                    <li>
-                      Create an
-                      <strong class="font-semibold">inclusive application for users with disabilities </strong>in
-                      compliance with 508 requirements
-                    </li>
-                  </ul> -->
-                </div>
+                <div></div>
               </div>
               <div [ngClass.gt-sm]="'sub-section-wo-border'" fxLayout="column" fxFlex="50" fxLayoutGap="15px">
                 <div>
@@ -234,42 +200,76 @@
             [ngClass.gt-md]="'max-w-screen-2xl'"
           >
             <h1>
-              <span class="sub-header font-extrabold text-4xl">01</span
-              ><span class="font-extrabold text-4xl">/Research</span>
+              <span class="sub-header font-extrabold text-4xl">01 </span
+              ><span class="font-extrabold text-4xl">/ Discovery</span>
             </h1>
             <label class="text-2xl font-bold sub-header">Empathize with users.</label>
           </div>
         </div>
         <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
           <div class="mt-4" fxLayout="column" fxLayoutGap="9rem">
-            <div fxLayout.gt-sm="row" fxLayout="column" fxLayoutGap="20px">
-              <div fxFlex="40" fxLayoutAlign="center center" fxLayout="column">
+            <div fxLayout.gt-sm="row" fxLayout="column" fxLayoutGap="3rem">
+              <div fxFlex="50" fxLayoutAlign="center center" fxLayout="column">
                 <h2 class="text-2xl font-extrabold mb-3 w-100">Meet Users</h2>
                 <p class="mb-3 text-gray-600">
-                  Before redesigning an application, I knew little about, I met with users. I wanted to validate my
-                  concerns about the existing application. During this process, many of my concerns regarding
-                  information hierarchies, naming conventions and limited functionalities were confirmed. The
-                  application was not serving users properly.
+                  Before redesigning an application, I met with the users. It was important to understand why users
+                  visited the OPAS Portal and what kinds of tasks they were trying to complete when there. During this
+                  time, I learned about the problems users were experiencing and the areas that could use the most
+                  improvement.
                 </p>
                 <p class="mb-3 text-gray-600">
-                  Additionally, it was now clear submitters and approvers had opposing issues with the existing
-                  application.
+                  I also discovered that OPAS Portal users, depending on role, had varying levels of expertise in the
+                  previous system, which heavily influenced the kinds of changes they wanted to see implemented.
                   <strong
-                    >The user base was asking for two kinds of experiences: one for visitors and another for power
-                    users.
+                    >While these suggestions seemed to vary widely, their recommendations ultimately boiled down to
+                    solving efficiency problems.
                   </strong>
                 </p>
                 <div class="w-100 my-3">
-                  <h4 class="font-semibold mb-2">Methods</h4>
-                  <ul class="list-disc ml-3 text-gray-600">
-                    <li>Interviews – 30+ participants</li>
-                    <li>Card sorting</li>
-                    <li>Field studies – 5 disabled users (508 compliance)</li>
-                    <li>Surveys – 300~ responses</li>
+                  <h4 class="font-extrabold mb-2">Methods</h4>
+                  <ul class="list-disc text-gray-600" fxLayout="column" fxLayoutGap="15px">
+                    <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                      <span><i class="text-gray-400 far fa-circle"></i></span>
+                      <span>Interviews: 30+ participants</span>
+                    </li>
+                    <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                      <span><i class="text-gray-400 far fa-circle"></i></span>
+                      <span>Field studies: 5 disabled users (508 compliance)</span>
+                    </li>
+                    <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                      <span><i class="text-gray-400 far fa-circle"></i></span>
+                      <span>Surveys: 300+ responses</span>
+                    </li>
                   </ul>
                 </div>
+                <div class="w-100 my-3">
+                  <h4 class="font-extrabold mb-2">Findings</h4>
+                  <p class="mb-3 text-gray-600">
+                    After meeting and receiving feedback from users, I learned there were essentially two kinds of
+                    users: submitters and approvers.
+                  </p>
+                  <p class="mb-3 text-gray-600">
+                    Submitters were often unfamiliar with agency jargon which led to problems finding and completing
+                    forms. Renaming forms, using the same language our submitters spoke, would shorten form hunting and
+                    improve accurate submissions.
+                    <strong
+                      >To give an example, a form named TRR-251 would be renamed to International Travel
+                      Submission</strong
+                    >.
+                  </p>
+                  <p class="mb-3 text-gray-600">
+                    Additionally, submitters frequently did not know which forms were required to be completed in
+                    certain scenarios. Submitters also needed help identifying which forms were required based on their
+                    situation.
+                  </p>
+                  <p class="mb-3 text-gray-600">
+                    Approvers, on the other hand, spent much of their day using the OPAS Portal. Their current approval
+                    process was linear and prevented them from multitasking. Approvers wanted to be able to manage
+                    multiple workstreams at once and have quick access to the forms they used most frequently.
+                  </p>
+                </div>
               </div>
-              <div fxFlex="60">
+              <div fxFlex="50">
                 <div fxLayout="row" class="w-100 justify-end">
                   <!-- <img
                     class="sm-img"
@@ -277,13 +277,7 @@
                       'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/illustrations%2Fundraw_conversation_h-12-g.svg?alt=media&token=900aa0e6-90db-455b-814f-2514883b1c55'
                     "
                   /> -->
-                  <div
-                    fxLayout="row"
-                    [ngClass.gt-sm]="'w-75'"
-                    [ngClass]="'w-100'"
-                    class="qoute content-section-with-border"
-                    fxLayoutGap="10px"
-                  >
+                  <div fxLayout="row" [ngClass]="'w-100'" class="qoute content-section-with-border" fxLayoutGap="10px">
                     <div>
                       <i
                         [ngClass.gt-xs]="'text-5xl'"
@@ -304,29 +298,8 @@
                 </div>
               </div>
             </div>
-            <!-- <div class="w-100 justify-center" fxLayout="row">
-              <div
-                fxLayout="row"
-                [ngClass.gt-sm]="'w-75'"
-                [ngClass]="'w-100'"
-                class="qoute content-section-with-border"
-                fxLayoutGap="10px"
-              >
-                <div>
-                  <i [ngClass.gt-xs]="'text-5xl'" [ngClass]="'text-4xl'" class="text-gray-200 fas fa-quote-left"></i>
-                </div>
-                <div class="text-start">
-                  <h1 [ngClass.gt-xs]="'text-5xl'" [ngClass]="'text-4xl'" class="font-bold leading-snug">
-                    I can't find the forms I'm looking for. The names of forms are confusing.
-                  </h1>
-                  <div fxLayout="column">
-                    <span>Organization Business Analyst</span>
-                    <small class="font-semibold text-sm text-gray-500">Submitter • Novice Experience</small>
-                  </div>
-                </div>
-              </div>
-            </div> -->
-            <div fxLayout.gt-sm="row" fxLayout="column" fxLayoutGap="150px">
+
+            <!-- <div fxLayout.gt-sm="row" fxLayout="column" fxLayoutGap="150px">
               <div fxFlex="50" fxLayoutAlign="start center" fxLayout="column">
                 <h2 class="text-2xl font-extrabold mb-3 w-100">Baseline</h2>
                 <div fxLayout="column" fxLayoutGap="20px" class="text-gray-600">
@@ -349,7 +322,6 @@
                   <h4 class="font-semibold mb-2">Methods</h4>
                   <ul class="list-disc ml-3 text-gray-600">
                     <li>Usability Testing – 5 novice participants + 5 power participants</li>
-                    <!-- <li>Surveys – 300 responses</li> -->
                   </ul>
                 </div>
               </div>
@@ -379,7 +351,7 @@
                   </ul>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
           <!-- <div class="mt-4" fxLayout="column">
 
@@ -394,101 +366,197 @@
             [ngClass.gt-md]="'max-w-screen-2xl'"
           >
             <h1>
-              <span class="sub-header font-extrabold text-4xl">02</span
-              ><span class="font-extrabold text-4xl">/Strategy</span>
+              <span class="sub-header font-extrabold text-4xl">02 </span
+              ><span class="font-extrabold text-4xl">/ Define</span>
             </h1>
-            <label class="text-2xl font-bold sub-header">Transform knowledge into a plan.</label>
+            <label class="text-2xl font-bold sub-header">Identify pain points.</label>
           </div>
         </div>
         <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
           <div class="w-100 text-start">
             <div class="mt-4" fxLayout="column" fxLayoutGap="10.5rem">
-              <div fxLayout="column" fxLayout.gt-md="row" fxLayoutGap="5rem">
-                <div fxFlex="30" fxLayoutAlign="start center" fxLayout="column">
-                  <h2 class="text-2xl font-extrabold mb-3 w-100">Personas</h2>
-                  <div fxLayout="column" fxLayoutGap="20px" class="text-gray-600">
-                    <p>
-                      I created personas to summarize a large user base into a few segments and then design solutions
-                      around these groups. I also used personas to familiarize the team with our users and help us
-                      better empathize with them. The team needed to know that our decisions impact real people and not
-                      just a user ID in a database.
-                    </p>
-                  </div>
-
+              <div fxLayout.gt-sm="row" fxLayout="column" fxLayoutGap="4rem">
+                <div fxFlex="40" fxLayoutAlign="center center" fxLayout="column">
+                  <h2 class="text-2xl font-extrabold mb-3 w-100">Visualize the Problem</h2>
+                  <p class="mb-3 text-gray-600">
+                    Now that I had a better understanding of OPAS Portal users, I wanted to take their experience and
+                    visualize it. The goal here is to identify pain points during the customer journey and alleviate
+                    them.
+                  </p>
                   <div class="w-100 my-3">
-                    <h4 class="font-bold mb-2">Insights</h4>
-                    <ul class="list-disc ml-3 text-gray-600">
-                      <li>Developers cared about a user's exprience more than I anticipated</li>
-                      <li>User stories became easier to write and more impactful</li>
-                    </ul>
-                  </div>
-                </div>
-                <div fxFlex="70" fxLayoutAlign="start">
-                  <div class="rounded-md overflow-hidden img-shadow">
-                    <ngb-carousel [interval]="15000" *ngIf="images">
-                      <ng-template ngbSlide>
-                        <div class="picsum-img-wrapper">
-                          <img class="w-100" [src]="images[0]" alt="Random first slide" />
-                        </div>
-                        <!-- <div class="carousel-caption">
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                      </div> -->
-                      </ng-template>
-                      <ng-template ngbSlide>
-                        <div class="picsum-img-wrapper">
-                          <img class="w-100" [src]="images[1]" alt="Random second slide" />
-                        </div>
-                        <!-- <div class="carousel-caption">
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                      </div> -->
-                      </ng-template>
-                    </ngb-carousel>
-                  </div>
-                </div>
-              </div>
-              <div fxLayout="column" fxLayout.gt-md="row" fxLayoutGap="5rem">
-                <div fxFlex="30" fxLayoutAlign="start" fxLayout="column">
-                  <h2 class="text-2xl font-extrabold mb-3 w-100">Customer Journey Map</h2>
-                  <div fxLayout="column" fxLayoutGap="10px" class="text-gray-600">
-                    <p>
-                      The customer journey map helped me put myself in the shoes of the user and
-                      <b>identify pain points and joyful moments</b> experienced by them while completing a task. Then,
-                      after identifying these points, I worked to remediate bad experiences and maximize good ones.
-                    </p>
-                    <!-- <p>
-                      <b
-                        >The customer journey map made finding opportunities for improvement clear and led to an
-                        experience that was better for users.</b
-                      >
-                      Often, the improvements were derived from common design practices rather than custom, one-off
-                      solutions.
-                    </p> -->
-                  </div>
-                  <div class="w-100 my-3">
-                    <h4 class="font-bold mb-2">Insights</h4>
-                    <ul class="list-disc ml-3 text-gray-600">
-                      <li>The problems are often not unique to OPAS, look for common solutions</li>
-                      <li>
-                        Users go through a rollercoaster of emotions while completing tasks – let's minimize these
+                    <h4 class="font-extrabold mb-2">Oppurtunities</h4>
+                    <ul class="list-disc text-gray-600" fxLayout="column" fxLayoutGap="15px">
+                      <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                        <span><i class="text-gray-400 far fa-circle"></i></span>
+                        <span>Interviews: 30+ participants</span>
                       </li>
-                      <li>Identifying ownership of problems is not obvious</li>
+                      <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                        <span><i class="text-gray-400 far fa-circle"></i></span>
+                        <span>Field studies: 5 disabled users (508 compliance)</span>
+                      </li>
+                      <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                        <span><i class="text-gray-400 far fa-circle"></i></span>
+                        <span>Surveys: 300+ responses</span>
+                      </li>
                     </ul>
                   </div>
                 </div>
-                <div fxFlex="70">
-                  <div [ngStyle]="{ background: '#fbfbfb' }" class="p-3 rounded-md overflow-hidden img-shadow">
-                    <img
-                      class="w-100"
-                      [src]="
-                        'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fopas-journey-map.png?alt=media&token=c65f81ce-7cc3-423f-8266-6f288fa5ddba'
-                      "
-                    />
+                <div fxFlex="60">
+                  <div fxLayout="row" class="w-100 justify-end">
+                    <div [ngStyle]="{ background: '#fbfbfb' }" class="p-3 rounded-md overflow-hidden img-shadow">
+                      <img
+                        class="w-100"
+                        [src]="
+                          'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fopas-journey-map.png?alt=media&token=c65f81ce-7cc3-423f-8266-6f288fa5ddba'
+                        "
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="w-100 justify-center" fxLayout="row">
+              <div fxLayout.gt-sm="row" fxLayout="column" fxLayoutGap="4rem" fxLayoutAlign="center center">
+                <div fxFlex="40" fxLayoutAlign="center center" fxLayout="column">
+                  <h2 class="text-2xl font-extrabold mb-3 w-100">Who Are Our Users?</h2>
+                  <p class="mb-3 text-gray-600">
+                    Based on user research, more than 70% of our users were submitters yet the OPAS Portal’s design did
+                    not accommodate them. Approvers, while a smaller group, accounted for the most time spent in the
+                    application.
+                  </p>
+                  <div class="w-100 my-3">
+                    <h4 class="font-extrabold mb-2 text-xl">Pirmary Users</h4>
+                    <div fxLayout="column">
+                      <div fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                        <span class="font-extrabold text-gray-400">1) </span>
+                        <div>
+                          <div class="font-extrabold text-gray-700 mb-2">Field Agents (Submitters)</div>
+                          <p class="mb-3 text-gray-600">
+                            Submitters only visit the OPAS Portal when required. Their frequency of use is typically
+                            low, and they are not usually familiar with the application. Submitters will complete a form
+                            and not revisit the site until another event occurs that requires them to make a submission.
+                          </p>
+                        </div>
+                      </div>
+                      <div fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                        <span class="font-extrabold text-gray-400">2) </span>
+                        <div>
+                          <div class="font-extrabold text-gray-700 mb-2">Intel Analysts (Submitters)</div>
+                          <p class="mb-3 text-gray-600">
+                            Submitters only visit the OPAS Portal when required. Their frequency of use is typically
+                            low, and they are not usually familiar with the application. Submitters will complete a form
+                            and not revisit the site until another event occurs that requires them to make a submission.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                        <span class="font-extrabold text-gray-400">3) </span>
+                        <div>
+                          <div class="font-extrabold text-gray-700 mb-2">Business Analysts (Approvers)</div>
+                          <p class="mb-3 text-gray-600">
+                            Approvers use the OPAS Portal daily. In fact, their job likely exists because of the OPAS
+                            ecosystem. They are highly sensitive to change and prefer functionality over style. Many of
+                            them are complacent with the current solution because it ‘gets the job done’.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div fxFlex="60" fxLayoutAlign="center center" fxLayout="column" fxLayoutGap="3rem">
+                  <div class="rounded-md overflow-hidden img-shadow">
+                    <img class="w-100" [src]="images[0]" />
+                  </div>
+                  <div class="rounded-md overflow-hidden img-shadow">
+                    <img class="w-100" [src]="images[1]" />
+                  </div>
+                </div>
+              </div>
+              <div fxLayout.gt-sm="row" fxLayout="column" fxLayoutGap="4rem" fxLayoutAlign="start start">
+                <div fxFlex.lt-md="100" fxFlex="75">
+                  <h2 class="text-4xl font-extrabold mb-3 w-100">Take Aways</h2>
+                  <div fxLayout="row" fxLayoutGap="3rem">
+                    <div fxFlex="50">
+                      <div class="w-100 my-3">
+                        <h4 class="text-2xl font-extrabold mb-4 sub-header">Pain Points</h4>
+                        <ul class="list-disc text-gray-600" fxLayout="column" fxLayoutGap="15px">
+                          <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                            <span><i class="text-gray-400 far fa-circle"></i></span>
+                            <span>Forms not intuitively named and located</span>
+                          </li>
+                          <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                            <span><i class="text-gray-400 far fa-circle"></i></span>
+                            <span>Site is slow and unresponsive to user input</span>
+                          </li>
+                          <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                            <span><i class="text-gray-400 far fa-circle"></i></span>
+                            <span>Outages occur without notification to users</span>
+                          </li>
+                          <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                            <span><i class="text-gray-400 far fa-circle"></i></span>
+                            <span>No assistance to help users find forms</span>
+                          </li>
+                          <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                            <span><i class="text-gray-400 far fa-circle"></i></span>
+                            <span>Too much information displayed</span>
+                          </li>
+                          <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                            <span><i class="text-gray-400 far fa-circle"></i></span>
+                            <span>Lacks ability to have quick access to frequently used forms</span>
+                          </li>
+                          <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                            <span><i class="text-gray-400 far fa-circle"></i></span>
+                            <span>Data table cannot be filtered, sorted or searched</span>
+                          </li>
+                          <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                            <span><i class="text-gray-400 far fa-circle"></i></span>
+                            <span>Aesthetically unpleasing</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div fxFlex="50">
+                      <div class="w-100 my-3">
+                        <h4 class="text-2xl font-extrabold mb-4 sub-header">Remedies</h4>
+                        <ul class="list-disc text-gray-600" fxLayout="column" fxLayoutGap="15px">
+                          <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                            <span><i class="text-gray-400 far fa-circle"></i></span>
+                            <span>Rename forms to speak user’s language</span>
+                          </li>
+                          <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                            <span><i class="text-gray-400 far fa-circle"></i></span>
+                            <span>Lighter weight application with better performance</span>
+                          </li>
+                          <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                            <span><i class="text-gray-400 far fa-circle"></i></span>
+                            <span>Ability to push notifications to users</span>
+                          </li>
+                          <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                            <span><i class="text-gray-400 far fa-circle"></i></span>
+                            <span>Intuitive way to funnel users to specific forms</span>
+                          </li>
+                          <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                            <span><i class="text-gray-400 far fa-circle"></i></span>
+                            <span>Better information hierarchies and limiting information displayed</span>
+                          </li>
+                          <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                            <span><i class="text-gray-400 far fa-circle"></i></span>
+                            <span>Ability to favorite forms</span>
+                          </li>
+                          <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                            <span><i class="text-gray-400 far fa-circle"></i></span>
+                            <span>Modern data table with ability to filter, sort and search</span>
+                          </li>
+                          <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                            <span><i class="text-gray-400 far fa-circle"></i></span>
+                            <span>Updated UI </span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="w-100 justify-center" fxLayout="row">
                 <div
                   fxLayout="row"
                   [ngClass.gt-sm]="'w-75'"
@@ -508,8 +576,8 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <div fxLayout.gt-sm="row" fxLayout="column" fxLayoutGap="20px">
+              </div> -->
+              <!-- <div fxLayout.gt-sm="row" fxLayout="column" fxLayoutGap="20px">
                 <div fxFlex="35" fxLayoutAlign="start center" fxLayout="column" fxLayoutGap="9rem">
                   <div fxLayout="column">
                     <h2 class="text-2xl font-extrabold mb-3 w-100">Usability Heurisitcs</h2>
@@ -561,7 +629,7 @@
                     />
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -574,14 +642,79 @@
             [ngClass.gt-md]="'max-w-screen-2xl'"
           >
             <h1>
-              <span class="sub-header font-extrabold text-4xl">03</span
-              ><span class="font-extrabold text-4xl">/Design</span>
+              <span class="sub-header font-extrabold text-4xl">03 </span
+              ><span class="font-extrabold text-4xl">/ Ideate</span>
             </h1>
             <label class="text-2xl font-bold sub-header">One step at a time, with users in mind.</label>
           </div>
         </div>
         <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
           <div class="mt-4" fxLayout="column" fxLayoutGap="9rem">
+            <div fxLayout.gt-sm="row" fxLayout="column" fxLayoutGap="4rem">
+              <div fxFlex="40" fxLayoutAlign="center center" fxLayout="column">
+                <h2 class="text-2xl font-extrabold mb-3 w-100">Sketches</h2>
+                <p class="mb-3 text-gray-600">
+                  Based on user feedback, the new OPAS Portal home page was going to be <strong>minimalistic</strong>.
+                  This decision was made to alleviate overwhelming users with options. We wanted to drawl users’ eyes to
+                  the large cards in the center of the screen. Clicking a card would then begin a process of funneling a
+                  submitter to the required forms they needed to complete.
+                </p>
+                <p class="mb-3 text-gray-600">
+                  The navigation bar at the top was also streamlined. The original application had tabs, pages and
+                  duplicated the location of certain content. It was confusing. The navbar would
+                  <strong>consolidate content</strong> into distinct pages that day-to-day users would be familiar with.
+                </p>
+                <div class="w-100 my-3">
+                  <h4 class="font-extrabold mb-2">Guiding Principles</h4>
+                  <ul class="list-disc text-gray-600" fxLayout="column" fxLayoutGap="15px">
+                    <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                      <span><i class="text-gray-400 far fa-circle"></i></span>
+                      <span>Limit visual noise</span>
+                    </li>
+                    <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                      <span><i class="text-gray-400 far fa-circle"></i></span>
+                      <span>Obvious hierarchies so pages are scannable</span>
+                    </li>
+                    <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                      <span><i class="text-gray-400 far fa-circle"></i></span>
+                      <span>Follow common design practices</span>
+                    </li>
+                  </ul>
+                </div>
+                <!-- <div class="w-100 my-3">
+                  <h4 class="font-extrabold mb-2">Oppurtunities</h4>
+                  <ul class="list-disc text-gray-600" fxLayout="column" fxLayoutGap="15px">
+                    <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                      <span><i class="text-gray-400 far fa-circle"></i></span>
+                      <span>Interviews: 30+ participants</span>
+                    </li>
+                    <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                      <span><i class="text-gray-400 far fa-circle"></i></span>
+                      <span>Field studies: 5 disabled users (508 compliance)</span>
+                    </li>
+                    <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                      <span><i class="text-gray-400 far fa-circle"></i></span>
+                      <span>Surveys: 300+ responses</span>
+                    </li>
+                  </ul>
+                </div> -->
+              </div>
+              <div fxFlex="60">
+                <div fxLayout="row" class="w-100 justify-end">
+                  <div class="d-flex justify-center rounded-md overflow-hidden bg-white px-1 py-1 img-shadow">
+                    <img
+                      class="w-100"
+                      [src.gt-md]="
+                        'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fsketches_vertical.png?alt=media&token=40624961-6c58-428e-8e28-2c2d34f35e50'
+                      "
+                      [src.lt-lg]="
+                        'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fopas-drawling.png?alt=media&token=523a6847-01f6-4d84-8630-dca094807624'
+                      "
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
             <div fxLayout="column" fxLayout.gt-md="row" fxLayoutGap="5rem">
               <div fxFlex="30" fxLayoutAlign="start center" fxLayout="column">
                 <h2 class="text-2xl font-extrabold mb-3 w-100">Site Map</h2>
@@ -1032,9 +1165,9 @@
     <div fxHide.lt-xl class="position-sticky table-of-contents-wrapper">
       <div class="position-sticky inner-container text-gray-500 mt-5 text-sm" fxLayout="column" fxLayoutGap="10px">
         <button class="text-left font-medium text-uppercase" (click)="scroll(keyinfo)">Key Info</button>
-        <button class="text-left font-medium text-uppercase" (click)="scroll(research)">Research</button>
-        <button class="text-left font-medium text-uppercase" (click)="scroll(strategy)">Strategy</button>
-        <button class="text-left font-medium text-uppercase" (click)="scroll(design)">Design</button>
+        <button class="text-left font-medium text-uppercase" (click)="scroll(research)">Discovery</button>
+        <button class="text-left font-medium text-uppercase" (click)="scroll(strategy)">Define</button>
+        <button class="text-left font-medium text-uppercase" (click)="scroll(design)">Ideate</button>
         <button class="text-left font-medium text-uppercase" (click)="scroll(prototype)">Prototype & Test</button>
         <button class="text-left font-medium text-uppercase" (click)="scroll(results)">Results</button>
       </div>
