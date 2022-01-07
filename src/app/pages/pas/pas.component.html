@@ -651,7 +651,7 @@
         <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
           <div class="mt-4" fxLayout="column" fxLayoutGap="9rem">
             <div fxLayout.gt-sm="row" fxLayout="column" fxLayoutGap="4rem">
-              <div fxFlex="40" fxLayoutAlign="center center" fxLayout="column">
+              <div fxFlex="40" fxLayoutAlign="start start" fxLayout="column">
                 <h2 class="text-2xl font-extrabold mb-3 w-100">Sketches</h2>
                 <p class="mb-3 text-gray-600">
                   Based on user feedback, the new OPAS Portal home page was going to be <strong>minimalistic</strong>.
@@ -681,23 +681,6 @@
                     </li>
                   </ul>
                 </div>
-                <!-- <div class="w-100 my-3">
-                  <h4 class="font-extrabold mb-2">Oppurtunities</h4>
-                  <ul class="list-disc text-gray-600" fxLayout="column" fxLayoutGap="15px">
-                    <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
-                      <span><i class="text-gray-400 far fa-circle"></i></span>
-                      <span>Interviews: 30+ participants</span>
-                    </li>
-                    <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
-                      <span><i class="text-gray-400 far fa-circle"></i></span>
-                      <span>Field studies: 5 disabled users (508 compliance)</span>
-                    </li>
-                    <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
-                      <span><i class="text-gray-400 far fa-circle"></i></span>
-                      <span>Surveys: 300+ responses</span>
-                    </li>
-                  </ul>
-                </div> -->
               </div>
               <div fxFlex="60">
                 <div fxLayout="row" class="w-100 justify-end">
@@ -716,23 +699,20 @@
               </div>
             </div>
             <div fxLayout="column" fxLayout.gt-md="row" fxLayoutGap="5rem">
-              <div fxFlex="30" fxLayoutAlign="start center" fxLayout="column">
+              <div fxFlex="40" fxLayoutAlign="start center" fxLayout="column">
                 <h2 class="text-2xl font-extrabold mb-3 w-100">Site Map</h2>
-                <p class="text-gray-600">
-                  OPAS was, functionally speaking, a large application, but its page count was relatively low. This is
-                  highlighted by the site map. The site map helped me
-                  <b>organize the application and decide where to place content.</b> I found myself coming back to this
-                  visualization when I needed to mentally shrink the scope of OPAS.
+                <p class="mb-3 text-gray-600">
+                  The original OPAS Portal had too many pages and the location of content was confusing. I decided to
+                  give each category of content a page that was easily accessible from the navbar. For example, instead
+                  of scattering forms in multiple locations, they would now live on the Forms Page.
                 </p>
-                <div class="w-100 my-3">
-                  <h4 class="font-bold mb-2">Insights</h4>
-                  <ul class="list-disc ml-3 text-gray-600">
-                    <li>A birds eye view simplifies the application</li>
-                    <li>A high level view of the application made re-organizing and cutting pages easier</li>
-                  </ul>
-                </div>
+                <p class="text-gray-600">
+                  However, based on user feedback I would loosen this design approach. While bucketing content on pages
+                  made sense, having access to forms in other logical locations was convenient. In later designs, a
+                  Forms Tray was added to the Task List page.
+                </p>
               </div>
-              <div fxFlex="70" class="d-flex justify-center">
+              <div fxFlex="60" class="d-flex justify-center">
                 <img
                   class="lg-img"
                   [src]="
@@ -741,6 +721,38 @@
                 />
               </div>
             </div>
+            <div fxLayout.gt-md="row" fxLayout="column" fxLayoutGap="4rem">
+              <div fxFlex="40" fxLayout="column">
+                <h2 class="text-2xl font-extrabold mb-3 w-100">Styles & Branding</h2>
+                <div fxLayout="column" fxLayoutGap="10px" class="text-gray-600">
+                  <p class="mb-3 text-gray-600">
+                    The OPAS Portal had not received a UI update since its release in 2006 and it desperately needed an
+                    overhaul. The base color palette for the site would be lighter with soft shadows to show visual
+                    hierarchies. <strong>I wanted the application to feel approachable, bright and new.</strong>
+                  </p>
+                  <p class="mb-3 text-gray-600">
+                    I also used color to help associate certain forms with categories. We called these categories
+                    ‘Areas’. The intention was to assign a certain color to a category so that users would recognize a
+                    forms category from a glance. Since there were hundreds of forms, color helped us quicky communicate
+                    the purpose of a form.
+                  </p>
+                  <p class="mb-3 text-gray-600">
+                    Dark mode was something early on I experimented with and was eventually implemented. I had learned
+                    from user interviews that OPAS approvers were spending hours a day looking at a screen which
+                    inevitably led to eye strain. Dark mode provided relief for this problem.
+                  </p>
+                </div>
+              </div>
+              <div fxFlex="60" class="d-flex justify-center">
+                <img
+                  class="style-tile-img w-100 rounded-md overflow-hidden img-shadow"
+                  [src]="
+                    'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fopas-style-tile.png?alt=media&token=de2a9b4e-bb95-48e0-9bd6-a66672c52952'
+                  "
+                />
+              </div>
+            </div>
+
             <div fxLayout.gt-md="row" fxLayout="column" fxLayoutGap="5rem">
               <div fxFlex="30" fxLayoutAlign="start center" fxLayout="column">
                 <h2 class="text-2xl font-extrabold mb-3 w-100">Task Flow</h2>
@@ -857,34 +869,7 @@
                 </p>
               </div>
             </div> -->
-            <div fxLayout="column" fxLayoutGap="3rem">
-              <div fxLayout.gt-md="row" fxLayout="column" fxLayoutGap="5rem">
-                <div fxFlex="30" fxLayout="column">
-                  <h2 class="text-2xl font-extrabold mb-3 w-100">Styles & Branding</h2>
-                  <div fxLayout="column" fxLayoutGap="10px" class="text-gray-600">
-                    <p>
-                      The OPAS style tile was a quick reference for OPAS colors, fonts, iconography and more. It
-                      documented the official styles to be used for OPAS and other future applications built by the
-                      division.
-                    </p>
-                    <p>
-                      There were a wide variety of colors that were used, some more than others. ‘Area’ colors were used
-                      to help users associate types of forms with topics. These
-                      <b>colors were eye grabbing but were used limitedly </b> to avoid desensitizing users to them.
-                    </p>
-                    <p>The style tile was used to inform style and branding of the high-fidelity mock-ups below.</p>
-                  </div>
-                </div>
-                <div fxFlex="auto" class="d-flex justify-center">
-                  <img
-                    class="style-tile-img rounded-md overflow-hidden img-shadow"
-                    [src]="
-                      'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fopas-style-tile.png?alt=media&token=de2a9b4e-bb95-48e0-9bd6-a66672c52952'
-                    "
-                  />
-                </div>
-              </div>
-            </div>
+            <div fxLayout="column" fxLayoutGap="3rem"></div>
             <div fxLayoutAlign="start center" fxLayout="column" fxLayoutGap="3rem">
               <h3 class="text-2xl font-extrabold mb-3 w-100">High-fidelity Mock-up</h3>
               <div fxLayout="column" fxLayoutGap="10px" class="text-gray-600">
