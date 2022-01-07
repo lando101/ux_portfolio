@@ -48,7 +48,7 @@
     <div class="container py-5 my-5" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
       <div fxLayout.gt-md="row" fxLayout.lt-lg="column-reverse" fxLayoutGap="6rem">
         <div fxFlex.gt-md="45">
-          <h1 class="text-5xl mb-2 font-extrabold leading-tight">OPAS</h1>
+          <h1 class="text-5xl mb-2 font-extrabold leading-tight">OPAS Portal</h1>
           <p class="project-desc text-xl text-gray-600">
             OPAS is a portal to a suite of 15+ applications that tracks the progression of tickets submitted by users.
             It helps submitters find the forms they need to complete and visualizes tasks approvers must take for a
@@ -94,19 +94,20 @@
                 <div>
                   <h3 class="text-2xl font-extrabold mb-2">Overview</h3>
                   <p class="mb-3 text-gray-600">
-                    The original Process Automation System was deployed in 2006, using an antiquated low-code no-code
-                    solution, that was meant to manage a variety of workflow types. The technology used to build it made
-                    development fast but rigid and, as a result, the solution could not be optimized for user
-                    experience. The years following the original deployment were unresponsive to users’ feedback due to
-                    technology constraints. This led to long, frustrating, time consuming experiences for users.
+                    The OPAS Portal is an application that helps users find a variety of forms spanning vast domains
+                    such as finance, security, career progression and more. Users typically come to the OPAS Portal when
+                    they are required to submit information or make a request the requires formal approvals. The OPAS
+                    Portal is also a workflow management tool that visualizes the initial submission and tracks the
+                    tickets progression through a series of approvers. These approvers visit the site daily and are
+                    highly sensitive to change.
                   </p>
-                  <p class="mb-3 text-gray-600">
+                  <!-- <p class="mb-3 text-gray-600">
                     In 2016, a new version of the application was approved to be built. The organization knew they
                     wanted to create an experience that reduced the time users spent to complete tasks. However, it was
                     now clear after years of feedback, the primary user was not obvious. Users had drastically different
                     goals in the application. Some were approvers and others were submitters with varying degrees of
                     expertise.
-                  </p>
+                  </p> -->
                 </div>
                 <div fxLayout="column" fxLayoutGap="1rem">
                   <div>
@@ -168,43 +169,41 @@
               <div [ngClass.gt-sm]="'sub-section-wo-border'" fxLayout="column" fxFlex="50" fxLayoutGap="15px">
                 <div>
                   <h3 class="text-2xl font-extrabold mb-2">Challenge</h3>
-                  <p class="text-gray-600">
-                    <strong class="font-semibold"
-                      >To design and build a successful replacement application, it had to be flexible to user needs,
-                      address radically different user goals and minimize the time spent to complete tasks.
-                    </strong>
+                  <p class="mb-3 text-gray-600">
+                    Originally, the OPAS Portal was a simple application which hosted forms and gave approvers a view to
+                    manage submissions. However, the form names were often confusingly named and led to incorrect
+                    submissions or even the avoidance of submission all together. Approvers, who were familiar with the
+                    system, had to manually find forms numerous times a day and use a data table that lacked basic
+                    functionality such as sorting, searching and filtering. Inefficiency in the system were rampant.
                   </p>
-                  <div>
-                    <ul class="list-disc ml-3 text-gray-600">
-                      <li>Design and build a modern web application to replace the existing application</li>
-                      <li>
-                        Create a solution that is
-                        <strong class="font-semibold">flexible enough to provide a positive experience</strong> for
-                        users with widely differing objectives
-                      </li>
-                      <li>
-                        Build a <strong class="font-semibold">templatized UI</strong> that dynamically loads content and
-                        generates pages from JSON data without the need for deployments for content changes
-                      </li>
-                      <li>
-                        Engineer an experience to
-                        <strong class="font-semibold">help novice users identify forms</strong> that are required to be
-                        completed based on user scenario – travel, expense, security reporting, etc.
-                      </li>
-                      <li>
-                        Develop two unique experiences (novice, expert) for users that promotes timeliness and
-                        efficiency
-                        <!-- <strong class="font-semibold"
-                          >familiar industry design patterns and contextual content visibility for convenience</strong
-                        > -->
-                      </li>
-                      <li>
-                        Create an
-                        <strong class="font-semibold">inclusive application for users with disabilities </strong>in
-                        compliance with 508 requirements
-                      </li>
-                    </ul>
-                  </div>
+                  <p class="mb-3 text-gray-600">
+                    We needed to design a system that was flexible enough to cater to users with varying degrees of OPAS
+                    Portal expertise.
+                    <strong class="font-semibold">We couldn’t build a one size fits all solution. </strong>
+                  </p>
+                </div>
+                <div>
+                  <ul class="list-disc text-gray-600" fxLayout="column" fxLayoutGap="15px">
+                    <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                      <span><i class="text-gray-400 far fa-circle"></i></span>
+                      <span
+                        >Decreasing incorrect submissions by guiding users toward the forms they were required to
+                        complete</span
+                      >
+                    </li>
+                    <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                      <span><i class="text-gray-400 far fa-circle"></i></span>
+                      <span>Shorten time between entering site to form submission</span>
+                    </li>
+                    <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                      <span><i class="text-gray-400 far fa-circle"></i></span>
+                      <span>Provide power users with tools to improve efficiency and automate remedial tasks</span>
+                    </li>
+                    <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                      <span><i class="text-gray-400 far fa-circle"></i></span>
+                      <span>Design a system that spoke users’ language and not agency jargon</span>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -246,14 +245,19 @@
             <div fxLayout.gt-sm="row" fxLayout="column" fxLayoutGap="20px">
               <div fxFlex="40" fxLayoutAlign="center center" fxLayout="column">
                 <h2 class="text-2xl font-extrabold mb-3 w-100">Meet Users</h2>
-                <p class="text-gray-600">
-                  My design process starts and end with users in mind. When designing the new OPAS application I wanted
-                  to speak directly to users to understand how the current application was failing and succeeding.
-                  During this process, it was clear that the perceived user base and actual user base were quite
-                  different. It was previously assumed that most users were high frequency users.
-                  <b>However, power users were a smaller percentage of users than anticipated.</b> After meeting with
-                  users, it was apparent lower frequency (novice) users were <b>50%+</b> of the user base and the
-                  application needed to better accommodate them.
+                <p class="mb-3 text-gray-600">
+                  Before redesigning an application, I knew little about, I met with users. I wanted to validate my
+                  concerns about the existing application. During this process, many of my concerns regarding
+                  information hierarchies, naming conventions and limited functionalities were confirmed. The
+                  application was not serving users properly.
+                </p>
+                <p class="mb-3 text-gray-600">
+                  Additionally, it was now clear submitters and approvers had opposing issues with the existing
+                  application.
+                  <strong
+                    >The user base was asking for two kinds of experiences: one for visitors and another for power
+                    users.
+                  </strong>
                 </p>
                 <div class="w-100 my-3">
                   <h4 class="font-semibold mb-2">Methods</h4>
@@ -267,16 +271,40 @@
               </div>
               <div fxFlex="60">
                 <div fxLayout="row" class="w-100 justify-end">
-                  <img
+                  <!-- <img
                     class="sm-img"
                     [src]="
                       'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/illustrations%2Fundraw_conversation_h-12-g.svg?alt=media&token=900aa0e6-90db-455b-814f-2514883b1c55'
                     "
-                  />
+                  /> -->
+                  <div
+                    fxLayout="row"
+                    [ngClass.gt-sm]="'w-75'"
+                    [ngClass]="'w-100'"
+                    class="qoute content-section-with-border"
+                    fxLayoutGap="10px"
+                  >
+                    <div>
+                      <i
+                        [ngClass.gt-xs]="'text-5xl'"
+                        [ngClass]="'text-4xl'"
+                        class="text-gray-200 fas fa-quote-left"
+                      ></i>
+                    </div>
+                    <div class="text-start">
+                      <h1 [ngClass.gt-xs]="'text-5xl'" [ngClass]="'text-4xl'" class="font-bold leading-snug">
+                        I can't find the forms I'm looking for. The names of forms are confusing.
+                      </h1>
+                      <div fxLayout="column">
+                        <span>Organization Business Analyst</span>
+                        <small class="font-semibold text-sm text-gray-500">Submitter • Novice Experience</small>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="w-100 justify-center" fxLayout="row">
+            <!-- <div class="w-100 justify-center" fxLayout="row">
               <div
                 fxLayout="row"
                 [ngClass.gt-sm]="'w-75'"
@@ -297,7 +325,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
             <div fxLayout.gt-sm="row" fxLayout="column" fxLayoutGap="150px">
               <div fxFlex="50" fxLayoutAlign="start center" fxLayout="column">
                 <h2 class="text-2xl font-extrabold mb-3 w-100">Baseline</h2>
