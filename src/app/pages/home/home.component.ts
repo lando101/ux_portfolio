@@ -81,7 +81,7 @@ export class HomeComponent implements OnInit {
     {
       title: 'OPAS Portal',
       desc: 'An enterprise grade application for managing workflows.',
-      skills: ['UX/UI', 'UX Engineer', 'Angular'],
+      skills: ['UX/UI Design', 'UX Research', 'UI Development'],
       img_url:
         'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fpas_image.png?alt=media&token=4a0dc5de-d5ed-4740-9f18-a82dd10601bc',
       href: '/pas',

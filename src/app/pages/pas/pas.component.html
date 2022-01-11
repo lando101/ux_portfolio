@@ -44,6 +44,16 @@
       </div>
     </div>
   </section> -->
+  <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
+    <div class="w-100 text-left">
+      <!-- <h4 class="font-extrabold text-gray-600 text-xl">Other Projects</h4> -->
+      <a class="text-sm" routerLink="/home">
+        <i class="fas fa-arrow-left mr-1"></i>
+        Home
+      </a>
+    </div>
+    <div class="w-100" fxLayout="row"></div>
+  </div>
   <section class="pb-5 my-5">
     <div class="container py-5 my-5" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
       <div fxLayout.gt-md="row" fxLayout.lt-lg="column-reverse" fxLayoutGap="6rem">
@@ -387,15 +397,27 @@
                     <ul class="list-disc text-gray-600" fxLayout="column" fxLayoutGap="15px">
                       <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
                         <span><i class="text-gray-400 far fa-circle"></i></span>
-                        <span>Interviews: 30+ participants</span>
+                        <span>Provide alternative ways to find forms</span>
                       </li>
                       <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
                         <span><i class="text-gray-400 far fa-circle"></i></span>
-                        <span>Field studies: 5 disabled users (508 compliance)</span>
+                        <span>Limit visible content to highlight relevant information</span>
                       </li>
                       <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
                         <span><i class="text-gray-400 far fa-circle"></i></span>
-                        <span>Surveys: 300+ responses</span>
+                        <span>Simplify forms naming convention </span>
+                      </li>
+                      <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                        <span><i class="text-gray-400 far fa-circle"></i></span>
+                        <span>Provide text describing the purpose of a form</span>
+                      </li>
+                      <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                        <span><i class="text-gray-400 far fa-circle"></i></span>
+                        <span>Implement a mechanism to favorite forms for quick access </span>
+                      </li>
+                      <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                        <span><i class="text-gray-400 far fa-circle"></i></span>
+                        <span>Use color and icons to help users quickly associate forms with categories</span>
                       </li>
                     </ul>
                   </div>
@@ -422,27 +444,29 @@
                     application.
                   </p>
                   <div class="w-100 my-3">
-                    <h4 class="font-extrabold mb-2 text-xl">Pirmary Users</h4>
+                    <h4 class="font-extrabold mb-2 text-xl">Primary Users</h4>
                     <div fxLayout="column">
                       <div fxLayout="row" fxLayoutGap="15px" class="align-items-start">
                         <span class="font-extrabold text-gray-400">1) </span>
                         <div>
-                          <div class="font-extrabold text-gray-700 mb-2">Field Agents (Submitters)</div>
+                          <div class="font-extrabold text-gray-700 mb-2">Field Agents (Submitter)</div>
                           <p class="mb-3 text-gray-600">
-                            Submitters only visit the OPAS Portal when required. Their frequency of use is typically
-                            low, and they are not usually familiar with the application. Submitters will complete a form
-                            and not revisit the site until another event occurs that requires them to make a submission.
+                            Field agents only visit the OPAS Portal when required. Their frequency of use is typically
+                            low to medium, and they are not usually familiar with the breath of the application. Field
+                            agents will complete a form and not revisit the site until another event occurs. Their day
+                            is usually hectic and the OPAS Portal is considered a hassle.
                           </p>
                         </div>
                       </div>
                       <div fxLayout="row" fxLayoutGap="15px" class="align-items-start">
                         <span class="font-extrabold text-gray-400">2) </span>
                         <div>
-                          <div class="font-extrabold text-gray-700 mb-2">Intel Analysts (Submitters)</div>
+                          <div class="font-extrabold text-gray-700 mb-2">Intel Analysts (Submitter)</div>
                           <p class="mb-3 text-gray-600">
-                            Submitters only visit the OPAS Portal when required. Their frequency of use is typically
-                            low, and they are not usually familiar with the application. Submitters will complete a form
-                            and not revisit the site until another event occurs that requires them to make a submission.
+                            Intel analysts tend to be younger and more technology literate. They visit the OPAS Portal a
+                            few times a year and have a difficult time finding forms. Intel analysts typically rely on
+                            outside help to find a form they are required to submit. The OPAS Portal looks dated to them
+                            and doesn’t reflect the modern applications they encounter on daily basis.
                           </p>
                         </div>
                       </div>
@@ -450,11 +474,11 @@
                       <div fxLayout="row" fxLayoutGap="15px" class="align-items-start">
                         <span class="font-extrabold text-gray-400">3) </span>
                         <div>
-                          <div class="font-extrabold text-gray-700 mb-2">Business Analysts (Approvers)</div>
+                          <div class="font-extrabold text-gray-700 mb-2">Business Analysts (Approver)</div>
                           <p class="mb-3 text-gray-600">
-                            Approvers use the OPAS Portal daily. In fact, their job likely exists because of the OPAS
-                            ecosystem. They are highly sensitive to change and prefer functionality over style. Many of
-                            them are complacent with the current solution because it ‘gets the job done’.
+                            Business analysts use the OPAS Portal daily. In fact, their job likely exists because of the
+                            OPAS ecosystem. They are highly sensitive to change and prefer functionality over style.
+                            Many of them are complacent with the current solution because it ‘gets the job done’.
                           </p>
                         </div>
                       </div>

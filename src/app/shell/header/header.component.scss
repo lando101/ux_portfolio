@@ -10,6 +10,9 @@
 .nav-link.dropdown-toggle {
   cursor: pointer;
 }
+.nav-link.active {
+  border-bottom: 3px solid $bg-purple;
+}
 
 .brand-text {
   font-family: "Megrim", cursive;
