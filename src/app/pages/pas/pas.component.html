@@ -54,7 +54,7 @@
     </div>
     <div class="w-100" fxLayout="row"></div>
   </div>
-  <section class="pb-5 my-5">
+  <section #intro class="pb-5 my-5">
     <div class="container py-5 my-5" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
       <div fxLayout.gt-md="row" fxLayout.lt-lg="column-reverse" fxLayoutGap="6rem">
         <div fxFlex.gt-md="45">
@@ -65,7 +65,12 @@
             ticket to be complete. This case study focuses on the re-engineering effort of the original OPAS
             application.
           </p>
-          <div fxLayout="row" fxLayoutGap="15px" class="py-4">
+          <div class="py-4">
+            <span class="text-gray-600"
+              ><strong>Status: </strong> Deployed <i class="text-green-400 far fa-check-circle"></i
+            ></span>
+          </div>
+          <div fxLayout="row" fxLayoutGap="15px">
             <span class="badge badge-pill badge-dark p-3">UI/UX Design</span>
             <span class="badge badge-pill badge-dark p-3">UX Research</span>
             <span class="badge badge-pill badge-dark p-3">UI Development</span>
@@ -196,7 +201,7 @@
             <img
               class="w-100"
               [src]="
-                'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fdesign_process.png?alt=media&token=3be96b07-c9a8-4dc7-a6a7-e7890202d0dc'
+                'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/illustrations_v2%2Fdesign_process_v2.png?alt=media&token=c34602d9-8f20-4c1a-b087-a2bc3cfe0ab9'
               "
             />
           </div>
@@ -239,7 +244,7 @@
                   <ul class="list-disc text-gray-600" fxLayout="column" fxLayoutGap="15px">
                     <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
                       <span><i class="text-gray-400 far fa-circle"></i></span>
-                      <span>Interviews: 30+ participants</span>
+                      <span>Interviews: 10+ participants</span>
                     </li>
                     <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
                       <span><i class="text-gray-400 far fa-circle"></i></span>
@@ -668,7 +673,7 @@
               <span class="sub-header font-extrabold text-4xl">03 </span
               ><span class="font-extrabold text-4xl">/ Ideate</span>
             </h1>
-            <label class="text-2xl font-bold sub-header">One step at a time, with users in mind.</label>
+            <label class="text-2xl font-bold sub-header">Let the creative juices flow.</label>
           </div>
         </div>
         <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
@@ -796,7 +801,7 @@
               <span class="sub-header font-extrabold text-4xl">04 </span
               ><span class="font-extrabold text-4xl">/ Design & Test</span>
             </h1>
-            <label class="text-2xl font-bold sub-header">The first moments of truth.</label>
+            <label class="text-2xl font-bold sub-header">Take it back to users.</label>
           </div>
         </div>
         <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
@@ -1362,12 +1367,40 @@
     </div>
     <div fxHide.lt-xl class="position-sticky table-of-contents-wrapper">
       <div class="position-sticky inner-container text-gray-500 mt-5 text-sm" fxLayout="column" fxLayoutGap="10px">
-        <button class="text-left font-medium text-uppercase" (click)="scroll(keyinfo)">Key Info</button>
-        <button class="text-left font-medium text-uppercase" (click)="scroll(research)">Discovery</button>
-        <button class="text-left font-medium text-uppercase" (click)="scroll(strategy)">Define</button>
-        <button class="text-left font-medium text-uppercase" (click)="scroll(design)">Ideate</button>
-        <button class="text-left font-medium text-uppercase" (click)="scroll(prototype)">Design & Test</button>
-        <button class="text-left font-medium text-uppercase" (click)="scroll(results)">Results</button>
+        <button
+          id="intro"
+          class="text-left font-medium text-uppercase focus:ring-2 focus:ring-gray-800"
+          (click)="scroll(intro)"
+        >
+          Intro
+        </button>
+        <button class="text-left font-medium text-uppercase focus:ring-2 focus:ring-gray-800" (click)="scroll(keyinfo)">
+          Summary
+        </button>
+        <button
+          class="text-left font-medium text-uppercase focus:ring-2 focus:ring-gray-800"
+          (click)="scroll(research)"
+        >
+          Discovery
+        </button>
+        <button
+          class="text-left font-medium text-uppercase focus:ring-2 focus:ring-gray-800"
+          (click)="scroll(strategy)"
+        >
+          Define
+        </button>
+        <button class="text-left font-medium text-uppercase focus:ring-2 focus:ring-gray-800" (click)="scroll(design)">
+          Ideate
+        </button>
+        <button
+          class="text-left font-medium text-uppercase focus:ring-2 focus:ring-gray-800"
+          (click)="scroll(prototype)"
+        >
+          Design & Test
+        </button>
+        <button class="text-left font-medium text-uppercase focus:ring-2 focus:ring-gray-800" (click)="scroll(results)">
+          Results
+        </button>
       </div>
     </div>
   </div>
