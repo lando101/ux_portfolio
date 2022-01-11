@@ -1,5 +1,5 @@
 <div class="container-fluid">
-  <div class="container align-items-center" fxLayout="column" fxLayoutGap="140px">
+  <div class="container align-items-center" fxLayout="column" fxLayoutGap="8rem">
     <div
       fxLayout="row"
       fxLayout.lt-lg="column-reverse"
@@ -56,10 +56,10 @@
     <!-- <div animateOnScroll animationName="animate__fadeInLeft animate__animated" class=""> -->
     <div [ngClass.lt-lg]="'max-w-screen-sm'">
       <div class="text-center w-100 mb-5 py-3 section-header" fxLayout="row" fxLayoutAlign="center center">
-        <div class="divider"></div>
+        <!-- <div class="divider"></div> -->
         <h2 fxHide.lt-md class="text-4xl font-extrabold px-4 whitespace-nowrap">Projects & Case Studies</h2>
         <h2 fxHide.gt-sm class="text-4xl font-extrabold px-4 whitespace-nowrap">Projects</h2>
-        <div class="divider"></div>
+        <!-- <div class="divider"></div> -->
       </div>
       <div fxLayout="column" fxLayoutGap="90px">
         <div *ngFor="let casestudy of caseStudies">
@@ -93,9 +93,9 @@
           "
         /> -->
       </div>
-      <div class="text-center w-100 mb-5 pb-3 bg-transparent" fxLayout="row" fxLayoutAlign="star center">
+      <div class="text-center w-100 mb-5 pb-3 bg-transparent" fxLayout="row" fxLayoutAlign="center center">
         <!-- <div class="divider"></div> -->
-        <h2 class="text-4xl font-extrabold whitespace-normal text-white text-left">What my team members say...</h2>
+        <h2 class="text-4xl font-extrabold whitespace-normal text-white text-center">What my team members say...</h2>
         <!-- <div class="divider"></div> -->
       </div>
       <div fxLayout.gt-md="row" fxLayout="column" fxLayoutGap="5rem" class="quotes-wrapper">

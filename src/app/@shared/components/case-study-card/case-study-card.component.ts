@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 export interface CaseStudy {
   title: string;
   desc: string;
@@ -18,7 +19,11 @@ export interface CaseStudy {
 })
 export class CaseStudyCardComponent implements OnInit {
   @Input() caseStudy: CaseStudy;
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit(): void {}
+
+  route(url: string) {
+    this.router.navigateByUrl(url);
+  }
 }

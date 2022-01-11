@@ -1,5 +1,13 @@
-<div fxHide.lt-lg fxLayout="row" fxLayoutGap="6rem">
-  <div *ngIf="caseStudy.orientation === 'left'" fxFlex="45" fxLayoutAlign="center center">
+<button
+  class="cs-card-container"
+  [ngClass]="{ 'disabled-cursor': !caseStudy.public }"
+  [disabled]="!caseStudy.public"
+  (click)="route(caseStudy.public ? caseStudy.href : '')"
+  fxHide.lt-lg
+  fxLayout="row"
+  fxLayoutGap="6rem"
+>
+  <!-- <div *ngIf="caseStudy.orientation === 'left'" fxFlex="45" fxLayoutAlign="center center">
     <a [routerLink]="caseStudy.public ? caseStudy.href : ''">
       <img
         fxFlex.lt-lg="70"
@@ -8,16 +16,17 @@
         [src]="caseStudy.img_url"
       />
     </a>
-  </div>
-  <div fxFlex="55" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="40px">
-    <h2 class="text-2xl font-extrabold px-4">{{ caseStudy.title }}</h2>
+  </div> -->
+  <div fxFlex="55" class="h-100" fxLayout="column" fxLayoutAlign="center start" fxLayoutGap="20px">
+    <span *ngIf="!caseStudy.public" class="text-gray-500 focus:ring-2 focus:ring-gray-800 text-uppercase font-bold"
+      >In Progress</span
+    >
+    <h2 class="text-2xl font-black">{{ caseStudy.title }}</h2>
     <div ngClass.gt-xs="" class="">
-      <p class="text-center text-gray-600">{{ caseStudy.desc }}</p>
-      <div fxLayout="row wrap" fxLayoutGap="10px" fxLayoutAlign="center center" class="mt-2">
-        <span *ngFor="let skill of caseStudy.skills" class="badge badge-pill badge-dark mt-2 px-3 py-2">{{
-          skill
-        }}</span>
+      <div fxLayout="row wrap" fxLayoutGap="10px" fxLayoutAlign="start start" class="pb-1">
+        <span *ngFor="let skill of caseStudy.skills" class="font-bold text-gray-400">{{ skill }}</span>
       </div>
+      <p class="text-left text-gray-600">{{ caseStudy.desc }}</p>
     </div>
     <div *ngIf="caseStudy.nda">
       <span fxLayout="row" class="nda-wrapper" fxLayoutGap="10px">
@@ -30,7 +39,7 @@
         </div>
       </span>
     </div>
-    <div>
+    <!-- <div>
       <a
         [routerLink]="caseStudy.href"
         *ngIf="caseStudy.caseStudy && caseStudy.public; else viewMore"
@@ -48,9 +57,9 @@
       <ng-template #comingsoon>
         <span class="text-gray-500 focus:ring-2 focus:ring-gray-800 text-uppercase font-bold">In Progress</span>
       </ng-template>
-    </div>
+    </div> -->
   </div>
-  <div *ngIf="caseStudy.orientation === 'right'" fxFlex="45" fxLayoutAlign="center center">
+  <!-- <div *ngIf="caseStudy.orientation === 'right'" fxFlex="45" fxLayoutAlign="center center">
     <a [routerLink]="caseStudy.public ? caseStudy.href : ''">
       <img
         fxFlex.lt-lg="70"
@@ -59,10 +68,21 @@
         [src]="caseStudy.img_url"
       />
     </a>
-  </div>
-</div>
+  </div> -->
+  <div fxFlex="45" fxLayoutAlign="center center">
+    <img
+      fxFlex.lt-lg="70"
+      class="img-right"
+      [alt]="'Image of coinfloe application on desktop and mobile'"
+      [src]="caseStudy.img_url"
+    />
+    <!-- <a [routerLink]="caseStudy.public ? caseStudy.href : ''">
 
-<div fxLayout="column" fxHide.gt-md fxLayoutGap="3rem">
+    </a> -->
+  </div>
+</button>
+
+<a fxLayout="column" fxHide.gt-md fxLayoutGap="3rem">
   <div fxFlex="45" fxLayoutAlign="center center">
     <a [routerLink]="caseStudy.href" class="justify-content-center">
       <img
@@ -89,12 +109,12 @@
           <i class="text-gray-400 text-xl fas fa-exclamation-circle"></i>
         </div>
         <div fxLayout="column">
-          <label class="text-sm font-semibold text-gray-100 mb-1">Under Non-disclosure Agreement</label>
+          <label class="text-sm font-semibold text-gray-100 mb-1 text-left">Under Non-disclosure Agreement</label>
           <p class="text-xs text-gray-300 font-medium">Details will likely be vague to protect client info.</p>
         </div>
       </span>
     </div>
-    <div>
+    <!-- <div>
       <a
         [routerLink]="caseStudy.public ? caseStudy.href : ''"
         *ngIf="caseStudy.caseStudy && caseStudy.public; else viewMore"
@@ -113,6 +133,6 @@
       <ng-template #comingsoon>
         <span class="text-gray-500 focus:ring-2 focus:ring-gray-800 text-uppercase font-bold">In Progress</span>
       </ng-template>
-    </div>
+    </div> -->
   </div>
-</div>
+</a>
