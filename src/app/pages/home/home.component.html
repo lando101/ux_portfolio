@@ -9,10 +9,10 @@
     >
       <div fxFlex.lt-sm="100" fxFlex="45">
         <h1 class="text-5xl font-extrabold leading-tight">
-          I'm Landon, a <span class="text-5xl font-extrabold leading-tight underline">UX Designer</span> at Booz Allen
-          Hamilton.
+          I'm Landon, a <span class="text-5xl font-extrabold leading-tight purple-navy-text">UX Designer</span> at Booz
+          Allen Hamilton.
         </h1>
-        <p class="text-xl leading-9 my-4 text-gray-500">
+        <p class="text-xl leading-9 mt-2 mb-4 text-gray-500">
           I'm a UX engineer, experienced in building custom user experiences for the Government
           <a
             matTooltip="Learn more about Government clearances"
@@ -26,26 +26,27 @@
           >
           and I'm ready to help!
         </p>
-        <button (click)="openDialog()" class="btn-main focus:ring-2 focus:ring-gray-800">
-          <span class="font-bold">{{ btnString }}</span>
-          <!-- <span class="font-bold" *ngIf="name">Got Feedback, {{ name }}?</span> -->
-        </button>
-        <div fxLayout="row" fxLayoutGap="25px" class="my-4">
+
+        <div fxLayout="row" fxLayoutGap="25px" class="py-4 align-items-center">
+          <button (click)="openDialog()" class="btn-main focus:ring-2 focus:ring-gray-800">
+            <span class="font-bold">{{ btnString }}</span>
+            <!-- <span class="font-bold" *ngIf="name">Got Feedback, {{ name }}?</span> -->
+          </button>
           <a href="https://www.linkedin.com/in/4921117/" target="_blank" matTooltip="View LinkedIn profile"
-            ><i class="fab fa-linkedin text-2xl text-gray-600"></i
+            ><i class="fab fa-linkedin text-lg text-gray-600"></i
           ></a>
           <a href="mailto:landon.messmerjmu@gmail.com" matTooltip="Send email"
-            ><i class="fas fa-envelope text-2xl text-gray-600"></i
+            ><i class="fas fa-envelope text-lg text-gray-600"></i
           ></a>
           <a
             href="https://codepen.io/lando101/pens/public?cursor=ZD0wJm89MSZwPTEmdj0zOTM5NDExNw=="
             target="_blank"
             matTooltip="View Codepen projects"
-            ><i class="fab fa-codepen text-2xl text-gray-600"></i
+            ><i class="fab fa-codepen text-lg text-gray-600"></i
           ></a>
         </div>
       </div>
-      <div fxHide.lt-sm fxFlex="auto" fxLayout="row" fxLayoutAlign="center center">
+      <div fxHide.lt-sm fxFlex="auto" fxLayout="column" fxLayoutAlign="end end">
         <img
           [src]="
             'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/illustrations_v2%2Funder%20construction-outline_III.png?alt=media&token=6260670f-ff8c-458b-8bf4-673c5491b1d8'
@@ -57,7 +58,7 @@
     <div [ngClass.lt-lg]="'max-w-screen-sm'">
       <div class="text-center w-100 mb-5 py-3 section-header" fxLayout="row" fxLayoutAlign="center center">
         <!-- <div class="divider"></div> -->
-        <h2 fxHide.lt-md class="text-4xl font-extrabold px-4 whitespace-nowrap">Projects & Case Studies</h2>
+        <h2 fxHide.lt-md class="text-4xl font-extrabold px-4 whitespace-nowrap">Projects + Case Studies</h2>
         <h2 fxHide.gt-sm class="text-4xl font-extrabold px-4 whitespace-nowrap">Projects</h2>
         <!-- <div class="divider"></div> -->
       </div>
@@ -69,9 +70,9 @@
     </div>
     <div [ngClass.lt-lg]="'max-w-screen-sm'">
       <div class="text-center w-100 mb-2 py-3 section-header" fxLayout="row" fxLayoutAlign="center center">
-        <div class="divider w-100"></div>
+        <!-- <div class="divider w-100"></div> -->
         <h2 class="text-4xl font-extrabold px-4">Roles</h2>
-        <div class="divider w-100"></div>
+        <!-- <div class="divider w-100"></div> -->
       </div>
       <div fxLayout="row" fxLayout.lt-lg="column" fxLayoutGap="65px" fxLayoutAlign="space-around">
         <div fxFlex="30" class="d-flex justify-center item-center" *ngFor="let skill of skills">

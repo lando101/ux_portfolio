@@ -80,10 +80,10 @@ export class HomeComponent implements OnInit {
   caseStudies: CaseStudy[] = [
     {
       title: 'OPAS Portal',
-      desc: 'An enterprise grade application for managing workflows.',
+      desc: 'An enterprise grade application for managing workflows for a user based of over 5,000 users.',
       skills: ['UX/UI Design', 'UX Research', 'UI Development'],
       img_url:
-        'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fpas_image.png?alt=media&token=4a0dc5de-d5ed-4740-9f18-a82dd10601bc',
+        'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fopas-transparent-no-tilt.png?alt=media&token=227a6ff4-e811-42ac-9a77-b4690a33ec43',
       href: '/pas',
       orientation: 'right',
       alt: 'Image of process automation application on desktop in light and dark mode',
@@ -94,9 +94,9 @@ export class HomeComponent implements OnInit {
     {
       title: 'Coinfloe',
       desc: 'A full-featured crypto currency web application built for exploring the crypto landscape.',
-      skills: ['UX/UI', 'Front-end Developer', 'API Developer', 'Angular'],
+      skills: ['UX/UI Design', 'UI/Front-End Development'],
       img_url:
-        'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fcoinfloe_image.png?alt=media&token=a81dc3b2-5afe-4d78-b7cf-179213c8ebbd',
+        'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fcoinfloe_ad_transparent_no_tilt.png?alt=media&token=9d750a04-4f4f-4b3e-89ac-33aeac3f9dd6',
       href: '/coinfloe',
       orientation: 'left',
       alt: 'Image of coinfloe application on desktop and mobile',

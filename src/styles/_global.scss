@@ -60,3 +60,10 @@ a {
 .img-shadow {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
+
+// text shadow
+.purple-navy-text {
+  // text-shadow: 4px 4px 3px #b1aeffab;
+  text-shadow: 4px 4px 5px #b1aeff80;
+  color: $bg-purple;
+}
