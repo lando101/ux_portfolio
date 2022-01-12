@@ -3,9 +3,10 @@
   [ngClass]="{ 'disabled-cursor': !caseStudy.public }"
   [disabled]="!caseStudy.public"
   (click)="route(caseStudy.public ? caseStudy.href : '')"
-  fxHide.lt-lg
   fxLayout="row"
-  fxLayoutGap="6rem"
+  fxLayout.lt-lg="column-reverse"
+  fxLayoutGap.gt-md="6rem"
+  fxLayoutGap.lt-lg="3rem"
 >
   <!-- <div *ngIf="caseStudy.orientation === 'left'" fxFlex="45" fxLayoutAlign="center center">
     <a [routerLink]="caseStudy.public ? caseStudy.href : ''">
@@ -39,50 +40,18 @@
         </div>
       </span>
     </div>
-    <!-- <div>
-      <a
-        [routerLink]="caseStudy.href"
-        *ngIf="caseStudy.caseStudy && caseStudy.public; else viewMore"
-        class="focus:ring-2 focus:ring-gray-800"
-        >Read the case study</a
-      >
-      <ng-template #viewMore>
-        <a
-          *ngIf="caseStudy.public; else comingsoon"
-          [routerLink]="caseStudy.href"
-          class="focus:ring-2 focus:ring-gray-800"
-          >Explore the project</a
-        >
-      </ng-template>
-      <ng-template #comingsoon>
-        <span class="text-gray-500 focus:ring-2 focus:ring-gray-800 text-uppercase font-bold">In Progress</span>
-      </ng-template>
-    </div> -->
   </div>
-  <!-- <div *ngIf="caseStudy.orientation === 'right'" fxFlex="45" fxLayoutAlign="center center">
-    <a [routerLink]="caseStudy.public ? caseStudy.href : ''">
-      <img
-        fxFlex.lt-lg="70"
-        class="img-right"
-        [alt]="'Image of coinfloe application on desktop and mobile'"
-        [src]="caseStudy.img_url"
-      />
-    </a>
-  </div> -->
   <div fxFlex="45" fxLayoutAlign="center center">
     <img
-      fxFlex.lt-lg="70"
+      fxFlex.lt-lg="80"
       class="img-right"
       [alt]="'Image of coinfloe application on desktop and mobile'"
       [src]="caseStudy.img_url"
     />
-    <!-- <a [routerLink]="caseStudy.public ? caseStudy.href : ''">
-
-    </a> -->
   </div>
 </button>
 
-<a fxLayout="column" fxHide.gt-md fxLayoutGap="3rem">
+<!-- <a fxLayout="column" fxHide.gt-md fxLayoutGap="3rem">
   <div fxFlex="45" fxLayoutAlign="center center">
     <a [routerLink]="caseStudy.href" class="justify-content-center">
       <img
@@ -114,25 +83,5 @@
         </div>
       </span>
     </div>
-    <!-- <div>
-      <a
-        [routerLink]="caseStudy.public ? caseStudy.href : ''"
-        *ngIf="caseStudy.caseStudy && caseStudy.public; else viewMore"
-        class="focus:ring-2 focus:ring-gray-800"
-        >Read the case study</a
-      >
-      <ng-template #viewMore>
-        <a
-          *ngIf="caseStudy.public; else comingsoon"
-          [routerLink]="caseStudy.href"
-          class="focus:ring-2 focus:ring-gray-800"
-          >Explore the project</a
-        >
-      </ng-template>
-
-      <ng-template #comingsoon>
-        <span class="text-gray-500 focus:ring-2 focus:ring-gray-800 text-uppercase font-bold">In Progress</span>
-      </ng-template>
-    </div> -->
   </div>
-</a>
+</a> -->

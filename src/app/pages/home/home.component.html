@@ -15,21 +15,33 @@
         <p class="text-xl leading-9 mt-2 mb-4 text-gray-500">
           I'm a UX engineer, experienced in building custom user experiences for the Government
           <a
+            class="text-gray-600"
             matTooltip="Learn more about Government clearances"
             href="https://www.state.gov/security-clearances"
             target="_blank"
             >cleared</a
           >
           space. I'm located in
-          <a matTooltip="Learn more about Arlington, VA" href="https://www.arlingtonva.us/Home" target="_blank"
+          <a
+            class="text-gray-600"
+            matTooltip="Learn more about Arlington, VA"
+            href="https://www.arlingtonva.us/Home"
+            target="_blank"
             >Arlington, VA</a
           >
           and I'm ready to help!
         </p>
 
-        <div fxLayout="row" fxLayoutGap="25px" class="py-4 align-items-center">
+        <div
+          fxLayout="row"
+          fxLayoutGap="25px"
+          class="py-4 align-items-center"
+          fxLayoutAlign.gt-md="start start"
+          fxLayoutAlign.lt-lg="center center"
+          fxLayoutAlign.lt-sm="start start"
+        >
           <button (click)="openDialog()" class="btn-main focus:ring-2 focus:ring-gray-800">
-            <span class="font-bold">{{ btnString }}</span>
+            <span class="font-extrabold tracking-wide px-4">{{ btnString }}</span>
             <!-- <span class="font-bold" *ngIf="name">Got Feedback, {{ name }}?</span> -->
           </button>
           <a href="https://www.linkedin.com/in/4921117/" target="_blank" matTooltip="View LinkedIn profile"
@@ -49,7 +61,7 @@
       <div fxHide.lt-sm fxFlex="auto" fxLayout="column" fxLayoutAlign="end end">
         <img
           [src]="
-            'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/illustrations_v2%2Funder%20construction-outline_III.png?alt=media&token=6260670f-ff8c-458b-8bf4-673c5491b1d8'
+            'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/illustrations_v2%2Funder%20construction-outline_III.png?alt=media&token=ef9e6ee7-8c19-4d83-b240-17d8e329af67'
           "
         />
       </div>
@@ -58,8 +70,8 @@
     <div [ngClass.lt-lg]="'max-w-screen-sm'">
       <div class="text-center w-100 mb-5 py-3 section-header" fxLayout="row" fxLayoutAlign="center center">
         <!-- <div class="divider"></div> -->
-        <h2 fxHide.lt-md class="text-4xl font-extrabold px-4 whitespace-nowrap">Projects + Case Studies</h2>
-        <h2 fxHide.gt-sm class="text-4xl font-extrabold px-4 whitespace-nowrap">Projects</h2>
+        <h2 fxHide.lt-md class="text-4xl font-extrabold whitespace-nowrap">Projects + Case Studies</h2>
+        <h2 fxHide.gt-sm class="text-4xl font-extrabold whitespace-nowrap">Case Studies</h2>
         <!-- <div class="divider"></div> -->
       </div>
       <div fxLayout="column" fxLayoutGap="90px">
