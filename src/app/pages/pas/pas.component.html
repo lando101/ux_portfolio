@@ -223,7 +223,7 @@
         </div>
         <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
           <div class="mt-4" fxLayout="column" fxLayoutGap="9rem">
-            <div fxLayout.gt-sm="row" fxLayout="column" fxLayoutGap="3rem">
+            <div fxLayout.gt-md="row" fxLayout="column" fxLayoutGap="3rem">
               <div fxFlex="50" fxLayoutAlign="center center" fxLayout="column">
                 <h2 class="text-2xl font-extrabold mb-3 w-100">Meet Users</h2>
                 <p class="mb-3 text-gray-600">
@@ -389,7 +389,7 @@
         <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
           <div class="w-100 text-start">
             <div class="mt-4" fxLayout="column" fxLayoutGap="10.5rem">
-              <div fxLayout.gt-sm="row" fxLayout="column" fxLayoutGap="4rem">
+              <div fxLayout.gt-md="row" fxLayout="column" fxLayoutGap="4rem">
                 <div fxFlex="40" fxLayoutAlign="center center" fxLayout="column">
                   <h2 class="text-2xl font-extrabold mb-3 w-100">Visualize the Problem</h2>
                   <p class="mb-3 text-gray-600">
@@ -440,7 +440,7 @@
                   </div>
                 </div>
               </div>
-              <div fxLayout.gt-sm="row" fxLayout="column" fxLayoutGap="4rem" fxLayoutAlign="center center">
+              <div fxLayout.gt-md="row" fxLayout="column" fxLayoutGap="4rem" fxLayoutAlign="start start">
                 <div fxFlex="40" fxLayoutAlign="center center" fxLayout="column">
                   <h2 class="text-2xl font-extrabold mb-3 w-100">Who Are Our Users?</h2>
                   <p class="mb-3 text-gray-600">
@@ -499,87 +499,85 @@
                   </div>
                 </div>
               </div>
-              <div fxLayout.gt-sm="row" fxLayout="column" fxLayoutGap="4rem" fxLayoutAlign="start start">
-                <div fxFlex.lt-md="100" fxFlex="75">
-                  <h2 class="text-4xl font-extrabold mb-3 w-100">Take Aways</h2>
-                  <div fxLayout="row" fxLayoutGap="3rem">
-                    <div fxFlex="50">
-                      <div class="w-100 my-3">
-                        <h4 class="text-2xl font-extrabold mb-4 sub-header">Pain Points</h4>
-                        <ul class="list-disc text-gray-600" fxLayout="column" fxLayoutGap="15px">
-                          <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
-                            <span><i class="text-gray-400 far fa-circle"></i></span>
-                            <span>Forms not intuitively named and located</span>
-                          </li>
-                          <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
-                            <span><i class="text-gray-400 far fa-circle"></i></span>
-                            <span>Site is slow and unresponsive to user input</span>
-                          </li>
-                          <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
-                            <span><i class="text-gray-400 far fa-circle"></i></span>
-                            <span>Outages occur without notification to users</span>
-                          </li>
-                          <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
-                            <span><i class="text-gray-400 far fa-circle"></i></span>
-                            <span>No assistance to help users find forms</span>
-                          </li>
-                          <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
-                            <span><i class="text-gray-400 far fa-circle"></i></span>
-                            <span>Too much information displayed</span>
-                          </li>
-                          <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
-                            <span><i class="text-gray-400 far fa-circle"></i></span>
-                            <span>Lacks ability to have quick access to frequently used forms</span>
-                          </li>
-                          <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
-                            <span><i class="text-gray-400 far fa-circle"></i></span>
-                            <span>Data table cannot be filtered, sorted or searched</span>
-                          </li>
-                          <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
-                            <span><i class="text-gray-400 far fa-circle"></i></span>
-                            <span>Aesthetically unpleasing</span>
-                          </li>
-                        </ul>
-                      </div>
+              <div>
+                <h2 class="text-4xl font-extrabold mb-3 w-100">Take Aways</h2>
+                <div fxLayout.gt-sm="row" fxLayout.lt-md="column" fxLayoutGap="3rem">
+                  <div fxFlex.gt-md="50" fxFlex.lt-sm="100">
+                    <div class="w-100 my-3">
+                      <h4 class="text-2xl font-extrabold mb-4 sub-header">Pain Points</h4>
+                      <ul class="list-disc text-gray-600" fxLayout="column" fxLayoutGap="15px">
+                        <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                          <span><i class="text-gray-400 far fa-circle"></i></span>
+                          <span>Forms not intuitively named and located</span>
+                        </li>
+                        <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                          <span><i class="text-gray-400 far fa-circle"></i></span>
+                          <span>Site is slow and unresponsive to user input</span>
+                        </li>
+                        <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                          <span><i class="text-gray-400 far fa-circle"></i></span>
+                          <span>Outages occur without notification to users</span>
+                        </li>
+                        <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                          <span><i class="text-gray-400 far fa-circle"></i></span>
+                          <span>No assistance to help users find forms</span>
+                        </li>
+                        <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                          <span><i class="text-gray-400 far fa-circle"></i></span>
+                          <span>Too much information displayed</span>
+                        </li>
+                        <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                          <span><i class="text-gray-400 far fa-circle"></i></span>
+                          <span>Lacks ability to have quick access to frequently used forms</span>
+                        </li>
+                        <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                          <span><i class="text-gray-400 far fa-circle"></i></span>
+                          <span>Data table cannot be filtered, sorted or searched</span>
+                        </li>
+                        <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                          <span><i class="text-gray-400 far fa-circle"></i></span>
+                          <span>Aesthetically unpleasing</span>
+                        </li>
+                      </ul>
                     </div>
-                    <div fxFlex="50">
-                      <div class="w-100 my-3">
-                        <h4 class="text-2xl font-extrabold mb-4 sub-header">Remedies</h4>
-                        <ul class="list-disc text-gray-600" fxLayout="column" fxLayoutGap="15px">
-                          <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
-                            <span><i class="text-gray-400 far fa-circle"></i></span>
-                            <span>Rename forms to speak user’s language</span>
-                          </li>
-                          <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
-                            <span><i class="text-gray-400 far fa-circle"></i></span>
-                            <span>Lighter weight application with better performance</span>
-                          </li>
-                          <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
-                            <span><i class="text-gray-400 far fa-circle"></i></span>
-                            <span>Ability to push notifications to users</span>
-                          </li>
-                          <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
-                            <span><i class="text-gray-400 far fa-circle"></i></span>
-                            <span>Intuitive way to funnel users to specific forms</span>
-                          </li>
-                          <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
-                            <span><i class="text-gray-400 far fa-circle"></i></span>
-                            <span>Better information hierarchies and limiting information displayed</span>
-                          </li>
-                          <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
-                            <span><i class="text-gray-400 far fa-circle"></i></span>
-                            <span>Ability to favorite forms</span>
-                          </li>
-                          <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
-                            <span><i class="text-gray-400 far fa-circle"></i></span>
-                            <span>Modern data table with ability to filter, sort and search</span>
-                          </li>
-                          <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
-                            <span><i class="text-gray-400 far fa-circle"></i></span>
-                            <span>Updated UI </span>
-                          </li>
-                        </ul>
-                      </div>
+                  </div>
+                  <div fxFlex.gt-md="50" fxFlex.lt-sm="100">
+                    <div class="w-100 my-3">
+                      <h4 class="text-2xl font-extrabold mb-4 sub-header">Remedies</h4>
+                      <ul class="list-disc text-gray-600" fxLayout="column" fxLayoutGap="15px">
+                        <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                          <span><i class="text-gray-400 far fa-circle"></i></span>
+                          <span>Rename forms to speak user’s language</span>
+                        </li>
+                        <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                          <span><i class="text-gray-400 far fa-circle"></i></span>
+                          <span>Lighter weight application with better performance</span>
+                        </li>
+                        <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                          <span><i class="text-gray-400 far fa-circle"></i></span>
+                          <span>Ability to push notifications to users</span>
+                        </li>
+                        <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                          <span><i class="text-gray-400 far fa-circle"></i></span>
+                          <span>Intuitive way to funnel users to specific forms</span>
+                        </li>
+                        <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                          <span><i class="text-gray-400 far fa-circle"></i></span>
+                          <span>Better information hierarchies and limiting information displayed</span>
+                        </li>
+                        <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                          <span><i class="text-gray-400 far fa-circle"></i></span>
+                          <span>Ability to favorite forms</span>
+                        </li>
+                        <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                          <span><i class="text-gray-400 far fa-circle"></i></span>
+                          <span>Modern data table with ability to filter, sort and search</span>
+                        </li>
+                        <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                          <span><i class="text-gray-400 far fa-circle"></i></span>
+                          <span>Updated UI </span>
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
@@ -678,7 +676,7 @@
         </div>
         <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
           <div class="mt-4" fxLayout="column" fxLayoutGap="9rem">
-            <div fxLayout.gt-sm="row" fxLayout="column" fxLayoutGap="4rem">
+            <div fxLayout.gt-md="row" fxLayout="column" fxLayoutGap="4rem">
               <div fxFlex="40" fxLayoutAlign="start start" fxLayout="column">
                 <h2 class="text-2xl font-extrabold mb-3 w-100">Sketches</h2>
                 <p class="mb-3 text-gray-600">
@@ -806,7 +804,7 @@
         </div>
         <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
           <div class="mt-4" fxLayout="column" fxLayoutGap="9rem">
-            <div fxLayout.gt-sm="row" fxLayout="column" fxLayoutGap="4rem">
+            <div fxLayout.gt-md="row" fxLayout="column" fxLayoutGap="4rem">
               <div fxFlex="40" fxLayoutAlign="start start" fxLayout="column">
                 <h2 class="text-2xl font-extrabold mb-3 w-100">One OPAS. Two Experiences.</h2>
                 <p class="mb-3 text-gray-600">
@@ -1260,7 +1258,7 @@
           fxLayout="column"
           fxLayoutGap="10rem"
         >
-          <div fxLayout.gt-sm="row" fxLayout="column" fxLayoutGap="4rem">
+          <div fxLayout.gt-md="row" fxLayout="column" fxLayoutGap="4rem">
             <div fxFlex="40" fxLayoutAlign="start start" fxLayout="column">
               <h2 class="text-2xl font-extrabold mb-3 w-100">Final Deliverable</h2>
               <p class="mb-3 text-gray-600">
@@ -1313,7 +1311,7 @@
               </div>
             </div>
           </div>
-          <div fxLayout.gt-sm="row" fxLayout="column" fxLayoutGap="4rem">
+          <div fxLayout.gt-md="row" fxLayout="column" fxLayoutGap="4rem">
             <div fxFlex="40">
               <h2 class="text-2xl font-extrabold mb-3 w-100">One-Size Fits None</h2>
               <p class="mb-3 text-gray-600">
