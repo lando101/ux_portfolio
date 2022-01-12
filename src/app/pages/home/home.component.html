@@ -1,5 +1,5 @@
 <div class="container-fluid">
-  <div class="container align-items-center" fxLayout="column" fxLayoutGap="8rem">
+  <div class="container align-items-center" fxLayout="column" fxLayoutGap.lt-sm="4rem" fxLayoutGap="8rem">
     <div
       fxLayout="row"
       fxLayout.lt-lg="column-reverse"
@@ -34,9 +34,10 @@
 
         <div
           fxLayout="row"
+          fxLayout.lt-sm="column"
           fxLayoutGap="25px"
-          class="py-4 align-items-center"
-          fxLayoutAlign.gt-md="start start"
+          class="py-4"
+          fxLayoutAlign.gt-md="start center"
           fxLayoutAlign.lt-lg="center center"
           fxLayoutAlign.lt-sm="start start"
         >
@@ -44,18 +45,20 @@
             <span class="font-extrabold tracking-wide px-4">{{ btnString }}</span>
             <!-- <span class="font-bold" *ngIf="name">Got Feedback, {{ name }}?</span> -->
           </button>
-          <a href="mailto:landon.messmerjmu@gmail.com" matTooltip="Send email"
-            ><i class="fas fa-envelope text-lg text-gray-600"></i
-          ></a>
-          <a href="https://www.linkedin.com/in/4921117/" target="_blank" matTooltip="View LinkedIn profile"
-            ><i class="fab fa-linkedin text-lg text-gray-600"></i
-          ></a>
-          <a
-            href="https://codepen.io/lando101/pens/public?cursor=ZD0wJm89MSZwPTEmdj0zOTM5NDExNw=="
-            target="_blank"
-            matTooltip="View Codepen projects"
-            ><i class="fab fa-codepen text-lg text-gray-600"></i
-          ></a>
+          <div fxLayoutGap="15px">
+            <a href="mailto:landon.messmerjmu@gmail.com" matTooltip="Send email"
+              ><i class="fas fa-envelope text-gray-600" ngClass="text-lg" ngClass.lt-sm="text-2xl"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/4921117/" target="_blank" matTooltip="View LinkedIn profile"
+              ><i class="fab fa-linkedin text-gray-600" ngClass="text-lg" ngClass.lt-sm="text-2xl"></i
+            ></a>
+            <a
+              href="https://codepen.io/lando101/pens/public?cursor=ZD0wJm89MSZwPTEmdj0zOTM5NDExNw=="
+              target="_blank"
+              matTooltip="View Codepen projects"
+              ><i class="fab fa-codepen text-gray-600" ngClass="text-lg" ngClass.lt-sm="text-2xl"></i
+            ></a>
+          </div>
         </div>
       </div>
       <div fxHide.lt-sm fxFlex="auto" fxLayout="column" fxLayoutAlign="end end">
@@ -68,25 +71,36 @@
     </div>
     <!-- <div animateOnScroll animationName="animate__fadeInLeft animate__animated" class=""> -->
     <div [ngClass.lt-lg]="'max-w-screen-sm'">
-      <div class="text-center w-100 mb-5 py-3 section-header" fxLayout="row" fxLayoutAlign="center center">
+      <div
+        class="text-center w-100 mb-3 py-3 section-header"
+        fxLayout="row"
+        fxLayoutAlign="center center"
+        fxLayoutAlign.lt-sm="center center"
+      >
         <!-- <div class="divider"></div> -->
         <h2 fxHide.lt-md class="text-4xl font-extrabold whitespace-nowrap">Projects + Case Studies</h2>
-        <h2 fxHide.gt-sm class="text-4xl font-extrabold whitespace-nowrap">Case Studies</h2>
+        <h2 fxHide.gt-sm class="text-3xl font-extrabold whitespace-nowrap">Case Studies</h2>
         <!-- <div class="divider"></div> -->
       </div>
-      <div fxLayout="column" fxLayoutGap="90px">
+      <div fxLayout="column" fxLayoutGap="90px" fxLayoutGap.lt-sm="2rem">
         <div *ngFor="let casestudy of caseStudies">
           <app-case-study-card [caseStudy]="casestudy"></app-case-study-card>
         </div>
       </div>
     </div>
-    <div [ngClass.lt-lg]="'max-w-screen-sm'">
+    <div [ngClass.lt-lg]="'max-w-screen-sm'" fxHide.lt-sm>
       <div class="text-center w-100 mb-2 py-3 section-header" fxLayout="row" fxLayoutAlign="center center">
         <!-- <div class="divider w-100"></div> -->
         <h2 class="text-4xl font-extrabold px-4">Roles</h2>
         <!-- <div class="divider w-100"></div> -->
       </div>
-      <div fxLayout="row" fxLayout.lt-lg="column" fxLayoutGap="65px" fxLayoutAlign="space-around">
+      <div
+        fxLayout="row"
+        fxLayout.lt-lg="column"
+        fxLayoutGap="65px"
+        fxLayoutGap.lt-sm="2rem"
+        fxLayoutAlign="space-around"
+      >
         <div fxFlex="30" class="d-flex justify-center item-center" *ngFor="let skill of skills">
           <app-info-card [skills]="skill"></app-info-card>
         </div>
@@ -106,9 +120,15 @@
           "
         /> -->
       </div>
-      <div class="text-center w-100 mb-5 pb-3 bg-transparent" fxLayout="row" fxLayoutAlign="center center">
+      <div class="w-100 mb-5 pb-3 bg-transparent" fxLayout="row" fxLayoutAlign="center center">
         <!-- <div class="divider"></div> -->
-        <h2 class="text-4xl font-extrabold whitespace-normal text-white text-center">What my team members say...</h2>
+        <h2
+          class="text-4xl font-extrabold whitespace-normal text-white"
+          ngClass="text-center"
+          ngClass.lt-sm="text-left"
+        >
+          What my team members say...
+        </h2>
         <!-- <div class="divider"></div> -->
       </div>
       <div fxLayout.gt-md="row" fxLayout="column" fxLayoutGap="5rem" class="quotes-wrapper">

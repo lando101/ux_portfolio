@@ -1,5 +1,6 @@
 <button
-  class="cs-card-container"
+  ngClass.gt-xs="cs-card-container"
+  ngClass.lt-sm="cs-card-container-no-hover"
   [ngClass]="{ 'disabled-cursor': !caseStudy.public }"
   [disabled]="!caseStudy.public"
   (click)="route(caseStudy.public ? caseStudy.href : '')"
@@ -36,7 +37,9 @@
         </div>
         <div fxLayout="column">
           <label class="text-sm font-semibold text-gray-100 mb-1 text-left">Under Non-disclosure Agreement</label>
-          <p class="text-xs text-gray-300 font-medium">Details will likely be vague to protect client info.</p>
+          <p class="text-xs text-gray-300 font-medium text-left">
+            Details will likely be vague to protect client info.
+          </p>
         </div>
       </span>
     </div>

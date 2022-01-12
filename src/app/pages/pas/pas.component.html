@@ -291,7 +291,13 @@
                       'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/illustrations%2Fundraw_conversation_h-12-g.svg?alt=media&token=900aa0e6-90db-455b-814f-2514883b1c55'
                     "
                   /> -->
-                  <div fxLayout="row" [ngClass]="'w-100'" class="qoute content-section-with-border" fxLayoutGap="10px">
+                  <div
+                    fxLayout="row"
+                    [ngClass]="'w-100'"
+                    class="qoute content-section-with-border"
+                    ngClass.lt-sm="pl-0"
+                    fxLayoutGap="10px"
+                  >
                     <div>
                       <i
                         [ngClass.gt-xs]="'text-5xl'"
@@ -1300,11 +1306,8 @@
                 <div class="d-flex justify-center rounded-md overflow-hidden px-1 py-1">
                   <img
                     class="w-100"
-                    [src.gt-md]="
+                    [src]="
                       'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fopas-high-fidelity-mockup-vertical.png?alt=media&token=6132ba66-b627-441e-a484-8f4d7b23d786'
-                    "
-                    [src.lt-lg]="
-                      'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fopas-drawling.png?alt=media&token=523a6847-01f6-4d84-8630-dca094807624'
                     "
                   />
                 </div>
