@@ -102,7 +102,7 @@ export class HomeComponent implements OnInit {
       alt: 'Image of coinfloe application on desktop and mobile',
       nda: false,
       caseStudy: true,
-      public: false,
+      public: true,
     },
     {
       title: 'Forecaster',
