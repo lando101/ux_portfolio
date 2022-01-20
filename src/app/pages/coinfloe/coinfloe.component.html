@@ -78,16 +78,6 @@
                     <h4 class="text-lg font-extrabold">Roles</h4>
                     <p class="text-gray-600">UX Designer, UX Engineer, Developer</p>
                   </div>
-                  <!-- <div>
-                    <h4 class="text-lg font-extrabold">Team</h4>
-                    <p class="text-gray-600">
-                      Self-organizing team with 3 developers, a UX designer, an analyst, and Scrum Master.
-                    </p>
-                  </div> -->
-                  <!-- <div>
-                    <h4 class="text-lg font-extrabold">Audience</h4>
-                    <p class="text-gray-600">5,000+ users</p>
-                  </div> -->
                   <div>
                     <h4 class="text-lg font-extrabold">Duration</h4>
                     <p class="text-gray-600">4 months</p>
@@ -137,7 +127,7 @@
             [ngClass.lt-lg]="'max-w-screen-lg px-4'"
             [ngClass.gt-md]="'max-w-screen-2xl'"
           >
-            <h1><span class="font-light text-4xl">01 </span><span class="font-extrabold text-4xl">/ Demo</span></h1>
+            <h1><span class="font-extrabold text-4xl">Demo</span></h1>
             <label class="text-2xl font-bold sub-header">Proof is in the pudding.</label>
           </div>
         </div>
@@ -152,18 +142,75 @@
               />
             </video>
           </div>
-          <!-- <div class="w-100 text-start">
-            <h1 class="font-extrabold text-4xl">Design Process</h1>
-            <label class="text-2xl font-bold sub-header">We aren't users or actors. Don't act like a user.</label>
+        </div>
+      </section>
+      <section #home class="dark-section">
+        <div class="dark-section-header-sticky">
+          <div
+            class="w-100 text-start container"
+            [ngClass.lt-lg]="'max-w-screen-lg px-4'"
+            [ngClass.gt-md]="'max-w-screen-2xl'"
+          >
+            <h1>
+              <span class="font-light text-4xl">01 </span><span class="font-extrabold text-4xl">/ Components</span>
+            </h1>
+            <!-- <label class="text-2xl font-bold sub-header">Proof is in the pudding.</label> -->
           </div>
-          <div class="w-100 my-5 py-2">
-            <img
-              class="w-100"
-              [src]="
-                'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/illustrations_v2%2Fdesign_process_v2.png?alt=media&token=c34602d9-8f20-4c1a-b087-a2bc3cfe0ab9'
-              "
-            />
-          </div> -->
+        </div>
+
+        <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
+          <div class="w-100" fxLayout="column" fxLayoutGap="12rem">
+            <div fxLayout="column" fxLayoutAlign="start start">
+              <video class="card-video" autoplay loop>
+                <source
+                  [src]="
+                    'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/videos%2Fcard_up_close.mp4?alt=media&token=9e5173ba-071d-417c-bdf8-15b674634ff9'
+                  "
+                  type="video/mp4"
+                />
+              </video>
+              <div class="pl-4">
+                <p class="text-xs font-light text-gray-400 mb-1">Card / Tilt Effect / Button</p>
+                <p class="video-desc text-3xl text-gray-400">News Card</p>
+              </div>
+            </div>
+            <div fxLayout="column" fxLayoutAlign="start start">
+              <div class="overflow-hidden">
+                <video class="small-video video-crop" autoplay loop>
+                  <source
+                    [src]="
+                      'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/videos%2Fcoin_card_close_up.mp4?alt=media&token=0e52d1da-77ec-40c4-9d62-6c7dff3d8bd1'
+                    "
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+              <div class="pl-3">
+                <p class="text-xs font-light text-gray-400 mb-1">Card / Tilt Effect / Button</p>
+                <p class="video-desc text-3xl text-gray-400">Coin Card</p>
+              </div>
+            </div>
+            <div fxLayout="column" fxLayoutAlign="center center">
+              <video class="w-100 vertical-video" autoplay loop>
+                <source
+                  [src]="
+                    'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/videos%2Fside_panel_zoom.mp4?alt=media&token=ace59ac6-cdaa-486e-9dbd-1854bca7f7a5'
+                  "
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <div fxLayout="column" fxLayoutAlign="center center">
+              <video class="w-100 card-video" autoplay loop>
+                <source
+                  [src]="
+                    'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/videos%2Fline_chart_up_close.mp4?alt=media&token=dc59ad90-27ea-4ae1-bb4d-1a1b83c5dcf0'
+                  "
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+          </div>
         </div>
       </section>
     </div>
@@ -181,6 +228,9 @@
         </button>
         <button class="text-left font-medium text-uppercase focus:ring-2 focus:ring-gray-800" (click)="scroll(demo)">
           Demo
+        </button>
+        <button class="text-left font-medium text-uppercase focus:ring-2 focus:ring-gray-800" (click)="scroll(home)">
+          Home Page
         </button>
         <!-- <button
           class="text-left font-medium text-uppercase focus:ring-2 focus:ring-gray-800"

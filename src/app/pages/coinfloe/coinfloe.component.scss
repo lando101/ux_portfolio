@@ -1,6 +1,6 @@
 @import "../../../styles/index";
 
-$dark-bg: #f3f1f9;
+$dark-bg: #f4f3f4;
 
 .table-of-contents-wrapper {
   top: 0px;
@@ -175,11 +175,7 @@ img {
 }
 
 .content-section-with-border {
-  padding-left: 35px;
-  // border-left: 4px solid $purple-border;
-  // border-left: 4px solid #4a4a4a12;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 15px 0px;
 }
 
 .sub-section-with-border {
@@ -242,4 +238,32 @@ img {
   &:hover {
     opacity: 0.75 !important;
   }
+}
+
+//videos
+
+.card-video {
+  max-height: 428px;
+  max-width: 1209px;
+  overflow: hidden;
+}
+
+.video-crop {
+  top: 1px;
+  position: relative;
+}
+
+.small-video {
+  top: 1px;
+  position: relative;
+  max-height: 211px;
+}
+
+.vertical-video {
+  max-height: 865px;
+}
+
+.video-desc {
+  // font-family: 'IBM Plex Mono', monospace !important;
+  font-family: "Libre Barcode 128 Text", cursive !important;
 }
