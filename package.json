@@ -43,6 +43,7 @@
     "canvas-confetti": "^1.4.0",
     "file-saver": "^2.0.5",
     "firebase": "^9.2.0",
+    "generator-ngx-rocket": "^10.1.2",
     "moment": "^2.29.1",
     "ng-animate": "^1.0.0",
     "ng2-animate-on-scroll": "^2.3.2",

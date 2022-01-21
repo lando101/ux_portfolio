@@ -304,6 +304,70 @@
           />
         </div>
       </section>
+      <section #pages class="dark-section">
+        <div class="dark-section-header-sticky">
+          <div
+            class="w-100 text-start container"
+            [ngClass.lt-lg]="'max-w-screen-lg px-4'"
+            [ngClass.gt-md]="'max-w-screen-2xl'"
+          >
+            <div class="text-center" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px">
+              <div class="sm-icon-container">
+                <i class="far fa-window-restore"></i>
+              </div>
+              <h1 class="text-center mb-5">
+                <span class="font-light text-4xl">06 </span><span class="font-extrabold text-4xl">/ Pages</span>
+              </h1>
+            </div>
+            <!-- <label class="text-2xl font-bold sub-header">Proof is in the pudding.</label> -->
+          </div>
+        </div>
+
+        <div
+          class="container align-items-center"
+          [ngClass.lt-lg]="'max-w-screen-lg px-4'"
+          [ngClass.gt-md]="'max-w-screen-2xl'"
+          fxLayout="column"
+          fxLayoutGap="7rem"
+        >
+          <div class="max-w-screen-lg overflow-hidden" fxLayout="column" fxLayoutGap="7rem">
+            <!-- <img
+              class="w-100"
+              [src]="
+                'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2FSite%20Map%20Coinfloe.png?alt=media&token=5326943e-b168-404a-9f59-305ecf641c74'
+              "
+            /> -->
+            <div>
+              <div fxLayout="column" class="mb-4 align-items-center">
+                <span class="text-gray-800 text-3xl font-bold mb-2">Explore</span>
+                <small class="font-semibold text-xs text-gray-400">Summary • News • Coin Highlights</small>
+              </div>
+              <video class="w-100 home-video-fix" controls autoplay loop>
+                <source
+                  [src]="
+                    'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/videos%2Fcoinfloe_home_vertical_video.mp4?alt=media&token=2758d5d9-0f90-4b22-8c79-f7045d520312'
+                  "
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <div>
+              <div fxLayout="column" class="mb-4 align-items-center">
+                <span class="text-gray-800 text-3xl font-bold mb-2"> Coins</span>
+                <small class="font-semibold text-xs text-gray-400">Filtering • Sorting • 250+ tokens</small>
+              </div>
+              <video class="w-100 home-video-fix" controls autoplay loop>
+                <source
+                  [src]="
+                    'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/videos%2Fcoinfloe_coins_vertical_video.mp4?alt=media&token=87f1f004-a6e2-4cba-81fa-72ba9793e370'
+                  "
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
       <section #home class="dark-section hidden">
         <div class="dark-section-header-sticky">
           <div
@@ -424,6 +488,9 @@
         </button>
         <button class="text-left font-medium text-uppercase focus:ring-2 focus:ring-gray-800" (click)="scroll(lofi)">
           Lo-Fi
+        </button>
+        <button class="text-left font-medium text-uppercase focus:ring-2 focus:ring-gray-800" (click)="scroll(pages)">
+          Pages
         </button>
         <button class="text-left font-medium text-uppercase focus:ring-2 focus:ring-gray-800" (click)="scroll(demo)">
           Demo
