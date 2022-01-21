@@ -67,3 +67,20 @@ a {
   text-shadow: 4px 4px 5px #b1aeff80;
   color: $bg-purple;
 }
+
+// shadows
+.primary-shadow {
+  box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+}
+
+// containers
+.sm-icon-container {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  background: #6c63ff38;
+  border-radius: 999px;
+  color: $bg-purple;
+  justify-content: center;
+  align-items: center;
+}

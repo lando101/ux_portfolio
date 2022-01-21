@@ -1,0 +1,10 @@
+<div
+  ngClass.gt-md="color-wrapper-lg"
+  ngClass.lt-lg="color-wrapper-sm"
+  class="rounded-xl primary-shadow"
+  [style.background]="color"
+>
+  <div fxLayout="row" class="w-100 h-100 p-2 justify-content-end align-items-end">
+    <span [style.color]="textColor" class="font-bold text-sm">{{ color }}</span>
+  </div>
+</div>

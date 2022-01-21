@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./coinfloe.component.scss'],
 })
 export class CoinfloeComponent implements OnInit {
+  fontFamily = "'Manrope', sans-serif";
+  fontName = 'Manrope';
+
   constructor() {}
 
   ngOnInit(): void {}

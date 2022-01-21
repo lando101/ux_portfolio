@@ -50,7 +50,7 @@
   </section>
   <div fxLayout="row">
     <div>
-      <section #keyinfo class="dark-section">
+      <section #keyinfo class="dark-section" [style.background-color]="'#f3f1f9'">
         <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
           <div class="w-100 text-start">
             <div class="text-left" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="3.5rem">
@@ -120,28 +120,118 @@
           </div>
         </div>
       </section>
-      <section #demo class="normal-section">
-        <div class="section-header-sticky mb-4">
+      <section #colors class="normal-section">
+        <div class="section-header-sticky">
           <div
             class="w-100 text-start container"
             [ngClass.lt-lg]="'max-w-screen-lg px-4'"
             [ngClass.gt-md]="'max-w-screen-2xl'"
           >
-            <h1><span class="font-extrabold text-4xl">Demo</span></h1>
-            <label class="text-2xl font-bold sub-header">Proof is in the pudding.</label>
+            <div class="text-center" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px">
+              <div class="sm-icon-container">
+                <i class="fas fa-swatchbook"></i>
+              </div>
+              <h1 class="text-center mb-5">
+                <span class="font-light text-4xl">01 </span><span class="font-extrabold text-4xl">/ Colors</span>
+              </h1>
+            </div>
+            <!-- <label class="text-2xl font-bold sub-header">Proof is in the pudding.</label> -->
           </div>
         </div>
-        <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
-          <div class="img-shadow">
-            <video class="w-100" controls autoplay loop>
-              <source
-                [src]="
-                  'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/videos%2Fcoinfloe_demo.mp4?alt=media&token=8353aae8-9dcd-490c-890a-fcfcac442857'
-                "
-                type="video/mp4"
-              />
-            </video>
+
+        <div
+          class="container"
+          [ngClass.lt-lg]="'max-w-screen-lg px-4'"
+          [ngClass.gt-md]="'max-w-screen-2xl'"
+          fxLayout="column"
+          fxLayoutGap="7rem"
+        >
+          <div class="text-center">
+            <h2 class="text-xl font-light mb-4">Light Theme</h2>
+            <div fxLayout.gt-md="row" fxLayout="column" fxLayoutGap="3rem" fxLayoutAlign="center center">
+              <app-color-swatch [color]="'#6b42ff'" [textColor]="'white'"></app-color-swatch>
+              <app-color-swatch [color]="'#f3f3f3'" [textColor]="'black'"></app-color-swatch>
+              <app-color-swatch [color]="'#f9f9f9'" [textColor]="'black'"></app-color-swatch>
+              <app-color-swatch [color]="'#00c77e'" [textColor]="'white'"></app-color-swatch>
+              <app-color-swatch [color]="'#fd2d53'" [textColor]="'white'"></app-color-swatch>
+            </div>
           </div>
+          <div class="text-center">
+            <h2 class="text-xl font-light mb-4">Dark Theme</h2>
+            <div fxLayout.gt-md="row" fxLayout="column" fxLayoutGap="3rem" fxLayoutAlign="center center">
+              <app-color-swatch [color]="'#9a7eff'" [textColor]="'white'"></app-color-swatch>
+              <app-color-swatch [color]="'#151519'" [textColor]="'white'"></app-color-swatch>
+              <app-color-swatch [color]="'#1a1a1f'" [textColor]="'white'"></app-color-swatch>
+              <app-color-swatch [color]="'#00c77e'" [textColor]="'white'"></app-color-swatch>
+              <app-color-swatch [color]="'#fd2d53'" [textColor]="'white'"></app-color-swatch>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section #typo class="grid-section">
+        <div class="grid-section-header-sticky">
+          <div
+            class="w-100 text-start container"
+            [ngClass.lt-lg]="'max-w-screen-lg px-4'"
+            [ngClass.gt-md]="'max-w-screen-2xl'"
+          >
+            <div class="text-center" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px">
+              <div class="sm-icon-container">
+                <i class="fas fa-pen-fancy"></i>
+              </div>
+              <h1 class="text-center mb-5">
+                <span class="font-light text-4xl">02 </span><span class="font-extrabold text-4xl">/ Typography</span>
+              </h1>
+            </div>
+            <!-- <label class="text-2xl font-bold sub-header">Proof is in the pudding.</label> -->
+          </div>
+        </div>
+
+        <div
+          class="container"
+          [ngClass.lt-lg]="'max-w-screen-lg px-4'"
+          [ngClass.gt-md]="'max-w-screen-2xl'"
+          fxLayout="column"
+          fxLayoutGap="7rem"
+        >
+          <div class="text-center">
+            <div fxLayout.gt-md="row" fxLayout="column" fxLayoutGap="3rem" fxLayoutAlign="center center">
+              <app-typography class="w-100" [fontFamily]="fontFamily" [name]="fontName"></app-typography>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section #uiflow class="normal-section">
+        <div class="section-header-sticky">
+          <div
+            class="w-100 text-start container"
+            [ngClass.lt-lg]="'max-w-screen-lg px-4'"
+            [ngClass.gt-md]="'max-w-screen-2xl'"
+          >
+            <div class="text-center" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px">
+              <div class="sm-icon-container">
+                <i class="fas fa-route"></i>
+              </div>
+              <h1 class="text-center mb-5">
+                <span class="font-light text-4xl">03 </span><span class="font-extrabold text-4xl">/ UI Flow</span>
+              </h1>
+            </div>
+            <!-- <label class="text-2xl font-bold sub-header">Proof is in the pudding.</label> -->
+          </div>
+        </div>
+
+        <div
+          class="container"
+          [ngClass.lt-lg]="'max-w-screen-lg px-4'"
+          [ngClass.gt-md]="'max-w-screen-2xl'"
+          fxLayout="column"
+          fxLayoutGap="7rem"
+        >
+          <img
+            [src]="
+              'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2FUI%20Flow.png?alt=media&token=35b0fd56-124c-4cec-9dde-f2a639d2ffa5'
+            "
+          />
         </div>
       </section>
       <section #home class="dark-section">
@@ -213,6 +303,30 @@
           </div>
         </div>
       </section>
+      <section #demo class="normal-section">
+        <div class="section-header-sticky mb-4">
+          <div
+            class="w-100 text-start container"
+            [ngClass.lt-lg]="'max-w-screen-lg px-4'"
+            [ngClass.gt-md]="'max-w-screen-2xl'"
+          >
+            <h1><span class="font-extrabold text-4xl">Demo</span></h1>
+            <label class="text-2xl font-bold sub-header">Proof is in the pudding.</label>
+          </div>
+        </div>
+        <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
+          <div class="img-shadow">
+            <video class="w-100" controls autoplay loop>
+              <source
+                [src]="
+                  'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/videos%2Fcoinfloe_demo.mp4?alt=media&token=8353aae8-9dcd-490c-890a-fcfcac442857'
+                "
+                type="video/mp4"
+              />
+            </video>
+          </div>
+        </div>
+      </section>
     </div>
     <div fxHide.lt-xl class="position-sticky table-of-contents-wrapper">
       <div class="position-sticky inner-container text-gray-500 mt-5 text-sm" fxLayout="column" fxLayoutGap="10px">
@@ -226,11 +340,18 @@
         <button class="text-left font-medium text-uppercase focus:ring-2 focus:ring-gray-800" (click)="scroll(keyinfo)">
           Summary
         </button>
+
+        <button class="text-left font-medium text-uppercase focus:ring-2 focus:ring-gray-800" (click)="scroll(colors)">
+          Color
+        </button>
+        <button class="text-left font-medium text-uppercase focus:ring-2 focus:ring-gray-800" (click)="scroll(typo)">
+          Typography
+        </button>
+        <button class="text-left font-medium text-uppercase focus:ring-2 focus:ring-gray-800" (click)="scroll(uiflow)">
+          UI Flow
+        </button>
         <button class="text-left font-medium text-uppercase focus:ring-2 focus:ring-gray-800" (click)="scroll(demo)">
           Demo
-        </button>
-        <button class="text-left font-medium text-uppercase focus:ring-2 focus:ring-gray-800" (click)="scroll(home)">
-          Home Page
         </button>
         <!-- <button
           class="text-left font-medium text-uppercase focus:ring-2 focus:ring-gray-800"

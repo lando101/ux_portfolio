@@ -19,6 +19,8 @@ import { ContactCardComponent } from './components/contact-card/contact-card.com
 import { NgxVcardModule } from 'ngx-vcard';
 import { CaseStudyCardSmComponent } from './components/case-study-card-sm/case-study-card-sm.component';
 import { ContactInfoFormStandardComponent } from './components/contact-info-form-standard/contact-info-form-standard.component';
+import { ColorSwatchComponent } from './components/color-swatch/color-swatch.component';
+import { TypographyComponent } from './components/typography/typography.component';
 
 @NgModule({
   imports: [
@@ -43,6 +45,8 @@ import { ContactInfoFormStandardComponent } from './components/contact-info-form
     ContactCardComponent,
     CaseStudyCardSmComponent,
     ContactInfoFormStandardComponent,
+    ColorSwatchComponent,
+    TypographyComponent,
   ],
   exports: [
     LoaderComponent,
@@ -54,6 +58,8 @@ import { ContactInfoFormStandardComponent } from './components/contact-info-form
     CertImagesComponent,
     ContactCardComponent,
     ContactInfoFormStandardComponent,
+    ColorSwatchComponent,
+    TypographyComponent,
   ],
 })
 export class SharedModule {}
