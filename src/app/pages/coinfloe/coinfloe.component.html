@@ -234,7 +234,77 @@
           />
         </div>
       </section>
-      <section #home class="dark-section">
+      <section #map class="dark-section">
+        <div class="dark-section-header-sticky">
+          <div
+            class="w-100 text-start container"
+            [ngClass.lt-lg]="'max-w-screen-lg px-4'"
+            [ngClass.gt-md]="'max-w-screen-2xl'"
+          >
+            <div class="text-center" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px">
+              <div class="sm-icon-container">
+                <i class="fas fa-sitemap"></i>
+              </div>
+              <h1 class="text-center mb-5">
+                <span class="font-light text-4xl">04 </span><span class="font-extrabold text-4xl">/ Site Map</span>
+              </h1>
+            </div>
+            <!-- <label class="text-2xl font-bold sub-header">Proof is in the pudding.</label> -->
+          </div>
+        </div>
+
+        <div
+          class="container align-items-center"
+          [ngClass.lt-lg]="'max-w-screen-lg px-4'"
+          [ngClass.gt-md]="'max-w-screen-2xl'"
+          fxLayout="column"
+          fxLayoutGap="7rem"
+        >
+          <div class="max-w-screen-lg">
+            <img
+              class="w-100"
+              [src]="
+                'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2FSite%20Map%20Coinfloe.png?alt=media&token=5326943e-b168-404a-9f59-305ecf641c74'
+              "
+            />
+          </div>
+        </div>
+      </section>
+      <section #lofi class="normal-section">
+        <div class="section-header-sticky">
+          <div
+            class="w-100 text-start container"
+            [ngClass.lt-lg]="'max-w-screen-lg px-4'"
+            [ngClass.gt-md]="'max-w-screen-2xl'"
+          >
+            <div class="text-center" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px">
+              <div class="sm-icon-container">
+                <i class="fas fa-drafting-compass"></i>
+              </div>
+              <h1 class="text-center mb-5">
+                <span class="font-light text-4xl">05 </span
+                ><span class="font-extrabold text-4xl">/ Lo-Fi Wireframes</span>
+              </h1>
+            </div>
+            <!-- <label class="text-2xl font-bold sub-header">Proof is in the pudding.</label> -->
+          </div>
+        </div>
+
+        <div
+          class="container"
+          [ngClass.lt-lg]="'max-w-screen-lg px-4'"
+          [ngClass.gt-md]="'max-w-screen-2xl'"
+          fxLayout="column"
+          fxLayoutGap="7rem"
+        >
+          <img
+            [src]="
+              'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2FCoinfloe%20Illustrations.png?alt=media&token=f89e930a-cdc5-4dc0-a6d9-e0e1c56e973b'
+            "
+          />
+        </div>
+      </section>
+      <section #home class="dark-section hidden">
         <div class="dark-section-header-sticky">
           <div
             class="w-100 text-start container"
@@ -247,7 +317,6 @@
             <!-- <label class="text-2xl font-bold sub-header">Proof is in the pudding.</label> -->
           </div>
         </div>
-
         <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
           <div class="w-100" fxLayout="column" fxLayoutGap="12rem">
             <div fxLayout="column" fxLayoutAlign="start start">
@@ -303,8 +372,8 @@
           </div>
         </div>
       </section>
-      <section #demo class="normal-section">
-        <div class="section-header-sticky mb-4">
+      <section #demo class="dark-section">
+        <div class="dark-section-header-sticky mb-4">
           <div
             class="w-100 text-start container"
             [ngClass.lt-lg]="'max-w-screen-lg px-4'"
@@ -349,6 +418,12 @@
         </button>
         <button class="text-left font-medium text-uppercase focus:ring-2 focus:ring-gray-800" (click)="scroll(uiflow)">
           UI Flow
+        </button>
+        <button class="text-left font-medium text-uppercase focus:ring-2 focus:ring-gray-800" (click)="scroll(map)">
+          Site Map
+        </button>
+        <button class="text-left font-medium text-uppercase focus:ring-2 focus:ring-gray-800" (click)="scroll(lofi)">
+          Lo-Fi
         </button>
         <button class="text-left font-medium text-uppercase focus:ring-2 focus:ring-gray-800" (click)="scroll(demo)">
           Demo
