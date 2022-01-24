@@ -5,7 +5,7 @@ import { LoaderComponent } from './loader/loader.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { InfoCardComponent } from './components/info-card/info-card.component';
 import { MomentModule } from 'ngx-moment';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { CaseStudyCardComponent } from './components/case-study-card/case-study-card.component';
 import { ContactInfoFormComponent } from './components/contact-info-form/contact-info-form.component';
@@ -21,6 +21,7 @@ import { CaseStudyCardSmComponent } from './components/case-study-card-sm/case-s
 import { ContactInfoFormStandardComponent } from './components/contact-info-form-standard/contact-info-form-standard.component';
 import { ColorSwatchComponent } from './components/color-swatch/color-swatch.component';
 import { TypographyComponent } from './components/typography/typography.component';
+import { LargeImageViewerComponent } from './components/large-image-viewer/large-image-viewer.component';
 
 @NgModule({
   imports: [
@@ -31,6 +32,7 @@ import { TypographyComponent } from './components/typography/typography.componen
     RouterModule,
     ReactiveFormsModule,
     MaterialModule,
+    FormsModule,
   ],
   declarations: [
     LoaderComponent,
@@ -47,6 +49,7 @@ import { TypographyComponent } from './components/typography/typography.componen
     ContactInfoFormStandardComponent,
     ColorSwatchComponent,
     TypographyComponent,
+    LargeImageViewerComponent,
   ],
   exports: [
     LoaderComponent,
@@ -60,6 +63,7 @@ import { TypographyComponent } from './components/typography/typography.componen
     ContactInfoFormStandardComponent,
     ColorSwatchComponent,
     TypographyComponent,
+    LargeImageViewerComponent,
   ],
 })
 export class SharedModule {}

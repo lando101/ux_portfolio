@@ -337,34 +337,67 @@
                 'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2FSite%20Map%20Coinfloe.png?alt=media&token=5326943e-b168-404a-9f59-305ecf641c74'
               "
             /> -->
-            <div>
-              <div fxLayout="column" class="mb-4 align-items-center">
-                <span class="text-gray-800 text-3xl font-bold mb-2">Explore</span>
-                <small class="font-semibold text-xs text-gray-400">Summary • News • Coin Highlights</small>
-              </div>
-              <video class="w-100 home-video-fix" controls autoplay loop>
-                <source
-                  [src]="
-                    'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/videos%2Fcoinfloe_home_vertical_video.mp4?alt=media&token=2758d5d9-0f90-4b22-8c79-f7045d520312'
-                  "
-                  type="video/mp4"
-                />
-              </video>
-            </div>
-            <div>
-              <div fxLayout="column" class="mb-4 align-items-center">
-                <span class="text-gray-800 text-3xl font-bold mb-2"> Coins</span>
-                <small class="font-semibold text-xs text-gray-400">Filtering • Sorting • 250+ tokens</small>
-              </div>
-              <video class="w-100 home-video-fix" controls autoplay loop>
-                <source
-                  [src]="
-                    'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/videos%2Fcoinfloe_coins_vertical_video.mp4?alt=media&token=87f1f004-a6e2-4cba-81fa-72ba9793e370'
-                  "
-                  type="video/mp4"
-                />
-              </video>
-            </div>
+
+            <app-large-image-viewer
+              [themeToggle]="true"
+              [name]="'Explore'"
+              [desc]="'Summary • News • Coin Highlights'"
+              [img1]="
+                'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/coinfloe_images%2Fcoinfloe_home_vertical.png?alt=media&token=59f9c915-ae00-460c-8f57-5caee55374c3'
+              "
+              [img2]="
+                'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/coinfloe_images%2Fdark_home_page-vertical.png?alt=media&token=6c9d3bb9-b97f-41eb-bbfe-5e3d708db5a3'
+              "
+              [video]="
+                'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/videos%2F2022-01-24_13-20-12.mp4?alt=media&token=9cb71b20-92b8-4739-973a-60fed500bed5'
+              "
+            >
+            </app-large-image-viewer>
+            <app-large-image-viewer
+              [themeToggle]="true"
+              [name]="'Coin Info'"
+              [desc]="'Charting • News • Metrics'"
+              [img1]="
+                'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/coinfloe_images%2Fcoin_info_vertical.png?alt=media&token=f28545e8-6003-4cc2-a8cd-362efbec9d5a'
+              "
+              [img2]="
+                'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/coinfloe_images%2Fdark_coin_info_vertical.png?alt=media&token=39f20c09-03a0-42a9-a97e-9f01d154a8a3'
+              "
+              [video]="
+                'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/videos%2F2022-01-24_13-34-42.mp4?alt=media&token=3ac291d4-c9cc-4e1b-9309-da6820d1270b'
+              "
+            >
+            </app-large-image-viewer>
+            <app-large-image-viewer
+              [themeToggle]="true"
+              [name]="'Coins'"
+              [desc]="'Filtering • Sorting • 250+ tokens'"
+              [img1]="
+                'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/coinfloe_images%2Fcoins_page_vertical.png?alt=media&token=88d2e3bc-9c08-4799-9a71-77ba941c3f5d'
+              "
+              [img2]="
+                'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/coinfloe_images%2Fdark_coin_page_vertical.png?alt=media&token=a094ad92-475d-4e2a-bd3b-f0c3710a9a54'
+              "
+              [video]="
+                'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/videos%2F2022-01-24_13-29-32.mp4?alt=media&token=6c45ba95-0982-4454-b595-b1d013ee8253'
+              "
+            >
+            </app-large-image-viewer>
+            <app-large-image-viewer
+              [themeToggle]="true"
+              [name]="'News'"
+              [desc]="'Trending • Topics • Search'"
+              [img1]="
+                'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/coinfloe_images%2Fnews_page_vertical.png?alt=media&token=0209e58b-c29c-4374-828d-392d3e32f69c'
+              "
+              [img2]="
+                'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/coinfloe_images%2Fdark_news_page_vertical.png?alt=media&token=f8975597-56da-4fae-b0a6-3b0f29b2015c'
+              "
+              [video]="
+                'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/videos%2F2022-01-24_13-50-04.mp4?alt=media&token=cd9f8072-d436-4aca-b7bb-c7bf2551d392'
+              "
+            >
+            </app-large-image-viewer>
           </div>
         </div>
       </section>

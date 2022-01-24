@@ -56,9 +56,13 @@ a {
   }
 }
 
-// img shadow
+// img
 .img-shadow {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.img-border {
+  border: 1px solid #ebebeb;
 }
 
 // text shadow
@@ -83,4 +87,13 @@ a {
   color: $bg-purple;
   justify-content: center;
   align-items: center;
+}
+
+// material
+.mat-button-toggle-group-appearance-standard {
+  border-radius: 12px !important;
+}
+
+::ng-deep .mat-button-toggle-appearance-standard .mat-button-toggle-label-content {
+  line-height: 35px !important;
 }

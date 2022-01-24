@@ -1,0 +1,51 @@
+<div>
+  <div fxLayout="column" class="align-items-center">
+    <span class="text-gray-800 text-3xl font-bold mb-2"> {{ name }}</span>
+    <small class="font-semibold text-xs text-gray-400">{{ desc }}</small>
+    <div *ngIf="themeToggle; else img">
+      <div class="w-100 text-center mt-3 mb-4">
+        <mat-button-toggle-group #group="matButtonToggleGroup" name="theme" aria-label="theme">
+          <mat-button-toggle disableRipple="true" checked="true" value="light">
+            <span [ngClass]="{ 'font-bold': group.value === 'light' }" class="font-bold text-gray-700 text-sm"
+              >Light</span
+            >
+          </mat-button-toggle>
+          <mat-button-toggle disableRipple="true" value="dark">
+            <span [ngClass]="{ 'font-bold': group.value === 'dark' }" class="font-bold text-gray-700 text-sm"
+              >Dark</span
+            >
+          </mat-button-toggle>
+          <mat-button-toggle disableRipple="true" value="video">
+            <span [ngClass]="{ 'font-bold': group.value === 'video' }" class="font-bold text-gray-700 text-sm"
+              >Video</span
+            >
+          </mat-button-toggle>
+        </mat-button-toggle-group>
+      </div>
+      <!-- <img class="w-100 img-border" *ngIf="group.value === 'light'; else dark" [src]="img1"/> -->
+      <img
+        class="w-100 img-border"
+        [ngClass]="{ hidden: group.value === 'dark' || group.value === 'video' }"
+        [src]="img1"
+      />
+      <img
+        class="w-100 img-border"
+        [ngClass]="{ hidden: group.value === 'light' || group.value === 'video' }"
+        [src]="img2"
+      />
+      <video class="w-100" *ngIf="group.value === 'video'" controls autoplay loop>
+        <source [src]="video" type="video/mp4" />
+      </video>
+    </div>
+  </div>
+</div>
+
+<ng-template #dark>
+  <img class="w-100 img-border" [src]="img2" />
+</ng-template>
+
+<ng-template #img>
+  <div>
+    <img class="w-100 img-border" [src]="img1" />
+  </div>
+</ng-template>
