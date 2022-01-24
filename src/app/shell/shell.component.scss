@@ -1,5 +1,11 @@
 @import "../../styles/index";
 
+.body-wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
 .loader-container {
   height: 100vh;
   width: 100vw;
@@ -19,6 +25,14 @@
   margin-top: -40px;
   font-family: "Megrim", cursive;
   font-size: 1.8rem;
+}
+
+.header {
+  position: absolute;
+  top: 0px;
+}
+.nav-up {
+  top: -40px;
 }
 
 /* KEYFRAMES */

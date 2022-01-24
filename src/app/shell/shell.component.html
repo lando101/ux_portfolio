@@ -1,4 +1,8 @@
-<div [ngClass]="{ 'hide-router': imgLoading > 0 || imgLoading === null }">
+<div
+  class="body-wrapper"
+  [ngClass]="{ 'hide-router': imgLoading > 0 || imgLoading === null }"
+  (scroll)="onScroll($event)"
+>
   <app-header></app-header>
   <router-outlet></router-outlet>
   <app-footer></app-footer>

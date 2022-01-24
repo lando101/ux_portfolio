@@ -94,6 +94,10 @@ a {
   border-radius: 12px !important;
 }
 
+::ng-deep .mat-form-field-infix {
+  width: auto !important;
+}
+
 ::ng-deep .mat-button-toggle-appearance-standard .mat-button-toggle-label-content {
   line-height: 35px !important;
 }

@@ -470,14 +470,21 @@
         </div>
       </section>
       <section #demo class="normal-section">
-        <div class="section-header-sticky mb-4">
+        <div class="section-header-sticky">
           <div
             class="w-100 text-start container"
             [ngClass.lt-lg]="'max-w-screen-lg px-4'"
             [ngClass.gt-md]="'max-w-screen-2xl'"
           >
-            <h1><span class="font-extrabold text-4xl">Demo</span></h1>
-            <label class="text-2xl font-bold sub-header">Proof is in the pudding.</label>
+            <div class="text-center" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px">
+              <div class="sm-icon-container">
+                <i class="far fa-hand-pointer -rotate-12"></i>
+              </div>
+              <h1 class="text-center mb-5">
+                <span class="font-light text-4xl">07 </span><span class="font-extrabold text-4xl">/ Demo</span>
+              </h1>
+            </div>
+            <!-- <label class="text-2xl font-bold sub-header">Proof is in the pudding.</label> -->
           </div>
         </div>
         <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
@@ -485,7 +492,7 @@
             <video class="w-100" controls autoplay loop>
               <source
                 [src]="
-                  'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/videos%2Fcoinfloe_demo.mp4?alt=media&token=8353aae8-9dcd-490c-890a-fcfcac442857'
+                  'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/videos%2F2022-01-24_16-00-28.mp4?alt=media&token=172e0e03-ec20-47d8-88a5-f35d68a7b54d'
                 "
                 type="video/mp4"
               />

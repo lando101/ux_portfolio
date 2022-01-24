@@ -45,4 +45,8 @@ export class ShellComponent implements OnInit {
       }
     });
   }
+
+  onScroll(event: any) {
+    console.log('scroll', event);
+  }
 }

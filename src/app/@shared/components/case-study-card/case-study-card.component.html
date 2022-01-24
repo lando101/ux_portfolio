@@ -1,13 +1,10 @@
 <button
+  class="text-left"
   ngClass.gt-xs="cs-card-container"
   ngClass.lt-sm="cs-card-container-no-hover"
   [ngClass]="{ 'disabled-cursor': !caseStudy.public }"
   [disabled]="!caseStudy.public"
   (click)="route(caseStudy.public ? caseStudy.href : '')"
-  fxLayout="row"
-  fxLayout.lt-lg="column-reverse"
-  fxLayoutGap.gt-md="6rem"
-  fxLayoutGap.lt-lg="3rem"
 >
   <!-- <div *ngIf="caseStudy.orientation === 'left'" fxFlex="45" fxLayoutAlign="center center">
     <a [routerLink]="caseStudy.public ? caseStudy.href : ''">
@@ -19,39 +16,43 @@
       />
     </a>
   </div> -->
-  <div fxFlex="55" class="h-100" fxLayout="column" fxLayoutAlign="center start" fxLayoutGap="20px">
-    <span *ngIf="!caseStudy.public" class="text-gray-500 focus:ring-2 focus:ring-gray-800 text-uppercase font-bold"
-      >In Progress</span
-    >
-    <h2 class="text-2xl font-black">{{ caseStudy.title }}</h2>
-    <div ngClass.gt-xs="" class="">
-      <div fxLayout="row wrap" fxLayoutGap="10px" fxLayoutAlign="start start" class="pb-1">
-        <span *ngFor="let skill of caseStudy.skills" class="font-bold text-gray-400">{{ skill }}</span>
+  <div fxLayout="row" fxLayout.lt-lg="column-reverse" fxLayoutGap.gt-md="6rem" fxLayoutGap.lt-lg="3rem" class="w-100">
+    <div fxFlex="55" class="h-100" fxLayout="column" fxLayoutAlign="center start" fxLayoutGap="20px">
+      <span *ngIf="!caseStudy.public" class="text-gray-500 focus:ring-2 focus:ring-gray-800 text-uppercase font-bold"
+        >In Progress</span
+      >
+      <h2 class="text-2xl font-black">{{ caseStudy.title }}</h2>
+      <div ngClass.gt-xs="" class="">
+        <div fxLayout="row wrap" fxLayoutGap="10px" fxLayoutAlign="start start" class="pb-1">
+          <span *ngFor="let skill of caseStudy.skills" class="font-bold text-gray-400">{{ skill }}</span>
+        </div>
+        <p class="text-left text-gray-600">{{ caseStudy.desc }}</p>
       </div>
-      <p class="text-left text-gray-600">{{ caseStudy.desc }}</p>
+      <div *ngIf="caseStudy.nda">
+        <span fxLayout="row" class="nda-wrapper" fxLayoutGap="10px">
+          <div fxLayout="column" class="justify-center">
+            <i class="text-gray-400 text-xl fas fa-exclamation-circle"></i>
+          </div>
+          <div fxLayout="column">
+            <label class="text-sm font-semibold text-gray-100 mb-1 text-left">Under Non-disclosure Agreement</label>
+            <p class="text-xs text-gray-300 font-medium text-left">
+              Details will likely be vague to protect client info.
+            </p>
+          </div>
+        </span>
+      </div>
     </div>
-    <div *ngIf="caseStudy.nda">
-      <span fxLayout="row" class="nda-wrapper" fxLayoutGap="10px">
-        <div fxLayout="column" class="justify-center">
-          <i class="text-gray-400 text-xl fas fa-exclamation-circle"></i>
-        </div>
-        <div fxLayout="column">
-          <label class="text-sm font-semibold text-gray-100 mb-1 text-left">Under Non-disclosure Agreement</label>
-          <p class="text-xs text-gray-300 font-medium text-left">
-            Details will likely be vague to protect client info.
-          </p>
-        </div>
-      </span>
+    <div fxFlex="45" fxLayoutAlign="center center">
+      <img
+        fxFlex.lt-lg="80"
+        class="img-right"
+        [alt]="'Image of coinfloe application on desktop and mobile'"
+        [src]="caseStudy.img_url"
+      />
     </div>
   </div>
-  <div fxFlex="45" fxLayoutAlign="center center">
-    <img
-      fxFlex.lt-lg="80"
-      class="img-right"
-      [alt]="'Image of coinfloe application on desktop and mobile'"
-      [src]="caseStudy.img_url"
-    />
-  </div>
+  <button *ngIf="caseStudy.public" class="btn-main focus:ring-2 focus:ring-gray-800">Read More</button>
+  <button *ngIf="!caseStudy.public" class="btn-secondary focus:ring-2 focus:ring-gray-800">Coming Soon</button>
 </button>
 
 <!-- <a fxLayout="column" fxHide.gt-md fxLayoutGap="3rem">
