@@ -1,9 +1,9 @@
 <div
-  class="body-wrapper"
-  [ngClass]="{ 'hide-router': imgLoading > 0 || imgLoading === null }"
+  id="container"
+  [ngClass]="{ 'hide-router': imgLoading > 0 || imgLoading === null, 'body-wrapper': !mobile }"
   (scroll)="onScroll($event)"
 >
-  <app-header></app-header>
+  <app-header [scrollUp]="scrollUp"></app-header>
   <router-outlet></router-outlet>
   <app-footer></app-footer>
 </div>

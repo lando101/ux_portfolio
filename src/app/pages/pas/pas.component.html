@@ -1,5 +1,5 @@
 <div>
-  <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
+  <div class="container" #intro [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
     <div class="w-100 text-left">
       <!-- <h4 class="font-extrabold text-gray-600 text-xl">Other Projects</h4> -->
       <a class="text-sm" routerLink="/home">
@@ -9,7 +9,7 @@
     </div>
     <div class="w-100" fxLayout="row"></div>
   </div>
-  <section #intro class="pb-5 my-5">
+  <section class="pb-5 my-5">
     <div class="container py-5 my-5" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
       <div fxLayout.gt-md="row" fxLayout.lt-lg="column-reverse" fxLayoutGap="6rem">
         <div fxFlex.gt-md="45">
@@ -1299,7 +1299,7 @@
         </div>
       </section>
     </div>
-    <div fxHide.lt-xl class="position-sticky table-of-contents-wrapper">
+    <div fxHide.lt-xl class="table-of-contents-wrapper">
       <div class="position-sticky inner-container text-gray-500 mt-5 text-sm" fxLayout="column" fxLayoutGap="10px">
         <button
           id="intro"

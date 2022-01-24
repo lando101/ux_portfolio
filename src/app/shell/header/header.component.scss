@@ -18,3 +18,14 @@
   font-family: "Megrim", cursive;
   font-size: 1.8rem;
 }
+
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+  transition: 0.2s ease-in-out;
+}
+
+.nav-down {
+  top: -80px;
+}

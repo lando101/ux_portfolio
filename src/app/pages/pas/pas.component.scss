@@ -3,9 +3,10 @@
 $dark-bg: #f3f1f9;
 
 .table-of-contents-wrapper {
-  top: 0px;
-  right: 30px;
+  top: 50px;
+  right: 105px;
   z-index: 9;
+  position: absolute !important;
   .inner-container {
     top: 25px;
     width: 165px;
