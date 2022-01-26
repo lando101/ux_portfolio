@@ -11,7 +11,7 @@ export class HeaderComponent implements OnInit {
   currentUrl: string;
   onProject: boolean;
   @Input() scrollUp: boolean;
-  constructor(private router: Router) {}
+  constructor(public router: Router) {}
 
   ngOnInit() {
     // console.log('init', this.router.url);
