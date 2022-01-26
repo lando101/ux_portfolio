@@ -42,7 +42,7 @@ export class ShellComponent implements OnInit {
     this.mobile = this.deviceService.isMobile();
     console.log('mobile', this.mobile);
     this.imgService.imagesLoading$.subscribe((count: number) => {
-      console.log('count', count);
+      // console.log('count', count);
       if (count === 0) {
         setTimeout(() => {
           this.imgLoading = count;

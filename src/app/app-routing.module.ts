@@ -6,10 +6,13 @@ const routes: Routes = [
   Shell.childRoutes([
     { path: 'about', loadChildren: () => import('./pages/about/about.module').then((m) => m.AboutModule) },
     { path: 'resume', loadChildren: () => import('./pages/resume/resume.module').then((m) => m.ResumeModule) },
-    { path: 'coinfloe', loadChildren: () => import('./pages/coinfloe/coinfloe.module').then((m) => m.CoinfloeModule) },
-    { path: 'pas', loadChildren: () => import('./pages/pas/pas.module').then((m) => m.PasModule) },
     {
-      path: 'forecaster',
+      path: 'projects/coinfloe',
+      loadChildren: () => import('./pages/coinfloe/coinfloe.module').then((m) => m.CoinfloeModule),
+    },
+    { path: 'projects/pas', loadChildren: () => import('./pages/pas/pas.module').then((m) => m.PasModule) },
+    {
+      path: 'projects/forecaster',
       loadChildren: () => import('./pages/forcaster/forcaster.module').then((m) => m.ForcasterModule),
     },
   ]),

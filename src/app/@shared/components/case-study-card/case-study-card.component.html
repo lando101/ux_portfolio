@@ -51,8 +51,10 @@
       />
     </div>
   </div>
-  <button *ngIf="caseStudy.public" class="btn-main focus:ring-2 focus:ring-gray-800">Read More</button>
-  <button *ngIf="!caseStudy.public" class="btn-secondary focus:ring-2 focus:ring-gray-800">Coming Soon</button>
+  <div ngClass.lt-sm="mt-3">
+    <button *ngIf="caseStudy.public" class="btn-main focus:ring-2 focus:ring-gray-800">Read More</button>
+    <button *ngIf="!caseStudy.public" class="btn-secondary focus:ring-2 focus:ring-gray-800">Coming Soon</button>
+  </div>
 </button>
 
 <!-- <a fxLayout="column" fxHide.gt-md fxLayoutGap="3rem">

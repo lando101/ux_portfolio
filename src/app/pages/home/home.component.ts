@@ -84,7 +84,7 @@ export class HomeComponent implements OnInit {
       skills: ['UX/UI Design', 'UX Research', 'UI Development'],
       img_url:
         'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fopas-transparent-no-tilt.png?alt=media&token=227a6ff4-e811-42ac-9a77-b4690a33ec43',
-      href: '/pas',
+      href: '/projects/pas',
       orientation: 'right',
       alt: 'Image of process automation application on desktop in light and dark mode',
       nda: true,
@@ -97,7 +97,7 @@ export class HomeComponent implements OnInit {
       skills: ['UX/UI Design', 'UI/Front-End Development'],
       img_url:
         'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fcoinfloe_ad_transparent_no_tilt.png?alt=media&token=9d750a04-4f4f-4b3e-89ac-33aeac3f9dd6',
-      href: '/coinfloe',
+      href: '/projects/coinfloe',
       orientation: 'left',
       alt: 'Image of coinfloe application on desktop and mobile',
       nda: false,
@@ -110,7 +110,7 @@ export class HomeComponent implements OnInit {
       skills: ['UX/UI', 'Front-end Developer', 'Angular'],
       img_url:
         'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fforecaster.png?alt=media&token=49a1d12b-2733-4266-b091-3787eec6fb85',
-      href: '/forecaster',
+      href: '/projects/forecaster',
       orientation: 'right',
       alt: 'Image of forecaster application on mobile',
       nda: false,
