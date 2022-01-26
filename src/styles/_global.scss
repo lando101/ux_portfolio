@@ -89,6 +89,22 @@ a {
   align-items: center;
 }
 
+.table-of-contents-wrapper {
+  top: 50px;
+  right: 105px;
+  z-index: 1;
+  position: absolute !important;
+  .inner-container {
+    top: 90px;
+    width: 165px;
+    button {
+      &:hover {
+        color: $hightlight-text-color;
+      }
+    }
+  }
+}
+
 // material
 .mat-button-toggle-group-appearance-standard {
   border-radius: 12px !important;
