@@ -105,6 +105,19 @@ export class HomeComponent implements OnInit {
       public: true,
     },
     {
+      title: 'Global4Sight',
+      desc: 'An intranet web application for managing and publicising sources information for intel analysts.',
+      skills: ['UX/UI Design', 'UX Research', 'UI Development'],
+      img_url:
+        'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fcoinfloe_ad_transparent_no_tilt.png?alt=media&token=9d750a04-4f4f-4b3e-89ac-33aeac3f9dd6',
+      href: '/projects/coinfloe',
+      orientation: 'left',
+      alt: 'Image of coinfloe application on desktop and mobile',
+      nda: false,
+      caseStudy: true,
+      public: false,
+    },
+    {
       title: 'Forecaster',
       desc: 'An exprimental weather application with dynamic weather animations based on current conditions.',
       skills: ['UX/UI', 'Front-end Developer', 'Angular'],

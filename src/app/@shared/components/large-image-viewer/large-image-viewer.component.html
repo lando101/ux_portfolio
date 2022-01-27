@@ -24,11 +24,13 @@
       </div>
       <!-- <img class="w-100 img-border" *ngIf="group.value === 'light'; else dark" [src]="img1"/> -->
       <img
+        [alt]="name + ' page'"
         class="w-100 img-border"
         [ngClass]="{ hidden: group.value === 'dark' || group.value === 'video' }"
         [src]="img1"
       />
       <img
+        [alt]="name + ' page in dark mode'"
         class="w-100 img-border"
         [ngClass]="{ hidden: group.value === 'light' || group.value === 'video' }"
         [src]="img2"
@@ -36,6 +38,9 @@
       <video class="w-100" *ngIf="group.value === 'video'" controls autoplay loop>
         <source [src]="video" type="video/mp4" />
       </video>
+    </div>
+    <div class="media-desc w-100 text-right mt-3 text-3xl text-gray-600">
+      {{ name }}
     </div>
   </div>
 </div>
