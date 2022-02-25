@@ -111,6 +111,14 @@ a {
   }
 }
 
+//accents
+.primary-accent {
+  width: 130px;
+  height: 6px;
+  margin-bottom: 20px;
+  background-color: $bg-purple;
+}
+
 // material
 .mat-button-toggle-group-appearance-standard {
   border-radius: 12px !important;

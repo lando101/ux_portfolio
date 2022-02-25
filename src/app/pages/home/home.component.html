@@ -12,8 +12,8 @@
           I'm Landon, a <span class="text-5xl font-extrabold leading-tight purple-navy-text">UX Designer</span> at Booz
           Allen Hamilton.
         </h1>
-        <p class="text-xl leading-9 mt-2 mb-4 text-gray-500">
-          I'm a UX engineer, experienced in building custom user experiences for the Government
+        <p class="text-lg leading-9 mt-2 mb-4 text-gray-500">
+          I'm a UX designer who builds innovative user experiences for the Government
           <a
             class="text-gray-600"
             matTooltip="Learn more about Government clearances"
@@ -21,15 +21,15 @@
             target="_blank"
             >cleared</a
           >
-          space. I'm located in
-          <a
+          space.
+          <!-- <a
             class="text-gray-600"
             matTooltip="Learn more about Arlington, VA"
             href="https://www.google.com/maps/place/Arlington,+VA/@38.7995607,-76.9126492,7.4z/data=!4m5!3m4!1s0x89b7b69d7ba7a70f:0xf8cf6fc845f6b093!8m2!3d38.8799697!4d-77.1067698?shorturl=1"
             target="_blank"
             >Arlington, VA</a
-          >
-          and I'm ready to help!
+          > -->
+          <!-- and I'm ready to help! -->
         </p>
 
         <div
@@ -71,10 +71,11 @@
     </div>
     <!-- <div animateOnScroll animationName="animate__fadeInLeft animate__animated" class=""> -->
     <div [ngClass.lt-lg]="'max-w-screen-sm'">
+      <div class="primary-accent"></div>
       <div
-        class="text-center w-100 mb-3 py-3 section-header"
+        class="text-center w-100 mb-5 py-3 section-header"
         fxLayout="row"
-        fxLayoutAlign="center center"
+        fxLayoutAlign="start start"
         fxLayoutAlign.lt-sm="center center"
       >
         <!-- <div class="divider"></div> -->
@@ -89,9 +90,10 @@
       </div>
     </div>
     <div [ngClass.lt-lg]="'max-w-screen-sm'" fxHide.lt-sm>
-      <div class="text-center w-100 mb-2 py-3 section-header" fxLayout="row" fxLayoutAlign="center center">
+      <div class="primary-accent"></div>
+      <div class="text-center w-100 mb-2 py-3 section-header" fxLayout="row" fxLayoutAlign="start start">
         <!-- <div class="divider w-100"></div> -->
-        <h2 class="text-4xl font-extrabold px-4">Roles</h2>
+        <h2 class="text-4xl font-extrabold">Roles</h2>
         <!-- <div class="divider w-100"></div> -->
       </div>
       <div
@@ -194,6 +196,12 @@
         <h2 class="text-4xl font-extrabold px-4 whitespace-nowrap">Contact Me</h2>
         <div class="divider w-100"></div>
       </div> -->
+      <div class="primary-accent"></div>
+      <div class="text-center w-100 mb-5 py-3 section-header" fxLayout="row" fxLayoutAlign="start start">
+        <!-- <div class="divider w-100"></div> -->
+        <h2 class="text-4xl font-extrabold">Contact</h2>
+        <!-- <div class="divider w-100"></div> -->
+      </div>
       <div class="w-100" fxLayout="row" fxLayout.lt-lg="column-reverse" fxLayoutGap="6rem">
         <div fxHide.lt-lg="" fxFlex="350px">
           <app-contact-card></app-contact-card>
