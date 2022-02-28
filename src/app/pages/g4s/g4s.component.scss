@@ -1,6 +1,6 @@
 @import "../../../styles/index";
 
-$dark-bg: #f3f1f9;
+$dark-bg: #f9f9fd;
 
 section {
   width: 100vw;
@@ -76,6 +76,10 @@ img {
   // margin: 50px 0px;
 }
 
+.video-wrapper {
+  height: auto;
+}
+
 .hero-wrapper {
   margin-top: -15px;
 }
@@ -91,8 +95,30 @@ img {
 .dark-section {
   background-color: $dark-bg;
   // padding: 5rem 3rem;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+
+  // padding-top: 5rem;
+  // padding-bottom: 7rem;
+  padding-top: 7rem;
+  padding-bottom: 10rem;
+  .lg-img {
+    max-height: 650px !important;
+    width: auto !important;
+    max-width: 100%;
+  }
+  .content {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+.grid-section {
+  background-color: $dark-bg;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23dedede' fill-opacity='0.45'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  // padding: 5rem 3rem;
+  // padding-top: 5rem;
+  // padding-bottom: 7rem;
+  padding-top: 7rem;
+  padding-bottom: 10rem;
   .lg-img {
     max-height: 650px !important;
     width: auto !important;
@@ -105,8 +131,11 @@ img {
 }
 
 .normal-section {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  // padding-top: 5rem;
+  // padding-bottom: 7rem;
+  padding: 5rem 0rem;
+  // padding-bottom: 10rem;
+  background-color: white;
   .sm-img {
     max-height: 350px;
     width: 100%;
@@ -125,7 +154,8 @@ img {
 .section-header-sticky {
   // position: sticky;
   top: 0px;
-  background: #f9f9fd;
+  // background: #f9f9fd;
+  background-color: white;
   z-index: 2;
   width: 100vw;
 }
@@ -136,6 +166,21 @@ img {
   background: $dark-bg;
   z-index: 2;
   width: 100vw;
+}
+
+.grid-section-header-sticky {
+  // position: sticky;
+  top: 0px;
+  background: transparent;
+  z-index: 2;
+  width: 100vw;
+}
+
+.process-section {
+  background-color: #e0dfef;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg fill-opacity='0.73'%3E%3Ccircle fill='%23E0DFEF' cx='400' cy='400' r='600'/%3E%3Ccircle fill='%23e6e5f2' cx='400' cy='400' r='500'/%3E%3Ccircle fill='%23ececf5' cx='400' cy='400' r='400'/%3E%3Ccircle fill='%23f3f2f9' cx='400' cy='400' r='300'/%3E%3Ccircle fill='%23f9f9fc' cx='400' cy='400' r='200'/%3E%3Ccircle fill='%23FFFFFF' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
+  // background-attachment: fixed;
+  background-size: cover;
 }
 
 .img-xs {
@@ -212,4 +257,32 @@ img {
   &:hover {
     opacity: 0.75 !important;
   }
+}
+
+//videos
+
+.card-video {
+  max-height: 428px;
+  max-width: 1209px;
+  overflow: hidden;
+}
+
+.video-crop {
+  top: 1px;
+  position: relative;
+}
+
+.small-video {
+  top: 1px;
+  position: relative;
+  max-height: 211px;
+}
+
+.vertical-video {
+  max-height: 865px;
+}
+
+.home-video-fix {
+  position: relative;
+  left: -1px;
 }

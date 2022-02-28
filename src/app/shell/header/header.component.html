@@ -53,15 +53,6 @@
               </button>
               <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
                 <button
-                  [ngClass]="{ 'font-bold': currentUrl === '/projects/pas' }"
-                  routerLink="/projects/pas"
-                  class="text-uppercase d-flex align-items-center"
-                  ngbDropdownItem
-                >
-                  <!-- <i *ngIf="currentUrl === '/projects/pas'" class="active-dot fas fa-dot-circle"></i> -->
-                  OPAS Portal
-                </button>
-                <button
                   [ngClass]="{ 'font-bold': currentUrl === '/projects/coinfloe' }"
                   routerLink="/projects/coinfloe"
                   class="text-uppercase d-flex align-items-center"
@@ -69,6 +60,24 @@
                 >
                   <!-- <i *ngIf="currentUrl === '/projects/coinfloe'" class="active-dot fas fa-dot-circle"></i> -->
                   Coinfloe
+                </button>
+                <button
+                  [ngClass]="{ 'font-bold': currentUrl === '/projects/g4s' }"
+                  routerLink="/projects/g4s"
+                  class="text-uppercase d-flex align-items-center"
+                  ngbDropdownItem
+                >
+                  <!-- <i *ngIf="currentUrl === '/projects/coinfloe'" class="active-dot fas fa-dot-circle"></i> -->
+                  Global4Sight
+                </button>
+                <button
+                  [ngClass]="{ 'font-bold': currentUrl === '/projects/pas' }"
+                  routerLink="/projects/pas"
+                  class="text-uppercase d-flex align-items-center"
+                  ngbDropdownItem
+                >
+                  <!-- <i *ngIf="currentUrl === '/projects/pas'" class="active-dot fas fa-dot-circle"></i> -->
+                  OPAS Portal
                 </button>
               </div>
             </div>

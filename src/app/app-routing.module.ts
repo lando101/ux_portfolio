@@ -15,6 +15,7 @@ const routes: Routes = [
       path: 'projects/forecaster',
       loadChildren: () => import('./pages/forcaster/forcaster.module').then((m) => m.ForcasterModule),
     },
+    { path: 'projects/g4s', loadChildren: () => import('./pages/g4s/g4s.module').then((m) => m.G4sModule) },
   ]),
 
   // { path: 'resume', loadChildren: () => import('./pages/resume/resume.module').then(m => m.ResumeModule) },

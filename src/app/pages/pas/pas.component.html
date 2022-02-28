@@ -137,7 +137,7 @@
         <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
           <div class="w-100 text-start">
             <h1 class="font-extrabold text-4xl">Design Process</h1>
-            <label class="text-2xl font-bold sub-header">Don't act like users. Talk to users.</label>
+            <label class="text-2xl font-bold sub-header">Solve problems for users. Iteratively.</label>
           </div>
           <div class="w-100 my-5 py-2">
             <img
@@ -159,7 +159,7 @@
             <h1>
               <span class="font-light text-4xl">01 </span><span class="font-extrabold text-4xl">/ Discovery</span>
             </h1>
-            <label class="text-2xl font-bold sub-header">Empathize with users.</label>
+            <label class="text-2xl font-light sub-header">Empathize with users.</label>
           </div>
         </div>
         <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
@@ -327,7 +327,7 @@
             [ngClass.gt-md]="'max-w-screen-2xl'"
           >
             <h1><span class="font-light text-4xl">02 </span><span class="font-extrabold text-4xl">/ Define</span></h1>
-            <label class="text-2xl font-bold sub-header">Identify pain points.</label>
+            <label class="text-2xl font-light sub-header">Identify pain points.</label>
           </div>
         </div>
         <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
@@ -386,7 +386,7 @@
               </div>
               <div fxLayout.gt-md="row" fxLayout="column" fxLayoutGap="4rem" fxLayoutAlign="start start">
                 <div fxFlex="40" fxLayoutAlign="center center" fxLayout="column">
-                  <h2 class="text-2xl font-extrabold mb-3 w-100">Who Are Our Users?</h2>
+                  <!-- <h2 class="text-2xl font-extrabold mb-3 w-100">Who Are Our Users?</h2> -->
                   <p class="mb-3 text-gray-600">
                     Based on user research, more than 70% of our users were submitters yet the OPAS Portal’s design did
                     not accommodate them. Approvers, while a smaller group, accounted for the most time spent in the
@@ -612,7 +612,7 @@
             [ngClass.gt-md]="'max-w-screen-2xl'"
           >
             <h1><span class="font-light text-4xl">03 </span><span class="font-extrabold text-4xl">/ Ideate</span></h1>
-            <label class="text-2xl font-bold sub-header">Let the creative juices flow.</label>
+            <label class="text-2xl font-light sub-header">Let the creative juices flow.</label>
           </div>
         </div>
         <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
@@ -665,7 +665,58 @@
                 </div>
               </div>
             </div>
-
+            <div fxLayout.gt-md="row" fxLayout="column" fxLayoutGap="5rem">
+              <div fxFlex="40" fxLayoutAlign="start center" fxLayout="column">
+                <h2 class="text-2xl font-extrabold mb-3 w-100">More Clicks is Better?</h2>
+                <p class="mb-3 text-gray-600">
+                  Team management and users had requested an application with less clicks. However, after observing
+                  users in the previous application, the number of clicks was not the problem. In fact, the previous
+                  application had arguably required less clicks.
+                </p>
+                <p class="mb-3 text-gray-600">
+                  <strong
+                    >The problem was that the previous application showed too many forms to try and satisfy the
+                    one-click requirement.</strong
+                  >
+                </p>
+                <p class="mb-3 text-gray-600">
+                  We solved this problem by limiting the options available to users. The application, instead, displayed
+                  cards with sentence fragments that, when selected, would filter forms. This form of filtering was
+                  natural to users and was much better than showing hundreds of forms at once.
+                </p>
+              </div>
+              <div fxFlex="60" class="d-flex justify-center">
+                <img
+                  class="lg-img"
+                  [src]="
+                    'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fpas-task-flow.png?alt=media&token=6b67ad6b-0535-474c-b15a-6749b7028df2'
+                  "
+                />
+              </div>
+            </div>
+            <div fxLayout="column" fxLayout.gt-md="row" fxLayoutGap="5rem">
+              <div fxFlex="40" fxLayoutAlign="start center" fxLayout="column">
+                <h2 class="text-2xl font-extrabold mb-3 w-100">Let's Organize</h2>
+                <p class="mb-3 text-gray-600">
+                  The original OPAS Portal had too many pages and the location of content was confusing. I decided to
+                  give each category of content a page that was easily accessible from the navbar. For example, instead
+                  of scattering forms in multiple locations, they would now live on the Forms Page.
+                </p>
+                <p class="text-gray-600">
+                  However, based on user feedback I would loosen this design approach. While bucketing content on pages
+                  made sense, having access to forms in other logical locations was convenient. In later designs, a
+                  Forms Tray was added to the Task List page.
+                </p>
+              </div>
+              <div fxFlex="60" class="d-flex justify-center">
+                <img
+                  class="lg-img"
+                  [src]="
+                    'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fsitemap.png?alt=media&token=558d6c1a-79dd-43a8-b6f9-9970b24456a0'
+                  "
+                />
+              </div>
+            </div>
             <!-- <div fxLayout="column" fxLayoutGap="3rem">
               <h2 class="text-2xl font-extrabold mb-3 w-100">Mockups</h2>
               <div fxLayout="column" fxLayoutGap="9rem">
@@ -739,7 +790,7 @@
             <h1>
               <span class="font-light text-4xl">04 </span><span class="font-extrabold text-4xl">/ Design & Test</span>
             </h1>
-            <label class="text-2xl font-bold sub-header">Take it back to users.</label>
+            <label class="text-2xl font-light sub-header">Take it back to users.</label>
           </div>
         </div>
         <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
@@ -833,58 +884,7 @@
                 </div>
               </div>
             </div>
-            <div fxLayout="column" fxLayout.gt-md="row" fxLayoutGap="5rem">
-              <div fxFlex="40" fxLayoutAlign="start center" fxLayout="column">
-                <h2 class="text-2xl font-extrabold mb-3 w-100">Let's Organize</h2>
-                <p class="mb-3 text-gray-600">
-                  The original OPAS Portal had too many pages and the location of content was confusing. I decided to
-                  give each category of content a page that was easily accessible from the navbar. For example, instead
-                  of scattering forms in multiple locations, they would now live on the Forms Page.
-                </p>
-                <p class="text-gray-600">
-                  However, based on user feedback I would loosen this design approach. While bucketing content on pages
-                  made sense, having access to forms in other logical locations was convenient. In later designs, a
-                  Forms Tray was added to the Task List page.
-                </p>
-              </div>
-              <div fxFlex="60" class="d-flex justify-center">
-                <img
-                  class="lg-img"
-                  [src]="
-                    'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fsitemap.png?alt=media&token=558d6c1a-79dd-43a8-b6f9-9970b24456a0'
-                  "
-                />
-              </div>
-            </div>
-            <div fxLayout.gt-md="row" fxLayout="column" fxLayoutGap="5rem">
-              <div fxFlex="40" fxLayoutAlign="start center" fxLayout="column">
-                <h2 class="text-2xl font-extrabold mb-3 w-100">More Clicks is Better?</h2>
-                <p class="mb-3 text-gray-600">
-                  Team management and users had requested an application with less clicks. However, after observing
-                  users in the previous application, the number of clicks was not the problem. In fact, the previous
-                  application had arguably required less clicks.
-                </p>
-                <p class="mb-3 text-gray-600">
-                  <strong
-                    >The problem was that the previous application showed too many forms to try and satisfy the
-                    one-click requirement.</strong
-                  >
-                </p>
-                <p class="mb-3 text-gray-600">
-                  We solved this problem by limiting the options available to users. The application, instead, displayed
-                  cards with sentence fragments that, when selected, would filter forms. This form of filtering was
-                  natural to users and was much better than showing hundreds of forms at once.
-                </p>
-              </div>
-              <div fxFlex="60" class="d-flex justify-center">
-                <img
-                  class="lg-img"
-                  [src]="
-                    'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fpas-task-flow.png?alt=media&token=6b67ad6b-0535-474c-b15a-6749b7028df2'
-                  "
-                />
-              </div>
-            </div>
+
             <div fxLayout.gt-md="row" fxLayout="column" fxLayoutGap="4rem">
               <div fxFlex="40" fxLayout="column">
                 <h2 class="text-2xl font-extrabold mb-3 w-100">Styles & Branding</h2>
@@ -1186,7 +1186,7 @@
         <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
           <div class="w-100 text-start">
             <h1 class="font-extrabold text-4xl">Results + Thougths</h1>
-            <label class="text-2xl font-bold sub-header">Keep improving.</label>
+            <label class="text-2xl font-light sub-header">Keep improving.</label>
           </div>
         </div>
         <div
@@ -1208,23 +1208,23 @@
                 <h4 class="font-extrabold mb-2">Accomplishments</h4>
                 <ul class="list-disc text-gray-600" fxLayout="column" fxLayoutGap="15px">
                   <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
-                    <span><i class="text-gray-400 far fa-circle"></i></span>
+                    <span><i class="text-gray-400 far fa-check-circle"></i></span>
                     <span>Reduced help desk ticket volume related to incorrect form submissions</span>
                   </li>
                   <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
-                    <span><i class="text-gray-400 far fa-circle"></i></span>
+                    <span><i class="text-gray-400 far fa-check-circle"></i></span>
                     <span>Received A+ 508 compliance rating from agency</span>
                   </li>
                   <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
-                    <span><i class="text-gray-400 far fa-circle"></i></span>
+                    <span><i class="text-gray-400 far fa-check-circle"></i></span>
                     <span>Renamed forms using natural language leading to less user confusion</span>
                   </li>
                   <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
-                    <span><i class="text-gray-400 far fa-circle"></i></span>
+                    <span><i class="text-gray-400 far fa-check-circle"></i></span>
                     <span>Lowered site load times by nearly 50% compared to original application</span>
                   </li>
                   <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
-                    <span><i class="text-gray-400 far fa-circle"></i></span>
+                    <span><i class="text-gray-400 far fa-check-circle"></i></span>
                     <span
                       >Removed remedial tasks such as repeatedly hunting for forms and re-configuring data table filters
                       by implementing favoriting and incorporating multiple tables per instance</span

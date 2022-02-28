@@ -97,12 +97,12 @@ export class HomeComponent implements OnInit {
       skills: ['UX/UI Design', 'UX Research', 'UI/Front-End Development'],
       img_url:
         'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/g4s_images%2Fg4s_transparent.png?alt=media&token=26ca772e-3bd8-4f86-8a6c-dabd4e19882a',
-      href: '/projects/pas',
+      href: '/projects/g4s',
       orientation: 'right',
       alt: 'Image of process automation application on desktop in light and dark mode',
       nda: true,
       caseStudy: true,
-      public: false,
+      public: true,
     },
     {
       title: 'Coinfloe',
