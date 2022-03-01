@@ -82,8 +82,7 @@ export class HomeComponent implements OnInit {
       title: 'OPAS Portal',
       desc: 'An enterprise grade application for managing workflows for a user based of over 5,000 users.',
       skills: ['UX/UI Design', 'UX Research', 'UI Development'],
-      img_url:
-        'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fopas-transparent-no-tilt.png?alt=media&token=227a6ff4-e811-42ac-9a77-b4690a33ec43',
+      img_url: 'https://ux-portfolio-lcm.s3.amazonaws.com/opas/general/opas-transparent-no-tilt.png',
       href: '/projects/pas',
       orientation: 'right',
       alt: 'Image of process automation application on desktop in light and dark mode',
@@ -95,8 +94,7 @@ export class HomeComponent implements OnInit {
       title: 'Global4Sight',
       desc: 'A sources management application that aggregates sources, standardizes citations, automates source packets and more.',
       skills: ['UX/UI Design', 'UX Research', 'UI/Front-End Development'],
-      img_url:
-        'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/g4s_images%2Fg4s_transparent.png?alt=media&token=26ca772e-3bd8-4f86-8a6c-dabd4e19882a',
+      img_url: 'https://ux-portfolio-lcm.s3.amazonaws.com/g4s/general/g4s_transparent.png',
       href: '/projects/g4s',
       orientation: 'right',
       alt: 'Image of process automation application on desktop in light and dark mode',
@@ -108,8 +106,7 @@ export class HomeComponent implements OnInit {
       title: 'Coinfloe',
       desc: 'A full-featured crypto currency web application built for exploring the crypto landscape.',
       skills: ['UX/UI Design', 'UI/Front-End Development'],
-      img_url:
-        'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fcoinfloe_ad_transparent_no_tilt.png?alt=media&token=9d750a04-4f4f-4b3e-89ac-33aeac3f9dd6',
+      img_url: 'https://ux-portfolio-lcm.s3.amazonaws.com/coinfloe/general/coinfloe_ad_transparent_no_tilt.png',
       href: '/projects/coinfloe',
       orientation: 'left',
       alt: 'Image of coinfloe application on desktop and mobile',
