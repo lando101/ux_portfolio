@@ -1,15 +1,6 @@
 <div>
-  <div #intro class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
-    <!-- <div class="w-100 text-left">
-      <a class="text-sm" routerLink="/home">
-        <i class="fas fa-arrow-left mr-1"></i>
-        Home
-      </a>
-    </div> -->
-    <div class="w-100" fxLayout="row"></div>
-  </div>
-  <section class="pb-5 my-5">
-    <div class="container py-5 my-5" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
+  <section #intro class="hero-diamond">
+    <div class="container py-5" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
       <div fxLayout.gt-md="row" fxLayout.lt-lg="column-reverse" fxLayoutGap="6rem">
         <div fxFlex.gt-md="45">
           <h1 class="text-5xl mb-2 font-extrabold leading-tight">Coinfloe</h1>
@@ -225,11 +216,7 @@
           fxLayout="column"
           fxLayoutGap="7rem"
         >
-          <img
-            [src]="
-              'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2FUI%20Flow.png?alt=media&token=35b0fd56-124c-4cec-9dde-f2a639d2ffa5'
-            "
-          />
+          <img [src]="'https://ux-portfolio-lcm.s3.amazonaws.com/coinfloe/visualizations/UI+Flow.png'" />
         </div>
       </section>
       <section #map class="dark-section">
@@ -260,9 +247,7 @@
           <div class="max-w-screen-lg">
             <img
               class="w-100"
-              [src]="
-                'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2FSite%20Map%20Coinfloe.png?alt=media&token=5326943e-b168-404a-9f59-305ecf641c74'
-              "
+              [src]="'https://ux-portfolio-lcm.s3.amazonaws.com/coinfloe/visualizations/Site+Map+Coinfloe.png'"
             />
           </div>
         </div>
@@ -294,11 +279,7 @@
           fxLayout="column"
           fxLayoutGap="7rem"
         >
-          <img
-            [src]="
-              'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2FCoinfloe%20Illustrations.png?alt=media&token=f89e930a-cdc5-4dc0-a6d9-e0e1c56e973b'
-            "
-          />
+          <img [src]="'https://ux-portfolio-lcm.s3.amazonaws.com/coinfloe/visualizations/Coinfloe+Illustrations.png'" />
         </div>
       </section>
       <section #pages class="dark-section">
@@ -339,60 +320,36 @@
               [themeToggle]="true"
               [name]="'Explore'"
               [desc]="'Summary • News • Coin Highlights'"
-              [img1]="
-                'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/coinfloe_images%2Fcoinfloe_home_vertical.png?alt=media&token=59f9c915-ae00-460c-8f57-5caee55374c3'
-              "
-              [img2]="
-                'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/coinfloe_images%2Fdark_home_page-vertical.png?alt=media&token=6c9d3bb9-b97f-41eb-bbfe-5e3d708db5a3'
-              "
-              [video]="
-                'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/videos%2F2022-01-24_13-20-12.mp4?alt=media&token=9cb71b20-92b8-4739-973a-60fed500bed5'
-              "
+              [img1]="'https://ux-portfolio-lcm.s3.amazonaws.com/coinfloe/vertical-light/coinfloe_home_vertical.png'"
+              [img2]="'https://ux-portfolio-lcm.s3.amazonaws.com/coinfloe/vertical-dark/dark_home_page-vertical.png'"
+              [video]="'https://ux-portfolio-lcm.s3.amazonaws.com/coinfloe/videos/explore-video.mp4'"
             >
             </app-large-image-viewer>
             <app-large-image-viewer
               [themeToggle]="true"
               [name]="'Coin Info'"
               [desc]="'Charting • News • Metrics'"
-              [img1]="
-                'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/coinfloe_images%2Fcoin_info_vertical.png?alt=media&token=f28545e8-6003-4cc2-a8cd-362efbec9d5a'
-              "
-              [img2]="
-                'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/coinfloe_images%2Fdark_coin_info_vertical.png?alt=media&token=39f20c09-03a0-42a9-a97e-9f01d154a8a3'
-              "
-              [video]="
-                'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/videos%2F2022-01-24_13-34-42.mp4?alt=media&token=3ac291d4-c9cc-4e1b-9309-da6820d1270b'
-              "
+              [img1]="'https://ux-portfolio-lcm.s3.amazonaws.com/coinfloe/vertical-light/coin_info_vertical.png'"
+              [img2]="'https://ux-portfolio-lcm.s3.amazonaws.com/coinfloe/vertical-dark/dark_coin_info_vertical.png'"
+              [video]="'https://ux-portfolio-lcm.s3.amazonaws.com/coinfloe/videos/coin-info-video.mp4'"
             >
             </app-large-image-viewer>
             <app-large-image-viewer
               [themeToggle]="true"
               [name]="'Coins'"
               [desc]="'Filtering • Sorting • 250+ tokens'"
-              [img1]="
-                'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/coinfloe_images%2Fcoins_page_vertical.png?alt=media&token=88d2e3bc-9c08-4799-9a71-77ba941c3f5d'
-              "
-              [img2]="
-                'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/coinfloe_images%2Fdark_coin_page_vertical.png?alt=media&token=a094ad92-475d-4e2a-bd3b-f0c3710a9a54'
-              "
-              [video]="
-                'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/videos%2F2022-01-24_13-29-32.mp4?alt=media&token=6c45ba95-0982-4454-b595-b1d013ee8253'
-              "
+              [img1]="'https://ux-portfolio-lcm.s3.amazonaws.com/coinfloe/vertical-light/coins_page_vertical.png'"
+              [img2]="'https://ux-portfolio-lcm.s3.amazonaws.com/coinfloe/vertical-dark/dark_coin_page_vertical.png'"
+              [video]="'https://ux-portfolio-lcm.s3.amazonaws.com/coinfloe/videos/coins-video.mp4'"
             >
             </app-large-image-viewer>
             <app-large-image-viewer
               [themeToggle]="true"
               [name]="'News'"
               [desc]="'Trending • Topics • Search'"
-              [img1]="
-                'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/coinfloe_images%2Fnews_page_vertical.png?alt=media&token=0209e58b-c29c-4374-828d-392d3e32f69c'
-              "
-              [img2]="
-                'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/coinfloe_images%2Fdark_news_page_vertical.png?alt=media&token=f8975597-56da-4fae-b0a6-3b0f29b2015c'
-              "
-              [video]="
-                'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/videos%2F2022-01-24_13-50-04.mp4?alt=media&token=cd9f8072-d436-4aca-b7bb-c7bf2551d392'
-              "
+              [img1]="'https://ux-portfolio-lcm.s3.amazonaws.com/coinfloe/vertical-light/news_page_vertical.png'"
+              [img2]="'https://ux-portfolio-lcm.s3.amazonaws.com/coinfloe/vertical-dark/dark_news_page_vertical.png'"
+              [video]="'https://ux-portfolio-lcm.s3.amazonaws.com/coinfloe/videos/news-video.mp4'"
             >
             </app-large-image-viewer>
           </div>
@@ -486,13 +443,8 @@
         </div>
         <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
           <div class="img-shadow">
-            <video class="w-100" controls autoplay loop>
-              <source
-                [src]="
-                  'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/videos%2F2022-01-24_16-00-28.mp4?alt=media&token=172e0e03-ec20-47d8-88a5-f35d68a7b54d'
-                "
-                type="video/mp4"
-              />
+            <video class="w-100" controls loop>
+              <source [src]="'https://ux-portfolio-lcm.s3.amazonaws.com/coinfloe/videos/demo.mp4'" type="video/mp4" />
             </video>
           </div>
         </div>
@@ -532,30 +484,6 @@
         <button class="text-left font-medium text-uppercase focus:ring-2 focus:ring-gray-800" (click)="scroll(demo)">
           Demo
         </button>
-        <!-- <button
-          class="text-left font-medium text-uppercase focus:ring-2 focus:ring-gray-800"
-          (click)="scroll(research)"
-        >
-          Discovery
-        </button>
-        <button
-          class="text-left font-medium text-uppercase focus:ring-2 focus:ring-gray-800"
-          (click)="scroll(strategy)"
-        >
-          Define
-        </button>
-        <button class="text-left font-medium text-uppercase focus:ring-2 focus:ring-gray-800" (click)="scroll(design)">
-          Ideate
-        </button>
-        <button
-          class="text-left font-medium text-uppercase focus:ring-2 focus:ring-gray-800"
-          (click)="scroll(prototype)"
-        >
-          Design & Test
-        </button>
-        <button class="text-left font-medium text-uppercase focus:ring-2 focus:ring-gray-800" (click)="scroll(results)">
-          Results
-        </button> -->
       </div>
     </div>
   </div>

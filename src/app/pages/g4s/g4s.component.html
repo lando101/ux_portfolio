@@ -1,9 +1,9 @@
 <div>
-  <div #intro class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
+  <!-- <div #intro class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
     <div class="w-100" fxLayout="row"></div>
-  </div>
-  <section class="pb-5 my-5">
-    <div class="container py-5 my-5" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
+  </div> -->
+  <section #intro class="hero-topography">
+    <div class="container py-5" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
       <div fxLayout.gt-md="row" fxLayout.lt-lg="column-reverse" fxLayoutGap="6rem">
         <div fxFlex.gt-md="40">
           <h1 class="text-5xl mb-2 font-extrabold leading-tight">Global4Sight</h1>
@@ -133,14 +133,143 @@
                 <i class="fas fa-binoculars"></i>
                 <!-- <i class="fas fa-swatchbook"></i> -->
               </div>
-              <h1 class="text-center mb-5">
-                <span class="font-light text-4xl">01 </span><span class="font-extrabold text-4xl">/ Discovery</span>
-              </h1>
+              <div class="mb-5 text-center">
+                <h1>
+                  <span class="font-light text-4xl">01 </span><span class="font-extrabold text-4xl">/ Discovery</span>
+                </h1>
+                <label class="text-xl font-light sub-header mt-2">Empathize with users.</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container max-w-screen-lg px-4 mt-5" fxLayout="column" fxLayoutGap="8rem">
+          <div fxLayout="column" fxLayoutGap="2.5rem">
+            <div>
+              <h2 class="text-2xl font-extrabold mb-3 w-100">Interviews</h2>
+              <div>
+                <p class="text-gray-600">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Mauris sit amet massa vitae tortor condimentum lacinia quis. Rhoncus mattis
+                  rhoncus urna neque viverra justo nec ultrices dui. Eros donec ac odio tempor orci dapibus. Sed cras
+                  ornare arcu dui vivamus arcu felis. Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque.
+                  Eget nunc lobortis mattis aliquam faucibus purus in massa tempor. Nec feugiat in fermentum posuere
+                  urna nec tincidunt. Diam quis enim lobortis scelerisque fermentum dui faucibus in. Convallis posuere
+                  morbi leo urna molestie at elementum eu facilisis.
+                </p>
+              </div>
+            </div>
+            <div>
+              <h4 class="font-extrabold mb-4">Key Questions</h4>
+              <div>
+                <ul class="list-disc text-gray-600" fxLayout="column" fxLayoutGap="15px">
+                  <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                    <span><i class="text-gray-400 far fa-circle"></i></span>
+                    <span>Lorem ipsum dolor sit amet?</span>
+                  </li>
+                  <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                    <span><i class="text-gray-400 far fa-circle"></i></span>
+                    <span>Lorem ipsum dolor sit amet?</span>
+                  </li>
+                  <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                    <span><i class="text-gray-400 far fa-circle"></i></span>
+                    <span>Lorem ipsum dolor sit amet?</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <h4 class="font-extrabold mb-4">Findings</h4>
+              <div>
+                <p class="mb-3 text-gray-600">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Mauris sit amet massa vitae tortor condimentum lacinia quis. Rhoncus mattis
+                  rhoncus urna neque viverra justo nec ultrices dui. Eros donec ac odio tempor orci dapibus. Sed cras
+                  ornare arcu dui vivamus arcu felis. Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque.
+                  Eget nunc lobortis mattis aliquam faucibus purus in massa tempor. Nec feugiat in fermentum posuere
+                  urna nec tincidunt. Diam quis enim lobortis scelerisque fermentum dui faucibus in. Convallis posuere
+                  morbi leo urna molestie at elementum eu facilisis.
+                </p>
+                <p class="mb-3 text-gray-600">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Mauris sit amet massa vitae tortor condimentum lacinia quis. Rhoncus mattis
+                  rhoncus urna neque viverra justo nec ultrices dui. Eros donec ac odio tempor orci dapibus. Sed cras
+                  ornare arcu dui vivamus arcu felis. Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque.
+                  Eget nunc lobortis mattis aliquam faucibus purus in massa tempor.
+                </p>
+              </div>
+            </div>
+            <div
+              fxLayout="row"
+              [ngClass]="'w-100'"
+              class="qoute content-section-with-border"
+              ngClass.lt-sm="pl-0"
+              fxLayoutGap="10px"
+            >
+              <div>
+                <i [ngClass.gt-xs]="'text-5xl'" [ngClass]="'text-4xl'" class="text-gray-200 fas fa-quote-left"></i>
+              </div>
+              <div class="text-start">
+                <h1 [ngClass.gt-xs]="'text-5xl'" [ngClass]="'text-4xl'" class="font-bold leading-snug">
+                  I can't find the forms I'm looking for. The names of forms are confusing.
+                </h1>
+                <div fxLayout="column">
+                  <span>Organization Business Analyst</span>
+                  <small class="font-semibold text-sm text-gray-500">Submitter / Novice Experience</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div fxLayout="column" fxLayoutGap="2.5rem">
+            <div>
+              <h2 class="text-2xl font-extrabold mb-3 w-100">Surveys</h2>
+              <div>
+                <p class="text-gray-600">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Mauris sit amet massa vitae tortor condimentum lacinia quis. Rhoncus mattis
+                  rhoncus urna neque viverra justo nec ultrices dui. Eros donec ac odio tempor orci dapibus. Sed cras
+                  ornare arcu dui vivamus arcu felis. Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque.
+                  Eget nunc lobortis mattis aliquam faucibus purus in massa tempor. Nec feugiat in fermentum posuere
+                  urna nec tincidunt. Diam quis enim lobortis scelerisque fermentum dui faucibus in. Convallis posuere
+                  morbi leo urna molestie at elementum eu facilisis.
+                </p>
+              </div>
+            </div>
+            <div>
+              <h4 class="font-extrabold mb-4">Key Questions</h4>
+              <div>
+                <ul class="list-disc text-gray-600" fxLayout="column" fxLayoutGap="15px">
+                  <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                    <span><i class="text-gray-400 far fa-circle"></i></span>
+                    <span>Lorem ipsum dolor sit amet?</span>
+                  </li>
+                  <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                    <span><i class="text-gray-400 far fa-circle"></i></span>
+                    <span>Lorem ipsum dolor sit amet?</span>
+                  </li>
+                  <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                    <span><i class="text-gray-400 far fa-circle"></i></span>
+                    <span>Lorem ipsum dolor sit amet?</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <h4 class="font-extrabold mb-4">Findings</h4>
+              <div>
+                <p class="mb-3 text-gray-600">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Mauris sit amet massa vitae tortor condimentum lacinia quis.
+                </p>
+                <p class="mb-3 text-gray-600">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="dark-section">
+      <section #define class="dark-section">
         <div class="dark-section-header-sticky">
           <div
             class="w-100 text-start container"
@@ -151,13 +280,298 @@
               <div class="sm-icon-container">
                 <i class="fas fa-map-marker-alt"></i>
               </div>
-              <h1 class="text-center mb-5">
-                <span class="font-light text-4xl">02 </span><span class="font-extrabold text-4xl">/ Define</span>
-              </h1>
+              <div class="text-center mb-5">
+                <h1>
+                  <span class="font-light text-4xl">02 </span><span class="font-extrabold text-4xl">/ Define</span>
+                </h1>
+                <label class="text-xl font-light sub-header mt-2">Identify problems.</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container max-w-screen-lg px-4 mt-5" fxLayout="column" fxLayoutGap="8rem">
+          <div fxLayout="column" fxLayoutGap="2.5rem">
+            <div>
+              <h2 class="text-2xl font-extrabold mb-3 w-100">Personas</h2>
+              <div>
+                <p class="mb-3 text-gray-600">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Mauris sit amet massa vitae tortor condimentum lacinia quis.
+                </p>
+              </div>
+              <div fxLayout="row" class="justify-content-center mt-5">
+                <ngb-carousel *ngIf="images">
+                  <ng-template ngbSlide>
+                    <div class="picsum-img-wrapper">
+                      <img [src]="images[0]" alt="Random first slide" />
+                    </div>
+                    <div class="carousel-caption">
+                      <h3>First slide label</h3>
+                      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </div>
+                  </ng-template>
+                  <ng-template ngbSlide>
+                    <div class="picsum-img-wrapper">
+                      <img [src]="images[1]" alt="Random second slide" />
+                    </div>
+                    <div class="carousel-caption">
+                      <h3>Second slide label</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                  </ng-template>
+                  <ng-template ngbSlide>
+                    <div class="picsum-img-wrapper">
+                      <img [src]="images[2]" alt="Random third slide" />
+                    </div>
+                    <div class="carousel-caption">
+                      <h3>Third slide label</h3>
+                      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    </div>
+                  </ng-template>
+                </ngb-carousel>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h2 class="text-2xl font-extrabold mb-3 w-100">User Journey</h2>
+            <div>
+              <p class="mb-3 text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Mauris sit amet massa vitae tortor condimentum lacinia quis.
+              </p>
+            </div>
+            <div fxLayout="row" class="justify-content-center mt-5">
+              <img
+                class="w-100"
+                [src]="'https://ux-portfolio-lcm.s3.amazonaws.com/opas/visualizations/opas-journey-map.png'"
+              />
+            </div>
+          </div>
+          <div>
+            <h2 class="text-2xl font-extrabold mb-3 w-100">User Stories</h2>
+            <div>
+              <p class="mb-3 text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Mauris sit amet massa vitae tortor condimentum lacinia quis. Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <p class="mb-3 text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Mauris sit amet massa vitae tortor condimentum lacinia quis.
+              </p>
             </div>
           </div>
         </div>
       </section>
+      <section #ideate class="normal-section">
+        <div class="section-header-sticky">
+          <div
+            class="w-100 text-start container"
+            [ngClass.lt-lg]="'max-w-screen-lg px-4'"
+            [ngClass.gt-md]="'max-w-screen-2xl'"
+          >
+            <div class="text-center" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px">
+              <div class="sm-icon-container">
+                <i class="fas fa-lightbulb"></i>
+                <!-- <i class="fas fa-swatchbook"></i> -->
+              </div>
+              <div class="text-center mb-5">
+                <h1>
+                  <span class="font-light text-4xl">03 </span><span class="font-extrabold text-4xl">/ Ideate</span>
+                </h1>
+                <label class="text-xl font-light sub-header mt-2">Wild ideas welcome.</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container max-w-screen-lg px-4 mt-5" fxLayout="column" fxLayoutGap="8rem">
+          <div fxLayout="column" fxLayoutGap="2.5rem">
+            <div>
+              <h2 class="text-2xl font-extrabold mb-3 w-100">User Flows</h2>
+              <div>
+                <p class="mb-3 text-gray-600">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Mauris sit amet massa vitae tortor condimentum lacinia quis.
+                </p>
+              </div>
+              <div fxLayout="row" class="justify-content-center mt-5">
+                <ngb-carousel *ngIf="userFlows">
+                  <ng-template ngbSlide>
+                    <div class="picsum-img-wrapper">
+                      <img
+                        [ngClass.gt-md]="'width-larger'"
+                        [ngClass.lt-lg]="'w-100'"
+                        [src]="userFlows[0]"
+                        alt="Random first slide"
+                      />
+                    </div>
+                  </ng-template>
+                  <ng-template ngbSlide>
+                    <div class="picsum-img-wrapper">
+                      <img
+                        [ngClass.gt-md]="'width-larger'"
+                        [ngClass.lt-lg]="'w-100'"
+                        [src]="userFlows[1]"
+                        alt="Random second slide"
+                      />
+                    </div>
+                  </ng-template>
+                  <ng-template ngbSlide>
+                    <div class="picsum-img-wrapper">
+                      <img
+                        [ngClass.gt-md]="'width-larger'"
+                        [ngClass.lt-lg]="'w-100'"
+                        [src]="userFlows[2]"
+                        alt="Random third slide"
+                      />
+                    </div>
+                  </ng-template>
+                </ngb-carousel>
+              </div>
+            </div>
+          </div>
+          <div fxLayout="column" fxLayoutGap="2.5rem">
+            <div>
+              <h2 class="text-2xl font-extrabold mb-3 w-100">Site Map</h2>
+              <div>
+                <p class="mb-3 text-gray-600">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Mauris sit amet massa vitae tortor condimentum lacinia quis.
+                </p>
+              </div>
+              <div fxLayout="row" class="justify-content-center mt-5">
+                <img
+                  class="w-100"
+                  [src]="'https://ux-portfolio-lcm.s3.amazonaws.com/coinfloe/visualizations/Site+Map+Coinfloe.png'"
+                />
+              </div>
+            </div>
+          </div>
+          <div fxLayout="column" fxLayoutGap="2.5rem">
+            <div>
+              <h2 class="text-2xl font-extrabold mb-3 w-100">Sketches</h2>
+              <div>
+                <p class="mb-3 text-gray-600">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Mauris sit amet massa vitae tortor condimentum lacinia quis.
+                </p>
+              </div>
+              <div>
+                <ul class="list-disc text-gray-600" fxLayout="column" fxLayoutGap="15px">
+                  <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                    <span><i class="text-gray-400 far fa-circle"></i></span>
+                    <span>Lorem ipsum dolor sit amet</span>
+                  </li>
+                  <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                    <span><i class="text-gray-400 far fa-circle"></i></span>
+                    <span>Lorem ipsum dolor sit amet</span>
+                  </li>
+                  <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                    <span><i class="text-gray-400 far fa-circle"></i></span>
+                    <span>Lorem ipsum dolor sit amet</span>
+                  </li>
+                </ul>
+              </div>
+              <div fxLayout="row" class="justify-content-center mt-5">
+                <img
+                  [ngClass.gt-md]="'width-larger'"
+                  [ngClass.lt-lg]="'w-100'"
+                  [src]="'https://ux-portfolio-lcm.s3.amazonaws.com/coinfloe/visualizations/Coinfloe+Illustrations.png'"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section #proto class="dark-section">
+        <div class="dark-section-header-sticky">
+          <div
+            class="w-100 text-start container"
+            [ngClass.lt-lg]="'max-w-screen-lg px-4'"
+            [ngClass.gt-md]="'max-w-screen-2xl'"
+          >
+            <div class="text-center" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px">
+              <div class="sm-icon-container">
+                <i class="fas fa-tools"></i>
+              </div>
+              <div class="text-center mb-5">
+                <h1>
+                  <span class="font-light text-4xl">04 </span><span class="font-extrabold text-4xl">/ Prototype</span>
+                </h1>
+                <label class="text-xl font-light sub-header mt-2">Let's build.</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container max-w-screen-lg px-4 mt-5" fxLayout="column" fxLayoutGap="8rem">
+          <div fxLayout="column" fxLayoutGap="2.5rem">
+            <div>
+              <h2 class="text-2xl font-extrabold mb-3 w-100">Lo-Fi</h2>
+              <div>
+                <p class="mb-3 text-gray-600">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Mauris sit amet massa vitae tortor condimentum lacinia quis.
+                </p>
+              </div>
+              <div fxLayout="row" class="justify-content-center mt-5">
+                <img
+                  class="w-100"
+                  [src]="'https://ux-portfolio-lcm.s3.amazonaws.com/coinfloe/visualizations/Site+Map+Coinfloe.png'"
+                />
+              </div>
+            </div>
+          </div>
+          <div fxLayout="column" fxLayoutGap="2.5rem">
+            <div>
+              <h2 class="text-2xl font-extrabold mb-3 w-100">Lo-Fi Interactive</h2>
+              <div>
+                <p class="mb-3 text-gray-600">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Mauris sit amet massa vitae tortor condimentum lacinia quis.
+                </p>
+              </div>
+              <div fxLayout="row" class="justify-content-center mt-5">
+                <iframe
+                  width="1366"
+                  height="1030"
+                  src="https://xd.adobe.com/embed/32257312-ddbc-4be1-b89c-86195df96b26-6776/"
+                  frameborder="0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div fxHide.lt-xl class="table-of-contents-wrapper">
+      <div class="position-sticky inner-container text-gray-500 mt-5 text-sm" fxLayout="column" fxLayoutGap="10px">
+        <button
+          id="intro"
+          class="text-left font-medium text-uppercase focus:ring-2 focus:ring-gray-800"
+          (click)="scroll(intro)"
+        >
+          Intro
+        </button>
+        <button class="text-left font-medium text-uppercase focus:ring-2 focus:ring-gray-800" (click)="scroll(keyinfo)">
+          Summary
+        </button>
+        <button
+          class="text-left font-medium text-uppercase focus:ring-2 focus:ring-gray-800"
+          (click)="scroll(discovery)"
+        >
+          Discovery
+        </button>
+        <button class="text-left font-medium text-uppercase focus:ring-2 focus:ring-gray-800" (click)="scroll(define)">
+          Define
+        </button>
+        <button class="text-left font-medium text-uppercase focus:ring-2 focus:ring-gray-800" (click)="scroll(ideate)">
+          Ideate
+        </button>
+        <button class="text-left font-medium text-uppercase focus:ring-2 focus:ring-gray-800" (click)="scroll(proto)">
+          Prototype
+        </button>
+      </div>
     </div>
   </div>
 </div>

@@ -1,15 +1,6 @@
 <div>
-  <div class="container" #intro [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
-    <!-- <div class="w-100 text-left">
-      <a class="text-sm" routerLink="/home">
-        <i class="fas fa-arrow-left mr-1"></i>
-        Home
-      </a>
-    </div> -->
-    <div class="w-100" fxLayout="row"></div>
-  </div>
-  <section class="pb-5 my-5">
-    <div class="container py-5 my-5" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
+  <section #intro class="hero-architect">
+    <div class="container py-5" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
       <div fxLayout.gt-md="row" fxLayout.lt-lg="column-reverse" fxLayoutGap="6rem">
         <div fxFlex.gt-md="45">
           <h1 class="text-5xl mb-2 font-extrabold leading-tight">OPAS Portal</h1>
@@ -140,10 +131,7 @@
             <label class="text-2xl font-bold sub-header">Solve problems for users. Iteratively.</label>
           </div>
           <div class="w-100 my-5 py-2">
-            <img
-              class="w-100"
-              [src]="'https://ux-portfolio-lcm.s3.amazonaws.com/opas/general/opas-transparent-no-tilt.png'"
-            />
+            <img class="w-100" [src]="'https://ux-portfolio-lcm.s3.amazonaws.com/general/design_process_v2.png'" />
           </div>
         </div>
       </section>
@@ -374,9 +362,7 @@
                     <div [ngStyle]="{ background: '#fbfbfb' }" class="p-3 rounded-md overflow-hidden img-shadow">
                       <img
                         class="w-100"
-                        [src]="
-                          'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fopas-journey-map.png?alt=media&token=c65f81ce-7cc3-423f-8266-6f288fa5ddba'
-                        "
+                        [src]="'https://ux-portfolio-lcm.s3.amazonaws.com/opas/visualizations/opas-journey-map.png'"
                       />
                     </div>
                   </div>
@@ -384,17 +370,17 @@
               </div>
               <div fxLayout.gt-md="row" fxLayout="column" fxLayoutGap="4rem" fxLayoutAlign="start start">
                 <div fxFlex="40" fxLayoutAlign="center center" fxLayout="column">
-                  <!-- <h2 class="text-2xl font-extrabold mb-3 w-100">Who Are Our Users?</h2> -->
+                  <h2 class="text-2xl font-extrabold mb-3 w-100">Who Are Our Users?</h2>
                   <p class="mb-3 text-gray-600">
                     Based on user research, more than 70% of our users were submitters yet the OPAS Portal’s design did
                     not accommodate them. Approvers, while a smaller group, accounted for the most time spent in the
                     application.
                   </p>
                   <div class="w-100 my-3">
-                    <h4 class="font-extrabold mb-2 text-xl">Primary Users</h4>
+                    <!-- <h4 class="font-extrabold mb-2 text-xl">Primary Users</h4> -->
                     <div fxLayout="column">
                       <div fxLayout="row" fxLayoutGap="15px" class="align-items-start">
-                        <span class="font-extrabold text-gray-400">1) </span>
+                        <span class="font-light text-gray-400">1 </span>
                         <div>
                           <div class="font-extrabold text-gray-700 mb-2">Field Agents (Submitter)</div>
                           <p class="mb-3 text-gray-600">
@@ -406,7 +392,7 @@
                         </div>
                       </div>
                       <div fxLayout="row" fxLayoutGap="15px" class="align-items-start">
-                        <span class="font-extrabold text-gray-400">2) </span>
+                        <span class="font-light text-gray-400">2 </span>
                         <div>
                           <div class="font-extrabold text-gray-700 mb-2">Intel Analysts (Submitter)</div>
                           <p class="mb-3 text-gray-600">
@@ -419,7 +405,7 @@
                       </div>
 
                       <div fxLayout="row" fxLayoutGap="15px" class="align-items-start">
-                        <span class="font-extrabold text-gray-400">3) </span>
+                        <span class="font-light text-gray-400">3 </span>
                         <div>
                           <div class="font-extrabold text-gray-700 mb-2">Business Analysts (Approver)</div>
                           <p class="mb-3 text-gray-600">
@@ -652,12 +638,8 @@
                   <div class="d-flex justify-center rounded-md overflow-hidden bg-white px-1 py-1 img-shadow">
                     <img
                       class="w-100"
-                      [src.gt-md]="
-                        'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fsketches_vertical.png?alt=media&token=40624961-6c58-428e-8e28-2c2d34f35e50'
-                      "
-                      [src.lt-lg]="
-                        'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fopas-drawling.png?alt=media&token=523a6847-01f6-4d84-8630-dca094807624'
-                      "
+                      [src.gt-md]="'https://ux-portfolio-lcm.s3.amazonaws.com/opas/mock-ups/sketches_vertical.png'"
+                      [src.lt-lg]="'https://ux-portfolio-lcm.s3.amazonaws.com/opas/mock-ups/opas-drawling.png'"
                     />
                   </div>
                 </div>
@@ -684,12 +666,7 @@
                 </p>
               </div>
               <div fxFlex="60" class="d-flex justify-center">
-                <img
-                  class="lg-img"
-                  [src]="
-                    'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fpas-task-flow.png?alt=media&token=6b67ad6b-0535-474c-b15a-6749b7028df2'
-                  "
-                />
+                <img class="lg-img" [src]="'https://ux-portfolio-lcm.s3.amazonaws.com/opas/charts/pas-task-flow.png'" />
               </div>
             </div>
             <div fxLayout="column" fxLayout.gt-md="row" fxLayoutGap="5rem">
@@ -707,12 +684,7 @@
                 </p>
               </div>
               <div fxFlex="60" class="d-flex justify-center">
-                <img
-                  class="lg-img"
-                  [src]="
-                    'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fsitemap.png?alt=media&token=558d6c1a-79dd-43a8-b6f9-9970b24456a0'
-                  "
-                />
+                <img class="lg-img" [src]="'https://ux-portfolio-lcm.s3.amazonaws.com/opas/charts/sitemap.png'" />
               </div>
             </div>
             <!-- <div fxLayout="column" fxLayoutGap="3rem">
@@ -872,11 +844,9 @@
                     <img
                       class="w-100"
                       [src.gt-md]="
-                        'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fopas-mid-fidelity-mockup-vertical.png?alt=media&token=4e4e1d00-2797-47fd-a26f-df5144bf5936'
+                        'https://ux-portfolio-lcm.s3.amazonaws.com/opas/mock-ups/opas-mid-fidelity-mockup-vertical.png'
                       "
-                      [src.lt-lg]="
-                        'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fopas-drawling.png?alt=media&token=523a6847-01f6-4d84-8630-dca094807624'
-                      "
+                      [src.lt-lg]="'https://ux-portfolio-lcm.s3.amazonaws.com/opas/mock-ups/opas-mock-ups.png'"
                     />
                   </div>
                 </div>
@@ -929,9 +899,7 @@
               <div fxFlex="60" class="d-flex justify-center">
                 <img
                   class="style-tile-img w-100 rounded-md overflow-hidden img-shadow"
-                  [src]="
-                    'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fopas-style-tile.png?alt=media&token=de2a9b4e-bb95-48e0-9bd6-a66672c52952'
-                  "
+                  [src]="'https://ux-portfolio-lcm.s3.amazonaws.com/opas/visualizations/opas-style-tile.png'"
                 />
               </div>
             </div>
@@ -1237,7 +1205,7 @@
                   <img
                     class="w-100"
                     [src]="
-                      'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fopas-high-fidelity-mockup-vertical.png?alt=media&token=6132ba66-b627-441e-a484-8f4d7b23d786'
+                      'https://ux-portfolio-lcm.s3.amazonaws.com/opas/mock-ups/opas-high-fidelity-mockup-vertical.png'
                     "
                   />
                 </div>
