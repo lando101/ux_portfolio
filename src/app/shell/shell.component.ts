@@ -68,12 +68,14 @@ export class ShellComponent implements OnInit {
     const position = event.target.scrollTop;
     if (position > this.lastPosition) {
       // scroll down :: hide header
-      if (position - this.lastPosition > 5) {
+      if (position - this.lastPosition > 7) {
         this.scrollUp = false;
       }
     } else {
       // scroll up
-      this.scrollUp = true;
+      if (this.lastPosition - position > 7) {
+        this.scrollUp = true;
+      }
     }
     // console.log('up', this.scrollUp);
     this.lastPosition = position;

@@ -7,7 +7,11 @@ import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./g4s.component.scss'],
 })
 export class G4sComponent implements OnInit {
-  images = [944, 1011, 984].map((n) => `https://picsum.photos/id/${n}/900/500`);
+  images = [
+    `https://ux-portfolio-lcm.s3.amazonaws.com/g4s/personas/marques-persona-saturated.png`,
+    'https://ux-portfolio-lcm.s3.amazonaws.com/g4s/personas/mikayla-persona.png',
+    'https://ux-portfolio-lcm.s3.amazonaws.com/g4s/personas/jacqueline-persona.png',
+  ];
   userFlows = [
     'https://ux-portfolio-lcm.s3.amazonaws.com/g4s/user-flows/Create+Citation+Export+(1).png',
     'https://ux-portfolio-lcm.s3.amazonaws.com/g4s/user-flows/Request+New+Source+Export.png',
@@ -15,9 +19,9 @@ export class G4sComponent implements OnInit {
   ];
   constructor(config: NgbCarouselConfig) {
     config.interval = 20000;
-    config.wrap = false;
+    config.wrap = true;
     config.keyboard = false;
-    config.pauseOnHover = false;
+    config.pauseOnHover = true;
   }
 
   ngOnInit(): void {}
