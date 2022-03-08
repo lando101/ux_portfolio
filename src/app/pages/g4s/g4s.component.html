@@ -338,6 +338,21 @@
             </div>
           </div>
           <div>
+            <h2 class="text-2xl font-extrabold mb-3 w-100">Empathy Map</h2>
+            <div>
+              <p class="mb-3 text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Mauris sit amet massa vitae tortor condimentum lacinia quis.
+              </p>
+            </div>
+            <div fxLayout="row" class="justify-content-center mt-5">
+              <img
+                class="w-100 rounded-xl"
+                [src]="'https://ux-portfolio-lcm.s3.amazonaws.com/g4s/general/marques-empathy-map.png'"
+              />
+            </div>
+          </div>
+          <div>
             <h2 class="text-2xl font-extrabold mb-3 w-100">User Stories</h2>
             <div>
               <p class="mb-3 text-gray-600">
@@ -375,6 +390,23 @@
           </div>
         </div>
         <div class="container max-w-screen-lg px-4 mt-5" fxLayout="column" fxLayoutGap="8rem">
+          <div fxLayout="column" fxLayoutGap="2.5rem">
+            <div>
+              <h2 class="text-2xl font-extrabold mb-3 w-100">How Might We</h2>
+              <div>
+                <p class="mb-3 text-gray-600">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Mauris sit amet massa vitae tortor condimentum lacinia quis.
+                </p>
+              </div>
+              <div fxLayout="row" class="justify-content-center mt-5">
+                <img
+                  class="w-100 rounded-xl"
+                  [src]="'https://ux-portfolio-lcm.s3.amazonaws.com/g4s/general/g4s-how-might-we.png'"
+                />
+              </div>
+            </div>
+          </div>
           <div fxLayout="column" fxLayoutGap="2.5rem">
             <div>
               <h2 class="text-2xl font-extrabold mb-3 w-100">User Flows</h2>
@@ -430,10 +462,7 @@
                 </p>
               </div>
               <div fxLayout="row" class="justify-content-center mt-5">
-                <img
-                  class="w-100"
-                  [src]="'https://ux-portfolio-lcm.s3.amazonaws.com/coinfloe/visualizations/Site+Map+Coinfloe.png'"
-                />
+                <img class="w-100" [src]="'https://ux-portfolio-lcm.s3.amazonaws.com/g4s/general/g4s-site-map.png'" />
               </div>
             </div>
           </div>
@@ -512,7 +541,7 @@
               </div>
             </div>
           </div>
-          <div fxLayout="column" fxLayoutGap="2.5rem">
+          <!-- <div fxLayout="column" fxLayoutGap="2.5rem">
             <div>
               <h2 class="text-2xl font-extrabold mb-3 w-100">Lo-Fi Interactive</h2>
               <div>
@@ -529,6 +558,118 @@
                   frameborder="0"
                   allowfullscreen
                 ></iframe>
+              </div>
+            </div>
+          </div> -->
+          <div fxLayout="column" fxLayoutGap="2.5rem">
+            <div>
+              <h2 class="text-2xl font-extrabold mb-3 w-100">Hi-Fi Wireframes</h2>
+              <div>
+                <p class="mb-3 text-gray-600">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Mauris sit amet massa vitae tortor condimentum lacinia quis.
+                </p>
+              </div>
+              <div fxLayout="row" class="justify-content-center mt-5">
+                <img
+                  [ngClass.gt-md]="'width-larger'"
+                  [ngClass.lt-lg]="'w-100'"
+                  [src]="'https://ux-portfolio-lcm.s3.amazonaws.com/g4s/hi-fi/Hi-Fi+Wireframes.png'"
+                />
+              </div>
+            </div>
+          </div>
+          <div fxLayout="column" fxLayoutGap="2.5rem">
+            <div>
+              <h2 class="text-2xl font-extrabold mb-3 w-100">User Feedback</h2>
+              <div>
+                <p class="mb-3 text-gray-600">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Mauris sit amet massa vitae tortor condimentum lacinia quis.
+                </p>
+              </div>
+              <div fxLayout="column" fxLayoutGap="2.5rem">
+                <div>
+                  <div class="mt-5">
+                    <h4 class="font-extrabold mb-4">Explore Page</h4>
+                    <div>
+                      <ul class="list-disc text-gray-600" fxLayout="column" fxLayoutGap="15px">
+                        <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                          <span><i class="text-gray-400 far fa-circle"></i></span>
+                          <span>Lorem ipsum dolor sit amet?</span>
+                        </li>
+                        <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                          <span><i class="text-gray-400 far fa-circle"></i></span>
+                          <span>Lorem ipsum dolor sit amet?</span>
+                        </li>
+                        <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                          <span><i class="text-gray-400 far fa-circle"></i></span>
+                          <span>Lorem ipsum dolor sit amet?</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div fxLayout="column" class="align-items-center mt-5">
+                    <img
+                      class="w-100"
+                      [src]="'https://ux-portfolio-lcm.s3.amazonaws.com/g4s/changes/Explore-Changes.png'"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <div class="pt-4 changes-border">
+                    <h4 class="font-extrabold mb-4">Citations Page</h4>
+                    <div>
+                      <ul class="list-disc text-gray-600" fxLayout="column" fxLayoutGap="15px">
+                        <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                          <span><i class="text-gray-400 far fa-circle"></i></span>
+                          <span>Lorem ipsum dolor sit amet?</span>
+                        </li>
+                        <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                          <span><i class="text-gray-400 far fa-circle"></i></span>
+                          <span>Lorem ipsum dolor sit amet?</span>
+                        </li>
+                        <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                          <span><i class="text-gray-400 far fa-circle"></i></span>
+                          <span>Lorem ipsum dolor sit amet?</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div fxLayout="column" class="align-items-center mt-5">
+                    <img
+                      class="w-100"
+                      [src]="'https://ux-portfolio-lcm.s3.amazonaws.com/g4s/changes/Citations-Changes.png'"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <div class="pt-4 changes-border">
+                    <h4 class="font-extrabold mb-4">Source Request Page</h4>
+                    <div>
+                      <ul class="list-disc text-gray-600" fxLayout="column" fxLayoutGap="15px">
+                        <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                          <span><i class="text-gray-400 far fa-circle"></i></span>
+                          <span>Lorem ipsum dolor sit amet?</span>
+                        </li>
+                        <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                          <span><i class="text-gray-400 far fa-circle"></i></span>
+                          <span>Lorem ipsum dolor sit amet?</span>
+                        </li>
+                        <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                          <span><i class="text-gray-400 far fa-circle"></i></span>
+                          <span>Lorem ipsum dolor sit amet?</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div fxLayout="column" class="align-items-center mt-5">
+                    <img
+                      class="w-100"
+                      [src]="'https://ux-portfolio-lcm.s3.amazonaws.com/g4s/changes/Request-Changes.png'"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
