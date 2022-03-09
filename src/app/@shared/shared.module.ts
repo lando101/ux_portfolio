@@ -22,6 +22,7 @@ import { ContactInfoFormStandardComponent } from './components/contact-info-form
 import { ColorSwatchComponent } from './components/color-swatch/color-swatch.component';
 import { TypographyComponent } from './components/typography/typography.component';
 import { LargeImageViewerComponent } from './components/large-image-viewer/large-image-viewer.component';
+import { CaseStudyCardMiniComponent } from './components/case-study-card-mini/case-study-card-mini.component';
 
 @NgModule({
   imports: [
@@ -50,6 +51,7 @@ import { LargeImageViewerComponent } from './components/large-image-viewer/large
     ColorSwatchComponent,
     TypographyComponent,
     LargeImageViewerComponent,
+    CaseStudyCardMiniComponent,
   ],
   exports: [
     LoaderComponent,
@@ -64,6 +66,7 @@ import { LargeImageViewerComponent } from './components/large-image-viewer/large
     ColorSwatchComponent,
     TypographyComponent,
     LargeImageViewerComponent,
+    CaseStudyCardMiniComponent,
   ],
 })
 export class SharedModule {}

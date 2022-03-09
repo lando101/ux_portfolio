@@ -449,6 +449,40 @@
           </div>
         </div>
       </section>
+      <section class="dark-section">
+        <div class="dark-section-header-sticky">
+          <div
+            class="w-100 text-start container"
+            [ngClass.lt-lg]="'max-w-screen-md px-4'"
+            [ngClass.gt-md]="'max-w-screen-2xl'"
+          >
+            <div class="text-center" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px">
+              <!-- <div class="sm-icon-container">
+                <i class="fas fa-lightbulb"></i>
+              </div> -->
+              <div class="text-center mb-5">
+                <h2>
+                  <!-- <span class="font-light text-4xl">03 </span> -->
+                  <span class="font-extrabold text-2xl">Thanks for reading!</span>
+                </h2>
+                <p class="text-gray-600">↓ Check out more work ↓</p>
+                <!-- <label class="text-xl font-light sub-header mt-2">Wild ideas welcome.</label> -->
+              </div>
+              <div
+                fxLayout.gt-md="row"
+                fxLayout.lt-lg="column"
+                fxLayoutGap="3rem"
+                fxLayoutGap.lt-sm="2rem"
+                [ngClass.gt-md]="'mx-5'"
+              >
+                <div fxFlex="50" *ngFor="let casestudy of caseStudies">
+                  <app-case-study-card-mini [caseStudy]="casestudy"></app-case-study-card-mini>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
     <div fxHide.lt-xl class="table-of-contents-wrapper">
       <div class="position-sticky inner-container text-gray-500 mt-5 text-sm" fxLayout="column" fxLayoutGap="10px">

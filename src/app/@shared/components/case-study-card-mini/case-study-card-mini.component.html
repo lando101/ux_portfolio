@@ -1,0 +1,18 @@
+<button
+  class="text-left h-100"
+  ngClass.gt-xs="cs-card-container"
+  ngClass.lt-sm="cs-card-container-no-hover"
+  (click)="route(caseStudy.public ? caseStudy.href : '')"
+>
+  <div fxLayout="column" fxLayoutGap="2rem">
+    <div fxLayout="row" fxLayoutAlign="center center">
+      <img class="w-100 p-2" [src]="caseStudy.img_url" />
+    </div>
+    <div fxLayout="column">
+      <h2 class="text-xl font-black text-center">{{ caseStudy.title }}</h2>
+      <div fxLayout="row wrap" fxLayoutGap="10px" fxLayoutAlign="center center" class="pb-1">
+        <span *ngFor="let skill of caseStudy.skills" class="font-bold text-gray-400 text-sm">{{ skill }}</span>
+      </div>
+    </div>
+  </div>
+</button>

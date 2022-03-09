@@ -6,12 +6,11 @@
     <div class="container py-5" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
       <div fxLayout.gt-md="row" fxLayout.lt-lg="column-reverse" fxLayoutGap="6rem">
         <div fxFlex.gt-md="40">
-          <h1 class="text-5xl mb-2 font-extrabold leading-tight">Global4Sight</h1>
+          <h1 class="text-5xl mb-2 font-extrabold leading-tight">G4S Sources</h1>
           <p class="project-desc text-xl text-gray-600">
-            Coinfloe centralizes crypto currency data from a variety of services into an easy-to-use application
-            designed for users new to the crypto space. Users can now explore over 250+ crypto currencies which are
-            supplemented with additional content to help them understand the token’s use case, community, recent news
-            and more.
+            G4S Sources (G4S) is a one-stop-shop for analysts to discover sources and use tools that assist in creating
+            reports. Until now, the process of identifying credible sources, citing them and generating reports varied
+            between teams. This case study focuses on the development effort to standardize this process.
           </p>
           <div class="py-4">
             <span class="text-gray-600"
@@ -43,11 +42,10 @@
                 <div>
                   <h3 class="text-2xl font-extrabold mb-2">Overview</h3>
                   <p class="mb-3 text-gray-600">
-                    Coinfloe is a personal application built and designed by me. It allows users to view crypto currency
-                    information such as news, prices and more in an intuitive UI that was designed for crypto outsiders.
-                    In addition to the UI, I also built the APIs for the application which centralized a variety of
-                    crypto API services into one easy to use API. Coinfloe was built out of a passion for the crypto
-                    space but also to highlight my UX experience without NDA restrictions.
+                    G4S Sources is an internal application that fits into a larger process that builds topic specific
+                    reports for clients. During this process, analysts visit G4S Sources to identify trustworthy sources
+                    they can use in reports and to generate DIA formatted citations. G4S Sources allows the organization
+                    to standardize its citation process and regulate the sources used in reports.
                   </p>
                 </div>
                 <div fxLayout="column" fxLayoutGap="1rem">
@@ -74,29 +72,32 @@
                 <div>
                   <h3 class="text-2xl font-extrabold mb-2">Challenge</h3>
                   <p class="mb-3 text-gray-600">
-                    Coinfloe proved to have many challenges. The first being aggregating content from multiple providers
-                    into one intuitive UI. Crypto information is by nature complicated since it’s a combination of
-                    financials, technology, and politics. I wanted to combine these three challenging subjects into one
-                    and present it to people who were new to the space.
+                    Analysts, in the past, have struggled to either <b>identify trustworthy sources</b> or have relied
+                    too heavily on a small group of sources.
                   </p>
                   <p class="mb-3 text-gray-600">
-                    Secondly, Coinfloe needed more than a UX designer. It needed a front-end developer and API developer
-                    too. To make Coinfloe happen, I had to jump into all these roles.
+                    Additionally, analysts have <b>failed to standardize their citations</b> within their own team but
+                    also across other teams. This has resulted in a perceived lack of professionalism from clients and
+                    the overuse of analyst time for tedious tasks.
                   </p>
                 </div>
                 <div>
                   <ul class="list-disc text-gray-600" fxLayout="column" fxLayoutGap="15px">
                     <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
                       <span><i class="text-gray-400 far fa-circle"></i></span>
-                      <span>Combine multiple data feeds into one application</span>
+                      <span>Create a UI that encourages exploration of sources</span>
                     </li>
                     <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
                       <span><i class="text-gray-400 far fa-circle"></i></span>
-                      <span>Make crypto currency data digestible for crypto outsiders</span>
+                      <span>Shorten citations times</span>
                     </li>
                     <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
                       <span><i class="text-gray-400 far fa-circle"></i></span>
-                      <span>Simplify the discovery of crypto currencies and promote exploration</span>
+                      <span>Standardize citations across teams</span>
+                    </li>
+                    <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                      <span><i class="text-gray-400 far fa-circle"></i></span>
+                      <span>Centralize the storage of citations and related materials</span>
                     </li>
                   </ul>
                 </div>
@@ -295,8 +296,8 @@
               <h2 class="text-2xl font-extrabold mb-3 w-100">Personas</h2>
               <div>
                 <p class="mb-3 text-gray-600">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Mauris sit amet massa vitae tortor condimentum lacinia quis.
+                  After meeting with users and listening to their feedback I was able to bucket them into three kinds of
+                  users. The internal intel analyst, the product manager and the government intel analyst.
                 </p>
               </div>
               <div fxLayout="row" class="justify-content-center mt-5">
@@ -326,9 +327,31 @@
             <h2 class="text-2xl font-extrabold mb-3 w-100">User Journey</h2>
             <div>
               <p class="mb-3 text-gray-600">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Mauris sit amet massa vitae tortor condimentum lacinia quis.
+                Users made it clear the as-is process was frustrating. I created a user journey for our primary user to
+                better empathize with them. It was now clear how painful it was to find reputable sources and cite them.
+                Opportunities for process improvement and user experience were abundant.
               </p>
+              <div class="w-100 my-4">
+                <h4 class="font-bold mb-3">Oppurtunities</h4>
+                <ul class="list-disc text-gray-600" fxLayout="column" fxLayoutGap="15px">
+                  <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                    <span><i class="text-gray-400 far fa-circle"></i></span>
+                    <span>Allow users to collaborate and own their citations</span>
+                  </li>
+                  <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                    <span><i class="text-gray-400 far fa-circle"></i></span>
+                    <span>Make citations shareable </span>
+                  </li>
+                  <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                    <span><i class="text-gray-400 far fa-circle"></i></span>
+                    <span>Transfer responsibility of citation format from user to application</span>
+                  </li>
+                  <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                    <span><i class="text-gray-400 far fa-circle"></i></span>
+                    <span>Centralize citation and documentation storage</span>
+                  </li>
+                </ul>
+              </div>
             </div>
             <div fxLayout="row" class="justify-content-center mt-5">
               <img
@@ -341,8 +364,9 @@
             <h2 class="text-2xl font-extrabold mb-3 w-100">Empathy Map</h2>
             <div>
               <p class="mb-3 text-gray-600">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Mauris sit amet massa vitae tortor condimentum lacinia quis.
+                I created an empathy map to better understand how our users make decisions and feel when completing the
+                current process. Visualizing the user’s attitudes and behaviors helped me more effectively advocate for
+                them.
               </p>
             </div>
             <div fxLayout="row" class="justify-content-center mt-5">
@@ -352,7 +376,7 @@
               />
             </div>
           </div>
-          <div>
+          <!-- <div>
             <h2 class="text-2xl font-extrabold mb-3 w-100">User Stories</h2>
             <div>
               <p class="mb-3 text-gray-600">
@@ -365,7 +389,7 @@
                 dolore magna aliqua. Mauris sit amet massa vitae tortor condimentum lacinia quis.
               </p>
             </div>
-          </div>
+          </div> -->
         </div>
       </section>
       <section #ideate class="normal-section">
@@ -395,8 +419,8 @@
               <h2 class="text-2xl font-extrabold mb-3 w-100">How Might We</h2>
               <div>
                 <p class="mb-3 text-gray-600">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Mauris sit amet massa vitae tortor condimentum lacinia quis.
+                  I used “How Might We” questions to promote creativity within the team but also to ensure we were
+                  targeting the right problems.
                 </p>
               </div>
               <div fxLayout="row" class="justify-content-center mt-5">
@@ -409,12 +433,34 @@
           </div>
           <div fxLayout="column" fxLayoutGap="2.5rem">
             <div>
-              <h2 class="text-2xl font-extrabold mb-3 w-100">User Flows</h2>
+              <h2 class="text-2xl font-extrabold mb-3 w-100">Flow Diagrams</h2>
               <div>
                 <p class="mb-3 text-gray-600">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Mauris sit amet massa vitae tortor condimentum lacinia quis.
+                  I created flow diagrams to visualize the path users would likely take to complete tasks in the to-be
+                  system. Doing this helped me maximize the happy-path experience and address fringe scenarios. Many
+                  questions arose while designing flowcharts.
                 </p>
+                <div class="w-100 my-4">
+                  <h4 class="font-bold mb-3">Questions</h4>
+                  <ul class="list-disc text-gray-600" fxLayout="column" fxLayoutGap="15px">
+                    <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                      <span><i class="text-gray-400 far fa-circle"></i></span>
+                      <span>What if a source does't exist?</span>
+                    </li>
+                    <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                      <span><i class="text-gray-400 far fa-circle"></i></span>
+                      <span>What if there are no results from a search?</span>
+                    </li>
+                    <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                      <span><i class="text-gray-400 far fa-circle"></i></span>
+                      <span>How can we shorten the time between creating citations?</span>
+                    </li>
+                    <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                      <span><i class="text-gray-400 far fa-circle"></i></span>
+                      <span>What if the user requests a new source that already exists?</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
               <div fxLayout="row" class="justify-content-center mt-5">
                 <ngb-carousel *ngIf="userFlows">
@@ -457,8 +503,12 @@
               <h2 class="text-2xl font-extrabold mb-3 w-100">Site Map</h2>
               <div>
                 <p class="mb-3 text-gray-600">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Mauris sit amet massa vitae tortor condimentum lacinia quis.
+                  The G4S Sources application served two primary purposes. Finding sources and creating citations. I
+                  used a site map to organize the application and link these two functional areas together.
+                </p>
+                <p class="mb-3 text-gray-600">
+                  Exploratory aspects of the application would lead users to Source ‘Profile’ pages and these pages
+                  would guide users to the Citation page.
                 </p>
               </div>
               <div fxLayout="row" class="justify-content-center mt-5">
@@ -471,23 +521,29 @@
               <h2 class="text-2xl font-extrabold mb-3 w-100">Sketches</h2>
               <div>
                 <p class="mb-3 text-gray-600">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Mauris sit amet massa vitae tortor condimentum lacinia quis.
+                  Now that I understood the general flow of the application and its hierarchy, I sketched a rough draft.
+                  Much of the design emphasis was focused on allowing analysts to discover sources and promote
+                  curiosity. While the as-is process was layered with frustration, the to-be process would be relaxed,
+                  intuitive and practical.
                 </p>
               </div>
               <div>
                 <ul class="list-disc text-gray-600" fxLayout="column" fxLayoutGap="15px">
                   <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
                     <span><i class="text-gray-400 far fa-circle"></i></span>
-                    <span>Lorem ipsum dolor sit amet</span>
+                    <span>Promote discoverability and exploration</span>
                   </li>
                   <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
                     <span><i class="text-gray-400 far fa-circle"></i></span>
-                    <span>Lorem ipsum dolor sit amet</span>
+                    <span>Pages should be templatized to allow scalability</span>
                   </li>
                   <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
                     <span><i class="text-gray-400 far fa-circle"></i></span>
-                    <span>Lorem ipsum dolor sit amet</span>
+                    <span>Next steps in a process should be clear and intuitive</span>
+                  </li>
+                  <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                    <span><i class="text-gray-400 far fa-circle"></i></span>
+                    <span>Information should be obvious and proportional to importance </span>
                   </li>
                 </ul>
               </div>
@@ -528,8 +584,8 @@
               <h2 class="text-2xl font-extrabold mb-3 w-100">Lo-Fi Wireframes</h2>
               <div>
                 <p class="mb-3 text-gray-600">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Mauris sit amet massa vitae tortor condimentum lacinia quis.
+                  Once I finished my sketches, I continued to refine them by converting them to digital format. During
+                  this phase, I thought about how pages would connect to one another.
                 </p>
               </div>
               <div fxLayout="row" class="justify-content-center mt-5">
@@ -537,6 +593,26 @@
                   [ngClass.gt-md]="'width-larger'"
                   [ngClass.lt-lg]="'w-100'"
                   [src]="'https://ux-portfolio-lcm.s3.amazonaws.com/g4s/general/G4S+Low+Fi.png'"
+                />
+              </div>
+            </div>
+          </div>
+          <div fxLayout="column" fxLayoutGap="2.5rem">
+            <div>
+              <h2 class="text-2xl font-extrabold mb-3 w-100">Lo-Fi Prototype</h2>
+              <div>
+                <p class="mb-3 text-gray-600">
+                  I created working lo-fi prototypes to show the development team how pages would connect to each other
+                  and guide users toward sources or citations.
+                </p>
+                <p class="mb-3 text-gray-600">Lo-fi prototypes were the basis for early usability testing as well.</p>
+              </div>
+              <div fxLayout="row" class="justify-content-center mt-5">
+                <img
+                  class="prototype-links-img"
+                  [ngClass.gt-md]="'width-larger'"
+                  [ngClass.lt-lg]="'w-100'"
+                  [src]="'https://ux-portfolio-lcm.s3.amazonaws.com/g4s/mid-fidelity/lo-fi-prototype-links.png'"
                 />
               </div>
             </div>
@@ -566,8 +642,8 @@
               <h2 class="text-2xl font-extrabold mb-3 w-100">Hi-Fi Wireframes</h2>
               <div>
                 <p class="mb-3 text-gray-600">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Mauris sit amet massa vitae tortor condimentum lacinia quis.
+                  With the lo-fi wireframes done, I transitioned to thinking about branding, information hierarchies,
+                  imagery and use of color.
                 </p>
               </div>
               <div fxLayout="row" class="justify-content-center mt-5">
@@ -581,12 +657,61 @@
           </div>
           <div fxLayout="column" fxLayoutGap="2.5rem">
             <div>
-              <h2 class="text-2xl font-extrabold mb-3 w-100">User Feedback</h2>
+              <h2 class="text-2xl font-extrabold mb-3 w-100">Feedback + Insights</h2>
               <div>
                 <p class="mb-3 text-gray-600">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Mauris sit amet massa vitae tortor condimentum lacinia quis.
+                  I took the prototypes to 5 users for feedback and demoed the designs to management. Both groups had
+                  feedback. I then had to find a way to address both groups concerns without sacrificing user
+                  experience.
                 </p>
+                <div class="w-100 my-4">
+                  <h4 class="font-bold mb-3">Users</h4>
+                  <ul class="list-disc text-gray-600" fxLayout="column" fxLayoutGap="15px">
+                    <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                      <span><i class="text-gray-400 far fa-circle"></i></span>
+                      <span
+                        >Navigation seemed cluttered and it was confusing how the navbar would disappear on certain
+                        pages.</span
+                      >
+                    </li>
+                    <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                      <span><i class="text-gray-400 far fa-circle"></i></span>
+                      <span
+                        >Confusion between the differences of the categories at the top and bottom of the Explore
+                        page.</span
+                      >
+                    </li>
+                    <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                      <span><i class="text-gray-400 far fa-circle"></i></span>
+                      <span
+                        >The citation process appeared to ask more information than was necessary to complete a
+                        citation.</span
+                      >
+                    </li>
+                    <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                      <span><i class="text-gray-400 far fa-circle"></i></span>
+                      <span>The explore page was visually too similar to the category pages.</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="w-100 my-4">
+                  <h4 class="font-bold mb-3">Management</h4>
+                  <ul class="list-disc text-gray-600" fxLayout="column" fxLayoutGap="15px">
+                    <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                      <span><i class="text-gray-400 far fa-circle"></i></span>
+                      <span>Need a location to highlight specific sources to users.</span>
+                    </li>
+                    <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                      <span><i class="text-gray-400 far fa-circle"></i></span>
+                      <span>Ability to show that new sources were regularly added.</span>
+                    </li>
+                    <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                      <span><i class="text-gray-400 far fa-circle"></i></span>
+                      <span>Metrics to prove usefulness of certain features.</span>
+                    </li>
+                  </ul>
+                </div>
+                <p class="mt-5 mb-0 text-gray-500 font-bold">Based on feedback, I made the following changes:</p>
               </div>
               <div fxLayout="column" fxLayoutGap="2.5rem">
                 <div>
@@ -595,16 +720,20 @@
                     <div>
                       <ul class="list-disc text-gray-600" fxLayout="column" fxLayoutGap="15px">
                         <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
-                          <span><i class="text-gray-400 far fa-circle"></i></span>
-                          <span>Lorem ipsum dolor sit amet?</span>
+                          <span class="font-light text-gray-400">01 </span>
+                          <span>Condensed navbar into header so that it’s static</span>
                         </li>
                         <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
-                          <span><i class="text-gray-400 far fa-circle"></i></span>
-                          <span>Lorem ipsum dolor sit amet?</span>
+                          <span class="font-light text-gray-400">02 </span>
+                          <span>Categories at the top of Explore changed to match those at the bottom</span>
                         </li>
                         <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
-                          <span><i class="text-gray-400 far fa-circle"></i></span>
-                          <span>Lorem ipsum dolor sit amet?</span>
+                          <span class="font-light text-gray-400">03 </span>
+                          <span>Added the Explore text to clarify page</span>
+                        </li>
+                        <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                          <span class="font-light text-gray-400">04 </span>
+                          <span>Added ‘Recently Added’ section to highlight new sources </span>
                         </li>
                       </ul>
                     </div>
@@ -622,16 +751,18 @@
                     <div>
                       <ul class="list-disc text-gray-600" fxLayout="column" fxLayoutGap="15px">
                         <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
-                          <span><i class="text-gray-400 far fa-circle"></i></span>
-                          <span>Lorem ipsum dolor sit amet?</span>
+                          <span class="font-light text-gray-400">01 </span>
+                          <span
+                            >Enlarged hero section to highlight relevant metrics and provide clear call to action</span
+                          >
                         </li>
                         <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
-                          <span><i class="text-gray-400 far fa-circle"></i></span>
-                          <span>Lorem ipsum dolor sit amet?</span>
+                          <span class="font-light text-gray-400">02 </span>
+                          <span>Provided section to explain purpose of required information</span>
                         </li>
                         <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
-                          <span><i class="text-gray-400 far fa-circle"></i></span>
-                          <span>Lorem ipsum dolor sit amet?</span>
+                          <span class="font-light text-gray-400">03 </span>
+                          <span>Added menu to allow for more actions than ‘copy’</span>
                         </li>
                       </ul>
                     </div>
@@ -649,16 +780,16 @@
                     <div>
                       <ul class="list-disc text-gray-600" fxLayout="column" fxLayoutGap="15px">
                         <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
-                          <span><i class="text-gray-400 far fa-circle"></i></span>
-                          <span>Lorem ipsum dolor sit amet?</span>
+                          <span class="font-light text-gray-400">01 </span>
+                          <span>Enlarged hero section to provide clear call to action</span>
                         </li>
                         <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
-                          <span><i class="text-gray-400 far fa-circle"></i></span>
-                          <span>Lorem ipsum dolor sit amet?</span>
+                          <span class="font-light text-gray-400">02 </span>
+                          <span>Improved explanation as to what is required to request a new source</span>
                         </li>
                         <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
-                          <span><i class="text-gray-400 far fa-circle"></i></span>
-                          <span>Lorem ipsum dolor sit amet?</span>
+                          <span class="font-light text-gray-400">03 </span>
+                          <span>Open requests section to show users their previous source requests and status</span>
                         </li>
                       </ul>
                     </div>
@@ -669,6 +800,92 @@
                       [src]="'https://ux-portfolio-lcm.s3.amazonaws.com/g4s/changes/Request-Changes.png'"
                     />
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section #thoughts class="normal-section">
+        <div class="section-header-sticky">
+          <div
+            class="w-100 text-start container"
+            [ngClass.lt-lg]="'max-w-screen-lg px-4'"
+            [ngClass.gt-md]="'max-w-screen-2xl'"
+          >
+            <div class="text-center" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px">
+              <!-- <div class="sm-icon-container">
+                <i class="fas fa-lightbulb"></i>
+              </div> -->
+              <div class="text-center mb-5">
+                <h1>
+                  <!-- <span class="font-light text-4xl">03 </span> -->
+                  <span class="font-extrabold text-4xl">Thoughts & Takeaways</span>
+                </h1>
+                <!-- <label class="text-xl font-light sub-header mt-2">Wild ideas welcome.</label> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container max-w-screen-lg px-4 mt-5" fxLayout="column" fxLayoutGap="4rem">
+          <div>
+            <h2 class="text-2xl font-extrabold mb-3 w-100">Meet More Users</h2>
+            <div>
+              <p class="text-gray-600">
+                Initial feedback of the G4S Sources application has been positively received from users. However, as the
+                application has gained more visibility from both management and other users’ interest in it has
+                increased too. As the project continues to mature, I think more user research will be required as the
+                intended userbase continues to grow to include a much more diverse set of users than what was initially
+                planned for.
+              </p>
+            </div>
+          </div>
+          <div>
+            <h2 class="text-2xl font-extrabold mb-3 w-100">Think Bigger</h2>
+            <div>
+              <p class="text-gray-600 mb-4">
+                The G4S Sources application is a simple intuitive tool built for analysts. However, the potential of the
+                application far exceeds its current scope. The problems experienced by internal organizational staff
+                closely mirror those of government employees. Going forward more time should be dedicated to solving an
+                industry problem rather than an internal problem.
+              </p>
+              <p class="text-gray-600">
+                Additionally, as analysts continue to feed the G4S Sources application with data more should be done to
+                extract value from it. We can provide even more value to analysts such as document sentiment analysis,
+                ML language translations and more. This is just the start.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="dark-section">
+        <div class="dark-section-header-sticky">
+          <div
+            class="w-100 text-start container"
+            [ngClass.lt-lg]="'max-w-screen-md px-4'"
+            [ngClass.gt-md]="'max-w-screen-2xl'"
+          >
+            <div class="text-center" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px">
+              <!-- <div class="sm-icon-container">
+                <i class="fas fa-lightbulb"></i>
+              </div> -->
+              <div class="text-center mb-5">
+                <h2>
+                  <!-- <span class="font-light text-4xl">03 </span> -->
+                  <span class="font-extrabold text-2xl">Thanks for reading!</span>
+                </h2>
+                <p class="text-gray-600">↓ Check out more work ↓</p>
+                <!-- <label class="text-xl font-light sub-header mt-2">Wild ideas welcome.</label> -->
+              </div>
+              <div
+                fxLayout.gt-md="row"
+                fxLayout.lt-lg="column"
+                fxLayoutGap="3rem"
+                fxLayoutGap.lt-sm="2rem"
+                [ngClass.gt-md]="'mx-5'"
+              >
+                <div fxFlex="50" *ngFor="let casestudy of caseStudies">
+                  <app-case-study-card-mini [caseStudy]="casestudy"></app-case-study-card-mini>
                 </div>
               </div>
             </div>
@@ -702,6 +919,12 @@
         </button>
         <button class="text-left font-medium text-uppercase focus:ring-2 focus:ring-gray-800" (click)="scroll(proto)">
           Prototype
+        </button>
+        <button
+          class="text-left font-medium text-uppercase focus:ring-2 focus:ring-gray-800"
+          (click)="scroll(thoughts)"
+        >
+          Thoughts
         </button>
       </div>
     </div>
