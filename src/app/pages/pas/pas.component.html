@@ -142,15 +142,23 @@
             [ngClass.lt-lg]="'max-w-screen-lg px-4'"
             [ngClass.gt-md]="'max-w-screen-2xl'"
           >
-            <h1>
-              <span class="font-light text-4xl">01 </span><span class="font-extrabold text-4xl">/ Discovery</span>
-            </h1>
-            <label class="text-2xl font-light sub-header">Empathize with users.</label>
+            <div class="text-center" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px">
+              <div class="sm-icon-container">
+                <i class="fas fa-binoculars"></i>
+                <!-- <i class="fas fa-swatchbook"></i> -->
+              </div>
+              <div class="mb-5 text-center">
+                <h1>
+                  <span class="font-light text-4xl">01 </span><span class="font-extrabold text-4xl">/ Discovery</span>
+                </h1>
+                <label class="text-xl font-light sub-header mt-2">Empathize with users.</label>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
+        <div class="container max-w-screen-lg px-4 mt-5">
           <div class="mt-4" fxLayout="column" fxLayoutGap="9rem">
-            <div fxLayout.gt-md="row" fxLayout="column" fxLayoutGap="3rem">
+            <div fxLayout="column" fxLayoutGap="3rem">
               <div fxFlex="50" fxLayoutAlign="center center" fxLayout="column">
                 <h2 class="text-2xl font-extrabold mb-3 w-100">Meet Users</h2>
                 <p class="mb-3 text-gray-600">
@@ -312,14 +320,23 @@
             [ngClass.lt-lg]="'max-w-screen-lg px-4'"
             [ngClass.gt-md]="'max-w-screen-2xl'"
           >
-            <h1><span class="font-light text-4xl">02 </span><span class="font-extrabold text-4xl">/ Define</span></h1>
-            <label class="text-2xl font-light sub-header">Identify pain points.</label>
+            <div class="text-center" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px">
+              <div class="sm-icon-container">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="text-center mb-5">
+                <h1>
+                  <span class="font-light text-4xl">02 </span><span class="font-extrabold text-4xl">/ Define</span>
+                </h1>
+                <label class="text-xl font-light sub-header mt-2">Identify problems.</label>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
+        <div class="container max-w-screen-lg px-4 mt-5">
           <div class="w-100 text-start">
             <div class="mt-4" fxLayout="column" fxLayoutGap="10.5rem">
-              <div fxLayout.gt-md="row" fxLayout="column" fxLayoutGap="4rem">
+              <div fxLayout="column" fxLayoutGap="4rem">
                 <div fxFlex="40" fxLayoutAlign="center center" fxLayout="column">
                   <h2 class="text-2xl font-extrabold mb-3 w-100">Visualize the Problem</h2>
                   <p class="mb-3 text-gray-600">
@@ -368,7 +385,7 @@
                   </div>
                 </div>
               </div>
-              <div fxLayout.gt-md="row" fxLayout="column" fxLayoutGap="4rem" fxLayoutAlign="start start">
+              <div fxLayout="column" fxLayoutGap="4rem" fxLayoutAlign="start start">
                 <div fxFlex="40" fxLayoutAlign="center center" fxLayout="column">
                   <h2 class="text-2xl font-extrabold mb-3 w-100">Who Are Our Users?</h2>
                   <p class="mb-3 text-gray-600">
@@ -595,13 +612,23 @@
             [ngClass.lt-lg]="'max-w-screen-lg px-4'"
             [ngClass.gt-md]="'max-w-screen-2xl'"
           >
-            <h1><span class="font-light text-4xl">03 </span><span class="font-extrabold text-4xl">/ Ideate</span></h1>
-            <label class="text-2xl font-light sub-header">Let the creative juices flow.</label>
+            <div class="text-center" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px">
+              <div class="sm-icon-container">
+                <i class="fas fa-lightbulb"></i>
+                <!-- <i class="fas fa-swatchbook"></i> -->
+              </div>
+              <div class="text-center mb-5">
+                <h1>
+                  <span class="font-light text-4xl">03 </span><span class="font-extrabold text-4xl">/ Ideate</span>
+                </h1>
+                <label class="text-xl font-light sub-header mt-2">Wild ideas welcome.</label>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
+        <div class="container max-w-screen-lg px-4 mt-5">
           <div class="mt-4" fxLayout="column" fxLayoutGap="9rem">
-            <div fxLayout.gt-md="row" fxLayout="column" fxLayoutGap="4rem">
+            <div fxLayout="column" fxLayoutGap="4rem">
               <div fxFlex="40" fxLayoutAlign="start start" fxLayout="column">
                 <h2 class="text-2xl font-extrabold mb-3 w-100">Sketches</h2>
                 <p class="mb-3 text-gray-600">
@@ -645,7 +672,7 @@
                 </div>
               </div>
             </div>
-            <div fxLayout.gt-md="row" fxLayout="column" fxLayoutGap="5rem">
+            <div fxLayout="column" fxLayoutGap="5rem">
               <div fxFlex="40" fxLayoutAlign="start center" fxLayout="column">
                 <h2 class="text-2xl font-extrabold mb-3 w-100">More Clicks is Better?</h2>
                 <p class="mb-3 text-gray-600">
@@ -669,7 +696,7 @@
                 <img class="lg-img" [src]="'https://ux-portfolio-lcm.s3.amazonaws.com/opas/charts/pas-task-flow.png'" />
               </div>
             </div>
-            <div fxLayout="column" fxLayout.gt-md="row" fxLayoutGap="5rem">
+            <div fxLayout="column" fxLayoutGap="5rem">
               <div fxFlex="40" fxLayoutAlign="start center" fxLayout="column">
                 <h2 class="text-2xl font-extrabold mb-3 w-100">Let's Organize</h2>
                 <p class="mb-3 text-gray-600">
@@ -757,15 +784,23 @@
             [ngClass.lt-lg]="'max-w-screen-lg px-4'"
             [ngClass.gt-md]="'max-w-screen-2xl'"
           >
-            <h1>
-              <span class="font-light text-4xl">04 </span><span class="font-extrabold text-4xl">/ Design & Test</span>
-            </h1>
-            <label class="text-2xl font-light sub-header">Take it back to users.</label>
+            <div class="text-center" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px">
+              <div class="sm-icon-container">
+                <i class="fas fa-tools"></i>
+              </div>
+              <div class="text-center mb-5">
+                <h1>
+                  <span class="font-light text-4xl">04 </span
+                  ><span class="font-extrabold text-4xl">/ Design & Test</span>
+                </h1>
+                <label class="text-xl font-light sub-header mt-2">Take it back to users.</label>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
+        <div class="container max-w-screen-lg px-4 mt-5">
           <div class="mt-4" fxLayout="column" fxLayoutGap="12rem">
-            <div fxLayout.gt-md="row" fxLayout="column" fxLayoutGap="4rem">
+            <div fxLayout="column" fxLayoutGap="4rem">
               <div fxFlex="40" fxLayoutAlign="start start" fxLayout="column">
                 <h2 class="text-2xl font-extrabold mb-3 w-100">One OPAS. Two Experiences.</h2>
                 <p class="mb-3 text-gray-600">
@@ -853,7 +888,7 @@
               </div>
             </div>
 
-            <div fxLayout.gt-md="row" fxLayout="column" fxLayoutGap="4rem">
+            <div fxLayout="column" fxLayoutGap="4rem">
               <div fxFlex="40" fxLayout="column">
                 <h2 class="text-2xl font-extrabold mb-3 w-100">Styles & Branding</h2>
                 <div fxLayout="column" fxLayoutGap="10px" class="text-gray-600">
@@ -1149,20 +1184,29 @@
         </div>
       </section>
       <section #results class="normal-section">
-        <div class="container" [ngClass.lt-lg]="'max-w-screen-lg px-4'" [ngClass.gt-md]="'max-w-screen-2xl'">
-          <div class="w-100 text-start">
-            <h1 class="font-extrabold text-4xl">Results + Thougths</h1>
-            <label class="text-2xl font-light sub-header">Keep improving.</label>
+        <div class="section-header-sticky">
+          <div
+            class="w-100 text-start container"
+            [ngClass.lt-lg]="'max-w-screen-lg px-4'"
+            [ngClass.gt-md]="'max-w-screen-2xl'"
+          >
+            <div class="text-center" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px">
+              <!-- <div class="sm-icon-container">
+                <i class="fas fa-lightbulb"></i>
+              </div> -->
+              <div class="text-center mb-5">
+                <h1>
+                  <!-- <span class="font-light text-4xl">03 </span> -->
+                  <span class="font-extrabold text-4xl">Results + Thougths</span>
+                </h1>
+                <label class="text-2xl font-light sub-header">Keep improving.</label>
+                <!-- <label class="text-xl font-light sub-header mt-2">Wild ideas welcome.</label> -->
+              </div>
+            </div>
           </div>
         </div>
-        <div
-          class="container mt-4"
-          [ngClass.lt-lg]="'max-w-screen-lg px-4'"
-          [ngClass.gt-md]="'max-w-screen-2xl'"
-          fxLayout="column"
-          fxLayoutGap="10rem"
-        >
-          <div fxLayout.gt-md="row" fxLayout="column" fxLayoutGap="4rem">
+        <div class="container max-w-screen-lg px-4 mt-5" fxLayout="column" fxLayoutGap="10rem">
+          <div fxLayout="column" fxLayoutGap="4rem">
             <div fxFlex="40" fxLayoutAlign="start start" fxLayout="column">
               <h2 class="text-2xl font-extrabold mb-3 w-100">Final Deliverable</h2>
               <p class="mb-3 text-gray-600">
@@ -1212,7 +1256,7 @@
               </div>
             </div>
           </div>
-          <div fxLayout.gt-md="row" fxLayout="column" fxLayoutGap="4rem">
+          <div fxLayout="column" fxLayoutGap="4rem">
             <div fxFlex="40">
               <h2 class="text-2xl font-extrabold mb-3 w-100">One-Size Fits None</h2>
               <p class="mb-3 text-gray-600">

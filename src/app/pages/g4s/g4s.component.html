@@ -89,7 +89,7 @@
                     </li>
                     <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
                       <span><i class="text-gray-400 far fa-circle"></i></span>
-                      <span>Shorten citations times</span>
+                      <span>Shorten citation creation times</span>
                     </li>
                     <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
                       <span><i class="text-gray-400 far fa-circle"></i></span>
@@ -149,13 +149,11 @@
               <h2 class="text-2xl font-extrabold mb-3 w-100">Interviews</h2>
               <div>
                 <p class="text-gray-600">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Mauris sit amet massa vitae tortor condimentum lacinia quis. Rhoncus mattis
-                  rhoncus urna neque viverra justo nec ultrices dui. Eros donec ac odio tempor orci dapibus. Sed cras
-                  ornare arcu dui vivamus arcu felis. Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque.
-                  Eget nunc lobortis mattis aliquam faucibus purus in massa tempor. Nec feugiat in fermentum posuere
-                  urna nec tincidunt. Diam quis enim lobortis scelerisque fermentum dui faucibus in. Convallis posuere
-                  morbi leo urna molestie at elementum eu facilisis.
+                  Before brainstorming ideas, sketching designs or hypothesizing solutions I had to meet with potential
+                  users. I wanted to understand their attitudes toward the current process and what actions they had to
+                  take to make that process work. I met with a total of <b>3 G4S intel analysts and 1 product owner</b>.
+                  These interviews helped me better understand the frustrations potential users were experiencing when
+                  creating citations and identifying credible sources.
                 </p>
               </div>
             </div>
@@ -165,15 +163,19 @@
                 <ul class="list-disc text-gray-600" fxLayout="column" fxLayoutGap="15px">
                   <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
                     <span><i class="text-gray-400 far fa-circle"></i></span>
-                    <span>Lorem ipsum dolor sit amet?</span>
+                    <span>How do you decide which sources are credible?</span>
                   </li>
                   <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
                     <span><i class="text-gray-400 far fa-circle"></i></span>
-                    <span>Lorem ipsum dolor sit amet?</span>
+                    <span>What are some pain points when selecting sources?</span>
                   </li>
                   <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
                     <span><i class="text-gray-400 far fa-circle"></i></span>
-                    <span>Lorem ipsum dolor sit amet?</span>
+                    <span>How do you currently create citations?</span>
+                  </li>
+                  <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
+                    <span><i class="text-gray-400 far fa-circle"></i></span>
+                    <span>What would make identifying sources and creating citations easier?</span>
                   </li>
                 </ul>
               </div>
@@ -182,20 +184,18 @@
               <h4 class="font-extrabold mb-4">Findings</h4>
               <div>
                 <p class="mb-3 text-gray-600">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Mauris sit amet massa vitae tortor condimentum lacinia quis. Rhoncus mattis
-                  rhoncus urna neque viverra justo nec ultrices dui. Eros donec ac odio tempor orci dapibus. Sed cras
-                  ornare arcu dui vivamus arcu felis. Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque.
-                  Eget nunc lobortis mattis aliquam faucibus purus in massa tempor. Nec feugiat in fermentum posuere
-                  urna nec tincidunt. Diam quis enim lobortis scelerisque fermentum dui faucibus in. Convallis posuere
-                  morbi leo urna molestie at elementum eu facilisis.
+                  After meeting with users, the problem with the current process was becoming clearer. It essentially
+                  boiled down to there wasn’t one.
+                  <b>Each interviewee had a unique criterion for establishing reliable sources</b>. One might value
+                  transparency while another might value timeliness. There wasn’t a process to identify which sources
+                  should be trusted and this caused irregularities in the credibility of reports.
                 </p>
                 <p class="mb-3 text-gray-600">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Mauris sit amet massa vitae tortor condimentum lacinia quis. Rhoncus mattis
-                  rhoncus urna neque viverra justo nec ultrices dui. Eros donec ac odio tempor orci dapibus. Sed cras
-                  ornare arcu dui vivamus arcu felis. Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque.
-                  Eget nunc lobortis mattis aliquam faucibus purus in massa tempor.
+                  Analysts also formulated citations differently. Some would create custom excels that generated
+                  citations and others would attempt to manually create them.
+                  <b>It was up to the analyst’s digression to enforce proper formatting</b>. This was a major issue
+                  because clients expected to receive reports with a specific citation format. Since it was up to
+                  individuals to create a process, their processes lacked uniformity in speed and quality.
                 </p>
               </div>
             </div>
@@ -211,11 +211,11 @@
               </div>
               <div class="text-start">
                 <h1 [ngClass.gt-xs]="'text-5xl'" [ngClass]="'text-4xl'" class="font-bold leading-snug">
-                  I can't find the forms I'm looking for. The names of forms are confusing.
+                  Formatting citations is a mess. It's a tedious process that takes way too much time.
                 </h1>
                 <div fxLayout="column">
-                  <span>Organization Business Analyst</span>
-                  <small class="font-semibold text-sm text-gray-500">Submitter / Novice Experience</small>
+                  <span>G4S Intel Analyst</span>
+                  <small class="font-semibold text-sm text-gray-500">Expert Experience</small>
                 </div>
               </div>
             </div>
@@ -445,7 +445,7 @@
                   <ul class="list-disc text-gray-600" fxLayout="column" fxLayoutGap="15px">
                     <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
                       <span><i class="text-gray-400 far fa-circle"></i></span>
-                      <span>What if a source does't exist?</span>
+                      <span>What if a source doesn't exist?</span>
                     </li>
                     <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
                       <span><i class="text-gray-400 far fa-circle"></i></span>
@@ -721,11 +721,11 @@
                       <ul class="list-disc text-gray-600" fxLayout="column" fxLayoutGap="15px">
                         <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
                           <span class="font-light text-gray-400">01 </span>
-                          <span>Condensed navbar into header so that it’s static</span>
+                          <span>Condensed navbar into header so that navigation elements are static</span>
                         </li>
                         <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
                           <span class="font-light text-gray-400">02 </span>
-                          <span>Categories at the top of Explore changed to match those at the bottom</span>
+                          <span>Categories at the top of Explore page changed to match those at the bottom</span>
                         </li>
                         <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
                           <span class="font-light text-gray-400">03 </span>
@@ -762,7 +762,7 @@
                         </li>
                         <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
                           <span class="font-light text-gray-400">03 </span>
-                          <span>Added menu to allow for more actions than ‘copy’</span>
+                          <span>Added menu to allow for more actions than just ‘copy’</span>
                         </li>
                       </ul>
                     </div>
@@ -789,7 +789,10 @@
                         </li>
                         <li fxLayout="row" fxLayoutGap="15px" class="align-items-start">
                           <span class="font-light text-gray-400">03 </span>
-                          <span>Open requests section to show users their previous source requests and status</span>
+                          <span
+                            >''Open Requests' section added to show users their previous source requests and
+                            status</span
+                          >
                         </li>
                       </ul>
                     </div>

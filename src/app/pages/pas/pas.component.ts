@@ -20,7 +20,7 @@ export class PasComponent implements OnInit {
 
   caseStudies: CaseStudy[] = [
     {
-      title: 'Global4Sight',
+      title: 'G4S Sources',
       desc: 'A sources management application that aggregates sources, standardizes citations, automates source packets and more.',
       skills: ['UX/UI Design', 'UX Research', 'UI/Front-End Development'],
       img_url: 'https://ux-portfolio-lcm.s3.amazonaws.com/g4s/general/g4s_transparent.png',
