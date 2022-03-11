@@ -10,14 +10,46 @@ q {
   quotes: "« " " »";
 }
 
+.hero-image {
+  z-index: -1;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  height: 100%;
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/Custom%20Size%20%E2%80%93%202.png?alt=media&token=a6e64907-e2a7-4f46-9da8-4d294f1499f2);
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: auto;
+  filter: brightness(1.05) opacity(0.75);
+}
+
+.hero-fade {
+  z-index: -1;
+  bottom: 0px;
+  left: 0px;
+  height: 95%;
+  background: linear-gradient(180deg, transparent, #f9f9fd);
+}
+
+.hero-container {
+  padding: 4rem 0px !important;
+}
+
+.hero-container-small {
+  padding: 2rem 0px !important;
+}
+
 .hero-section {
   // height: 550px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 4rem;
-  img {
+  .img-lg {
     max-height: 550px;
+  }
+  .img-sm {
+    max-height: 400px;
   }
   a {
     color: inherit;

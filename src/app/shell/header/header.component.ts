@@ -1,5 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { NavigationEnd, NavigationStart, Router } from '@angular/router';
+import { ContactInfo } from '@app/@shared/components/contact-info-form/contact-info-form.component';
+import { ContactInfoService } from '@app/services/contact-info.service';
 
 @Component({
   selector: 'app-header',
@@ -11,11 +13,16 @@ export class HeaderComponent implements OnInit {
   currentUrl: string;
   onProject: boolean;
   @Input() scrollUp: boolean;
-  constructor(public router: Router) {}
+  contactInfo: ContactInfo;
+  btnString: string;
+  constructor(public router: Router, private contactInfoService: ContactInfoService) {}
 
   ngOnInit() {
     // console.log('init', this.router.url);
     this.detectProjectUrl();
+    this.contactInfoService.$btnText.subscribe((text: string) => {
+      this.btnString = text;
+    });
   }
 
   ngAfterViewInit(): void {
@@ -39,5 +46,9 @@ export class HeaderComponent implements OnInit {
 
   toggleMenu() {
     this.menuHidden = !this.menuHidden;
+  }
+
+  openDialog(): void {
+    this.contactInfoService.openDialog();
   }
 }

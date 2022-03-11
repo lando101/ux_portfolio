@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<!-- <div class="container-fluid">
   <div class="container align-items-center" fxLayout="column" fxLayoutGap.lt-sm="4rem" fxLayoutGap="8rem">
     <div
       fxLayout="row"
@@ -22,14 +22,6 @@
             >cleared</a
           >
           space.
-          <!-- <a
-            class="text-gray-600"
-            matTooltip="Learn more about Arlington, VA"
-            href="https://www.google.com/maps/place/Arlington,+VA/@38.7995607,-76.9126492,7.4z/data=!4m5!3m4!1s0x89b7b69d7ba7a70f:0xf8cf6fc845f6b093!8m2!3d38.8799697!4d-77.1067698?shorturl=1"
-            target="_blank"
-            >Arlington, VA</a
-          > -->
-          <!-- and I'm ready to help! -->
         </p>
 
         <div
@@ -43,7 +35,6 @@
         >
           <button (click)="openDialog()" class="btn-main focus:ring-2 focus:ring-gray-800">
             <span class="font-extrabold tracking-wide px-4">{{ btnString }}</span>
-            <!-- <span class="font-bold" *ngIf="name">Got Feedback, {{ name }}?</span> -->
           </button>
           <div fxLayoutGap="15px">
             <a href="mailto:landon.messmerjmu@gmail.com" matTooltip="Send email"
@@ -69,7 +60,6 @@
         />
       </div>
     </div>
-    <!-- <div animateOnScroll animationName="animate__fadeInLeft animate__animated" class=""> -->
     <div [ngClass.lt-lg]="'max-w-screen-sm'">
       <div class="primary-accent"></div>
       <div
@@ -78,10 +68,8 @@
         fxLayoutAlign="start start"
         fxLayoutAlign.lt-sm="center center"
       >
-        <!-- <div class="divider"></div> -->
         <h2 fxHide.lt-md class="text-4xl font-extrabold whitespace-nowrap">Projects</h2>
         <h2 fxHide.gt-sm class="text-3xl font-extrabold whitespace-nowrap">Projects</h2>
-        <!-- <div class="divider"></div> -->
       </div>
       <div fxLayout="column" fxLayoutGap="90px" fxLayoutGap.lt-sm="2rem">
         <div *ngFor="let casestudy of caseStudies">
@@ -92,9 +80,7 @@
     <div [ngClass.lt-lg]="'max-w-screen-sm'" fxHide.lt-sm>
       <div class="primary-accent"></div>
       <div class="text-center w-100 mb-2 py-3 section-header" fxLayout="row" fxLayoutAlign="start start">
-        <!-- <div class="divider w-100"></div> -->
         <h2 class="text-4xl font-extrabold">Roles</h2>
-        <!-- <div class="divider w-100"></div> -->
       </div>
       <div
         fxLayout="row"
@@ -111,19 +97,10 @@
         <app-cert-images></app-cert-images>
       </div>
     </div>
-    <!-- <div animateOnScroll animationName="animate__fadeInRight" class="animate__animated"> -->
-
     <div [ngClass.lt-lg]="'max-w-screen-sm'" class="feedback-section">
       <div class="bg">
-        <!-- <img
-          fxHide.lt-xl
-          [src]="
-            'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/illustrations%2Fundraw_team_spirit_re_yl1v.svg?alt=media&token=5fde9477-1e23-4d47-a20b-35758cbd8bbe'
-          "
-        /> -->
       </div>
       <div class="w-100 mb-5 pb-3 bg-transparent" fxLayout="row" fxLayoutAlign="center center">
-        <!-- <div class="divider"></div> -->
         <h2
           ngClass.lt-lg="text-4xl"
           ngClass.gt-md="text-5xl"
@@ -133,7 +110,6 @@
         >
           What my team members say...
         </h2>
-        <!-- <div class="divider"></div> -->
       </div>
       <div fxLayout.gt-md="row" fxLayout="column" fxLayoutGap="5rem" class="quotes-wrapper">
         <div fxFlex="30" *ngFor="let quote of quotes">
@@ -141,66 +117,10 @@
         </div>
       </div>
     </div>
-    <!-- <div [ngClass.lt-lg]="'max-w-screen-sm'">
-      <div class="text-center w-100 mb-5 py-3 section-header" fxLayout="row" fxLayoutAlign="center center">
-        <div class="divider w-100"></div>
-        <h2 class="text-4xl font-extrabold px-4 whitespace-nowrap">Build It</h2>
-        <div class="divider w-100"></div>
-      </div>
-      <div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutAlign="space-around">
-        <div fxLayout.gt-md="row" fxLayout="column" fxLayoutGap="25px">
-          <div fxFlex="40" fxLayout="column" fxLayoutAlign="center center">
-            <h2 class="text-3xl font-bold mb-4">When mock-ups aren't enough, build it.</h2>
-            <div fxLayout="column" fxLayoutGap="10px">
-              <p class="text-gray-600">
-                Frequently, I build and prototype working expereinces. Wireframes and mock-ups are great for
-                presentations, however, they don't always capture the full intent of a design. Working with developers
-                and delivering functional <code>HTML/SCSS</code> has proven to be the most effective way to nail UI
-                interactions.
-              </p>
-              <p class="text-gray-600">When mock-ups are failing to communicate iteractions, I build it.</p>
-              <div class="my-5">
-                <a
-                  class="btn-main focus:ring-2 focus:ring-gray-800"
-                  target="_blank"
-                  href="https://codepen.io/lando101/pens/public?cursor=ZD0wJm89MSZwPTEmdj0zOTM5NDExNw=="
-                  >View Codepen projects <i class="ml-1 fas fa-external-link-alt"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div fxFlex="60">
-            <iframe
-              height="500"
-              style="width: 100%"
-              scrolling="no"
-              title="Primary Button"
-              src="https://codepen.io/lando101/embed/abOeNWO?default-tab=css%2Cresult&theme-id=dark"
-              frameborder="no"
-              loading="lazy"
-              allowtransparency="true"
-              allowfullscreen="true"
-            >
-              See the Pen <a href="https://codepen.io/lando101/pen/abOeNWO"> Primary Button</a> by Landon Messmer (<a
-                href="https://codepen.io/lando101"
-                >@lando101</a
-              >) on <a href="https://codepen.io">CodePen</a>.
-            </iframe>
-          </div>
-        </div>
-      </div>
-    </div> -->
     <div [ngClass.lt-lg]="'max-w-screen-sm'" class="w-100">
-      <!-- <div class="text-center w-100 mb-5 py-3 section-header" fxLayout="row" fxLayoutAlign="center center">
-        <div class="divider w-100"></div>
-        <h2 class="text-4xl font-extrabold px-4 whitespace-nowrap">Contact Me</h2>
-        <div class="divider w-100"></div>
-      </div> -->
       <div class="primary-accent"></div>
       <div class="text-center w-100 mb-5 py-3 section-header" fxLayout="row" fxLayoutAlign="start start">
-        <!-- <div class="divider w-100"></div> -->
         <h2 class="text-4xl font-extrabold">Contact</h2>
-        <!-- <div class="divider w-100"></div> -->
       </div>
       <div class="w-100 mb-5 pb-5" fxLayout="row" fxLayout.lt-lg="column-reverse" fxLayoutGap="6rem">
         <div fxHide.lt-lg="" fxFlex="350px">
@@ -212,13 +132,174 @@
       </div>
     </div>
   </div>
+</div> -->
 
-  <!-- <div class="jumbotron text-center">
-    <h1>
-      <img class="logo" src="assets/ngx-rocket-logo.png" alt="angular logo" />
-      <span translate>Hello world !</span>
-    </h1>
-    <app-loader [isLoading]="isLoading"></app-loader>
-    <q [hidden]="isLoading">{{ quote }}</q>
+<div class="w-100" fxLayout="column" ngClass.lt-lg="px-3" fxLayoutGap.lt-sm="4rem" fxLayoutGap="8rem">
+  <section
+    class="w-100 py-5 mb-4 position-relative overflow-hidden"
+    ngClass.gt-sm="hero-container"
+    ngClass.lt-md="hero-container-small"
+    fxLayout="column"
+    fxLayoutAlign="center center"
+  >
+    <div
+      fxLayout="row"
+      fxLayout.lt-md="column-reverse"
+      fxLayoutGap="6rem"
+      [ngClass.lt-lg]="'max-w-screen-lg'"
+      class="hero-section container"
+    >
+      <div fxFlex.lt-sm="100" fxFlex="450px">
+        <h3 class="font-bold text-2xl mb-2 highlight-text">Hi, I'm Landon</h3>
+        <h1 class="text-5xl font-extrabold leading-tight">UX Designer at Booz Allen.</h1>
+        <p class="text-lg leading-9 mt-2 mb-4 text-gray-500">
+          I specialize in building innovative designs for the Government
+          <a
+            class="text-gray-600"
+            matTooltip="Learn more about Government clearances"
+            href="https://www.state.gov/security-clearances"
+            target="_blank"
+            >cleared</a
+          >
+          space.
+        </p>
+
+        <div
+          fxLayout="row"
+          fxLayout.lt-sm="column"
+          fxLayoutGap="25px"
+          class="py-4"
+          fxLayoutAlign.gt-md="start center"
+          fxLayoutAlign.lt-lg="start center"
+          fxLayoutAlign.lt-sm="start start"
+        >
+          <button (click)="openDialog()" class="btn-main btn-call-to-action focus:ring-2 focus:ring-gray-800">
+            <span class="font-extrabold tracking-wide px-4">{{ btnString }}</span>
+          </button>
+          <div fxLayoutGap="15px">
+            <a href="mailto:landon.messmerjmu@gmail.com" matTooltip="Send email"
+              ><i class="fas fa-envelope text-gray-600" ngClass="text-lg" ngClass.lt-sm="text-2xl"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/4921117/" target="_blank" matTooltip="View LinkedIn profile"
+              ><i class="fab fa-linkedin text-gray-600" ngClass="text-lg" ngClass.lt-sm="text-2xl"></i
+            ></a>
+            <a
+              href="https://codepen.io/lando101/pens/public?cursor=ZD0wJm89MSZwPTEmdj0zOTM5NDExNw=="
+              target="_blank"
+              matTooltip="View Codepen projects"
+              ><i class="fab fa-codepen text-gray-600" ngClass="text-lg" ngClass.lt-sm="text-2xl"></i
+            ></a>
+          </div>
+        </div>
+        <div fxLayout="column" class="container mt-5 p-0" [ngClass.lt-lg]="'max-w-screen-lg'">
+          <!-- <p class="font-bold text-xs text-gray-500">Certifications</p> -->
+          <app-cert-images></app-cert-images>
+        </div>
+      </div>
+      <div fxHide.lt-sm fxFlex="auto" fxLayout="column" fxLayoutAlign="center center">
+        <img
+          ngClass.gt-sm="img-lg"
+          ngClass.lt-md="img-sm"
+          [src]="'https://ux-portfolio-lcm.s3.amazonaws.com/general/cherry-on-top.png'"
+        />
+      </div>
+    </div>
+
+    <!-- <div class="position-absolute w-100 hero-image">
+    <img class="w-100" [src]="'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/Custom%20Size%20%E2%80%93%201.png?alt=media&token=8dcd5936-d002-4cdc-9b81-c09e6bb78bed'">
   </div> -->
+    <!-- <div class="position-absolute w-100 hero-image">
+  </div> -->
+    <div class="position-absolute w-100 hero-fade"></div>
+  </section>
+
+  <section class="w-100" fxLayout="row" fxLayoutAlign="center center">
+    <div [ngClass.lt-lg]="'max-w-screen-lg'" class="container">
+      <div class="primary-accent"></div>
+      <div
+        class="text-center w-100 mb-5 py-3 section-header"
+        fxLayout="row"
+        fxLayoutAlign="start start"
+        fxLayoutAlign.lt-sm="center center"
+      >
+        <h2 fxHide.lt-md class="text-4xl font-extrabold whitespace-nowrap">Projects</h2>
+        <h2 fxHide.gt-sm class="text-3xl font-extrabold whitespace-nowrap">Projects</h2>
+      </div>
+      <div fxLayout="column" fxHide.lt-lg fxLayout.lt-lg="row wrap" fxLayoutGap.gt-md="90px" fxLayoutGap.lt-sm="2rem">
+        <div *ngFor="let casestudy of caseStudies">
+          <app-case-study-card [caseStudy]="casestudy"></app-case-study-card>
+        </div>
+      </div>
+      <div fxLayout="column" fxHide.gt-md fxLayout.lt-lg="row wrap" fxLayoutGap="25px grid">
+        <div ngClass.gt-sm="w-50" ngClass.lt-md="w-100" *ngFor="let casestudy of caseStudies">
+          <app-case-study-card-mini fxHide.gt-md [caseStudy]="casestudy"></app-case-study-card-mini>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="w-100" fxLayout="row" fxLayoutAlign="center center">
+    <div [ngClass.lt-lg]="'max-w-screen-lg'" class="container" fxHide.lt-sm>
+      <div class="primary-accent"></div>
+      <div class="text-center w-100 mb-2 py-3 section-header" fxLayout="row" fxLayoutAlign="start start">
+        <h2 class="text-4xl font-extrabold">Roles</h2>
+      </div>
+      <div
+        fxLayout="row"
+        fxLayout.lt-lg="column"
+        fxLayoutGap="65px"
+        fxLayoutGap.lt-sm="2rem"
+        fxLayoutAlign="space-around"
+      >
+        <div fxFlex="30" class="d-flex justify-center item-center" *ngFor="let skill of skills">
+          <app-info-card [skills]="skill"></app-info-card>
+        </div>
+      </div>
+      <!-- <div>
+        <app-cert-images></app-cert-images>
+      </div> -->
+    </div>
+  </section>
+  <section class="w-100" fxLayout="row" fxLayoutAlign="center center">
+    <div [ngClass.lt-lg]="'max-w-screen-lg'" class="container" class="feedback-section">
+      <div class="bg"></div>
+      <div class="w-100 mb-5 pb-3 bg-transparent" fxLayout="row" fxLayoutAlign="center center">
+        <h2
+          ngClass.lt-lg="text-4xl"
+          ngClass.gt-md="text-5xl"
+          class="font-extrabold whitespace-normal text-white"
+          ngClass="text-center"
+          ngClass.lt-sm="text-left text-4xl"
+        >
+          What my team members say...
+        </h2>
+      </div>
+      <div
+        fxLayout.gt-md="row"
+        fxLayout="column"
+        fxLayoutGap="5rem"
+        [ngClass.lt-lg]="'max-w-screen-sm'"
+        class="container"
+      >
+        <div fxFlex="30" *ngFor="let quote of quotes">
+          <app-quotes [quote]="quote"></app-quotes>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="w-100" fxLayout="row" fxLayoutAlign="center center">
+    <div [ngClass.lt-lg]="'max-w-screen-lg'" class="container">
+      <div class="primary-accent"></div>
+      <div class="text-center w-100 mb-5 py-3 section-header" fxLayout="row" fxLayoutAlign="start start">
+        <h2 class="text-4xl font-extrabold">Contact</h2>
+      </div>
+      <div class="w-100 mb-5 pb-5" fxLayout="row" fxLayout.lt-lg="column-reverse" fxLayoutGap="6rem">
+        <div fxHide.lt-lg="" fxFlex="350px">
+          <app-contact-card></app-contact-card>
+        </div>
+        <div fxFlex="auto">
+          <app-contact-info-form-standard></app-contact-info-form-standard>
+        </div>
+      </div>
+    </div>
+  </section>
 </div>

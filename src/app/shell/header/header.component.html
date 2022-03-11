@@ -1,6 +1,6 @@
 <header [ngClass]="{ 'nav-down': !scrollUp }">
   <nav class="navbar navbar-expand-lg navbar-light bg-light mb-0">
-    <div class="container">
+    <!-- <div class="container">
       <a
         class="navbar-brand brand-text focus:ring-2 focus:ring-gray-800"
         routerLink="/home"
@@ -28,13 +28,6 @@
             >
               <span translate>Home</span>
             </a>
-            <!-- <a
-              class="nav-item nav-link text-uppercase focus:ring-2 focus:ring-gray-800"
-              routerLink="/about"
-              routerLinkActive="active"
-            >
-              <span translate>About</span>
-            </a> -->
             <a
               class="nav-item nav-link text-uppercase focus:ring-2 focus:ring-gray-800"
               routerLink="/resume"
@@ -58,7 +51,6 @@
                   class="text-uppercase d-flex align-items-center"
                   ngbDropdownItem
                 >
-                  <!-- <i *ngIf="currentUrl === '/projects/coinfloe'" class="active-dot fas fa-dot-circle"></i> -->
                   Coinfloe
                 </button>
                 <button
@@ -67,7 +59,6 @@
                   class="text-uppercase d-flex align-items-center"
                   ngbDropdownItem
                 >
-                  <!-- <i *ngIf="currentUrl === '/projects/coinfloe'" class="active-dot fas fa-dot-circle"></i> -->
                   Global4Sight
                 </button>
                 <button
@@ -76,16 +67,144 @@
                   class="text-uppercase d-flex align-items-center"
                   ngbDropdownItem
                 >
-                  <!-- <i *ngIf="currentUrl === '/projects/pas'" class="active-dot fas fa-dot-circle"></i> -->
                   OPAS Portal
                 </button>
               </div>
             </div>
           </div>
-          <!-- <app-language-selector inNavbar="true" menuClass="dropdown-menu dropdown-menu-right"></app-language-selector> -->
         </div>
       </div>
+    </div> -->
+    <div fxLayout="row" class="container" [ngClass.lt-lg]="'max-w-screen-lg'">
+      <div>
+        <a class="navbar-brand brand-text focus:ring-2 focus:ring-gray-800" routerLink="/home" translate>APP_NAME</a>
+      </div>
+      <div>
+        <div ngClass.gt-sm="d-none" class="row">
+          <div class="col">
+            <div ngbDropdown class="d-inline-block" display="dynamic">
+              <button class="navbar-toggler" id="dropdownBasic1" ngbDropdownToggle>
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                <div fxLayout="column" fxLayoutGap="7px">
+                  <a
+                    class="mx-3 text-gray-700 text-capitalize focus:ring-2 focus:ring-gray-800 no-underline"
+                    routerLink="/home"
+                    routerLinkActive="active"
+                  >
+                    <span class="font-semibold text-base" translate>Home</span>
+                  </a>
+                  <a
+                    class="mx-3 text-gray-700 text-capitalize focus:ring-2 focus:ring-gray-800"
+                    routerLink="/resume"
+                    routerLinkActive="active"
+                  >
+                    <span class="font-semibold text-base" translate>Resume</span>
+                  </a>
+                  <button
+                    [ngClass]="{ 'font-bold': currentUrl === '/projects/coinfloe' }"
+                    routerLink="/projects/coinfloe"
+                    class="nav-button p-0 font-semibold text-base mx-3 text-gray-700 text-capitalize focus:ring-2 focus:ring-gray-800 no-underline"
+                    ngbDropdownItem
+                  >
+                    Coinfloe
+                  </button>
+                  <button
+                    [ngClass]="{ 'font-bold': currentUrl === '/projects/g4s' }"
+                    routerLink="/projects/g4s"
+                    class="nav-button p-0 font-semibold text-base mx-3 text-gray-700 text-capitalize focus:ring-2 focus:ring-gray-800 no-underline"
+                    ngbDropdownItem
+                  >
+                    Global4Sight
+                  </button>
+                  <button
+                    [ngClass]="{ 'font-bold': currentUrl === '/projects/pas' }"
+                    routerLink="/projects/pas"
+                    class="nav-button p-0 font-semibold text-base mx-3 text-gray-700 text-capitalize focus:ring-2 focus:ring-gray-800 no-underline"
+                    ngbDropdownItem
+                  >
+                    OPAS Portal
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <button
+        class="navbar-toggler"
+        type="button"
+        aria-controls="navbar-menu"
+        aria-label="Toggle navigation"
+        (click)="toggleMenu()"
+        [attr.aria-expanded]="!menuHidden"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+        <div ngClass.lt-md="d-none" id="navbar-menu" class="float-xs-none">
+          <div class="navbar-nav ml-auto">
+            <div class="navbar-nav" fxLayout="row" fxLayoutGap="65px">
+              <a
+                class="text-gray-700 text-capitalize focus:ring-2 focus:ring-gray-800 no-underline"
+                routerLink="/home"
+                routerLinkActive="active"
+              >
+                <span class="font-semibold text-base" translate>Home</span>
+              </a>
+              <a
+                class="text-gray-700 text-capitalize focus:ring-2 focus:ring-gray-800"
+                routerLink="/resume"
+                routerLinkActive="active"
+              >
+                <span class="font-semibold text-base" translate>Resume</span>
+              </a>
+              <div ngbDropdown class="d-inline-block">
+                <button
+                  [ngClass]="{ active: onProject }"
+                  class="text-gray-700 nav-item text-capitalize font-semibold text-base"
+                  id="projectsdp"
+                  ngbDropdownToggle
+                >
+                  Projects <i class="ml-1 fas fa-chevron-down text-xs text-gray-500"></i>
+                </button>
+                <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                  <div fxLayout="column" fxLayoutGap="7px">
+                    <button
+                      [ngClass]="{ 'font-bold': currentUrl === '/projects/coinfloe' }"
+                      routerLink="/projects/coinfloe"
+                      class="nav-button p-0 font-semibold text-base mx-3 text-gray-700 text-capitalize focus:ring-2 focus:ring-gray-800 no-underline"
+                      ngbDropdownItem
+                    >
+                      Coinfloe
+                    </button>
+                    <button
+                      [ngClass]="{ 'font-bold': currentUrl === '/projects/g4s' }"
+                      routerLink="/projects/g4s"
+                      class="nav-button p-0 font-semibold text-base mx-3 text-gray-700 text-capitalize focus:ring-2 focus:ring-gray-800 no-underline"
+                      ngbDropdownItem
+                    >
+                      Global4Sight
+                    </button>
+                    <button
+                      [ngClass]="{ 'font-bold': currentUrl === '/projects/pas' }"
+                      routerLink="/projects/pas"
+                      class="nav-button p-0 font-semibold text-base mx-3 text-gray-700 text-capitalize focus:ring-2 focus:ring-gray-800 no-underline"
+                      ngbDropdownItem
+                    >
+                      OPAS Portal
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div ngClass.lt-md="d-none">
+        <button class="btn-main focus:ring-2 focus:ring-gray-800" (click)="openDialog()">
+          <span class="font-bold text-base">{{ btnString }}</span>
+        </button>
+      </div>
     </div>
-    <!-- <button class="py-2 px-3 m-2 bg-blue-500 hover:bg-nav-hover-blue rounded-md text-white">Click Me!</button> -->
   </nav>
 </header>

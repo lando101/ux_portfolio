@@ -10,8 +10,9 @@
 .nav-link.dropdown-toggle {
   cursor: pointer;
 }
-.nav-link.active {
-  border-bottom: 3px solid $bg-purple;
+.active {
+  // border-bottom: 3px solid $bg-purple;
+  color: $bg-purple !important;
 }
 
 .brand-text {
@@ -35,4 +36,18 @@ header {
   font-size: 0.6rem;
   margin-right: 7px;
   color: $bg-purple;
+}
+
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+.nav-button {
+  background-color: transparent;
+  transition: 0.2s ease-in-out;
+  width: 145px;
+  &:hover {
+    background-color: transparent;
+    color: $bg-purple !important;
+  }
 }

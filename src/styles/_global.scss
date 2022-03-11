@@ -2,7 +2,7 @@
 
 .btn-main {
   font-weight: bold;
-  border-radius: 5px;
+  border-radius: 10px;
   background: $bg-purple;
   color: white;
   padding: 10px 25px;
@@ -15,9 +15,18 @@
   }
 }
 
+.btn-call-to-action {
+  border-radius: 0px;
+  box-shadow: 6px 6px #2f2e41;
+  &:hover {
+    background: $bg-purple !important;
+    box-shadow: none;
+  }
+}
+
 .btn-secondary {
   font-weight: bold;
-  border-radius: 5px;
+  border-radius: 10px;
   background: $bg-gray;
   color: $big-text-color;
   padding: 10px 25px;
@@ -32,7 +41,7 @@
 
 .btn-main-invert {
   font-weight: bold;
-  border-radius: 5px;
+  border-radius: 10px;
   background: white;
   color: $bg-purple;
   padding: 10px 25px;
@@ -45,14 +54,19 @@
   }
 }
 
+// text
+.highlight-text {
+  color: $bg-purple;
+}
+
 a {
   font-weight: bold;
-  color: $bg-purple;
+  // color: $bg-purple;
   transition: 0.2s ease-in-out;
   text-transform: uppercase;
   &:hover {
     color: lighten($bg-purple, 3%);
-    text-decoration: underline;
+    text-decoration: none !important;
   }
 }
 
