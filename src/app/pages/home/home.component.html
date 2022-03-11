@@ -208,8 +208,7 @@
     <!-- <div class="position-absolute w-100 hero-image">
     <img class="w-100" [src]="'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/Custom%20Size%20%E2%80%93%201.png?alt=media&token=8dcd5936-d002-4cdc-9b81-c09e6bb78bed'">
   </div> -->
-    <!-- <div class="position-absolute w-100 hero-image">
-  </div> -->
+    <div fxHide.lt-lg class="position-absolute w-100 hero-image"></div>
     <div class="position-absolute w-100 hero-fade"></div>
   </section>
 
@@ -225,14 +224,14 @@
         <h2 fxHide.lt-md class="text-4xl font-extrabold whitespace-nowrap">Projects</h2>
         <h2 fxHide.gt-sm class="text-3xl font-extrabold whitespace-nowrap">Projects</h2>
       </div>
-      <div fxLayout="column" fxHide.lt-lg fxLayout.lt-lg="row wrap" fxLayoutGap.gt-md="90px" fxLayoutGap.lt-sm="2rem">
+      <!-- <div fxLayout="column" fxHide.lt-lg fxLayout.lt-lg="row wrap" fxLayoutGap.gt-md="90px" fxLayoutGap.lt-sm="2rem">
         <div *ngFor="let casestudy of caseStudies">
           <app-case-study-card [caseStudy]="casestudy"></app-case-study-card>
         </div>
-      </div>
-      <div fxLayout="column" fxHide.gt-md fxLayout.lt-lg="row wrap" fxLayoutGap="25px grid">
+      </div> -->
+      <div fxLayout="column" fxLayout="row wrap" fxLayoutGap="25px grid">
         <div ngClass.gt-sm="w-50" ngClass.lt-md="w-100" *ngFor="let casestudy of caseStudies">
-          <app-case-study-card-mini fxHide.gt-md [caseStudy]="casestudy"></app-case-study-card-mini>
+          <app-case-study-card-mini [caseStudy]="casestudy"></app-case-study-card-mini>
         </div>
       </div>
     </div>

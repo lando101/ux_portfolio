@@ -21,7 +21,21 @@ q {
   background-attachment: fixed;
   background-position: bottom;
   background-size: auto;
-  filter: brightness(1.05) opacity(0.75);
+  // filter: brightness(1.05) opacity(0.75);
+  filter: brightness(1.05) opacity(0.65);
+  animation: reveal 4s ease-in-out;
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .hero-fade {
