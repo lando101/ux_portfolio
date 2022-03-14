@@ -151,7 +151,7 @@
     >
       <div fxFlex.lt-sm="100" fxFlex="450px">
         <h3 class="font-bold text-2xl mb-2 highlight-text">Hi, I'm Landon</h3>
-        <h1 class="text-5xl font-extrabold leading-tight">UX Designer at Booz Allen.</h1>
+        <h1 class="text-5xl font-black leading-tight">UX Designer at Booz Allen.</h1>
         <p class="text-lg leading-9 mt-2 mb-4 text-gray-500">
           I specialize in building innovative designs for the Government
           <a
@@ -200,7 +200,8 @@
         <img
           ngClass.gt-sm="img-lg"
           ngClass.lt-md="img-sm"
-          [src]="'https://ux-portfolio-lcm.s3.amazonaws.com/general/cherry-on-top.png'"
+          s
+          [src]="'https://ux-portfolio-lcm.s3.amazonaws.com/general/cherry-on-top-v2.png'"
         />
       </div>
     </div>
@@ -221,17 +222,17 @@
         fxLayoutAlign="start start"
         fxLayoutAlign.lt-sm="center center"
       >
-        <h2 fxHide.lt-md class="text-4xl font-extrabold whitespace-nowrap">Projects</h2>
-        <h2 fxHide.gt-sm class="text-3xl font-extrabold whitespace-nowrap">Projects</h2>
+        <h2 fxHide.lt-md class="text-4xl font-black whitespace-nowrap">Projects</h2>
+        <h2 fxHide.gt-sm class="text-3xl font-black whitespace-nowrap">Projects</h2>
       </div>
       <!-- <div fxLayout="column" fxHide.lt-lg fxLayout.lt-lg="row wrap" fxLayoutGap.gt-md="90px" fxLayoutGap.lt-sm="2rem">
         <div *ngFor="let casestudy of caseStudies">
           <app-case-study-card [caseStudy]="casestudy"></app-case-study-card>
         </div>
       </div> -->
-      <div fxLayout="column" fxLayout="row wrap" fxLayoutGap="25px grid">
+      <div fxLayout="column" fxLayout="row wrap" fxLayoutGap="45px grid">
         <div ngClass.gt-sm="w-50" ngClass.lt-md="w-100" *ngFor="let casestudy of caseStudies">
-          <app-case-study-card-mini [caseStudy]="casestudy"></app-case-study-card-mini>
+          <app-case-study-card-mini [showMore]="true" [caseStudy]="casestudy"></app-case-study-card-mini>
         </div>
       </div>
     </div>
@@ -240,7 +241,7 @@
     <div [ngClass.lt-lg]="'max-w-screen-lg'" class="container" fxHide.lt-sm>
       <div class="primary-accent"></div>
       <div class="text-center w-100 mb-2 py-3 section-header" fxLayout="row" fxLayoutAlign="start start">
-        <h2 class="text-4xl font-extrabold">Roles</h2>
+        <h2 class="text-4xl font-black">Roles</h2>
       </div>
       <div
         fxLayout="row"
@@ -258,14 +259,20 @@
       </div> -->
     </div>
   </section>
-  <section class="w-100" fxLayout="row" fxLayoutAlign="center center">
+  <section class="w-100 position-relative overflow-visible" fxLayout="row" fxLayoutAlign="center center">
+    <!-- <div class="position-absolute w-100 feedback-fade-top"></div>
+    <div class="position-absolute w-100 feedback-fade-bottom"></div> -->
+    <div fxLayout="row" class="w-100 px-5 justify-between position-absolute">
+      <img src="https://ux-portfolio-lcm.s3.amazonaws.com/general/look-down-left.png" />
+      <img src="https://ux-portfolio-lcm.s3.amazonaws.com/general/look-down-right.png" />
+    </div>
     <div [ngClass.lt-lg]="'max-w-screen-lg'" class="container" class="feedback-section">
-      <div class="bg"></div>
+      <!-- <div class="bg"></div> -->
       <div class="w-100 mb-5 pb-3 bg-transparent" fxLayout="row" fxLayoutAlign="center center">
         <h2
           ngClass.lt-lg="text-4xl"
           ngClass.gt-md="text-5xl"
-          class="font-extrabold whitespace-normal text-white"
+          class="font-black whitespace-normal"
           ngClass="text-center"
           ngClass.lt-sm="text-left text-4xl"
         >
@@ -289,7 +296,7 @@
     <div [ngClass.lt-lg]="'max-w-screen-lg'" class="container">
       <div class="primary-accent"></div>
       <div class="text-center w-100 mb-5 py-3 section-header" fxLayout="row" fxLayoutAlign="start start">
-        <h2 class="text-4xl font-extrabold">Contact</h2>
+        <h2 class="text-4xl font-black">Contact</h2>
       </div>
       <div class="w-100 mb-5 pb-5" fxLayout="row" fxLayout.lt-lg="column-reverse" fxLayoutGap="6rem">
         <div fxHide.lt-lg="" fxFlex="350px">

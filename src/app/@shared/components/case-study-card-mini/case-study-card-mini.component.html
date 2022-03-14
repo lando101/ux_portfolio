@@ -1,17 +1,33 @@
 <button
-  class="text-left h-100"
+  class="text-left h-100 position-relative"
   ngClass.gt-xs="cs-card-container"
   ngClass.lt-sm="cs-card-container-no-hover"
   (click)="route(caseStudy.public ? caseStudy.href : '')"
 >
-  <div fxLayout="column" fxLayoutGap="2rem">
-    <div fxLayout="row" fxLayoutAlign="center center">
-      <img class="w-100 p-2 rounded-xl" [src]="caseStudy.img_url" />
+  <div fxLayout="column" fxLayoutGap="10px" class="h-100 justify-between">
+    <div class="nda-container" *ngIf="caseStudy.nda">
+      <span fxLayout="row" class="nda-wrapper" fxLayoutGap="10px">
+        <div fxLayout="column" class="justify-center">
+          <i class="text-gray-600 text-xl fas fa-exclamation-circle"></i>
+        </div>
+        <div fxLayout="column">
+          <label class="text-sm font-bold text-gray-600 mb-1 text-left">Under Non-disclosure Agreement</label>
+          <p class="text-xs text-gray-500 font-medium text-left">Details might be vague to protect client info.</p>
+        </div>
+      </span>
     </div>
-    <div fxLayout="column">
-      <h2 class="text-xl font-black text-center">{{ caseStudy.title }}</h2>
-      <div fxLayout="row wrap" fxLayoutGap="10px" fxLayoutAlign="center center" class="pb-1">
-        <span *ngFor="let skill of caseStudy.skills" class="font-bold text-gray-400 text-sm">{{ skill }}</span>
+    <div fxLayout="column" fxLayoutGap="2rem" class="p-4 h-100 justify-between">
+      <div fxLayout="row" fxLayoutAlign="center center">
+        <img class="w-100 p-2 rounded-xl" [src]="caseStudy.img_url" />
+      </div>
+      <div fxLayout="column">
+        <h2 class="text-xl font-black text-left">{{ caseStudy.title }}</h2>
+        <div fxLayout="row wrap" fxLayoutGap="10px" fxLayoutAlign="start center" class="pb-1">
+          <span *ngFor="let skill of caseStudy.skills" class="font-bold text-gray-400 text-sm">{{ skill }}</span>
+        </div>
+        <div *ngIf="showMore" class="text-start">
+          <p class="text-stone-600 py-3 text-base">{{ caseStudy?.desc }}</p>
+        </div>
       </div>
     </div>
   </div>

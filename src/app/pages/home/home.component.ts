@@ -117,7 +117,7 @@ export class HomeComponent implements OnInit {
     {
       title: 'Forecaster',
       desc: 'An exprimental weather application with dynamic weather animations based on current conditions.',
-      skills: ['UX/UI', 'Front-end Developer', 'Angular'],
+      skills: ['UX/UI', 'Front-End Developer', 'Angular'],
       img_url:
         'https://firebasestorage.googleapis.com/v0/b/ux-portfolio-8fc64.appspot.com/o/website_images%2Fforecaster.png?alt=media&token=49a1d12b-2733-4266-b091-3787eec6fb85',
       href: '/projects/forecaster',

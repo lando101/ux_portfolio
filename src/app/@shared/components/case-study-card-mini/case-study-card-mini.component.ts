@@ -9,7 +9,7 @@ import { CaseStudy } from '../case-study-card/case-study-card.component';
 })
 export class CaseStudyCardMiniComponent implements OnInit {
   @Input() caseStudy: CaseStudy;
-
+  @Input() showMore: boolean;
   constructor(private router: Router) {}
 
   ngOnInit(): void {}
