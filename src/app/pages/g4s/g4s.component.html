@@ -17,10 +17,16 @@
               ><strong>Status: </strong> In Development <i class="text-blue-500 fas fa-spinner"></i
             ></span>
           </div>
-          <div fxLayout="row" fxLayoutGap="15px">
-            <span class="badge badge-pill badge-dark p-3">UI/UX Design</span>
-            <span class="badge badge-pill badge-dark p-3">UX Research</span>
-            <span class="badge badge-pill badge-dark p-3">UI Development</span>
+          <div fxLayout="row wrap" fxLayoutGap="15px grid">
+            <div>
+              <span class="badge badge-pill badge-dark p-3">UI/UX Design</span>
+            </div>
+            <div>
+              <span class="badge badge-pill badge-dark p-3">UX Research</span>
+            </div>
+            <div>
+              <span class="badge badge-pill badge-dark p-3">UI Development</span>
+            </div>
           </div>
         </div>
         <div fxFlex.gt-md="60">
@@ -113,7 +119,14 @@
             <label class="text-2xl font-light sub-header mt-2">Solve problems for users. Iteratively.</label>
           </div>
           <div class="w-100 mt-5 py-2">
-            <img class="w-100" [src]="'https://ux-portfolio-lcm.s3.amazonaws.com/general/Design-Approach-G4S.png'" />
+            <img
+              class="w-100"
+              [src.gt-sm]="'https://ux-portfolio-lcm.s3.amazonaws.com/general/Design-Approach-G4S.png'"
+            />
+            <img
+              class="w-100"
+              [src.lt-md]="'https://ux-portfolio-lcm.s3.amazonaws.com/g4s/general/Design-Approach-G4S-Vertical.png'"
+            />
           </div>
         </div>
       </section>
@@ -464,7 +477,8 @@
               <div fxLayout="row" class="justify-content-center mt-5">
                 <img
                   class="w-100 rounded-xl"
-                  [src]="'https://ux-portfolio-lcm.s3.amazonaws.com/g4s/general/g4s-how-might-we.png'"
+                  [src.gt-sm]="'https://ux-portfolio-lcm.s3.amazonaws.com/g4s/general/g4s-how-might-we.png'"
+                  [src.lt-md]="'https://ux-portfolio-lcm.s3.amazonaws.com/g4s/general/g4s-how-might-we-mobile.png'"
                 />
               </div>
             </div>

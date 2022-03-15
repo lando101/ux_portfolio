@@ -15,10 +15,16 @@
               ><strong>Status: </strong> Deployed <i class="text-green-400 far fa-check-circle"></i
             ></span>
           </div>
-          <div fxLayout="row" fxLayoutGap="15px">
-            <span class="badge badge-pill badge-dark p-3">UI/UX Design</span>
-            <span class="badge badge-pill badge-dark p-3">UX Research</span>
-            <span class="badge badge-pill badge-dark p-3">UI Development</span>
+          <div fxLayout="row wrap" fxLayoutGap="15px grid">
+            <div>
+              <span class="badge badge-pill badge-dark p-3">UI/UX Design</span>
+            </div>
+            <div>
+              <span class="badge badge-pill badge-dark p-3">UX Research</span>
+            </div>
+            <div>
+              <span class="badge badge-pill badge-dark p-3">UI Development</span>
+            </div>
           </div>
         </div>
         <div fxFlex.gt-md="55">
@@ -131,7 +137,16 @@
             <label class="text-2xl font-light sub-header mt-2">Solve problems for users. Iteratively.</label>
           </div>
           <div class="w-100 mt-5 py-2">
-            <img class="w-100" [src]="'https://ux-portfolio-lcm.s3.amazonaws.com/general/Design-Approach-OPAS.png'" />
+            <img
+              class="w-100"
+              [src.gt-sm]="'https://ux-portfolio-lcm.s3.amazonaws.com/general/Design-Approach-OPAS.png'"
+            />
+            <img
+              class="w-100"
+              [src.lt-md]="
+                'https://ux-portfolio-lcm.s3.amazonaws.com/opas/visualizations/Design-Approach-OPAS-Vertical.png'
+              "
+            />
           </div>
         </div>
       </section>
@@ -665,8 +680,7 @@
                   <div class="d-flex justify-center rounded-md overflow-hidden bg-white px-1 py-1 img-shadow">
                     <img
                       class="w-100"
-                      [src.gt-md]="'https://ux-portfolio-lcm.s3.amazonaws.com/opas/mock-ups/sketches_vertical.png'"
-                      [src.lt-lg]="'https://ux-portfolio-lcm.s3.amazonaws.com/opas/mock-ups/opas-drawling.png'"
+                      [src]="'https://ux-portfolio-lcm.s3.amazonaws.com/opas/mock-ups/sketches_vertical.png'"
                     />
                   </div>
                 </div>
@@ -878,10 +892,9 @@
                   <div class="d-flex justify-center rounded-md overflow-hidden px-1 py-1">
                     <img
                       class="w-100"
-                      [src.gt-md]="
+                      [src]="
                         'https://ux-portfolio-lcm.s3.amazonaws.com/opas/mock-ups/opas-mid-fidelity-mockup-vertical.png'
                       "
-                      [src.lt-lg]="'https://ux-portfolio-lcm.s3.amazonaws.com/opas/mock-ups/opas-mock-ups.png'"
                     />
                   </div>
                 </div>

@@ -9,9 +9,9 @@
     fxLayoutGap="25px"
   >
     <div>
-      <h1 *ngIf="!contactInfo.firstname" class="text-3xl font-extrabold">Now, about you...</h1>
+      <h1 fxHide.lt-sm *ngIf="!contactInfo.firstname" class="text-3xl font-extrabold">Now, about you...</h1>
       <h1 *ngIf="contactInfo.firstname" class="text-3xl font-extrabold">Got ideas?</h1>
-      <p *ngIf="!contactInfo.firstname" class="text-sm text-gray-500 font-semibold">
+      <p fxHide.lt-sm *ngIf="!contactInfo.firstname" class="text-sm text-gray-500 font-semibold">
         Thanks for visiting. I'm looking forward to chatting!
       </p>
       <p *ngIf="contactInfo.firstname" class="text-sm text-gray-500 font-semibold">Wow, you're awesome!</p>

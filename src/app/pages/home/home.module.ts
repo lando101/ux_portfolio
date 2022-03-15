@@ -21,7 +21,6 @@ import { DirectivesModule } from '@app/directives/directives.module';
     MaterialModule,
     NgxVcardModule,
     DirectivesModule,
-    AnimateOnScrollModule.forRoot(),
   ],
   declarations: [HomeComponent],
 })

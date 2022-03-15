@@ -23,6 +23,7 @@ import { ColorSwatchComponent } from './components/color-swatch/color-swatch.com
 import { TypographyComponent } from './components/typography/typography.component';
 import { LargeImageViewerComponent } from './components/large-image-viewer/large-image-viewer.component';
 import { CaseStudyCardMiniComponent } from './components/case-study-card-mini/case-study-card-mini.component';
+import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 
 @NgModule({
   imports: [
@@ -34,6 +35,7 @@ import { CaseStudyCardMiniComponent } from './components/case-study-card-mini/ca
     ReactiveFormsModule,
     MaterialModule,
     FormsModule,
+    AnimateOnScrollModule.forRoot(),
   ],
   declarations: [
     LoaderComponent,
@@ -67,6 +69,7 @@ import { CaseStudyCardMiniComponent } from './components/case-study-card-mini/ca
     TypographyComponent,
     LargeImageViewerComponent,
     CaseStudyCardMiniComponent,
+    AnimateOnScrollModule,
   ],
 })
 export class SharedModule {}

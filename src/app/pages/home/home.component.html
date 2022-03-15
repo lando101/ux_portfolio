@@ -150,8 +150,10 @@
       class="hero-section container"
     >
       <div fxFlex.lt-sm="100" fxFlex="450px">
-        <h3 class="font-bold text-2xl mb-2 highlight-text">Hi, I'm Landon</h3>
-        <h1 class="text-5xl font-black leading-tight">UX Designer at Booz Allen.</h1>
+        <h3 ngClass.lt-sm="text-xl" ngClass.gt-xs="text-2xl" class="font-bold mb-2 highlight-text">Hi, I'm Landon</h3>
+        <h1 ngClass.lt-sm="text-4xl" ngClass.gt-xs="text-5xl" class="font-black leading-tight">
+          UX Designer at Booz Allen.
+        </h1>
         <p class="text-lg leading-9 mt-2 mb-4 text-gray-500">
           I specialize in building innovative designs for the Government
           <a
@@ -216,12 +218,7 @@
   <section class="w-100" fxLayout="row" fxLayoutAlign="center center">
     <div [ngClass.lt-lg]="'max-w-screen-lg'" class="container">
       <div class="primary-accent"></div>
-      <div
-        class="text-center w-100 mb-5 py-3 section-header"
-        fxLayout="row"
-        fxLayoutAlign="start start"
-        fxLayoutAlign.lt-sm="center center"
-      >
+      <div class="text-center w-100 mb-5 py-3 section-header" fxLayout="row" fxLayoutAlign="start start">
         <h2 fxHide.lt-md class="text-4xl font-black whitespace-nowrap">Projects</h2>
         <h2 fxHide.gt-sm class="text-3xl font-black whitespace-nowrap">Projects</h2>
       </div>
@@ -250,7 +247,14 @@
         fxLayoutGap.lt-sm="2rem"
         fxLayoutAlign="space-around"
       >
-        <div fxFlex="30" class="d-flex justify-center item-center" *ngFor="let skill of skills">
+        <div
+          animateOnScroll
+          offset="-150"
+          animationName="animated animate__fadeIn"
+          fxFlex="30"
+          class="d-flex justify-center item-center hide-on-init"
+          *ngFor="let skill of skills"
+        >
           <app-info-card [skills]="skill"></app-info-card>
         </div>
       </div>
@@ -262,9 +266,23 @@
   <section class="w-100 position-relative overflow-visible" fxLayout="row" fxLayoutAlign="center center">
     <!-- <div class="position-absolute w-100 feedback-fade-top"></div>
     <div class="position-absolute w-100 feedback-fade-bottom"></div> -->
-    <div fxLayout="row" class="w-100 px-5 justify-between position-absolute">
-      <img src="https://ux-portfolio-lcm.s3.amazonaws.com/general/look-down-left.png" />
-      <img src="https://ux-portfolio-lcm.s3.amazonaws.com/general/look-down-right.png" />
+    <div fxLayout="row" ngClass.gt-sm="px-5" class="w-100 px-5 justify-between position-absolute">
+      <img
+        class="hide-on-init"
+        offset="0"
+        animateOnScroll
+        animationName="animated animate__fadeInLeft"
+        ngClass.lt-md="img-shift-left"
+        src="https://ux-portfolio-lcm.s3.amazonaws.com/general/look-down-left.png"
+      />
+      <img
+        class="hide-on-init"
+        offset="0"
+        animateOnScroll
+        animationName="animated animate__fadeInRight"
+        fxHide.lt-md
+        src="https://ux-portfolio-lcm.s3.amazonaws.com/general/look-down-right.png"
+      />
     </div>
     <div [ngClass.lt-lg]="'max-w-screen-lg'" class="container" class="feedback-section">
       <!-- <div class="bg"></div> -->
@@ -295,11 +313,25 @@
   <section class="w-100" fxLayout="row" fxLayoutAlign="center center">
     <div [ngClass.lt-lg]="'max-w-screen-lg'" class="container">
       <div class="primary-accent"></div>
-      <div class="text-center w-100 mb-5 py-3 section-header" fxLayout="row" fxLayoutAlign="start start">
-        <h2 class="text-4xl font-black">Contact</h2>
+      <div
+        ngClass.lt-md="mb-3"
+        ngClass.gt-sm="mb-5"
+        class="text-center w-100 py-3 section-header"
+        fxLayout="row"
+        fxLayoutAlign="start start"
+      >
+        <h2 fxHide.lt-md class="text-4xl font-black whitespace-nowrap">Contact</h2>
+        <h2 fxHide.gt-sm class="text-3xl font-black whitespace-nowrap">Contact</h2>
       </div>
       <div class="w-100 mb-5 pb-5" fxLayout="row" fxLayout.lt-lg="column-reverse" fxLayoutGap="6rem">
-        <div fxHide.lt-lg="" fxFlex="350px">
+        <div
+          class="hide-on-init"
+          offset="-300"
+          animateOnScroll
+          animationName="animated animate__fadeInUp"
+          fxHide.lt-lg=""
+          fxFlex="350px"
+        >
           <app-contact-card></app-contact-card>
         </div>
         <div fxFlex="auto">

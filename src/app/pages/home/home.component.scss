@@ -1,5 +1,7 @@
 @import "../../../styles/index";
-@import "~animate.css/animate.min.css";
+// @import "/node_modules/animate.css/animate.min.css";
+// @import "/node_modules/animate.css";
+@import "animate.css";
 .logo {
   width: 100px;
 }
@@ -71,13 +73,6 @@ q {
   }
 }
 
-.animated {
-  visibility: visible !important;
-}
-.hide-on-init {
-  visibility: hidden;
-}
-
 .divider {
   width: 40%;
   border-top: 2px solid #3b395c2b;
@@ -143,4 +138,8 @@ q {
     width: 100%;
     justify-content: space-evenly;
   }
+}
+
+.img-shift-left {
+  margin-left: -6rem;
 }

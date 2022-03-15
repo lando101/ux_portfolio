@@ -136,7 +136,7 @@ export class HomeComponent implements OnInit {
       role: 'Associate at Booz Allen Hamilton',
       name: 'Teresa Lowen',
       large: false,
-      color: '#fb4b6e',
+      color: '#5dcaf4',
     },
     {
       title: 'Leadership',

@@ -15,11 +15,19 @@
               ><strong>Status: </strong> In Development <i class="text-blue-500 fas fa-spinner"></i
             ></span>
           </div>
-          <div fxLayout="row" fxLayoutGap="15px">
-            <span class="badge badge-pill badge-dark p-3">UI/UX Design</span>
-            <span class="badge badge-pill badge-dark p-3">UX Research</span>
-            <span class="badge badge-pill badge-dark p-3">UI Development</span>
-            <span class="badge badge-pill badge-dark p-3">API Development</span>
+          <div fxLayout="row wrap" fxLayoutGap="15px grid">
+            <div>
+              <span class="badge badge-pill badge-dark p-3">UI/UX Design</span>
+            </div>
+            <div>
+              <span class="badge badge-pill badge-dark p-3">UX Research</span>
+            </div>
+            <div>
+              <span class="badge badge-pill badge-dark p-3">UI Development</span>
+            </div>
+            <div>
+              <span class="badge badge-pill badge-dark p-3">API Development</span>
+            </div>
           </div>
         </div>
         <div fxFlex.gt-md="55">
@@ -137,7 +145,7 @@
         >
           <div class="text-center">
             <h2 class="text-xl font-light mb-4">Light Theme</h2>
-            <div fxLayout.gt-md="row" fxLayout="column" fxLayoutGap="3rem" fxLayoutAlign="center center">
+            <div fxLayout="row wrap" fxLayoutGap="3rem grid" fxLayoutAlign="center center">
               <app-color-swatch [color]="'#6b42ff'" [textColor]="'white'"></app-color-swatch>
               <app-color-swatch [color]="'#f3f3f3'" [textColor]="'black'"></app-color-swatch>
               <app-color-swatch [color]="'#f9f9f9'" [textColor]="'black'"></app-color-swatch>
@@ -147,7 +155,7 @@
           </div>
           <div class="text-center">
             <h2 class="text-xl font-light mb-4">Dark Theme</h2>
-            <div fxLayout.gt-md="row" fxLayout="column" fxLayoutGap="3rem" fxLayoutAlign="center center">
+            <div fxLayout="row wrap" fxLayoutGap="3rem grid" fxLayoutAlign="center center">
               <app-color-swatch [color]="'#9a7eff'" [textColor]="'white'"></app-color-swatch>
               <app-color-swatch [color]="'#151519'" [textColor]="'white'"></app-color-swatch>
               <app-color-swatch [color]="'#1a1a1f'" [textColor]="'white'"></app-color-swatch>

@@ -3,9 +3,9 @@
     <span [ngStyle]="style" class="text-gray-800 text-4xl font-semibold mb-2">{{ name }}</span>
     <small class="font-semibold text-xs text-gray-400">Regular • Bold • Extra Bold</small>
   </div>
-  <div fxLayout="row" class="max-w-6xl w-100">
-    <div fxFlex="50" fxLayout="column" fxLayoutAlign="start center">
-      <div fxLayout="row" fxLayout="column" fxLayoutAlign="start start">
+  <div fxLayout.gt-sm="row" fxLayout.lt-md="column" class="max-w-6xl w-100" fxLayoutGap.lt-md="3rem">
+    <div fxFlex.gt-sm="50" fxLayout="column" fxLayoutAlign="start center">
+      <div fxLayout="row" fxLayout="column" fxLayoutAlign.gt-sm="start start" fxLayoutAlign.lt-md="center center">
         <span class="text-base font-semibold text-gray-500 mb-3">Headings</span>
         <div fxLayout="column" fxLayoutGap="2rem">
           <div class="text-left">
@@ -14,25 +14,25 @@
               <p class="text-xs font-light text-gray-400 mb-1 text-uppercase mt-2">text-4xl / font-extrabold</p>
             </div>
           </div>
-          <div class="text-left">
+          <div ngClass.gt-sm="text-left" ngClass.lt-md="text-center">
             <div [ngStyle]="style" class="text-3xl font-normal">
               Heading 2
               <p class="text-xs font-light text-gray-400 mb-1 text-uppercase mt-2">text-3xl / font-normal</p>
             </div>
           </div>
-          <div class="text-left">
+          <div ngClass.gt-sm="text-left" ngClass.lt-md="text-center">
             <div [ngStyle]="style" class="text-xl font-bold">
               Heading 3
               <p class="text-xs font-light text-gray-400 mb-1 text-uppercase mt-2">text-xl / font-bold</p>
             </div>
           </div>
-          <div class="text-left">
+          <div ngClass.gt-sm="text-left" ngClass.lt-md="text-center">
             <div [ngStyle]="style" class="text-lg font-bold">
               Heading 4
               <p class="text-xs font-light text-gray-400 mb-1 text-uppercase mt-2">text-lg / font-bold</p>
             </div>
           </div>
-          <div class="text-left">
+          <div ngClass.gt-sm="text-left" ngClass.lt-md="text-center">
             <div [ngStyle]="style" class="text-base font-extrabold">
               Heading 5
               <p class="text-xs font-light text-gray-400 mb-1 text-uppercase mt-2">text-base / font-extrabold</p>
@@ -41,29 +41,29 @@
         </div>
       </div>
     </div>
-    <div fxFlex="50" fxLayout="column" fxLayoutAlign="start center">
-      <div fxLayout="row" fxLayout="column" fxLayoutAlign="start start">
+    <div fxFlex.gt-sm="50" fxLayout="column" fxLayoutAlign="start center">
+      <div fxLayout="row" fxLayout="column" fxLayoutAlign.gt-sm="start start" fxLayoutAlign.lt-md="center center">
         <span class="text-base font-semibold text-gray-500 mb-3">Body</span>
         <div fxLayout="column" fxLayoutGap="2rem">
-          <div class="text-left">
+          <div ngClass.gt-sm="text-left" ngClass.lt-md="text-center">
             <div [ngStyle]="style" class="text-base font-bold">
               Body 1
               <p class="text-xs font-light text-gray-400 mb-1 text-uppercase mt-2">text-base / font-bold</p>
             </div>
           </div>
-          <div class="text-left">
+          <div ngClass.gt-sm="text-left" ngClass.lt-md="text-center">
             <div [ngStyle]="style" class="text-sm font-semibold">
               Body 2
               <p class="text-xs font-light text-gray-400 mb-1 text-uppercase mt-2">text-sm / font-semibold</p>
             </div>
           </div>
-          <div class="text-left">
+          <div ngClass.gt-sm="text-left" ngClass.lt-md="text-center">
             <div [ngStyle]="style" class="text-sm font-base">
               Body 3
               <p class="text-xs font-light text-gray-400 mb-1 text-uppercase mt-2">text-sm / font-semibold</p>
             </div>
           </div>
-          <div class="text-left">
+          <div ngClass.gt-sm="text-left" ngClass.lt-md="text-center">
             <div [ngStyle]="style" class="text-xs font-extrabold">
               Body 4
               <p class="text-xs font-light text-gray-400 mb-1 text-uppercase mt-2">text-sm / font-semibold</p>
