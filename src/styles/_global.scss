@@ -59,6 +59,14 @@
   color: $bg-purple;
 }
 
+.text-underline-wavy {
+  color: #2b2a3b;
+  text-decoration: underline;
+  text-decoration-color: $bg-purple;
+  text-decoration-style: wavy;
+  text-decoration-thickness: 3px;
+}
+
 a {
   font-weight: bold;
   // color: $bg-purple;
