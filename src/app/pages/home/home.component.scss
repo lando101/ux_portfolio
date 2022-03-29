@@ -2,6 +2,12 @@
 // @import "/node_modules/animate.css/animate.min.css";
 // @import "/node_modules/animate.css";
 @import "animate.css";
+
+.home-wrapper {
+  // background-color: $bg-light;
+  background: linear-gradient(247deg, #f0f0fa, #fbfbfd);
+}
+
 .logo {
   width: 100px;
 }
@@ -79,9 +85,7 @@ q {
 }
 
 .section-header {
-  // position: sticky;
-  // top: -1px;
-  background: $bg-light;
+  background: transparent;
 }
 
 .feedback-fade-bottom {

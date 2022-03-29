@@ -66,16 +66,19 @@
         <mat-error *ngIf="this.form.controls.comments.invalid">What brings you here? Required.</mat-error>
       </mat-form-field>
     </div>
-    <div class="w-100" fxLayout="column" fxLayoutAlign="center start">
-      <p class="text-xs font-semibold">Form not working? Email me instead.</p>
+    <!-- <div class="w-100" fxLayout="column" fxLayoutAlign="center start">
+      <p class="text-xs font-semibold">Email work better?</p>
       <a class="text-sm font-light text-lowercase" href="mailto:landon.messmerjmu@gmail.com"
         >landon.messmerjmu@gmail.com</a
       >
-    </div>
+    </div> -->
   </div>
 
   <div fxLayout="row" class="justify-content-between align-items-center">
-    <button (click)="onNoClick()" class="btn-secondary focus:ring-2 focus:ring-gray-800">Cancel</button>
+    <div fxLayout="row" fxLayoutGap="15px">
+      <button (click)="onNoClick()" class="btn-secondary focus:ring-2 focus:ring-gray-800">Cancel</button>
+      <a href="mailto:landon.messmerjmu@gmail.com" class="btn-secondary focus:ring-2 focus:ring-gray-800"> Email Me </a>
+    </div>
     <button (click)="submit()" type="submit" class="send btn-main focus:ring-2 focus:ring-gray-800">
       Send
       <i class="fas fa-shipping-fast text-sm ml-2"></i>

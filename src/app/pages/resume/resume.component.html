@@ -1,7 +1,26 @@
-<div class="w-100 d-flex justify-center">
+<div class="w-100 d-flex justify-center resume-wrapper">
   <div class="max-w-screen-lg py-5 my-5" ngClass="px-5" ngClass.lt-sm="px-2">
-    <div id="resume" fxLayout.lt-sm="column-reverse" fxLayout="column" fxLayoutGap="8rem">
-      <img [src]="'https://ux-portfolio-lcm.s3.amazonaws.com/general/resume_winter_2021.png'" />
+    <div id="resume" fxLayout.lt-sm="column-reverse" fxLayout="column" fxLayoutGap="10rem">
+      <div class="position-relative">
+        <div @inOutAnimate class="resume-overlay" *ngIf="show === 'visible'">
+          <div fxLayout="column" fxLayoutAlign="center center">
+            <h1>
+              <i class="fas fa-cloud-download-alt text-5xl mb-3"></i>
+            </h1>
+            <h1 class="font-black text-3xl">Click to Download!</h1>
+          </div>
+        </div>
+        <button
+          [ngClass]="{ 'resume-blur': show === 'visible' }"
+          (mouseenter)="show = 'visible'"
+          (mouseleave)="show = 'invisible'"
+          tooltip="Download Resume"
+          (click)="saveResume()"
+          class="resume"
+        >
+          <img [src]="'https://ux-portfolio-lcm.s3.amazonaws.com/general/resume_winter_2021.png'" />
+        </button>
+      </div>
       <div fxLayout="row" fxLayoutGap="6rem">
         <div ngClass.lt-md="text-center" fxFlex="auto" fxLayout="column" class="justify-between">
           <div>
@@ -30,12 +49,12 @@
               </div>
             </div>
           </div>
-          <div>
+          <!-- <div>
             <a class="text-sm" routerLink="/home">
               <i class="fas fa-arrow-left mr-1"></i>
               Home
             </a>
-          </div>
+          </div> -->
         </div>
         <div fxHide.lt-md fxFlex="45">
           <img
